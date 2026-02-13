@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+
+# Dati (troppo grandi per git)
+*.bmp
+*.xlsx
+*.csv
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Modelli addestrati
+models_trained/*
+*.pth
+*.h5
+*.pkl
+
+# Log
+logs/*
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+.github/
+.claude/
+# OS
+.DS_Store
+Thumbs.db
+
+# Eccezioni (file da committare)
+!.gitignore
+!docs/*
+!templates/*
+!src/**/*.py
+!README.md
