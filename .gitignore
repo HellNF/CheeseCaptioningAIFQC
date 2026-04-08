@@ -5,6 +5,8 @@ __pycache__/
 .venv/
 venv/
 *.egg-info/
+.env
+.env.*
 
 # Dati (troppo grandi per git)
 *.bmp
@@ -12,7 +14,8 @@ venv/
 *.csv
 data/raw/*
 data/interim/*
-data/processed/*
+!data/processed/*.csv
+
 
 # Modelli addestrati
 models_trained/*

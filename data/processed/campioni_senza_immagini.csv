@@ -1,0 +1,1351 @@
+csv_file,line_number,data_seduta,prodotto,caseificio
+Commenti liberi_QTG_2019_Aroma.csv,25,2019-12-04,C0P,TN_328
+Commenti liberi_QTG_2019_Aroma.csv,26,2019-12-04,C0D,TN_306
+Commenti liberi_QTG_2019_Aroma.csv,50,2020-02-12,C0Q,TN_330
+Commenti liberi_QTG_2019_Aroma.csv,51,2020-02-12,C0O,TN_326
+Commenti liberi_QTG_2019_Colore della pasta.csv,16,2019-10-30,C0O,TN_326
+Commenti liberi_QTG_2019_Colore della pasta.csv,22,2019-12-04,,
+Commenti liberi_QTG_2019_Colore della pasta.csv,25,2019-12-18,C0M,TN_319
+Commenti liberi_QTG_2019_Colore della pasta.csv,26,2019-12-18,C0M,TN_319
+Commenti liberi_QTG_2019_Colore della pasta.csv,41,2020-02-12,C0O,TN_326
+Commenti liberi_QTG_2019_Profumo.csv,30,2019-10-30,C0O,TN_326
+Commenti liberi_QTG_2019_Profumo.csv,33,2019-10-30,C0O,TN_326
+Commenti liberi_QTG_2019_Profumo.csv,61,2019-12-04,C0D,TN_306
+Commenti liberi_QTG_2019_Profumo.csv,62,2019-12-04,C0E,TN_307
+Commenti liberi_QTG_2019_Profumo.csv,63,2019-12-04,C0P,TN_328
+Commenti liberi_QTG_2019_Profumo.csv,73,2019-12-18,C0M,TN_319
+Commenti liberi_QTG_2019_Profumo.csv,103,2020-02-12,C0N,TN_323
+Commenti liberi_QTG_2019_Profumo.csv,104,2020-02-12,C0L,TN_316
+Commenti liberi_QTG_2019_Profumo.csv,105,2020-02-12,C0M,TN_319
+Commenti liberi_QTG_2019_Profumo.csv,106,2020-02-12,C0O,TN_326
+Commenti liberi_QTG_2019_Profumo.csv,107,2020-02-12,C0C,TN_305
+Commenti liberi_QTG_2019_Sapore.csv,19,2019-10-30,C0O,TN_326
+Commenti liberi_QTG_2019_Sapore.csv,28,2019-12-04,C0E,TN_307
+Commenti liberi_QTG_2019_Sapore.csv,29,2019-12-04,C0P,TN_328
+Commenti liberi_QTG_2019_Sapore.csv,30,2019-12-04,C0H,TN_313
+Commenti liberi_QTG_2019_Sapore.csv,63,2020-02-12,C0C,TN_305
+Commenti liberi_QTG_2019_Sapore.csv,64,2020-02-12,C0Q,TN_330
+Commenti liberi_QTG_2019_Spessore della crosta.csv,18,2019-12-04,,
+Commenti liberi_QTG_2019_Spessore della crosta.csv,25,2019-12-18,C0M,TN_319
+Commenti liberi_QTG_2019_Spessore della crosta.csv,35,2020-02-12,C0L,TN_316
+Commenti liberi_QTG_2019_Spessore della crosta.csv,36,2020-02-12,C0M,TN_319
+Commenti liberi_QTG_2019_Spessore della crosta.csv,37,2020-02-12,C0N,TN_323
+Commenti liberi_QTG_2019_Spessore della crosta.csv,38,2020-02-12,C0M,TN_319
+Commenti liberi_QTG_2019_Spessore della crosta.csv,39,2020-02-12,C0M,TN_319
+Commenti liberi_QTG_2019_Struttura della pasta.csv,34,2019-10-30,C0O,TN_326
+Commenti liberi_QTG_2019_Struttura della pasta.csv,59,2019-12-04,C0I,TN_314
+Commenti liberi_QTG_2019_Struttura della pasta.csv,60,2019-12-04,C0Q,TN_330
+Commenti liberi_QTG_2019_Struttura della pasta.csv,71,2019-12-18,C0M,TN_319
+Commenti liberi_QTG_2019_Struttura della pasta.csv,108,2020-02-12,C0Q,TN_330
+Commenti liberi_QTG_2019_Struttura della pasta.csv,109,2020-02-12,C0Q,TN_330
+Commenti liberi_QTG_2019_Struttura della pasta.csv,110,2020-02-12,C0C,TN_305
+Commenti liberi_QTG_2019_Struttura della pasta.csv,111,2020-02-12,C0L,TN_316
+Commenti liberi_QTG_2019_Struttura della pasta.csv,112,2020-02-12,C0M,TN_319
+Commenti liberi_QTG_2019_Struttura della pasta.csv,113,2020-02-12,C0O,TN_326
+Commenti liberi_QTG_2019_Struttura della pasta.csv,114,2020-02-12,C0Q,TN_330
+Commenti liberi_QTG_2019_Struttura della pasta.csv,115,2020-02-12,C0N,TN_323
+Commenti liberi_QTG_2019_Struttura della pasta.csv,116,2020-02-12,C0Q,TN_330
+Commenti liberi_QTG_2019_Struttura della pasta.csv,117,2020-02-12,C0M,TN_319
+Commenti liberi_QTG_2019_Struttura della pasta.csv,118,2020-02-12,C0M,TN_319
+Commenti liberi_QTG_2019_Struttura della pasta.csv,119,2020-02-12,C0O,TN_326
+Commenti liberi_QTG_2019_Struttura della pasta.csv,120,2020-02-12,C0Q,TN_330
+Commenti liberi_QTG_2019_Struttura della pasta.csv,121,2020-02-12,C0C,TN_305
+Commenti liberi_QTG_2019_Struttura della pasta.csv,122,2020-02-12,C0O,TN_326
+Commenti liberi_QTG_2019_Struttura della pasta.csv,123,2020-02-12,C0C,TN_305
+Commenti liberi_QTG_2019_Struttura della pasta.csv,124,2020-02-12,C0L,TN_316
+Commenti liberi_QTG_2019_Struttura della pasta.csv,125,2020-02-12,C0M,TN_319
+Commenti liberi_QTG_2019_Struttura della pasta.csv,126,2020-02-12,C0O,TN_326
+Commenti liberi_QTG_2019_Texture.csv,40,2019-12-04,C0P,TN_328
+Commenti liberi_QTG_2019_Texture.csv,41,2019-12-04,C0H,TN_313
+Commenti liberi_QTG_2019_Texture.csv,42,2019-12-04,C0P,TN_328
+Commenti liberi_QTG_2019_Texture.csv,43,2019-12-04,C0E,TN_307
+Commenti liberi_QTG_2019_Texture.csv,44,2019-12-04,C0D,TN_306
+Commenti liberi_QTG_2019_Texture.csv,45,2019-12-04,C0I,TN_314
+Commenti liberi_QTG_2019_Texture.csv,46,2019-12-04,C0E,TN_307
+Commenti liberi_QTG_2019_Texture.csv,57,2019-12-18,C0M,TN_319
+Commenti liberi_QTG_2019_Texture.csv,78,2020-02-12,C0L,TN_316
+Commenti liberi_QTG_2019_Texture.csv,79,2020-02-12,C0O,TN_326
+Commenti liberi_QTG_2019_Texture.csv,80,2020-02-12,C0Q,TN_330
+Commenti liberi_QTG_2020_Aroma.csv,32,2020-10-14,C0B,TN_304
+Commenti liberi_QTG_2020_Aroma.csv,33,2020-10-14,C0B,TN_304
+Commenti liberi_QTG_2020_Aroma.csv,34,2020-10-14,C0O,TN_326
+Commenti liberi_QTG_2020_Aroma.csv,44,2020-11-04,C0A,TN_302
+Commenti liberi_QTG_2020_Aroma.csv,45,2020-11-19,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,46,2020-11-19,C0A,TN_302
+Commenti liberi_QTG_2020_Aroma.csv,47,2020-11-19,C0N,TN_323
+Commenti liberi_QTG_2020_Aroma.csv,48,2020-11-19,C0C,TN_305
+Commenti liberi_QTG_2020_Aroma.csv,49,2020-11-25,C0C,TN_305
+Commenti liberi_QTG_2020_Aroma.csv,50,2020-12-02,C0F,TN_310
+Commenti liberi_QTG_2020_Aroma.csv,51,2020-12-02,C0L,TN_316
+Commenti liberi_QTG_2020_Aroma.csv,52,2020-12-09,C0A,TN_302
+Commenti liberi_QTG_2020_Aroma.csv,53,2020-12-09,C0C,TN_305
+Commenti liberi_QTG_2020_Aroma.csv,54,2020-12-09,C0N,TN_323
+Commenti liberi_QTG_2020_Aroma.csv,55,2020-12-09,C0Q,TN_330
+Commenti liberi_QTG_2020_Aroma.csv,56,2020-12-09,C0G,TN_311
+Commenti liberi_QTG_2020_Aroma.csv,57,2020-12-09,C0G,TN_311
+Commenti liberi_QTG_2020_Aroma.csv,58,2020-12-09,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,59,2020-12-09,C0N,TN_323
+Commenti liberi_QTG_2020_Aroma.csv,60,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Aroma.csv,61,2020-12-16,C0B,TN_304
+Commenti liberi_QTG_2020_Aroma.csv,62,2020-12-16,C0G,TN_311
+Commenti liberi_QTG_2020_Aroma.csv,63,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Aroma.csv,64,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Aroma.csv,65,2020-12-16,C0G,TN_311
+Commenti liberi_QTG_2020_Aroma.csv,66,2020-12-16,C0I,TN_314
+Commenti liberi_QTG_2020_Aroma.csv,67,2020-12-16,C0P,TN_328
+Commenti liberi_QTG_2020_Aroma.csv,68,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Aroma.csv,69,2020-12-18,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,70,2020-12-18,C0N,TN_323
+Commenti liberi_QTG_2020_Aroma.csv,71,2021-01-13,C0A,TN_302
+Commenti liberi_QTG_2020_Aroma.csv,72,2021-01-13,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,73,2021-01-13,C0Q,TN_330
+Commenti liberi_QTG_2020_Aroma.csv,74,2021-01-20,C0A,TN_302
+Commenti liberi_QTG_2020_Aroma.csv,75,2021-01-20,C0D,TN_306
+Commenti liberi_QTG_2020_Aroma.csv,76,2021-01-20,C0Q,TN_330
+Commenti liberi_QTG_2020_Aroma.csv,77,2021-01-27,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,78,2021-01-27,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,79,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Aroma.csv,80,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Aroma.csv,81,2021-02-03,C0N,TN_323
+Commenti liberi_QTG_2020_Aroma.csv,82,2021-02-03,C0L,TN_316
+Commenti liberi_QTG_2020_Aroma.csv,83,2021-02-03,C0A,TN_302
+Commenti liberi_QTG_2020_Aroma.csv,84,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Aroma.csv,85,2021-02-10,C0C,TN_305
+Commenti liberi_QTG_2020_Aroma.csv,86,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Aroma.csv,87,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Aroma.csv,88,2021-02-17,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,89,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Aroma.csv,90,2021-02-17,C0R,TN_338
+Commenti liberi_QTG_2020_Aroma.csv,91,2021-02-17,C0Q,TN_330
+Commenti liberi_QTG_2020_Aroma.csv,92,2021-02-24,C0C,TN_305
+Commenti liberi_QTG_2020_Aroma.csv,93,2021-02-24,C0E,TN_307
+Commenti liberi_QTG_2020_Aroma.csv,94,2021-02-24,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,95,2021-02-24,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,96,2021-03-03,C0A,TN_302
+Commenti liberi_QTG_2020_Aroma.csv,97,2021-03-03,C0C,TN_305
+Commenti liberi_QTG_2020_Aroma.csv,98,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Aroma.csv,99,2021-03-10,,
+Commenti liberi_QTG_2020_Aroma.csv,100,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Aroma.csv,101,2021-03-17,C0H,TN_313
+Commenti liberi_QTG_2020_Aroma.csv,102,2021-03-17,C0H,TN_313
+Commenti liberi_QTG_2020_Aroma.csv,103,2021-03-17,C0R,TN_338
+Commenti liberi_QTG_2020_Aroma.csv,104,2021-03-24,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,105,2021-03-24,C0C,TN_305
+Commenti liberi_QTG_2020_Aroma.csv,106,2021-03-24,C0G,TN_311
+Commenti liberi_QTG_2020_Aroma.csv,107,2021-03-24,C0E,TN_307
+Commenti liberi_QTG_2020_Aroma.csv,108,2021-03-24,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,109,2021-03-31,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,110,2021-03-31,C0M,TN_319
+Commenti liberi_QTG_2020_Aroma.csv,111,2021-03-31,C0Q,TN_330
+Commenti liberi_QTG_2020_Aroma.csv,112,2021-03-31,C0I,TN_314
+Commenti liberi_QTG_2020_Aroma.csv,113,2021-03-31,C0I,TN_314
+Commenti liberi_QTG_2020_Aroma.csv,114,2021-04-07,C0B,TN_304
+Commenti liberi_QTG_2020_Aroma.csv,115,2021-04-07,C0E,TN_307
+Commenti liberi_QTG_2020_Aroma.csv,116,2021-04-07,C0A,TN_302
+Commenti liberi_QTG_2020_Aroma.csv,117,2021-04-07,C0N,TN_323
+Commenti liberi_QTG_2020_Aroma.csv,118,2021-04-07,C0E,TN_307
+Commenti liberi_QTG_2020_Colore della pasta.csv,34,2020-10-14,C0B,TN_304
+Commenti liberi_QTG_2020_Colore della pasta.csv,35,2020-10-14,C0C,TN_305
+Commenti liberi_QTG_2020_Colore della pasta.csv,36,2020-10-14,C0D,TN_306
+Commenti liberi_QTG_2020_Colore della pasta.csv,37,2020-10-14,C0O,TN_326
+Commenti liberi_QTG_2020_Colore della pasta.csv,38,2020-10-14,C0Q,TN_330
+Commenti liberi_QTG_2020_Colore della pasta.csv,39,2020-10-14,C0B,TN_304
+Commenti liberi_QTG_2020_Colore della pasta.csv,40,2020-10-14,C0C,TN_305
+Commenti liberi_QTG_2020_Colore della pasta.csv,41,2020-10-14,C0O,TN_326
+Commenti liberi_QTG_2020_Colore della pasta.csv,42,2020-10-14,C0B,TN_304
+Commenti liberi_QTG_2020_Colore della pasta.csv,55,2020-11-04,C0P,TN_328
+Commenti liberi_QTG_2020_Colore della pasta.csv,56,2020-11-04,C0N,TN_323
+Commenti liberi_QTG_2020_Colore della pasta.csv,57,2020-11-04,C0D,TN_306
+Commenti liberi_QTG_2020_Colore della pasta.csv,58,2020-11-04,C0N,TN_323
+Commenti liberi_QTG_2020_Colore della pasta.csv,59,2020-11-04,C0P,TN_328
+Commenti liberi_QTG_2020_Colore della pasta.csv,60,2020-11-19,C0H,TN_313
+Commenti liberi_QTG_2020_Colore della pasta.csv,61,2020-11-19,C0M,TN_319
+Commenti liberi_QTG_2020_Colore della pasta.csv,62,2020-11-19,C0N,TN_323
+Commenti liberi_QTG_2020_Colore della pasta.csv,63,2020-11-19,C0C,TN_305
+Commenti liberi_QTG_2020_Colore della pasta.csv,64,2020-11-19,C0P,TN_328
+Commenti liberi_QTG_2020_Colore della pasta.csv,65,2020-11-25,C0C,TN_305
+Commenti liberi_QTG_2020_Colore della pasta.csv,66,2020-11-25,C0D,TN_306
+Commenti liberi_QTG_2020_Colore della pasta.csv,67,2020-11-25,C0E,TN_307
+Commenti liberi_QTG_2020_Colore della pasta.csv,68,2020-11-25,C0E,TN_307
+Commenti liberi_QTG_2020_Colore della pasta.csv,69,2020-11-25,C0G,TN_311
+Commenti liberi_QTG_2020_Colore della pasta.csv,70,2020-11-25,C0P,TN_328
+Commenti liberi_QTG_2020_Colore della pasta.csv,71,2020-12-02,C0D,TN_306
+Commenti liberi_QTG_2020_Colore della pasta.csv,72,2020-12-02,C0E,TN_307
+Commenti liberi_QTG_2020_Colore della pasta.csv,73,2020-12-02,C0F,TN_310
+Commenti liberi_QTG_2020_Colore della pasta.csv,74,2020-12-02,C0Q,TN_330
+Commenti liberi_QTG_2020_Colore della pasta.csv,75,2020-12-02,C0D,TN_306
+Commenti liberi_QTG_2020_Colore della pasta.csv,76,2020-12-02,C0Q,TN_330
+Commenti liberi_QTG_2020_Colore della pasta.csv,77,2020-12-09,C0M,TN_319
+Commenti liberi_QTG_2020_Colore della pasta.csv,78,2020-12-09,C0A,TN_302
+Commenti liberi_QTG_2020_Colore della pasta.csv,79,2020-12-09,C0Q,TN_330
+Commenti liberi_QTG_2020_Colore della pasta.csv,80,2020-12-09,C0N,TN_323
+Commenti liberi_QTG_2020_Colore della pasta.csv,81,2020-12-09,C0Q,TN_330
+Commenti liberi_QTG_2020_Colore della pasta.csv,82,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Colore della pasta.csv,83,2020-12-16,C0I,TN_314
+Commenti liberi_QTG_2020_Colore della pasta.csv,84,2020-12-16,C0B,TN_304
+Commenti liberi_QTG_2020_Colore della pasta.csv,85,2020-12-16,C0O,TN_326
+Commenti liberi_QTG_2020_Colore della pasta.csv,86,2020-12-18,C0A,TN_302
+Commenti liberi_QTG_2020_Colore della pasta.csv,87,2020-12-18,C0N,TN_323
+Commenti liberi_QTG_2020_Colore della pasta.csv,88,2021-01-13,C0P,TN_328
+Commenti liberi_QTG_2020_Colore della pasta.csv,89,2021-01-13,C0Q,TN_330
+Commenti liberi_QTG_2020_Colore della pasta.csv,90,2021-01-13,C0M,TN_319
+Commenti liberi_QTG_2020_Colore della pasta.csv,91,2021-01-20,C0A,TN_302
+Commenti liberi_QTG_2020_Colore della pasta.csv,92,2021-01-20,C0G,TN_311
+Commenti liberi_QTG_2020_Colore della pasta.csv,93,2021-01-20,C0Q,TN_330
+Commenti liberi_QTG_2020_Colore della pasta.csv,94,2021-01-20,C0D,TN_306
+Commenti liberi_QTG_2020_Colore della pasta.csv,95,2021-01-20,C0D,TN_306
+Commenti liberi_QTG_2020_Colore della pasta.csv,96,2021-01-20,C0G,TN_311
+Commenti liberi_QTG_2020_Colore della pasta.csv,97,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Colore della pasta.csv,98,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Colore della pasta.csv,99,2021-01-27,C0H,TN_313
+Commenti liberi_QTG_2020_Colore della pasta.csv,100,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Colore della pasta.csv,101,2021-01-27,C0C,TN_305
+Commenti liberi_QTG_2020_Colore della pasta.csv,102,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Colore della pasta.csv,103,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Colore della pasta.csv,104,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Colore della pasta.csv,105,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Colore della pasta.csv,106,2021-02-03,C0A,TN_302
+Commenti liberi_QTG_2020_Colore della pasta.csv,107,2021-02-03,C0G,TN_311
+Commenti liberi_QTG_2020_Colore della pasta.csv,108,2021-02-03,C0G,TN_311
+Commenti liberi_QTG_2020_Colore della pasta.csv,109,2021-02-03,C0G,TN_311
+Commenti liberi_QTG_2020_Colore della pasta.csv,110,2021-02-03,C0G,TN_311
+Commenti liberi_QTG_2020_Colore della pasta.csv,111,2021-02-03,C0L,TN_316
+Commenti liberi_QTG_2020_Colore della pasta.csv,112,2021-02-03,C0O,TN_326
+Commenti liberi_QTG_2020_Colore della pasta.csv,113,2021-02-10,C0N,TN_323
+Commenti liberi_QTG_2020_Colore della pasta.csv,114,2021-02-10,C0R,TN_338
+Commenti liberi_QTG_2020_Colore della pasta.csv,115,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Colore della pasta.csv,116,2021-02-10,C0N,TN_323
+Commenti liberi_QTG_2020_Colore della pasta.csv,117,2021-02-17,C0R,TN_338
+Commenti liberi_QTG_2020_Colore della pasta.csv,118,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Colore della pasta.csv,119,2021-02-17,C0M,TN_319
+Commenti liberi_QTG_2020_Colore della pasta.csv,120,2021-02-17,C0O,TN_326
+Commenti liberi_QTG_2020_Colore della pasta.csv,121,2021-02-17,C0R,TN_338
+Commenti liberi_QTG_2020_Colore della pasta.csv,122,2021-02-17,C0M,TN_319
+Commenti liberi_QTG_2020_Colore della pasta.csv,123,2021-02-24,C0B,TN_304
+Commenti liberi_QTG_2020_Colore della pasta.csv,124,2021-03-03,C0A,TN_302
+Commenti liberi_QTG_2020_Colore della pasta.csv,125,2021-03-03,C0N,TN_323
+Commenti liberi_QTG_2020_Colore della pasta.csv,126,2021-03-03,C0A,TN_302
+Commenti liberi_QTG_2020_Colore della pasta.csv,127,2021-03-03,C0E,TN_307
+Commenti liberi_QTG_2020_Colore della pasta.csv,128,2021-03-10,C0N,TN_323
+Commenti liberi_QTG_2020_Colore della pasta.csv,129,2021-03-17,C0R,TN_338
+Commenti liberi_QTG_2020_Colore della pasta.csv,130,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Colore della pasta.csv,131,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Colore della pasta.csv,132,2021-03-24,C0C,TN_305
+Commenti liberi_QTG_2020_Colore della pasta.csv,133,2021-03-24,C0G,TN_311
+Commenti liberi_QTG_2020_Colore della pasta.csv,134,2021-03-24,C0E,TN_307
+Commenti liberi_QTG_2020_Colore della pasta.csv,135,2021-03-24,C0C,TN_305
+Commenti liberi_QTG_2020_Colore della pasta.csv,136,2021-03-24,C0G,TN_311
+Commenti liberi_QTG_2020_Colore della pasta.csv,137,2021-03-24,C0A,TN_302
+Commenti liberi_QTG_2020_Colore della pasta.csv,138,2021-03-24,C0C,TN_305
+Commenti liberi_QTG_2020_Colore della pasta.csv,139,2021-03-24,C0P,TN_328
+Commenti liberi_QTG_2020_Colore della pasta.csv,140,2021-03-31,C0Q,TN_330
+Commenti liberi_QTG_2020_Colore della pasta.csv,141,2021-03-31,C0G,TN_311
+Commenti liberi_QTG_2020_Colore della pasta.csv,142,2021-03-31,C0G,TN_311
+Commenti liberi_QTG_2020_Colore della pasta.csv,143,2021-03-31,C0N,TN_323
+Commenti liberi_QTG_2020_Colore della pasta.csv,144,2021-03-31,C0A,TN_302
+Commenti liberi_QTG_2020_Colore della pasta.csv,145,2021-03-31,C0A,TN_302
+Commenti liberi_QTG_2020_Colore della pasta.csv,146,2021-03-31,C0I,TN_314
+Commenti liberi_QTG_2020_Colore della pasta.csv,147,2021-04-07,C0E,TN_307
+Commenti liberi_QTG_2020_Colore della pasta.csv,148,2021-04-07,C0B,TN_304
+Commenti liberi_QTG_2020_Profumo.csv,6,2020-09-02,C0C,TN_305
+Commenti liberi_QTG_2020_Profumo.csv,7,2020-09-02,C0D,TN_306
+Commenti liberi_QTG_2020_Profumo.csv,8,2020-09-02,C0H,TN_313
+Commenti liberi_QTG_2020_Profumo.csv,9,2020-09-02,C0I,TN_314
+Commenti liberi_QTG_2020_Profumo.csv,10,2020-09-02,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,11,2020-09-02,C0D,TN_306
+Commenti liberi_QTG_2020_Profumo.csv,12,2020-09-02,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,13,2020-09-02,C0H,TN_313
+Commenti liberi_QTG_2020_Profumo.csv,58,2020-10-14,C0D,TN_306
+Commenti liberi_QTG_2020_Profumo.csv,59,2020-10-14,C0O,TN_326
+Commenti liberi_QTG_2020_Profumo.csv,60,2020-10-14,C0C,TN_305
+Commenti liberi_QTG_2020_Profumo.csv,61,2020-10-14,C0Q,TN_330
+Commenti liberi_QTG_2020_Profumo.csv,84,2020-11-04,C0E,TN_307
+Commenti liberi_QTG_2020_Profumo.csv,85,2020-11-04,C0D,TN_306
+Commenti liberi_QTG_2020_Profumo.csv,86,2020-11-04,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,87,2020-11-04,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,88,2020-11-04,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,89,2020-11-04,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,90,2020-11-04,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,91,2020-11-19,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,92,2020-11-19,C0C,TN_305
+Commenti liberi_QTG_2020_Profumo.csv,93,2020-11-19,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,94,2020-11-19,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,95,2020-11-19,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,96,2020-11-19,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,97,2020-11-19,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,98,2020-11-25,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,99,2020-11-25,C0C,TN_305
+Commenti liberi_QTG_2020_Profumo.csv,100,2020-11-25,C0D,TN_306
+Commenti liberi_QTG_2020_Profumo.csv,101,2020-11-25,C0E,TN_307
+Commenti liberi_QTG_2020_Profumo.csv,102,2020-12-02,C0I,TN_314
+Commenti liberi_QTG_2020_Profumo.csv,103,2020-12-02,C0D,TN_306
+Commenti liberi_QTG_2020_Profumo.csv,104,2020-12-02,C0Q,TN_330
+Commenti liberi_QTG_2020_Profumo.csv,105,2020-12-02,C0F,TN_310
+Commenti liberi_QTG_2020_Profumo.csv,106,2020-12-09,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,107,2020-12-09,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,108,2020-12-09,C0Q,TN_330
+Commenti liberi_QTG_2020_Profumo.csv,109,2020-12-09,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,110,2020-12-09,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,111,2020-12-09,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,112,2020-12-09,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,113,2020-12-09,C0Q,TN_330
+Commenti liberi_QTG_2020_Profumo.csv,114,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Profumo.csv,115,2020-12-16,C0B,TN_304
+Commenti liberi_QTG_2020_Profumo.csv,116,2020-12-16,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,117,2020-12-16,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,118,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Profumo.csv,119,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Profumo.csv,120,2020-12-16,C0B,TN_304
+Commenti liberi_QTG_2020_Profumo.csv,121,2020-12-16,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,122,2020-12-16,C0O,TN_326
+Commenti liberi_QTG_2020_Profumo.csv,123,2020-12-16,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,124,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Profumo.csv,125,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Profumo.csv,126,2020-12-18,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,127,2020-12-18,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,128,2020-12-18,C0H,TN_313
+Commenti liberi_QTG_2020_Profumo.csv,129,2020-12-18,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,130,2021-01-13,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,131,2021-01-13,C0B,TN_304
+Commenti liberi_QTG_2020_Profumo.csv,132,2021-01-13,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,133,2021-01-13,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,134,2021-01-13,C0B,TN_304
+Commenti liberi_QTG_2020_Profumo.csv,135,2021-01-13,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,136,2021-01-13,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,137,2021-01-30,C0D,TN_306
+Commenti liberi_QTG_2020_Profumo.csv,138,2021-01-20,C0F,TN_310
+Commenti liberi_QTG_2020_Profumo.csv,139,2021-01-20,C0H,TN_313
+Commenti liberi_QTG_2020_Profumo.csv,140,2021-01-20,C0Q,TN_330
+Commenti liberi_QTG_2020_Profumo.csv,141,2021-01-20,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,142,2021-01-20,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,143,2021-01-20,C0D,TN_306
+Commenti liberi_QTG_2020_Profumo.csv,144,2021-01-20,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,145,2021-01-20,C0H,TN_313
+Commenti liberi_QTG_2020_Profumo.csv,146,2021-01-27,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,147,2021-01-27,C0C,TN_305
+Commenti liberi_QTG_2020_Profumo.csv,148,2021-01-27,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,149,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,150,2021-01-27,C0H,TN_313
+Commenti liberi_QTG_2020_Profumo.csv,151,2021-01-27,C0C,TN_305
+Commenti liberi_QTG_2020_Profumo.csv,152,2021-01-27,C0H,TN_313
+Commenti liberi_QTG_2020_Profumo.csv,153,2021-01-27,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,154,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,155,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Profumo.csv,156,2021-02-03,C0I,TN_314
+Commenti liberi_QTG_2020_Profumo.csv,157,2021-02-03,C0L,TN_316
+Commenti liberi_QTG_2020_Profumo.csv,158,2021-02-03,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,159,2021-02-03,C0O,TN_326
+Commenti liberi_QTG_2020_Profumo.csv,160,2021-02-03,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,161,2021-02-03,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,162,2021-02-03,C0L,TN_316
+Commenti liberi_QTG_2020_Profumo.csv,163,2021-02-03,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,164,2021-02-03,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,165,2021-02-03,C0L,TN_316
+Commenti liberi_QTG_2020_Profumo.csv,166,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Profumo.csv,167,2021-02-10,C0R,TN_338
+Commenti liberi_QTG_2020_Profumo.csv,168,2021-02-10,C0R,TN_338
+Commenti liberi_QTG_2020_Profumo.csv,169,2021-02-10,C0C,TN_305
+Commenti liberi_QTG_2020_Profumo.csv,170,2021-02-10,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,171,2021-02-10,C0D,TN_306
+Commenti liberi_QTG_2020_Profumo.csv,172,2021-02-10,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,173,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Profumo.csv,174,2021-02-17,C0O,TN_326
+Commenti liberi_QTG_2020_Profumo.csv,175,2021-02-17,C0Q,TN_330
+Commenti liberi_QTG_2020_Profumo.csv,176,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Profumo.csv,177,2021-02-17,C0R,TN_338
+Commenti liberi_QTG_2020_Profumo.csv,178,2021-02-17,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,179,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Profumo.csv,180,2021-02-17,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,181,2021-02-17,C0O,TN_326
+Commenti liberi_QTG_2020_Profumo.csv,182,2021-02-17,C0R,TN_338
+Commenti liberi_QTG_2020_Profumo.csv,183,2021-02-24,C0E,TN_307
+Commenti liberi_QTG_2020_Profumo.csv,184,2021-02-24,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,185,2021-02-24,C0B,TN_304
+Commenti liberi_QTG_2020_Profumo.csv,186,2021-02-24,C0E,TN_307
+Commenti liberi_QTG_2020_Profumo.csv,187,2021-02-24,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,188,2021-02-24,C0B,TN_304
+Commenti liberi_QTG_2020_Profumo.csv,189,2021-02-24,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,190,2021-02-24,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,191,2021-03-03,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,192,2021-03-03,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,193,2021-03-03,C0C,TN_305
+Commenti liberi_QTG_2020_Profumo.csv,194,2021-03-03,C0H,TN_313
+Commenti liberi_QTG_2020_Profumo.csv,195,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,196,2021-03-03,C0A,TN_302
+Commenti liberi_QTG_2020_Profumo.csv,197,2021-03-03,C0H,TN_313
+Commenti liberi_QTG_2020_Profumo.csv,198,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,199,2021-03-03,C0H,TN_313
+Commenti liberi_QTG_2020_Profumo.csv,200,2021-03-03,C0E,TN_307
+Commenti liberi_QTG_2020_Profumo.csv,201,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,202,2021-03-10,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,203,2021-03-10,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,204,2021-03-10,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,205,2021-03-10,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,206,2021-03-10,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,207,2021-03-17,C0R,TN_338
+Commenti liberi_QTG_2020_Profumo.csv,208,2021-03-17,C0R,TN_338
+Commenti liberi_QTG_2020_Profumo.csv,209,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Profumo.csv,210,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Profumo.csv,211,2021-03-17,C0L,TN_316
+Commenti liberi_QTG_2020_Profumo.csv,212,2021-03-17,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,213,2021-03-17,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,214,2021-03-17,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,215,2021-03-24,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,216,2021-03-24,C0C,TN_305
+Commenti liberi_QTG_2020_Profumo.csv,217,2021-03-24,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,218,2021-03-24,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,219,2021-03-24,C0P,TN_328
+Commenti liberi_QTG_2020_Profumo.csv,220,2021-03-24,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,221,2021-03-31,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,222,2021-03-31,C0M,TN_319
+Commenti liberi_QTG_2020_Profumo.csv,223,2021-03-31,C0Q,TN_330
+Commenti liberi_QTG_2020_Profumo.csv,224,2021-03-31,C0I,TN_314
+Commenti liberi_QTG_2020_Profumo.csv,225,2021-03-31,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,226,2021-03-31,C0G,TN_311
+Commenti liberi_QTG_2020_Profumo.csv,227,2021-03-31,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,228,2021-03-31,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,229,2021-04-07,C0N,TN_323
+Commenti liberi_QTG_2020_Profumo.csv,230,2021-04-07,C0O,TN_326
+Commenti liberi_QTG_2020_Profumo.csv,231,2021-04-07,C0B,TN_304
+Commenti liberi_QTG_2020_Profumo.csv,232,2021-04-07,C0E,TN_307
+Commenti liberi_QTG_2020_Profumo.csv,233,2021-04-07,C0E,TN_307
+Commenti liberi_QTG_2020_Profumo.csv,234,2021-04-07,C0B,TN_304
+Commenti liberi_QTG_2020_Sapore.csv,50,2020-10-14,C0O,TN_326
+Commenti liberi_QTG_2020_Sapore.csv,51,2020-10-14,C0C,TN_305
+Commenti liberi_QTG_2020_Sapore.csv,52,2020-10-14,C0D,TN_306
+Commenti liberi_QTG_2020_Sapore.csv,53,2020-10-14,C0O,TN_326
+Commenti liberi_QTG_2020_Sapore.csv,54,2020-10-14,C0B,TN_304
+Commenti liberi_QTG_2020_Sapore.csv,55,2020-10-14,C0B,TN_304
+Commenti liberi_QTG_2020_Sapore.csv,56,2020-10-14,C0Q,TN_330
+Commenti liberi_QTG_2020_Sapore.csv,57,2020-10-14,C0B,TN_304
+Commenti liberi_QTG_2020_Sapore.csv,58,2020-10-14,C0C,TN_305
+Commenti liberi_QTG_2020_Sapore.csv,59,2020-10-14,C0Q,TN_330
+Commenti liberi_QTG_2020_Sapore.csv,81,2020-11-04,C0D,TN_306
+Commenti liberi_QTG_2020_Sapore.csv,82,2020-11-04,C0M,TN_319
+Commenti liberi_QTG_2020_Sapore.csv,83,2020-11-04,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,84,2020-11-04,C0E,TN_307
+Commenti liberi_QTG_2020_Sapore.csv,85,2020-11-04,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,86,2020-11-04,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,87,2020-11-19,C0C,TN_305
+Commenti liberi_QTG_2020_Sapore.csv,88,2020-11-19,C0H,TN_313
+Commenti liberi_QTG_2020_Sapore.csv,89,2020-11-19,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,90,2020-11-19,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,91,2020-11-19,C0C,TN_305
+Commenti liberi_QTG_2020_Sapore.csv,92,2020-11-19,C0N,TN_323
+Commenti liberi_QTG_2020_Sapore.csv,93,2020-11-19,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,94,2020-11-25,C0C,TN_305
+Commenti liberi_QTG_2020_Sapore.csv,95,2020-11-25,C0D,TN_306
+Commenti liberi_QTG_2020_Sapore.csv,96,2020-11-25,C0E,TN_307
+Commenti liberi_QTG_2020_Sapore.csv,97,2020-11-25,C0G,TN_311
+Commenti liberi_QTG_2020_Sapore.csv,98,2020-11-25,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,99,2020-11-25,C0Q,TN_330
+Commenti liberi_QTG_2020_Sapore.csv,100,2020-11-25,C0E,TN_307
+Commenti liberi_QTG_2020_Sapore.csv,101,2020-11-25,C0G,TN_311
+Commenti liberi_QTG_2020_Sapore.csv,102,2020-12-02,C0E,TN_307
+Commenti liberi_QTG_2020_Sapore.csv,103,2020-12-02,C0I,TN_314
+Commenti liberi_QTG_2020_Sapore.csv,104,2020-12-02,C0L,TN_316
+Commenti liberi_QTG_2020_Sapore.csv,105,2020-12-02,C0Q,TN_330
+Commenti liberi_QTG_2020_Sapore.csv,106,2020-12-02,C0Q,TN_330
+Commenti liberi_QTG_2020_Sapore.csv,107,2020-12-02,C0D,TN_306
+Commenti liberi_QTG_2020_Sapore.csv,108,2020-12-02,C0I,TN_314
+Commenti liberi_QTG_2020_Sapore.csv,109,2020-12-09,C0M,TN_319
+Commenti liberi_QTG_2020_Sapore.csv,110,2020-12-09,C0C,TN_305
+Commenti liberi_QTG_2020_Sapore.csv,111,2020-12-09,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,112,2020-12-09,C0C,TN_305
+Commenti liberi_QTG_2020_Sapore.csv,113,2020-12-09,C0M,TN_319
+Commenti liberi_QTG_2020_Sapore.csv,114,2020-12-09,C0N,TN_323
+Commenti liberi_QTG_2020_Sapore.csv,115,2020-12-16,C0B,TN_304
+Commenti liberi_QTG_2020_Sapore.csv,116,2020-12-16,C0I,TN_314
+Commenti liberi_QTG_2020_Sapore.csv,117,2020-12-16,C0O,TN_326
+Commenti liberi_QTG_2020_Sapore.csv,118,2020-12-16,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,119,2020-12-16,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,120,2020-12-16,C0G,TN_311
+Commenti liberi_QTG_2020_Sapore.csv,121,2020-12-16,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,122,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Sapore.csv,123,2020-12-18,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,124,2020-12-18,C0H,TN_313
+Commenti liberi_QTG_2020_Sapore.csv,125,2020-12-18,C0M,TN_319
+Commenti liberi_QTG_2020_Sapore.csv,126,2020-12-18,C0N,TN_323
+Commenti liberi_QTG_2020_Sapore.csv,127,2020-12-18,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,128,2020-12-18,C0H,TN_313
+Commenti liberi_QTG_2020_Sapore.csv,129,2021-01-13,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,130,2021-01-13,C0B,TN_304
+Commenti liberi_QTG_2020_Sapore.csv,131,2021-01-13,C0I,TN_314
+Commenti liberi_QTG_2020_Sapore.csv,132,2021-01-13,C0M,TN_319
+Commenti liberi_QTG_2020_Sapore.csv,133,2021-01-13,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,134,2021-01-13,C0Q,TN_330
+Commenti liberi_QTG_2020_Sapore.csv,135,2021-01-13,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,136,2021-01-13,C0M,TN_319
+Commenti liberi_QTG_2020_Sapore.csv,137,2021-01-13,C0Q,TN_330
+Commenti liberi_QTG_2020_Sapore.csv,138,2021-01-20,C0D,TN_306
+Commenti liberi_QTG_2020_Sapore.csv,139,2021-01-20,C0H,TN_313
+Commenti liberi_QTG_2020_Sapore.csv,140,2021-01-20,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,141,2021-01-20,C0D,TN_306
+Commenti liberi_QTG_2020_Sapore.csv,142,2021-01-20,C0F,TN_310
+Commenti liberi_QTG_2020_Sapore.csv,143,2021-01-20,C0H,TN_313
+Commenti liberi_QTG_2020_Sapore.csv,144,2021-01-20,C0Q,TN_330
+Commenti liberi_QTG_2020_Sapore.csv,145,2021-01-20,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,146,2021-01-20,C0D,TN_306
+Commenti liberi_QTG_2020_Sapore.csv,147,2021-01-20,C0H,TN_313
+Commenti liberi_QTG_2020_Sapore.csv,148,2021-01-20,C0Q,TN_330
+Commenti liberi_QTG_2020_Sapore.csv,149,2021-01-20,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,150,2021-01-20,C0D,TN_306
+Commenti liberi_QTG_2020_Sapore.csv,151,2021-01-20,C0F,TN_310
+Commenti liberi_QTG_2020_Sapore.csv,152,2021-01-20,C0G,TN_311
+Commenti liberi_QTG_2020_Sapore.csv,153,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,154,2021-01-27,C0M,TN_319
+Commenti liberi_QTG_2020_Sapore.csv,155,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,156,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Sapore.csv,157,2021-01-27,C0H,TN_313
+Commenti liberi_QTG_2020_Sapore.csv,158,2021-01-27,C0N,TN_323
+Commenti liberi_QTG_2020_Sapore.csv,159,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Sapore.csv,160,2021-01-27,C0N,TN_323
+Commenti liberi_QTG_2020_Sapore.csv,161,2021-01-27,C0N,TN_323
+Commenti liberi_QTG_2020_Sapore.csv,162,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,163,2021-02-03,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,164,2021-02-03,C0I,TN_314
+Commenti liberi_QTG_2020_Sapore.csv,165,2021-02-03,C0N,TN_323
+Commenti liberi_QTG_2020_Sapore.csv,166,2021-02-03,C0O,TN_326
+Commenti liberi_QTG_2020_Sapore.csv,167,2021-02-03,C0G,TN_311
+Commenti liberi_QTG_2020_Sapore.csv,168,2021-02-03,C0O,TN_326
+Commenti liberi_QTG_2020_Sapore.csv,169,2021-02-03,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,170,2021-02-03,C0L,TN_316
+Commenti liberi_QTG_2020_Sapore.csv,171,2021-02-03,C0N,TN_323
+Commenti liberi_QTG_2020_Sapore.csv,172,2021-02-03,C0O,TN_326
+Commenti liberi_QTG_2020_Sapore.csv,173,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Sapore.csv,174,2021-02-10,C0M,TN_319
+Commenti liberi_QTG_2020_Sapore.csv,175,2021-02-10,C0R,TN_338
+Commenti liberi_QTG_2020_Sapore.csv,176,2021-02-10,C0M,TN_319
+Commenti liberi_QTG_2020_Sapore.csv,177,2021-02-10,C0D,TN_306
+Commenti liberi_QTG_2020_Sapore.csv,178,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Sapore.csv,179,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Sapore.csv,180,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Sapore.csv,181,2021-02-17,C0M,TN_319
+Commenti liberi_QTG_2020_Sapore.csv,182,2021-02-17,C0O,TN_326
+Commenti liberi_QTG_2020_Sapore.csv,183,2021-02-17,C0Q,TN_330
+Commenti liberi_QTG_2020_Sapore.csv,184,2021-02-17,C0O,TN_326
+Commenti liberi_QTG_2020_Sapore.csv,185,2021-02-24,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,186,2021-02-24,C0G,TN_311
+Commenti liberi_QTG_2020_Sapore.csv,187,2021-02-24,C0M,TN_319
+Commenti liberi_QTG_2020_Sapore.csv,188,2021-02-24,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,189,2021-02-24,C0B,TN_304
+Commenti liberi_QTG_2020_Sapore.csv,190,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,191,2021-03-03,C0C,TN_305
+Commenti liberi_QTG_2020_Sapore.csv,192,2021-03-03,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,193,2021-03-03,C0H,TN_313
+Commenti liberi_QTG_2020_Sapore.csv,194,2021-03-03,C0C,TN_305
+Commenti liberi_QTG_2020_Sapore.csv,195,2021-03-03,C0E,TN_307
+Commenti liberi_QTG_2020_Sapore.csv,196,2021-03-10,C0G,TN_311
+Commenti liberi_QTG_2020_Sapore.csv,197,2021-03-17,C0H,TN_313
+Commenti liberi_QTG_2020_Sapore.csv,198,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Sapore.csv,199,2021-03-17,C0C,TN_305
+Commenti liberi_QTG_2020_Sapore.csv,200,2021-03-17,C0L,TN_316
+Commenti liberi_QTG_2020_Sapore.csv,201,2021-03-24,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,202,2021-03-24,C0C,TN_305
+Commenti liberi_QTG_2020_Sapore.csv,203,2021-03-24,C0E,TN_307
+Commenti liberi_QTG_2020_Sapore.csv,204,2021-03-24,C0G,TN_311
+Commenti liberi_QTG_2020_Sapore.csv,205,2021-03-24,C0P,TN_328
+Commenti liberi_QTG_2020_Sapore.csv,206,2021-03-31,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,207,2021-03-31,C0A,TN_302
+Commenti liberi_QTG_2020_Sapore.csv,208,2021-03-31,C0Q,TN_330
+Commenti liberi_QTG_2020_Sapore.csv,209,2021-03-31,C0G,TN_311
+Commenti liberi_QTG_2020_Sapore.csv,210,2021-03-31,C0N,TN_323
+Commenti liberi_QTG_2020_Sapore.csv,211,2021-04-07,C0O,TN_326
+Commenti liberi_QTG_2020_Spessore della crosta.csv,22,2020-10-14,C0D,TN_306
+Commenti liberi_QTG_2020_Spessore della crosta.csv,27,2020-11-04,C0A,TN_302
+Commenti liberi_QTG_2020_Spessore della crosta.csv,28,2020-11-04,C0M,TN_319
+Commenti liberi_QTG_2020_Spessore della crosta.csv,29,2020-11-19,C0C,TN_305
+Commenti liberi_QTG_2020_Spessore della crosta.csv,30,2020-11-19,C0P,TN_328
+Commenti liberi_QTG_2020_Spessore della crosta.csv,31,2020-11-19,C0M,TN_319
+Commenti liberi_QTG_2020_Spessore della crosta.csv,32,2020-11-25,C0G,TN_311
+Commenti liberi_QTG_2020_Spessore della crosta.csv,33,2020-11-25,C0Q,TN_330
+Commenti liberi_QTG_2020_Spessore della crosta.csv,34,2020-12-02,C0E,TN_307
+Commenti liberi_QTG_2020_Spessore della crosta.csv,35,2020-12-09,,
+Commenti liberi_QTG_2020_Spessore della crosta.csv,36,2020-12-16,C0I,TN_314
+Commenti liberi_QTG_2020_Spessore della crosta.csv,37,2020-12-18,C0A,TN_302
+Commenti liberi_QTG_2020_Spessore della crosta.csv,38,2020-12-18,C0M,TN_319
+Commenti liberi_QTG_2020_Spessore della crosta.csv,39,2021-01-13,,
+Commenti liberi_QTG_2020_Spessore della crosta.csv,40,2021-01-20,C0F,TN_310
+Commenti liberi_QTG_2020_Spessore della crosta.csv,41,2021-01-20,C0Q,TN_330
+Commenti liberi_QTG_2020_Spessore della crosta.csv,42,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Spessore della crosta.csv,43,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Spessore della crosta.csv,44,2021-02-03,C0G,TN_311
+Commenti liberi_QTG_2020_Spessore della crosta.csv,45,2021-02-03,C0N,TN_323
+Commenti liberi_QTG_2020_Spessore della crosta.csv,46,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Spessore della crosta.csv,47,2021-02-10,C0D,TN_306
+Commenti liberi_QTG_2020_Spessore della crosta.csv,48,2021-02-10,C0N,TN_323
+Commenti liberi_QTG_2020_Spessore della crosta.csv,49,2021-02-10,C0D,TN_306
+Commenti liberi_QTG_2020_Spessore della crosta.csv,50,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Spessore della crosta.csv,51,2021-02-17,C0R,TN_338
+Commenti liberi_QTG_2020_Spessore della crosta.csv,52,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Spessore della crosta.csv,53,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Spessore della crosta.csv,54,2021-02-17,C0M,TN_319
+Commenti liberi_QTG_2020_Spessore della crosta.csv,55,2021-02-24,C0M,TN_319
+Commenti liberi_QTG_2020_Spessore della crosta.csv,56,2021-02-24,C0M,TN_319
+Commenti liberi_QTG_2020_Spessore della crosta.csv,57,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Spessore della crosta.csv,58,2021-03-03,C0A,TN_302
+Commenti liberi_QTG_2020_Spessore della crosta.csv,59,2021-03-03,C0C,TN_305
+Commenti liberi_QTG_2020_Spessore della crosta.csv,60,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Spessore della crosta.csv,61,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Spessore della crosta.csv,62,2021-03-10,,
+Commenti liberi_QTG_2020_Spessore della crosta.csv,63,2021-03-17,C0R,TN_338
+Commenti liberi_QTG_2020_Spessore della crosta.csv,64,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Spessore della crosta.csv,65,2021-03-17,C0C,TN_305
+Commenti liberi_QTG_2020_Spessore della crosta.csv,66,2021-03-24,C0C,TN_305
+Commenti liberi_QTG_2020_Spessore della crosta.csv,67,2021-03-24,C0M,TN_319
+Commenti liberi_QTG_2020_Spessore della crosta.csv,68,2021-03-24,C0G,TN_311
+Commenti liberi_QTG_2020_Spessore della crosta.csv,69,2021-03-24,C0C,TN_305
+Commenti liberi_QTG_2020_Spessore della crosta.csv,70,2021-03-24,C0G,TN_311
+Commenti liberi_QTG_2020_Spessore della crosta.csv,71,2021-03-31,,
+Commenti liberi_QTG_2020_Spessore della crosta.csv,72,2021-04-07,C0E,TN_307
+Commenti liberi_QTG_2020_Spessore della crosta.csv,73,2021-04-07,C0A,TN_302
+Commenti liberi_QTG_2020_Spessore della crosta.csv,74,2021-04-07,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,59,2020-10-14,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,60,2020-10-14,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,61,2020-10-14,C0B,TN_304
+Commenti liberi_QTG_2020_Struttura della pasta.csv,62,2020-10-14,C0O,TN_326
+Commenti liberi_QTG_2020_Struttura della pasta.csv,63,2020-10-14,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,64,2020-10-14,C0B,TN_304
+Commenti liberi_QTG_2020_Struttura della pasta.csv,65,2020-10-14,C0D,TN_306
+Commenti liberi_QTG_2020_Struttura della pasta.csv,66,2020-10-14,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,67,2020-10-14,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,68,2020-10-14,C0D,TN_306
+Commenti liberi_QTG_2020_Struttura della pasta.csv,69,2020-10-14,C0D,TN_306
+Commenti liberi_QTG_2020_Struttura della pasta.csv,70,2020-10-14,C0O,TN_326
+Commenti liberi_QTG_2020_Struttura della pasta.csv,99,2020-11-04,C0D,TN_306
+Commenti liberi_QTG_2020_Struttura della pasta.csv,100,2020-11-04,C0D,TN_306
+Commenti liberi_QTG_2020_Struttura della pasta.csv,101,2020-11-04,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,102,2020-11-04,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,103,2020-11-04,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,104,2020-11-04,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,105,2020-11-04,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,106,2020-11-19,C0H,TN_313
+Commenti liberi_QTG_2020_Struttura della pasta.csv,107,2020-11-19,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,108,2020-11-19,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,109,2020-11-19,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,110,2020-11-19,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,111,2020-11-19,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,112,2020-11-19,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,113,2020-11-19,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,114,2020-11-19,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,115,2020-11-19,C0H,TN_313
+Commenti liberi_QTG_2020_Struttura della pasta.csv,116,2020-11-25,C0D,TN_306
+Commenti liberi_QTG_2020_Struttura della pasta.csv,117,2020-11-25,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,118,2020-11-25,C0D,TN_306
+Commenti liberi_QTG_2020_Struttura della pasta.csv,119,2020-11-25,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,120,2020-11-25,C0G,TN_311
+Commenti liberi_QTG_2020_Struttura della pasta.csv,121,2020-11-25,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,122,2020-11-25,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,123,2020-11-25,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,124,2020-11-25,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,125,2020-11-25,C0D,TN_306
+Commenti liberi_QTG_2020_Struttura della pasta.csv,126,2020-11-25,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,127,2020-11-25,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,128,2020-12-02,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,129,2020-12-02,C0F,TN_310
+Commenti liberi_QTG_2020_Struttura della pasta.csv,130,2020-12-02,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,131,2020-12-02,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,132,2020-12-02,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,133,2020-12-02,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,134,2020-12-02,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,135,2020-12-02,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,136,2020-12-02,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,137,2020-12-02,C0D,TN_306
+Commenti liberi_QTG_2020_Struttura della pasta.csv,138,2020-12-02,C0F,TN_310
+Commenti liberi_QTG_2020_Struttura della pasta.csv,139,2020-12-02,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,140,2020-12-09,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,141,2020-12-09,C0G,TN_311
+Commenti liberi_QTG_2020_Struttura della pasta.csv,142,2020-12-09,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,143,2020-12-09,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,144,2020-12-09,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,145,2020-12-09,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,146,2020-12-09,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,147,2020-12-09,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,148,2020-12-09,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,149,2020-12-09,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,150,2020-12-16,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,151,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Struttura della pasta.csv,152,2020-12-16,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,153,2020-12-16,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,154,2020-12-16,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,155,2020-12-16,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,156,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Struttura della pasta.csv,157,2020-12-16,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,158,2020-12-16,C0B,TN_304
+Commenti liberi_QTG_2020_Struttura della pasta.csv,159,2020-12-16,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,160,2020-12-16,C0R,TN_338
+Commenti liberi_QTG_2020_Struttura della pasta.csv,161,2020-12-16,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,162,2020-12-18,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,163,2020-12-18,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,164,2020-12-18,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,165,2020-12-18,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,166,2020-12-18,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,167,2020-12-18,C0H,TN_313
+Commenti liberi_QTG_2020_Struttura della pasta.csv,168,2020-12-18,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,169,2020-12-18,C0H,TN_313
+Commenti liberi_QTG_2020_Struttura della pasta.csv,170,2020-12-18,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,171,2021-01-13,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,172,2021-01-13,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,173,2021-01-13,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,174,2021-01-13,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,175,2021-01-13,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,176,2021-01-13,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,177,2021-01-13,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,178,2021-01-13,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,179,2021-01-13,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,180,2021-01-13,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,181,2021-01-13,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,182,2021-01-13,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,183,2021-01-20,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,184,2021-01-20,C0H,TN_313
+Commenti liberi_QTG_2020_Struttura della pasta.csv,185,2021-01-20,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,186,2021-01-20,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,187,2021-01-20,C0D,TN_306
+Commenti liberi_QTG_2020_Struttura della pasta.csv,188,2021-01-20,C0F,TN_310
+Commenti liberi_QTG_2020_Struttura della pasta.csv,189,2021-01-20,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,190,2021-01-20,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,191,2021-01-20,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,192,2021-01-20,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,193,2021-01-20,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,194,2021-01-20,C0D,TN_306
+Commenti liberi_QTG_2020_Struttura della pasta.csv,195,2021-01-20,C0F,TN_310
+Commenti liberi_QTG_2020_Struttura della pasta.csv,196,2021-01-27,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,197,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,198,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,199,2021-01-27,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,200,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,201,2021-01-27,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,202,2021-01-27,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,203,2021-01-27,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,204,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,205,2021-01-27,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,206,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,207,2021-01-27,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,208,2021-01-27,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,209,2021-01-27,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,210,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,211,2021-02-03,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,212,2021-02-03,C0G,TN_311
+Commenti liberi_QTG_2020_Struttura della pasta.csv,213,2021-02-03,C0O,TN_326
+Commenti liberi_QTG_2020_Struttura della pasta.csv,214,2021-02-03,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,215,2021-02-03,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,216,2021-02-03,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,217,2021-02-03,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,218,2021-02-03,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,219,2021-02-03,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,220,2021-02-03,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,221,2021-02-03,C0O,TN_326
+Commenti liberi_QTG_2020_Struttura della pasta.csv,222,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,223,2021-02-10,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,224,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,225,2021-02-10,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,226,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,227,2021-02-10,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,228,2021-02-10,C0R,TN_338
+Commenti liberi_QTG_2020_Struttura della pasta.csv,229,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,230,2021-02-10,C0R,TN_338
+Commenti liberi_QTG_2020_Struttura della pasta.csv,231,2021-02-10,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,232,2021-02-10,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,233,2021-02-10,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,234,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,235,2021-02-10,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,236,2021-02-10,C0R,TN_338
+Commenti liberi_QTG_2020_Struttura della pasta.csv,237,2021-02-10,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,238,2021-02-10,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,239,2021-02-10,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,240,2021-02-17,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,241,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,242,2021-02-17,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,243,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,244,2021-02-17,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,245,2021-02-17,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,246,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,247,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,248,2021-02-17,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,249,2021-02-17,C0R,TN_338
+Commenti liberi_QTG_2020_Struttura della pasta.csv,250,2021-02-17,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,251,2021-02-17,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,252,2021-02-17,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,253,2021-02-24,C0B,TN_304
+Commenti liberi_QTG_2020_Struttura della pasta.csv,254,2021-02-24,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,255,2021-02-24,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,256,2021-02-24,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,257,2021-02-24,C0B,TN_304
+Commenti liberi_QTG_2020_Struttura della pasta.csv,258,2021-02-24,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,259,2021-02-24,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,260,2021-02-24,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,261,2021-02-24,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,262,2021-02-24,C0B,TN_304
+Commenti liberi_QTG_2020_Struttura della pasta.csv,263,2021-02-24,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,264,2021-02-24,C0B,TN_304
+Commenti liberi_QTG_2020_Struttura della pasta.csv,265,2021-02-24,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,266,2021-02-24,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,267,2021-03-03,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,268,2021-03-03,C0H,TN_313
+Commenti liberi_QTG_2020_Struttura della pasta.csv,269,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,270,2021-03-03,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,271,2021-03-03,C0H,TN_313
+Commenti liberi_QTG_2020_Struttura della pasta.csv,272,2021-03-03,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,273,2021-03-03,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,274,2021-03-03,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,275,2021-03-03,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,276,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,277,2021-03-03,C0H,TN_313
+Commenti liberi_QTG_2020_Struttura della pasta.csv,278,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,279,2021-03-10,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,280,2021-03-10,C0G,TN_311
+Commenti liberi_QTG_2020_Struttura della pasta.csv,281,2021-03-10,C0G,TN_311
+Commenti liberi_QTG_2020_Struttura della pasta.csv,282,2021-03-17,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,283,2021-03-17,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,284,2021-03-17,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,285,2021-03-17,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,286,2021-03-17,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,287,2021-03-17,C0H,TN_313
+Commenti liberi_QTG_2020_Struttura della pasta.csv,288,2021-03-17,C0H,TN_313
+Commenti liberi_QTG_2020_Struttura della pasta.csv,289,2021-03-17,C0H,TN_313
+Commenti liberi_QTG_2020_Struttura della pasta.csv,290,2021-03-17,C0R,TN_338
+Commenti liberi_QTG_2020_Struttura della pasta.csv,291,2021-03-17,C0R,TN_338
+Commenti liberi_QTG_2020_Struttura della pasta.csv,292,2021-03-17,C0R,TN_338
+Commenti liberi_QTG_2020_Struttura della pasta.csv,293,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Struttura della pasta.csv,294,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Struttura della pasta.csv,295,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Struttura della pasta.csv,296,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Struttura della pasta.csv,297,2021-03-17,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,298,2021-03-17,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,299,2021-03-17,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,300,2021-03-17,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,301,2021-03-17,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,302,2021-03-17,C0L,TN_316
+Commenti liberi_QTG_2020_Struttura della pasta.csv,303,2021-03-24,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,304,2021-03-24,C0C,TN_305
+Commenti liberi_QTG_2020_Struttura della pasta.csv,305,2021-03-24,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,306,2021-03-24,C0G,TN_311
+Commenti liberi_QTG_2020_Struttura della pasta.csv,307,2021-03-24,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,308,2021-03-24,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,309,2021-03-24,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,310,2021-03-24,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,311,2021-03-24,C0E,TN_307
+Commenti liberi_QTG_2020_Struttura della pasta.csv,312,2021-03-24,C0G,TN_311
+Commenti liberi_QTG_2020_Struttura della pasta.csv,313,2021-03-24,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,314,2021-03-24,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,315,2021-03-24,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,316,2021-03-24,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,317,2021-03-24,C0P,TN_328
+Commenti liberi_QTG_2020_Struttura della pasta.csv,318,2021-03-31,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,319,2021-03-31,C0Q,TN_330
+Commenti liberi_QTG_2020_Struttura della pasta.csv,320,2021-03-31,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,321,2021-03-31,C0N,TN_323
+Commenti liberi_QTG_2020_Struttura della pasta.csv,322,2021-03-31,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,323,2021-03-31,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,324,2021-03-31,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,325,2021-03-31,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,326,2021-03-31,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,327,2021-03-31,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,328,2021-03-31,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,329,2021-03-31,C0M,TN_319
+Commenti liberi_QTG_2020_Struttura della pasta.csv,330,2021-03-31,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,331,2021-03-31,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,332,2021-03-31,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,333,2021-03-31,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,334,2021-03-31,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,335,2021-03-31,C0I,TN_314
+Commenti liberi_QTG_2020_Struttura della pasta.csv,336,2021-04-07,C0A,TN_302
+Commenti liberi_QTG_2020_Struttura della pasta.csv,337,2021-04-07,C0O,TN_326
+Commenti liberi_QTG_2020_Texture.csv,20,2020-10-14,C0C,TN_305
+Commenti liberi_QTG_2020_Texture.csv,21,2020-10-14,C0C,TN_305
+Commenti liberi_QTG_2020_Texture.csv,22,2020-10-14,C0B,TN_304
+Commenti liberi_QTG_2020_Texture.csv,31,2020-11-04,C0E,TN_307
+Commenti liberi_QTG_2020_Texture.csv,32,2020-11-04,C0E,TN_307
+Commenti liberi_QTG_2020_Texture.csv,33,2020-11-04,C0D,TN_306
+Commenti liberi_QTG_2020_Texture.csv,34,2020-11-04,C0E,TN_307
+Commenti liberi_QTG_2020_Texture.csv,35,2020-11-04,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,36,2020-11-04,C0E,TN_307
+Commenti liberi_QTG_2020_Texture.csv,37,2020-11-04,C0N,TN_323
+Commenti liberi_QTG_2020_Texture.csv,38,2020-11-19,C0H,TN_313
+Commenti liberi_QTG_2020_Texture.csv,39,2020-11-19,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,40,2020-11-25,C0G,TN_311
+Commenti liberi_QTG_2020_Texture.csv,41,2020-11-25,C0Q,TN_330
+Commenti liberi_QTG_2020_Texture.csv,42,2020-11-25,C0P,TN_328
+Commenti liberi_QTG_2020_Texture.csv,43,2020-12-02,C0E,TN_307
+Commenti liberi_QTG_2020_Texture.csv,44,2020-12-02,C0F,TN_310
+Commenti liberi_QTG_2020_Texture.csv,45,2020-12-09,C0A,TN_302
+Commenti liberi_QTG_2020_Texture.csv,46,2020-12-09,C0G,TN_311
+Commenti liberi_QTG_2020_Texture.csv,47,2020-12-09,C0Q,TN_330
+Commenti liberi_QTG_2020_Texture.csv,48,2020-12-09,C0C,TN_305
+Commenti liberi_QTG_2020_Texture.csv,49,2020-12-09,C0N,TN_323
+Commenti liberi_QTG_2020_Texture.csv,50,2020-12-09,C0A,TN_302
+Commenti liberi_QTG_2020_Texture.csv,51,2020-12-09,C0G,TN_311
+Commenti liberi_QTG_2020_Texture.csv,52,2020-12-16,C0B,TN_304
+Commenti liberi_QTG_2020_Texture.csv,53,2020-12-18,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,54,2020-12-18,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,55,2020-12-18,C0H,TN_313
+Commenti liberi_QTG_2020_Texture.csv,56,2020-12-18,C0N,TN_323
+Commenti liberi_QTG_2020_Texture.csv,57,2021-01-13,C0I,TN_314
+Commenti liberi_QTG_2020_Texture.csv,58,2021-01-13,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,59,2021-01-13,C0P,TN_328
+Commenti liberi_QTG_2020_Texture.csv,60,2021-01-13,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,61,2021-01-13,C0Q,TN_330
+Commenti liberi_QTG_2020_Texture.csv,62,2021-01-20,C0F,TN_310
+Commenti liberi_QTG_2020_Texture.csv,63,2021-01-20,C0F,TN_310
+Commenti liberi_QTG_2020_Texture.csv,64,2021-01-20,C0G,TN_311
+Commenti liberi_QTG_2020_Texture.csv,65,2021-01-27,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,66,2021-01-27,C0H,TN_313
+Commenti liberi_QTG_2020_Texture.csv,67,2021-01-27,C0E,TN_307
+Commenti liberi_QTG_2020_Texture.csv,68,2021-01-27,C0H,TN_313
+Commenti liberi_QTG_2020_Texture.csv,69,2021-01-27,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,70,2021-01-27,C0P,TN_328
+Commenti liberi_QTG_2020_Texture.csv,71,2021-01-27,C0N,TN_323
+Commenti liberi_QTG_2020_Texture.csv,72,2021-02-03,C0N,TN_323
+Commenti liberi_QTG_2020_Texture.csv,73,2021-02-03,C0L,TN_316
+Commenti liberi_QTG_2020_Texture.csv,74,2021-02-03,C0A,TN_302
+Commenti liberi_QTG_2020_Texture.csv,75,2021-02-03,C0L,TN_316
+Commenti liberi_QTG_2020_Texture.csv,76,2021-02-03,C0O,TN_326
+Commenti liberi_QTG_2020_Texture.csv,77,2021-02-10,C0R,TN_338
+Commenti liberi_QTG_2020_Texture.csv,78,2021-02-10,C0C,TN_305
+Commenti liberi_QTG_2020_Texture.csv,79,2021-02-10,C0D,TN_306
+Commenti liberi_QTG_2020_Texture.csv,80,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Texture.csv,81,2021-02-17,C0Q,TN_330
+Commenti liberi_QTG_2020_Texture.csv,82,2021-02-17,C0A,TN_302
+Commenti liberi_QTG_2020_Texture.csv,83,2021-02-17,C0A,TN_302
+Commenti liberi_QTG_2020_Texture.csv,84,2021-02-17,C0L,TN_316
+Commenti liberi_QTG_2020_Texture.csv,85,2021-02-17,C0R,TN_338
+Commenti liberi_QTG_2020_Texture.csv,86,2021-02-24,C0B,TN_304
+Commenti liberi_QTG_2020_Texture.csv,87,2021-02-24,C0A,TN_302
+Commenti liberi_QTG_2020_Texture.csv,88,2021-02-24,C0B,TN_304
+Commenti liberi_QTG_2020_Texture.csv,89,2021-02-24,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,90,2021-02-24,C0B,TN_304
+Commenti liberi_QTG_2020_Texture.csv,91,2021-02-24,C0C,TN_305
+Commenti liberi_QTG_2020_Texture.csv,92,2021-02-24,C0E,TN_307
+Commenti liberi_QTG_2020_Texture.csv,93,2021-02-24,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,94,2021-03-03,C0A,TN_302
+Commenti liberi_QTG_2020_Texture.csv,95,2021-03-03,C0H,TN_313
+Commenti liberi_QTG_2020_Texture.csv,96,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Texture.csv,97,2021-03-03,C0A,TN_302
+Commenti liberi_QTG_2020_Texture.csv,98,2021-03-03,C0H,TN_313
+Commenti liberi_QTG_2020_Texture.csv,99,2021-03-03,C0N,TN_323
+Commenti liberi_QTG_2020_Texture.csv,100,2021-03-03,C0P,TN_328
+Commenti liberi_QTG_2020_Texture.csv,101,2021-03-10,,
+Commenti liberi_QTG_2020_Texture.csv,102,2021-03-17,C0C,TN_305
+Commenti liberi_QTG_2020_Texture.csv,103,2021-03-17,C0F,TN_310
+Commenti liberi_QTG_2020_Texture.csv,104,2021-03-17,C0L,TN_316
+Commenti liberi_QTG_2020_Texture.csv,105,2021-03-24,C0C,TN_305
+Commenti liberi_QTG_2020_Texture.csv,106,2021-03-24,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,107,2021-03-24,C0P,TN_328
+Commenti liberi_QTG_2020_Texture.csv,108,2021-03-24,C0E,TN_307
+Commenti liberi_QTG_2020_Texture.csv,109,2021-03-31,C0A,TN_302
+Commenti liberi_QTG_2020_Texture.csv,110,2021-03-31,C0M,TN_319
+Commenti liberi_QTG_2020_Texture.csv,111,2021-03-31,C0Q,TN_330
+Commenti liberi_QTG_2020_Texture.csv,112,2021-03-31,C0I,TN_314
+Commenti liberi_QTG_2020_Texture.csv,113,2021-03-31,C0G,TN_311
+Commenti liberi_QTG_2020_Texture.csv,114,2021-04-07,,
+Commenti liberi_TEST_2021_Aroma.csv,2,2021-09-28,,
+Commenti liberi_TEST_2021_Aroma.csv,3,2021-10-06,C0A,TN_302
+Commenti liberi_TEST_2021_Aroma.csv,4,2021-10-06,C0Q,TN_330
+Commenti liberi_TEST_2021_Aroma.csv,5,2021-10-06,C0Q,TN_330
+Commenti liberi_TEST_2021_Aroma.csv,6,2021-10-13,C0M,TN_319
+Commenti liberi_TEST_2021_Aroma.csv,7,2021-10-13,C0I,TN_314
+Commenti liberi_TEST_2021_Aroma.csv,8,2021-10-20,C0C,TN_305
+Commenti liberi_TEST_2021_Aroma.csv,9,2021-10-20,C0G,TN_311
+Commenti liberi_TEST_2021_Aroma.csv,10,2021-10-27,,
+Commenti liberi_TEST_2021_Aroma.csv,11,2021-11-10,,
+Commenti liberi_TEST_2021_Aroma.csv,12,2021-11-17,C0G,TN_311
+Commenti liberi_TEST_2021_Aroma.csv,13,2021-11-24,C0N,TN_323
+Commenti liberi_TEST_2021_Aroma.csv,14,2021-12-01,C0E,TN_307
+Commenti liberi_TEST_2021_Aroma.csv,15,2021-12-01,C0I,TN_314
+Commenti liberi_TEST_2021_Aroma.csv,16,2021-12-07,,
+Commenti liberi_TEST_2021_Aroma.csv,17,2021-12-14,,
+Commenti liberi_TEST_2021_Aroma.csv,18,2022-01-12,C0C,TN_305
+Commenti liberi_TEST_2021_Aroma.csv,19,2022-01-12,C0M,TN_319
+Commenti liberi_TEST_2021_Aroma.csv,20,2022-01-19,C0O,TN_326
+Commenti liberi_TEST_2021_Aroma.csv,21,2022-01-26,C0H,TN_313
+Commenti liberi_TEST_2021_Aroma.csv,22,2022-01-26,C0P,TN_328
+Commenti liberi_TEST_2021_Aroma.csv,23,2022-01-26,C0D,TN_306
+Commenti liberi_TEST_2021_Aroma.csv,24,2022-01-26,C0P,TN_328
+Commenti liberi_TEST_2021_Aroma.csv,25,2022-02-02,,
+Commenti liberi_TEST_2021_Aroma.csv,26,2022-02-09,C0O,TN_326
+Commenti liberi_TEST_2021_Aroma.csv,27,2022-02-09,C0O,TN_326
+Commenti liberi_TEST_2021_Aroma.csv,28,2022-02-09,C0Q,TN_330
+Commenti liberi_TEST_2021_Aroma.csv,29,2022-02-16,C0C,TN_305
+Commenti liberi_TEST_2021_Aroma.csv,30,2022-03-02,C0E,TN_307
+Commenti liberi_TEST_2021_Aroma.csv,31,2022-03-02,C0N,TN_323
+Commenti liberi_TEST_2021_Aroma.csv,32,2022-03-02,C0B,TN_304
+Commenti liberi_TEST_2021_Aroma.csv,33,2022-03-02,C0I,TN_314
+Commenti liberi_TEST_2021_Aroma.csv,34,2022-03-09,C0D,TN_306
+Commenti liberi_TEST_2021_Aroma.csv,35,2022-03-16,,
+Commenti liberi_TEST_2021_Aroma.csv,36,2022-03-23,C0I,TN_314
+Commenti liberi_TEST_2021_Aroma.csv,37,2022-03-23,C0Q,TN_330
+Commenti liberi_TEST_2021_Aroma.csv,38,2022-03-30,C0A,TN_302
+Commenti liberi_TEST_2021_Aroma.csv,39,2022-03-30,C0A,TN_302
+Commenti liberi_TEST_2021_Aroma.csv,40,2022-03-30,C0Q,TN_330
+Commenti liberi_TEST_2021_Aroma.csv,41,2022-04-06,,
+Commenti liberi_TEST_2021_Aroma.csv,42,2022-05-04,C0R,TN_338
+Commenti liberi_TEST_2021_Aroma.csv,43,2022-05-04,C0M,TN_319
+Commenti liberi_TEST_2021_Aroma.csv,44,2022-05-11,C0A,TN_302
+Commenti liberi_TEST_2021_Aroma.csv,45,2022-05-11,C0G,TN_311
+Commenti liberi_TEST_2021_Aroma.csv,46,2022-05-18,C0L,TN_316
+Commenti liberi_TEST_2021_Aroma.csv,47,2022-05-18,C0G,TN_311
+Commenti liberi_TEST_2021_Aroma.csv,48,2022-05-18,C0B,TN_304
+Commenti liberi_TEST_2021_Aroma.csv,49,2022-06-01,C0A,TN_302
+Commenti liberi_TEST_2021_Aroma.csv,50,2022-06-01,C0O,TN_326
+Commenti liberi_TEST_2021_Aroma.csv,51,2022-06-08,C0N,TN_323
+Commenti liberi_TEST_2021_Aroma.csv,52,2022-06-08,C0N,TN_323
+Commenti liberi_TEST_2021_Aroma.csv,53,2022-06-15,C0G,TN_311
+Commenti liberi_TEST_2021_Aroma.csv,54,2022-06-22,C0M,TN_319
+Commenti liberi_TEST_2021_Aroma.csv,55,2022-06-22,C0M,TN_319
+Commenti liberi_TEST_2021_Aroma.csv,56,2022-06-29,C0A,TN_302
+Commenti liberi_TEST_2021_Colore della Pasta.csv,2,2021-09-28,,
+Commenti liberi_TEST_2021_Colore della Pasta.csv,3,2021-10-06,C0Q,TN_330
+Commenti liberi_TEST_2021_Colore della Pasta.csv,4,2021-10-13,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,5,2021-10-20,C0P,TN_328
+Commenti liberi_TEST_2021_Colore della Pasta.csv,6,2021-10-27,,
+Commenti liberi_TEST_2021_Colore della Pasta.csv,7,2021-11-10,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,8,2021-11-17,C0B,TN_304
+Commenti liberi_TEST_2021_Colore della Pasta.csv,9,2021-11-17,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,10,2021-11-24,C0N,TN_323
+Commenti liberi_TEST_2021_Colore della Pasta.csv,11,2021-11-24,C0P,TN_328
+Commenti liberi_TEST_2021_Colore della Pasta.csv,12,2021-11-24,C0R,TN_338
+Commenti liberi_TEST_2021_Colore della Pasta.csv,13,2021-12-01,C0E,TN_307
+Commenti liberi_TEST_2021_Colore della Pasta.csv,14,2021-12-01,C0E,TN_307
+Commenti liberi_TEST_2021_Colore della Pasta.csv,15,2021-12-01,C0P,TN_328
+Commenti liberi_TEST_2021_Colore della Pasta.csv,16,2021-12-01,C0P,TN_328
+Commenti liberi_TEST_2021_Colore della Pasta.csv,17,2021-12-07,,
+Commenti liberi_TEST_2021_Colore della Pasta.csv,18,2021-12-14,C0P,TN_328
+Commenti liberi_TEST_2021_Colore della Pasta.csv,19,2022-01-12,C0Q,TN_330
+Commenti liberi_TEST_2021_Colore della Pasta.csv,20,2022-01-19,,
+Commenti liberi_TEST_2021_Colore della Pasta.csv,21,2022-01-26,,
+Commenti liberi_TEST_2021_Colore della Pasta.csv,22,2022-02-02,C0E,TN_307
+Commenti liberi_TEST_2021_Colore della Pasta.csv,23,2022-02-02,C0E,TN_307
+Commenti liberi_TEST_2021_Colore della Pasta.csv,24,2022-02-02,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,25,2022-02-02,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,26,2022-02-02,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,27,2022-02-02,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,28,2022-02-09,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,29,2022-02-09,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,30,2022-02-09,C0R,TN_338
+Commenti liberi_TEST_2021_Colore della Pasta.csv,31,2022-02-16,,
+Commenti liberi_TEST_2021_Colore della Pasta.csv,32,2022-03-02,C0B,TN_304
+Commenti liberi_TEST_2021_Colore della Pasta.csv,33,2022-03-02,C0P,TN_328
+Commenti liberi_TEST_2021_Colore della Pasta.csv,34,2022-03-02,C0I,TN_314
+Commenti liberi_TEST_2021_Colore della Pasta.csv,35,2022-03-02,C0M,TN_319
+Commenti liberi_TEST_2021_Colore della Pasta.csv,36,2022-03-02,C0E,TN_307
+Commenti liberi_TEST_2021_Colore della Pasta.csv,37,2022-03-02,C0I,TN_314
+Commenti liberi_TEST_2021_Colore della Pasta.csv,38,2022-03-02,C0M,TN_319
+Commenti liberi_TEST_2021_Colore della Pasta.csv,39,2022-03-02,C0E,TN_307
+Commenti liberi_TEST_2021_Colore della Pasta.csv,40,2022-03-02,C0M,TN_319
+Commenti liberi_TEST_2021_Colore della Pasta.csv,41,2022-03-09,C0N,TN_323
+Commenti liberi_TEST_2021_Colore della Pasta.csv,42,2022-03-09,C0O,TN_326
+Commenti liberi_TEST_2021_Colore della Pasta.csv,43,2022-03-09,C0O,TN_326
+Commenti liberi_TEST_2021_Colore della Pasta.csv,44,2022-03-16,C0A,TN_302
+Commenti liberi_TEST_2021_Colore della Pasta.csv,45,2022-03-23,C0F,TN_310
+Commenti liberi_TEST_2021_Colore della Pasta.csv,46,2022-03-30,C0E,TN_307
+Commenti liberi_TEST_2021_Colore della Pasta.csv,47,2022-04-06,,
+Commenti liberi_TEST_2021_Colore della Pasta.csv,48,2022-05-04,C0D,TN_306
+Commenti liberi_TEST_2021_Colore della Pasta.csv,49,2022-05-04,C0M,TN_319
+Commenti liberi_TEST_2021_Colore della Pasta.csv,50,2022-05-04,C0E,TN_307
+Commenti liberi_TEST_2021_Colore della Pasta.csv,51,2022-05-11,C0M,TN_319
+Commenti liberi_TEST_2021_Colore della Pasta.csv,52,2022-05-18,C0A,TN_302
+Commenti liberi_TEST_2021_Colore della Pasta.csv,53,2022-05-18,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,54,2022-05-18,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,55,2022-06-01,C0A,TN_302
+Commenti liberi_TEST_2021_Colore della Pasta.csv,56,2022-06-08,C0R,TN_338
+Commenti liberi_TEST_2021_Colore della Pasta.csv,57,2022-06-08,C0N,TN_323
+Commenti liberi_TEST_2021_Colore della Pasta.csv,58,2022-06-08,C0C,TN_305
+Commenti liberi_TEST_2021_Colore della Pasta.csv,59,2022-06-15,C0G,TN_311
+Commenti liberi_TEST_2021_Colore della Pasta.csv,60,2022-06-15,C0E,TN_307
+Commenti liberi_TEST_2021_Colore della Pasta.csv,61,2022-06-22,C0E,TN_307
+Commenti liberi_TEST_2021_Colore della Pasta.csv,62,2022-06-29,C0F,TN_310
+Commenti liberi_TEST_2021_Colore della Pasta.csv,63,2022-06-29,C0F,TN_310
+Commenti liberi_TEST_2021_Colore della Pasta.csv,64,2022-06-29,C0F,TN_310
+Commenti liberi_TEST_2021_Profumo.csv,2,2021-09-28,C0N,TN_323
+Commenti liberi_TEST_2021_Profumo.csv,3,2021-10-06,C0Q,TN_330
+Commenti liberi_TEST_2021_Profumo.csv,4,2021-10-13,,
+Commenti liberi_TEST_2021_Profumo.csv,5,2021-10-20,C0C,TN_305
+Commenti liberi_TEST_2021_Profumo.csv,6,2021-10-27,,
+Commenti liberi_TEST_2021_Profumo.csv,7,2021-11-10,C0A,TN_302
+Commenti liberi_TEST_2021_Profumo.csv,8,2021-11-10,C0G,TN_311
+Commenti liberi_TEST_2021_Profumo.csv,9,2021-11-17,,
+Commenti liberi_TEST_2021_Profumo.csv,10,2021-11-24,C0A,TN_302
+Commenti liberi_TEST_2021_Profumo.csv,11,2021-11-24,C0R,TN_338
+Commenti liberi_TEST_2021_Profumo.csv,12,2021-12-01,C0I,TN_314
+Commenti liberi_TEST_2021_Profumo.csv,13,2021-12-01,C0P,TN_328
+Commenti liberi_TEST_2021_Profumo.csv,14,2021-12-01,C0P,TN_328
+Commenti liberi_TEST_2021_Profumo.csv,15,2021-12-07,,
+Commenti liberi_TEST_2021_Profumo.csv,16,2021-12-14,C0Q,TN_330
+Commenti liberi_TEST_2021_Profumo.csv,17,2022-01-12,C0C,TN_305
+Commenti liberi_TEST_2021_Profumo.csv,18,2022-01-12,C0Q,TN_330
+Commenti liberi_TEST_2021_Profumo.csv,19,2022-01-19,C0M,TN_319
+Commenti liberi_TEST_2021_Profumo.csv,20,2022-01-19,C0E,TN_307
+Commenti liberi_TEST_2021_Profumo.csv,21,2022-01-19,C0M,TN_319
+Commenti liberi_TEST_2021_Profumo.csv,22,2022-01-26,C0F,TN_310
+Commenti liberi_TEST_2021_Profumo.csv,23,2022-01-26,C0F,TN_310
+Commenti liberi_TEST_2021_Profumo.csv,24,2022-01-26,C0P,TN_328
+Commenti liberi_TEST_2021_Profumo.csv,25,2022-02-02,C0E,TN_307
+Commenti liberi_TEST_2021_Profumo.csv,26,2022-02-02,C0I,TN_314
+Commenti liberi_TEST_2021_Profumo.csv,27,2022-02-02,C0I,TN_314
+Commenti liberi_TEST_2021_Profumo.csv,28,2022-02-02,C0P,TN_328
+Commenti liberi_TEST_2021_Profumo.csv,29,2022-02-09,C0L,TN_316
+Commenti liberi_TEST_2021_Profumo.csv,30,2022-02-16,C0P,TN_328
+Commenti liberi_TEST_2021_Profumo.csv,31,2022-02-16,C0P,TN_328
+Commenti liberi_TEST_2021_Profumo.csv,32,2022-02-16,C0A,TN_302
+Commenti liberi_TEST_2021_Profumo.csv,33,2022-03-02,C0P,TN_328
+Commenti liberi_TEST_2021_Profumo.csv,34,2022-03-02,C0E,TN_307
+Commenti liberi_TEST_2021_Profumo.csv,35,2022-03-02,C0P,TN_328
+Commenti liberi_TEST_2021_Profumo.csv,36,2022-03-09,C0D,TN_306
+Commenti liberi_TEST_2021_Profumo.csv,37,2022-03-09,C0P,TN_328
+Commenti liberi_TEST_2021_Profumo.csv,38,2022-03-16,,
+Commenti liberi_TEST_2021_Profumo.csv,39,2022-03-23,,
+Commenti liberi_TEST_2021_Profumo.csv,40,2022-03-30,C0Q,TN_330
+Commenti liberi_TEST_2021_Profumo.csv,41,2022-04-06,C0G,TN_311
+Commenti liberi_TEST_2021_Profumo.csv,42,2022-04-06,C0D,TN_306
+Commenti liberi_TEST_2021_Profumo.csv,43,2022-05-04,,
+Commenti liberi_TEST_2021_Profumo.csv,44,2022-05-11,C0Q,TN_330
+Commenti liberi_TEST_2021_Profumo.csv,45,2022-05-11,C0G,TN_311
+Commenti liberi_TEST_2021_Profumo.csv,46,2022-05-18,C0L,TN_316
+Commenti liberi_TEST_2021_Profumo.csv,47,2022-05-18,C0N,TN_323
+Commenti liberi_TEST_2021_Profumo.csv,48,2022-05-18,C0B,TN_304
+Commenti liberi_TEST_2021_Profumo.csv,49,2022-05-18,C0G,TN_311
+Commenti liberi_TEST_2021_Profumo.csv,50,2022-06-01,C0E,TN_307
+Commenti liberi_TEST_2021_Profumo.csv,51,2022-06-08,C0C,TN_305
+Commenti liberi_TEST_2021_Profumo.csv,52,2022-06-08,C0N,TN_323
+Commenti liberi_TEST_2021_Profumo.csv,53,2022-06-15,C0I,TN_314
+Commenti liberi_TEST_2021_Profumo.csv,54,2022-06-22,C0N,TN_323
+Commenti liberi_TEST_2021_Profumo.csv,55,2022-06-22,C0Q,TN_330
+Commenti liberi_TEST_2021_Profumo.csv,56,2022-06-22,C0N,TN_323
+Commenti liberi_TEST_2021_Profumo.csv,57,2022-06-22,C0M,TN_319
+Commenti liberi_TEST_2021_Profumo.csv,58,2022-06-29,C0P,TN_328
+Commenti liberi_TEST_2021_Sapore.csv,2,2021-09-28,,
+Commenti liberi_TEST_2021_Sapore.csv,3,2021-10-06,C0Q,TN_330
+Commenti liberi_TEST_2021_Sapore.csv,4,2021-10-13,C0I,TN_314
+Commenti liberi_TEST_2021_Sapore.csv,5,2021-10-13,C0M,TN_319
+Commenti liberi_TEST_2021_Sapore.csv,6,2021-10-20,,
+Commenti liberi_TEST_2021_Sapore.csv,7,2021-10-27,,
+Commenti liberi_TEST_2021_Sapore.csv,8,2021-11-10,C0A,TN_302
+Commenti liberi_TEST_2021_Sapore.csv,9,2021-11-10,C0A,TN_302
+Commenti liberi_TEST_2021_Sapore.csv,10,2021-11-17,C0M,TN_319
+Commenti liberi_TEST_2021_Sapore.csv,11,2021-11-24,C0A,TN_302
+Commenti liberi_TEST_2021_Sapore.csv,12,2021-11-24,C0A,TN_302
+Commenti liberi_TEST_2021_Sapore.csv,13,2021-12-01,,
+Commenti liberi_TEST_2021_Sapore.csv,14,2021-12-07,,
+Commenti liberi_TEST_2021_Sapore.csv,15,2021-12-14,,
+Commenti liberi_TEST_2021_Sapore.csv,16,2022-01-12,C0M,TN_319
+Commenti liberi_TEST_2021_Sapore.csv,17,2022-01-19,C0M,TN_319
+Commenti liberi_TEST_2021_Sapore.csv,18,2022-01-19,C0E,TN_307
+Commenti liberi_TEST_2021_Sapore.csv,19,2022-01-19,C0O,TN_326
+Commenti liberi_TEST_2021_Sapore.csv,20,2022-01-26,C0H,TN_313
+Commenti liberi_TEST_2021_Sapore.csv,21,2022-02-02,C0A,TN_302
+Commenti liberi_TEST_2021_Sapore.csv,22,2022-02-02,C0E,TN_307
+Commenti liberi_TEST_2021_Sapore.csv,23,2022-02-09,C0R,TN_338
+Commenti liberi_TEST_2021_Sapore.csv,24,2022-02-09,C0Q,TN_330
+Commenti liberi_TEST_2021_Sapore.csv,25,2022-02-09,C0L,TN_316
+Commenti liberi_TEST_2021_Sapore.csv,26,2022-02-09,C0A,TN_302
+Commenti liberi_TEST_2021_Sapore.csv,27,2022-02-16,C0P,TN_328
+Commenti liberi_TEST_2021_Sapore.csv,28,2022-03-02,C0B,TN_304
+Commenti liberi_TEST_2021_Sapore.csv,29,2022-03-02,C0M,TN_319
+Commenti liberi_TEST_2021_Sapore.csv,30,2022-03-09,C0O,TN_326
+Commenti liberi_TEST_2021_Sapore.csv,31,2022-03-09,C0D,TN_306
+Commenti liberi_TEST_2021_Sapore.csv,32,2022-03-09,C0C,TN_305
+Commenti liberi_TEST_2021_Sapore.csv,33,2022-03-09,C0P,TN_328
+Commenti liberi_TEST_2021_Sapore.csv,34,2022-03-16,C0H,TN_313
+Commenti liberi_TEST_2021_Sapore.csv,35,2022-03-23,C0N,TN_323
+Commenti liberi_TEST_2021_Sapore.csv,36,2022-03-23,C0I,TN_314
+Commenti liberi_TEST_2021_Sapore.csv,37,2022-03-30,C0Q,TN_330
+Commenti liberi_TEST_2021_Sapore.csv,38,2022-04-06,C0A,TN_302
+Commenti liberi_TEST_2021_Sapore.csv,39,2022-04-06,C0G,TN_311
+Commenti liberi_TEST_2021_Sapore.csv,40,2022-05-04,C0E,TN_307
+Commenti liberi_TEST_2021_Sapore.csv,41,2022-05-04,C0M,TN_319
+Commenti liberi_TEST_2021_Sapore.csv,42,2022-05-11,C0M,TN_319
+Commenti liberi_TEST_2021_Sapore.csv,43,2022-05-18,C0B,TN_304
+Commenti liberi_TEST_2021_Sapore.csv,44,2022-05-18,C0L,TN_316
+Commenti liberi_TEST_2021_Sapore.csv,45,2022-05-18,C0N,TN_323
+Commenti liberi_TEST_2021_Sapore.csv,46,2022-05-18,C0G,TN_311
+Commenti liberi_TEST_2021_Sapore.csv,47,2022-05-18,C0A,TN_302
+Commenti liberi_TEST_2021_Sapore.csv,48,2022-06-01,,
+Commenti liberi_TEST_2021_Sapore.csv,49,2022-06-08,,
+Commenti liberi_TEST_2021_Sapore.csv,50,2022-06-15,,
+Commenti liberi_TEST_2021_Sapore.csv,51,2022-06-22,C0A,TN_302
+Commenti liberi_TEST_2021_Sapore.csv,52,2022-06-22,C0M,TN_319
+Commenti liberi_TEST_2021_Sapore.csv,53,2022-06-22,C0E,TN_307
+Commenti liberi_TEST_2021_Sapore.csv,54,2022-06-29,C0A,TN_302
+Commenti liberi_TEST_2021_Sapore.csv,55,2022-06-29,C0L,TN_316
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,2,2021-09-28,,
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,3,2021-10-06,C0Q,TN_330
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,4,2021-10-13,C0I,TN_314
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,5,2021-10-13,C0M,TN_319
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,6,2021-10-13,C0E,TN_307
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,7,2021-10-20,,
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,8,2021-10-27,C0D,TN_306
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,9,2021-11-10,C0G,TN_311
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,10,2021-11-10,C0H,TN_313
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,11,2021-11-17,,
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,12,2021-11-24,,
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,13,2021-12-01,,
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,14,2021-12-07,C0A,TN_302
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,15,2021-12-07,C0C,TN_305
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,16,2021-12-14,C0I,TN_314
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,17,2022-01-12,C0M,TN_319
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,18,2022-01-19,C0Q,TN_330
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,19,2022-01-19,C0M,TN_319
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,20,2022-01-19,C0E,TN_307
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,21,2022-01-26,,
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,22,2022-02-02,C0A,TN_302
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,23,2022-02-02,C0E,TN_307
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,24,2022-02-02,C0G,TN_311
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,25,2022-02-02,C0G,TN_311
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,26,2022-02-09,,
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,27,2022-02-16,C0P,TN_328
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,28,2022-03-02,C0M,TN_319
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,29,2022-03-02,C0M,TN_319
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,30,2022-03-09,C0G,TN_311
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,31,2022-03-09,C0N,TN_323
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,32,2022-03-09,C0C,TN_305
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,33,2022-03-09,C0G,TN_311
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,34,2022-03-09,C0O,TN_326
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,35,2022-03-09,C0O,TN_326
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,36,2022-03-16,,
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,37,2022-03-23,C0F,TN_310
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,38,2022-03-23,C0Q,TN_330
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,39,2022-03-23,C0R,TN_338
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,40,2022-03-30,C0Q,TN_330
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,41,2022-04-06,C0A,TN_302
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,42,2022-05-04,C0C,TN_305
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,43,2022-05-11,C0Q,TN_330
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,44,2022-05-11,C0Q,TN_330
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,45,2022-05-18,C0A,TN_302
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,46,2022-06-01,,
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,47,2022-06-08,C0H,TN_313
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,48,2022-06-15,C0A,TN_302
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,49,2022-06-22,C0A,TN_302
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,50,2022-06-22,C0C,TN_305
+Commenti liberi_TEST_2021_Spessore della Crosta.csv,51,2022-06-29,C0A,TN_302
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,2,2021-09-28,C0C,TN_305
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,3,2021-09-28,C0A,TN_302
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,4,2021-10-06,C0O,TN_326
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,5,2021-10-13,C0M,TN_319
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,6,2021-10-13,C0G,TN_311
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,7,2021-10-13,C0E,TN_307
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,8,2021-10-13,C0G,TN_311
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,9,2021-10-13,C0L,TN_316
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,10,2021-10-20,C0C,TN_305
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,11,2021-10-20,C0P,TN_328
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,12,2021-10-27,C0F,TN_310
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,13,2021-11-10,C0G,TN_311
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,14,2021-11-17,C0B,TN_304
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,15,2021-11-17,C0F,TN_310
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,16,2021-11-17,C0G,TN_311
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,17,2021-11-17,C0G,TN_311
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,18,2021-11-17,C0O,TN_326
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,19,2021-11-24,C0N,TN_323
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,20,2021-11-24,C0R,TN_338
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,21,2021-12-01,C0E,TN_307
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,22,2021-12-07,C0A,TN_302
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,23,2021-12-14,C0P,TN_328
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,24,2021-12-14,C0Q,TN_330
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,25,2021-12-14,C0Q,TN_330
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,26,2021-12-14,C0I,TN_314
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,27,2021-12-14,C0P,TN_328
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,28,2021-12-14,C0M,TN_319
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,29,2022-01-12,C0Q,TN_330
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,30,2022-01-12,C0Q,TN_330
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,31,2022-01-12,C0Q,TN_330
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,32,2022-01-12,C0Q,TN_330
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,33,2022-01-19,C0B,TN_304
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,34,2022-01-19,C0Q,TN_330
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,35,2022-01-19,C0O,TN_326
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,36,2022-01-26,C0H,TN_313
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,37,2022-01-26,C0P,TN_328
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,38,2022-01-26,C0I,TN_314
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,39,2022-02-02,C0D,TN_306
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,40,2022-02-02,C0E,TN_307
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,41,2022-02-02,C0G,TN_311
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,42,2022-02-02,C0G,TN_311
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,43,2022-02-02,C0P,TN_328
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,44,2022-02-09,C0R,TN_338
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,45,2022-02-09,C0G,TN_311
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,46,2022-02-09,C0L,TN_316
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,47,2022-02-09,C0Q,TN_330
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,48,2022-02-16,C0A,TN_302
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,49,2022-02-16,C0I,TN_314
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,50,2022-03-02,C0N,TN_323
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,51,2022-03-02,C0B,TN_304
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,52,2022-03-02,C0E,TN_307
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,53,2022-03-02,C0M,TN_319
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,54,2022-03-02,C0N,TN_323
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,55,2022-03-02,C0P,TN_328
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,56,2022-03-09,C0N,TN_323
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,57,2022-03-09,C0N,TN_323
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,58,2022-03-16,C0L,TN_316
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,59,2022-03-16,C0A,TN_302
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,60,2022-03-16,C0C,TN_305
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,61,2022-03-23,C0Q,TN_330
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,62,2022-03-23,C0G,TN_311
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,63,2022-03-23,C0F,TN_310
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,64,2022-03-30,C0Q,TN_330
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,65,2022-03-30,C0E,TN_307
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,66,2022-04-06,C0A,TN_302
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,67,2022-04-06,C0G,TN_311
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,68,2022-05-04,C0E,TN_307
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,69,2022-05-04,C0M,TN_319
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,70,2022-05-11,C0A,TN_302
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,71,2022-05-18,,
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,72,2022-06-01,,
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,73,2022-06-08,C0G,TN_311
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,74,2022-06-08,C0N,TN_323
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,75,2022-06-08,C0C,TN_305
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,76,2022-06-08,C0H,TN_313
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,77,2022-06-08,C0B,TN_304
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,78,2022-06-08,C0B,TN_304
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,79,2022-06-15,C0O,TN_326
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,80,2022-06-22,C0E,TN_307
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,81,2022-06-22,C0E,TN_307
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,82,2022-06-22,C0Q,TN_330
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,83,2022-06-22,C0C,TN_305
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,84,2022-06-22,C0E,TN_307
+Commenti liberi_TEST_2021_Struttura della Pasta.csv,85,2022-06-29,,
+Commenti liberi_TEST_2021_Texture.csv,2,2021-09-28,C0N,TN_323
+Commenti liberi_TEST_2021_Texture.csv,3,2021-10-06,C0P,TN_328
+Commenti liberi_TEST_2021_Texture.csv,4,2021-10-13,C0M,TN_319
+Commenti liberi_TEST_2021_Texture.csv,5,2021-10-20,,
+Commenti liberi_TEST_2021_Texture.csv,6,2021-10-27,C0F,TN_310
+Commenti liberi_TEST_2021_Texture.csv,7,2021-11-10,C0G,TN_311
+Commenti liberi_TEST_2021_Texture.csv,8,2021-11-17,C0M,TN_319
+Commenti liberi_TEST_2021_Texture.csv,9,2021-11-24,C0A,TN_302
+Commenti liberi_TEST_2021_Texture.csv,10,2021-11-24,C0P,TN_328
+Commenti liberi_TEST_2021_Texture.csv,11,2021-12-01,,
+Commenti liberi_TEST_2021_Texture.csv,12,2021-12-07,,
+Commenti liberi_TEST_2021_Texture.csv,13,2021-12-14,C0D,TN_306
+Commenti liberi_TEST_2021_Texture.csv,14,2021-12-14,C0Q,TN_330
+Commenti liberi_TEST_2021_Texture.csv,15,2022-01-12,C0Q,TN_330
+Commenti liberi_TEST_2021_Texture.csv,16,2022-01-12,C0M,TN_319
+Commenti liberi_TEST_2021_Texture.csv,17,2022-01-19,C0O,TN_326
+Commenti liberi_TEST_2021_Texture.csv,18,2022-01-26,C0F,TN_310
+Commenti liberi_TEST_2021_Texture.csv,19,2022-01-26,C0P,TN_328
+Commenti liberi_TEST_2021_Texture.csv,20,2022-02-02,C0G,TN_311
+Commenti liberi_TEST_2021_Texture.csv,21,2022-02-09,C0A,TN_302
+Commenti liberi_TEST_2021_Texture.csv,22,2022-02-09,C0Q,TN_330
+Commenti liberi_TEST_2021_Texture.csv,23,2022-02-09,C0Q,TN_330
+Commenti liberi_TEST_2021_Texture.csv,24,2022-02-16,,
+Commenti liberi_TEST_2021_Texture.csv,25,2022-03-02,C0B,TN_304
+Commenti liberi_TEST_2021_Texture.csv,26,2022-03-02,C0E,TN_307
+Commenti liberi_TEST_2021_Texture.csv,27,2022-03-02,C0B,TN_304
+Commenti liberi_TEST_2021_Texture.csv,28,2022-03-02,C0I,TN_314
+Commenti liberi_TEST_2021_Texture.csv,29,2022-03-02,C0E,TN_307
+Commenti liberi_TEST_2021_Texture.csv,30,2022-03-09,C0C,TN_305
+Commenti liberi_TEST_2021_Texture.csv,31,2022-03-16,C0C,TN_305
+Commenti liberi_TEST_2021_Texture.csv,32,2022-03-16,C0C,TN_305
+Commenti liberi_TEST_2021_Texture.csv,33,2022-03-23,C0R,TN_338
+Commenti liberi_TEST_2021_Texture.csv,34,2022-03-23,C0G,TN_311
+Commenti liberi_TEST_2021_Texture.csv,35,2022-03-30,C0Q,TN_330
+Commenti liberi_TEST_2021_Texture.csv,36,2022-03-30,C0Q,TN_330
+Commenti liberi_TEST_2021_Texture.csv,37,2022-04-06,C0A,TN_302
+Commenti liberi_TEST_2021_Texture.csv,38,2022-05-04,C0E,TN_307
+Commenti liberi_TEST_2021_Texture.csv,39,2022-05-11,C0Q,TN_330
+Commenti liberi_TEST_2021_Texture.csv,40,2022-05-18,C0A,TN_302
+Commenti liberi_TEST_2021_Texture.csv,41,2022-05-18,C0L,TN_316
+Commenti liberi_TEST_2021_Texture.csv,42,2022-05-18,C0B,TN_304
+Commenti liberi_TEST_2021_Texture.csv,43,2022-06-01,C0O,TN_326
+Commenti liberi_TEST_2021_Texture.csv,44,2022-06-08,,
+Commenti liberi_TEST_2021_Texture.csv,45,2022-06-15,,
+Commenti liberi_TEST_2021_Texture.csv,46,2022-06-22,C0C,TN_305
+Commenti liberi_TEST_2021_Texture.csv,47,2022-06-22,C0A,TN_302
+Commenti liberi_TEST_2021_Texture.csv,48,2022-06-22,C0N,TN_323
+Commenti liberi_TEST_2021_Texture.csv,49,2022-06-29,C0L,TN_316
