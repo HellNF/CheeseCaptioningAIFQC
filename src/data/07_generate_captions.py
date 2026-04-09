@@ -95,7 +95,18 @@ REGOLE FONDAMENTALI:
     Il colore della pasta non è stato commentato.'
 
     Esempio CORRETTO: '...La texture è friabile.'
-12. Descrivi SOLO caratteristiche sensoriali tecniche. NON fare valutazioni di consumo, NON suggerire occasioni di utilizzo, NON esprimere giudizi commerciali."""
+12. Descrivi SOLO caratteristiche sensoriali tecniche. NON fare valutazioni di consumo, NON suggerire occasioni di utilizzo, NON esprimere giudizi commerciali.
+
+    ❌ VIETATO (non scrivere MAI frasi come queste):
+    - '...un aspetto che potrebbe essere migliorato'
+    - '...che dovrebbe essere corretto'
+    - '...da migliorare nella produzione'
+    - '...si abbina bene con...'
+    - '...ideale per...'
+
+    ✅ CORRETTO: descrivi il dato sensoriale in modo neutro e tecnico.
+    Esempio SBAGLIATO: 'La texture risulta tenera, un aspetto che potrebbe essere migliorato.'
+    Esempio CORRETTO:  'La texture risulta tenera.'"""
 
 
 def normalize_attr_name(attr: str) -> str:

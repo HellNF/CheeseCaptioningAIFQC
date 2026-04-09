@@ -6,6 +6,19 @@
 
 ---
 
+## POST-FIX (2026-04-09)
+
+Fix applicati al CSV `captions_finali.csv` senza rigenerare le caption:
+
+1. **Path normalizzati**: tutte le colonne `path_fetta_primaria` e `path_grana_primaria` convertite da backslash Windows (`\`) a forward slash (`/`) per compatibilità cross-platform (348/348 righe).
+2. **Caption TN323_2020-09-23**: rimossa la frase valutativa "un aspetto che potrebbe essere migliorato" (violazione regola 12 — giudizio commerciale).
+3. **System prompt rafforzato** (`07_generate_captions.py`): aggiunta regola 12 con esempi espliciti di frasi vietate e corrette, per prevenire linguaggio valutativo in run futuri.
+4. **Fix sorgente** (`05_join_samples.py`): sostituito `str(path.relative_to(...))` con `path.relative_to(...).as_posix()` per generare path con forward slash nativamente nei run futuri.
+
+**Impatto**: nessuna caption è stata rigenerata. Il fix su TN323_2020-09-23 è una rimozione chirurgica della frase valutativa, preservando il contenuto sensoriale.
+
+---
+
 ## STATISTICHE
 
 - Caption generate: 348
@@ -27,7 +40,7 @@
 
 **Caption:**
 
-> Il profumo è caratterizzato da una nota di grasso di prosciutto crudo, accompagnata da una leggera sfumatura bruciata e una complessità limitata, con un richiamo al cremoso caramello. Il sapore risulta anonimo e poco espresso, con una sensazione di freschezza che ricorda un formaggio poco stagionato, senza note sgradevoli. L'aroma presenta una componente non gradevole, bilanciata da sentori di burro fresco e una marcata lattonosità. La struttura della pasta appare variabile, con zone grasse alternate a zone secche e una finezza non sempre uniforme. [FINE]
+> Il profumo è caratterizzato da una nota di grasso di prosciutto crudo, accompagnata da una leggera sfumatura bruciata e una complessità limitata, con un richiamo al cremoso caramello. Il sapore risulta anonimo e poco espresso, con una sensazione di freschezza che ricorda un formaggio poco stagionato, senza note sgradevoli. L'aroma presenta una componente non gradevole, bilanciata da sentori di burro fresco e una marcata lattonosità. La struttura della pasta appare variabile, con zone grasse alternate a zone secche e una finezza non sempre uniforme.
 
 ### Esempio 2: TN323_2020-09-23
 
@@ -38,7 +51,7 @@
 
 **Caption:**
 
-> Il profumo è intenso, con note di latte e una piacevole sensazione di freschezza. Il sapore si presenta equilibrato, non dolce e con una leggera acidità che arricchisce l'esperienza gustativa. La texture, purtroppo, risulta tenera, un aspetto che potrebbe essere migliorato. [FINE]
+> Il profumo è intenso, con note di latte e una piacevole sensazione di freschezza. Il sapore si presenta equilibrato, non dolce e con una leggera acidità che arricchisce l'esperienza gustativa. La texture, purtroppo, risulta tenera.
 
 ### Esempio 3: TN305_2018-10-03
 
@@ -60,7 +73,7 @@
 
 **Caption:**
 
-> Il profumo è caratterizzato da una nota lattica dominante, con sentori di burro fresco e una leggera sfumatura di bruciato. Il sapore presenta una leggera punta di dolcezza, che arricchisce l'esperienza gustativa. La texture si rivela abbastanza solubile, anche se si percepisce una certa carenza di cristalli. Il colore della pasta è chiaro, ma non presenta tonalità paglierine. [FINE]
+> Il profumo è caratterizzato da una nota lattica dominante, con sentori di burro fresco e una leggera sfumatura di bruciato. Il sapore presenta una leggera punta di dolcezza, che arricchisce l'esperienza gustativa. La texture si rivela abbastanza solubile, anche se si percepisce una certa carenza di cristalli. Il colore della pasta è chiaro, ma non presenta tonalità paglierine.
 
 ### Esempio 5: TN302_2019-03-13
 

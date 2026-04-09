@@ -46,3 +46,6 @@ Thumbs.db
 !templates/*
 !src/**/*.py
 !README.md
+
+.agents/
+skills-lock.json

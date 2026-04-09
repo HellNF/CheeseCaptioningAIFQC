@@ -246,7 +246,7 @@ def parse_all_images() -> List[Dict[str, Any]]:
                     anno = 2021
 
                 images.append({
-                    'path': str(bmp_path.relative_to(PROJECT_ROOT)),
+                    'path': bmp_path.relative_to(PROJECT_ROOT).as_posix(),
                     'codice_caseificio': parsed['codice_caseificio'],
                     'data_seduta': data_seduta,
                     'vista': parsed['vista'],
