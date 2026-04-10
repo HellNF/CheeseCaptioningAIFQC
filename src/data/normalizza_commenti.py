@@ -224,8 +224,56 @@ def normalizza_batch(
     return parse_llm_response(response_text, expected_ids)
 
 
-def genera_report(risultati, attributo, output_path):
-    raise NotImplementedError
+def genera_report(risultati: list[dict], attributo: str, output_path: Path) -> None:
+    """Genera report Markdown con statistiche di normalizzazione.
+
+    output_path: percorso completo del file .md da creare.
+    """
+    import random
+
+    totale = len(risultati)
+    conteggi: dict[str, int] = {}
+    for r in risultati:
+        conteggi[r["classe"]] = conteggi.get(r["classe"], 0) + 1
+
+    caption_prodotte = conteggi.get("OK", 0) + conteggi.get("CONFORME", 0)
+    scartati = totale - caption_prodotte
+    pct_scartati = (scartati / totale * 100) if totale > 0 else 0
+
+    lines = [
+        f"# Report normalizzazione — {attributo}",
+        "",
+        "## Statistiche",
+        "",
+        f"- Commenti processati: {totale}",
+        f"- Caption prodotte: {caption_prodotte}",
+        f"- Scartati: {scartati} ({pct_scartati:.1f}%)",
+        "",
+        "## Distribuzione classi",
+        "",
+        "| Classe | Conteggio | % |",
+        "|--------|-----------|---|",
+    ]
+    for classe in ["OK", "CONFORME", "FUORI_ATTRIBUTO", "RIFERIMENTO", "ILLEGGIBILE", "ERRORE_PARSING", "ERRORE"]:
+        n = conteggi.get(classe, 0)
+        if n > 0:
+            lines.append(f"| {classe} | {n} | {n/totale*100:.1f}% |")
+
+    if pct_scartati > ALERT_SCARTATI_PCT:
+        lines += [
+            "",
+            f"> **ATTENZIONE:** percentuale scartati ({pct_scartati:.1f}%) superiore alla soglia ({ALERT_SCARTATI_PCT}%).",
+        ]
+
+    campione = [r for r in risultati if r.get("caption")]
+    campione = random.sample(campione, min(10, len(campione)))
+    lines += ["", "## Esempi before/after (campione casuale)", ""]
+    for r in campione:
+        lines.append(f"- **Raw:** `{r.get('commento_raw', '')}` → **Caption:** {r['caption']}")
+
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text("\n".join(lines), encoding="utf-8")
 
 
 # ── carica_vocabolario ────────────────────────────────────────────────────

@@ -213,3 +213,35 @@ def test_normalizza_batch_classi_corrette():
     assert classi[1] == "OK"
     assert classi[2] == "CONFORME"
     assert classi[3] == "RIFERIMENTO"
+
+
+# ── genera_report ──────────────────────────────────────────────────────────
+
+RISULTATI_FIXTURE = [
+    {"id": 1, "classe": "OK",            "caption": "Caption A.", "commento_raw": "pasta compatta"},
+    {"id": 2, "classe": "CONFORME",      "caption": "Caption B.", "commento_raw": "ok"},
+    {"id": 3, "classe": "RIFERIMENTO",   "caption": None,         "commento_raw": "vedi sopra"},
+    {"id": 4, "classe": "OK",            "caption": "Caption C.", "commento_raw": "grana fine"},
+    {"id": 5, "classe": "FUORI_ATTRIBUTO","caption": None,        "commento_raw": "crosta spessa"},
+]
+
+def test_genera_report_crea_file(tmp_path):
+    genera_report(RISULTATI_FIXTURE, "Texture", tmp_path / "report.md")
+    assert (tmp_path / "report.md").exists()
+
+def test_genera_report_contiene_statistiche(tmp_path):
+    genera_report(RISULTATI_FIXTURE, "Texture", tmp_path / "report.md")
+    content = (tmp_path / "report.md").read_text(encoding="utf-8")
+    assert "Texture" in content
+    assert "OK" in content
+    assert "CONFORME" in content
+    assert "3" in content   # 3 caption prodotte (OK + CONFORME)
+
+def test_genera_report_alert_se_scartati_elevati(tmp_path):
+    molti_scartati = [
+        {"id": i, "classe": "ILLEGGIBILE", "caption": None, "commento_raw": f"x{i}"}
+        for i in range(9)
+    ] + [{"id": 10, "classe": "OK", "caption": "Caption.", "commento_raw": "testo"}]
+    genera_report(molti_scartati, "Aroma", tmp_path / "report.md")
+    content = (tmp_path / "report.md").read_text(encoding="utf-8")
+    assert "ATTENZIONE" in content or "attenzione" in content.lower()
