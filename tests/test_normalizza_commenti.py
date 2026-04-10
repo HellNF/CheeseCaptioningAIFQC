@@ -167,3 +167,48 @@ def test_genera_baseline_passa_attributo_nel_prompt():
     messages = client.chat.completions.create.call_args.kwargs["messages"]
     prompt_text = str(messages)
     assert "Texture" in prompt_text
+
+
+# ── normalizza_batch ───────────────────────────────────────────────────────
+
+BATCH_FIXTURE = [
+    {"id": 1, "commento_prenorm": "pasta compatta con grana regolare"},
+    {"id": 2, "commento_prenorm": "ok"},
+    {"id": 3, "commento_prenorm": "vedi sopra"},
+]
+
+LLM_BATCH_RESPONSE = (
+    '{"id": 1, "classe": "OK", "caption": "La texture è compatta con grana regolare."}\n'
+    '{"id": 2, "classe": "CONFORME", "caption": "La texture risulta nella norma."}\n'
+    '{"id": 3, "classe": "RIFERIMENTO", "caption": null}\n'
+)
+
+def test_normalizza_batch_ritorna_risultati_per_tutti():
+    client = _mock_client(LLM_BATCH_RESPONSE)
+    risultati = normalizza_batch(
+        BATCH_FIXTURE, "Texture", VOCAB_FIXTURE, "Baseline testo.", client
+    )
+    assert len(risultati) == 3
+
+def test_normalizza_batch_chiama_api_una_volta():
+    client = _mock_client(LLM_BATCH_RESPONSE)
+    normalizza_batch(BATCH_FIXTURE, "Texture", VOCAB_FIXTURE, "Baseline.", client)
+    client.chat.completions.create.assert_called_once()
+
+def test_normalizza_batch_include_vocabolario_nel_prompt():
+    client = _mock_client(LLM_BATCH_RESPONSE)
+    normalizza_batch(BATCH_FIXTURE, "Texture", VOCAB_FIXTURE, "Baseline.", client)
+    messages = client.chat.completions.create.call_args.kwargs["messages"]
+    system_content = str(messages)
+    assert "Texture" in system_content
+    assert "Baseline." in system_content
+
+def test_normalizza_batch_classi_corrette():
+    client = _mock_client(LLM_BATCH_RESPONSE)
+    risultati = normalizza_batch(
+        BATCH_FIXTURE, "Texture", VOCAB_FIXTURE, "Baseline.", client
+    )
+    classi = {r["id"]: r["classe"] for r in risultati}
+    assert classi[1] == "OK"
+    assert classi[2] == "CONFORME"
+    assert classi[3] == "RIFERIMENTO"

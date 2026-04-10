@@ -75,6 +75,23 @@ def prenormalizza_commento(commento: str, vocabolario: dict) -> str:
     return testo.strip()
 
 
+# ── Costanti di formato ────────────────────────────────────────────────────
+
+_USER_MSG_HEADER = (
+    "Normalizza i seguenti commenti di panel sensoriale. "
+    "Per ciascuno restituisci un oggetto JSON su una riga separata:\n"
+    '{"id": N, "classe": "OK|CONFORME|FUORI_ATTRIBUTO|RIFERIMENTO|ILLEGGIBILE", "caption": "..."|null}\n\n'
+    "Classi:\n"
+    "- OK: commento con contenuto specifico → caption normalizzata in linguaggio naturale\n"
+    "- CONFORME: breve/generico che esprime conformità ('ok','buono','nella media') "
+    "→ espandi con la descrizione baseline\n"
+    "- FUORI_ATTRIBUTO: riguarda un attributo diverso → caption null\n"
+    "- RIFERIMENTO: rimanda ad altra scheda ('vedi sopra') → caption null\n"
+    "- ILLEGGIBILE: incomprensibile o corrotto → caption null\n\n"
+    "Commenti:\n"
+)
+
+
 # ── Stub rimanenti ────────────────────────────────────────────────────────
 
 def parse_llm_response(response_text: str, expected_ids: list[int]) -> list[dict]:
@@ -141,8 +158,68 @@ def genera_baseline(attributo: str, vocabolario: dict, client, model: str = MODE
     return response.choices[0].message.content.strip()
 
 
-def normalizza_batch(batch, attributo, vocabolario, baseline, client, model=MODEL_DEFAULT):
-    raise NotImplementedError
+def _build_system_prompt(attributo: str, vocabolario: dict, baseline: str) -> str:
+    """Costruisce il system prompt per la normalizzazione LLM."""
+    desc = ATTRIBUTI_DESCRIZIONI.get(attributo, "")
+    termini = ", ".join(vocabolario.get("termini_tecnici_invariabili", []))
+    cluster_lines = "\n".join(
+        f"  - {c['forma_canonica']}: {', '.join(c.get('varianti', []))}"
+        for c in vocabolario.get("cluster", [])
+    ) or "  (nessuno)"
+    sinonimi_lines = "\n".join(
+        f"  - '{s['da']}' → '{s['a']}'"
+        for s in vocabolario.get("sinonimi_diretti", [])
+    ) or "  (nessuno)"
+
+    return (
+        "[CONTESTO CASEARIO]\n"
+        "Il Grana Trentino è un formaggio DOP a pasta dura stagionato prodotto in Trentino.\n"
+        "Le valutazioni provengono da un panel sensoriale esperto che valuta campioni di formaggio.\n"
+        "Queste caption saranno usate per addestrare modelli encoder-decoder di image captioning.\n"
+        "Il linguaggio deve essere tecnico ma naturale, in italiano standard. "
+        "Lunghezza target: 15-60 parole.\n\n"
+        f"[ATTRIBUTO CORRENTE]\n"
+        f"Attributo: {attributo}\n"
+        f"Definizione: {desc}\n"
+        f"Descrizione baseline (campione conforme): {baseline}\n\n"
+        f"[VOCABOLARIO VALIDATO]\n"
+        f"Termini tecnici: {termini or '(vedi cluster)'}\n"
+        f"Cluster semantici:\n{cluster_lines}\n"
+        f"Normalizzazioni (sinonimi/typo/abbreviazioni):\n{sinonimi_lines}"
+    )
+
+
+def normalizza_batch(
+    batch: list[dict],
+    attributo: str,
+    vocabolario: dict,
+    baseline: str,
+    client,
+    model: str = MODEL_DEFAULT,
+) -> list[dict]:
+    """Normalizza un batch di commenti pre-normalizzati via LLM.
+
+    batch: lista di {id, commento_prenorm}
+    Ritorna lista di {id, classe, caption}.
+    """
+    system_prompt = _build_system_prompt(attributo, vocabolario, baseline)
+    commenti_text = "\n".join(
+        f'{item["id"]}. "{item["commento_prenorm"]}"' for item in batch
+    )
+    user_message = _USER_MSG_HEADER + commenti_text
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_message},
+        ],
+        max_tokens=len(batch) * 80,
+        temperature=0.2,
+    )
+    response_text = response.choices[0].message.content
+    expected_ids = [item["id"] for item in batch]
+    return parse_llm_response(response_text, expected_ids)
 
 
 def genera_report(risultati, attributo, output_path):
