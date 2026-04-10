@@ -138,6 +138,18 @@ def _mock_client(content: str):
     )
     return client
 
+VOCAB_FIXTURE_WITH_TERMS = {
+    **VOCAB_FIXTURE,
+    "termini_tecnici_invariabili": ["compattezza", "granulosità"],
+}
+
+def test_genera_baseline_include_termini_vocabolario():
+    client = _mock_client("Baseline con termini.")
+    genera_baseline("Texture", VOCAB_FIXTURE_WITH_TERMS, client)
+    messages = client.chat.completions.create.call_args.kwargs["messages"]
+    prompt_text = str(messages)
+    assert "compattezza" in prompt_text
+
 def test_genera_baseline_ritorna_stringa():
     client = _mock_client("La texture risulta nella norma, compatta e omogenea.")
     baseline = genera_baseline("Texture", VOCAB_FIXTURE, client)
@@ -152,7 +164,6 @@ def test_genera_baseline_chiama_api_una_volta():
 def test_genera_baseline_passa_attributo_nel_prompt():
     client = _mock_client("Baseline.")
     genera_baseline("Texture", VOCAB_FIXTURE, client)
-    call_kwargs = client.chat.completions.create.call_args
-    messages = call_kwargs[1]["messages"] if "messages" in call_kwargs[1] else call_kwargs[0][0]
+    messages = client.chat.completions.create.call_args.kwargs["messages"]
     prompt_text = str(messages)
     assert "Texture" in prompt_text
