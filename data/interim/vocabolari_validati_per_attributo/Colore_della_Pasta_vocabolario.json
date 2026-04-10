@@ -328,79 +328,58 @@
       "da": "chuaro",
       "a": "chiaro",
       "tipo": "typo"
+    },
+    {
+      "da": "giallo gonfalone centrale",
+      "a": "alone ampio",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "sganciato / sganciato carico",
+      "a": "netto evidente",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "immatricolata",
+      "a": "marchiatura",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "L'amore",
+      "a": "l'alone",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "bocciature",
+      "a": "occhiature",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "ragionevoli scuro",
+      "a": "ragionevolmente scuro",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "concezione",
+      "a": "al centro",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "vasca",
+      "a": "tasca",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "originale",
+      "a": "anomala",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "tranciato",
+      "a": "tagliato",
+      "tipo": "dubbio_risolto"
     }
   ],
   "conversioni_quantitative": [],
-  "dubbi_non_risolti": [
-    {
-      "termine": "giallo gonfalone centrale",
-      "option_a": "alone ampio",
-      "option_b": "giallo intenso",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "sganciato / sganciato carico",
-      "option_a": "netto evidente",
-      "option_b": "scarico",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "immatricolata",
-      "option_a": "incartatura",
-      "option_b": "microocchiatura",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "L'amore",
-      "option_a": "l'alone",
-      "option_b": "il colore",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "bocciature",
-      "option_a": "occhiature",
-      "option_b": "bollature",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "ragionevoli scuro",
-      "option_a": "ragionevolmente scuro",
-      "option_b": "aloni scuri",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "concezione",
-      "option_a": "al centro",
-      "option_b": "a zone",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "vasca",
-      "option_a": "fascia",
-      "option_b": "tasca",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "originale",
-      "option_a": "marginale",
-      "option_b": "anomala",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "tranciato",
-      "option_a": "aranciato",
-      "option_b": "tagliato",
-      "scelta": "",
-      "note": ""
-    }
-  ]
+  "dubbi_non_risolti": []
 }

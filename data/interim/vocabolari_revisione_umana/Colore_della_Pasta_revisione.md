@@ -1,19 +1,36 @@
 ## META
+
 ```yaml
 attributo: "Colore_della_Pasta"
 versione: "1.0"
-stato: "DA_RIVEDERE"
+stato: "APPROVATO"
 note_generali: ""
 ```
 
 ## TERMINI TECNICI INVARIABILI
+
 ```yaml
-termini: [piatto, piatti, scalzo, scalzi, sottocrosta, angoli, frattura, occhiatura, microocchiatura, cristalli, tirosina, stirata]
+termini:
+  [
+    piatto,
+    piatti,
+    scalzo,
+    scalzi,
+    sottocrosta,
+    angoli,
+    frattura,
+    occhiatura,
+    microocchiatura,
+    cristalli,
+    tirosina,
+    stirata,
+  ]
 ```
 
 ## CLUSTER SEMANTICI
 
 ### Cluster: giallo_paglierino
+
 > Frequenza stimata: 253 | Varianti NBLM: giallo, paglierino, dorato, ambrato, gonfalone
 
 ```yaml
@@ -24,6 +41,7 @@ note: "gonfalone nel DUBBIO 1"
 ```
 
 ### Cluster: carico
+
 > Frequenza stimata: 170 | Varianti NBLM: carico, carica, saturo, intenso, marcato, accentuato
 
 ```yaml
@@ -34,6 +52,7 @@ note: ""
 ```
 
 ### Cluster: chiaro
+
 > Frequenza stimata: 157 | Varianti NBLM: chiaro, chiara, scarico
 
 ```yaml
@@ -44,6 +63,7 @@ note: "chuaro/chiarimenti = typo (vedi sinonimi)"
 ```
 
 ### Cluster: omogeneo
+
 > Frequenza stimata: 155 | Varianti NBLM: omogeneo, omogenea, uniforme, bello, positivo
 
 ```yaml
@@ -54,6 +74,7 @@ note: ""
 ```
 
 ### Cluster: alone
+
 > Frequenza stimata: 151 | Varianti NBLM: alone, sganciato
 
 ```yaml
@@ -64,6 +85,7 @@ note: "sganciato nel DUBBIO 2"
 ```
 
 ### Cluster: centrale
+
 > Frequenza stimata: 150 | Varianti NBLM: centro, centrale
 
 ```yaml
@@ -74,16 +96,19 @@ note: ""
 ```
 
 ### Cluster: rosato
+
 > Frequenza stimata: 112 | Varianti NBLM: rosa, rosato, rosata, rossastro, rossiccio, rosso, salmone, salmonato, pompelmo, risata, rodata
 
 ```yaml
 forma_canonica: rosato
-varianti: [rosa, rosata, rossastro, rossiccio, rosso, salmone, salmonato, pompelmo]
+varianti:
+  [rosa, rosata, rossastro, rossiccio, rosso, salmone, salmonato, pompelmo]
 frequenza_stimata: 112
 note: "risata/rodata = typo per rosata (vedi sinonimi)"
 ```
 
 ### Cluster: scuro
+
 > Frequenza stimata: 111 | Varianti NBLM: scuro, scura, marrone, bruno, bruna, imbrunito
 
 ```yaml
@@ -94,6 +119,7 @@ note: ""
 ```
 
 ### Cluster: macchiato
+
 > Frequenza stimata: 91 | Varianti NBLM: macchia, macchie, macchioline, chiazza, chiazze, puntini neri
 
 ```yaml
@@ -104,6 +130,7 @@ note: ""
 ```
 
 ### Cluster: esterno
+
 > Frequenza stimata: 90 | Varianti NBLM: verso, sotto, vicino, bordo, bordi, esterno, lateralmente
 
 ```yaml
@@ -114,6 +141,7 @@ note: ""
 ```
 
 ### Cluster: lieve
+
 > Frequenza stimata: 65 | Varianti NBLM: leggero, lieve, appena, lievemente, sfumatura, sfumato, sfumature
 
 ```yaml
@@ -124,6 +152,7 @@ note: ""
 ```
 
 ### Cluster: disomogeneo
+
 > Frequenza stimata: 58 | Varianti NBLM: non omogeneo, disomogeneo, disomogeneità, eterogeneo, bi color, 3colori, zona, zone, area, aree
 
 ```yaml
@@ -134,16 +163,19 @@ note: "bi color/3colori = espressioni informali per disomogeneità netta"
 ```
 
 ### Cluster: grigio_verdastro
+
 > Frequenza stimata: 46 | Varianti NBLM: grigio, grigiastro, grigetta, verde, verdastro, verdognolo, verdolino
 
 ```yaml
 forma_canonica: grigio-verdastro
-varianti: [grigio, grigiastro, grigetta, verde, verdastro, verdognolo, verdolino]
+varianti:
+  [grigio, grigiastro, grigetta, verde, verdastro, verdognolo, verdolino]
 frequenza_stimata: 46
 note: "vergognose = typo per verdognole (vedi sinonimi)"
 ```
 
 ### Cluster: aranciato_nocciola
+
 > Frequenza stimata: 43 | Varianti NBLM: arancio, aranciato, arancione, nocciola
 
 ```yaml
@@ -154,6 +186,7 @@ note: "arrangiato/tranciato = typo per aranciato (vedi sinonimi)"
 ```
 
 ### Cluster: a_strisce
+
 > Frequenza stimata: 40 | Varianti NBLM: fascia, fasce, striscia, strisce, striature
 
 ```yaml
@@ -164,6 +197,7 @@ note: ""
 ```
 
 ### Cluster: bianco
+
 > Frequenza stimata: 11 | Varianti NBLM: bianco, biancastro, candido, cipria
 
 ```yaml
@@ -174,16 +208,28 @@ note: ""
 ```
 
 ### Cluster: anomalo_difetto
+
 > Frequenza stimata: 18 | Varianti NBLM: ossidato, ossidazione, disidratato, spugna, spugnosa, gessato, bagnato, pastoso, muffa
 
 ```yaml
 forma_canonica: anomalo per difetto strutturale
-varianti: [ossidato, ossidazione, disidratato, spugnosa, gessato, bagnato, pastoso, muffa]
+varianti:
+  [
+    ossidato,
+    ossidazione,
+    disidratato,
+    spugnosa,
+    gessato,
+    bagnato,
+    pastoso,
+    muffa,
+  ]
 frequenza_stimata: 18
 note: ""
 ```
 
 ### Cluster: piatto_piatti
+
 > Frequenza stimata: 100 | Varianti NBLM: piatto, piatti
 
 ```yaml
@@ -194,6 +240,7 @@ note: "termine INVARIABILE"
 ```
 
 ### Cluster: scalzo_scalzi
+
 > Frequenza stimata: 30 | Varianti NBLM: scalzo, scalzi
 
 ```yaml
@@ -204,6 +251,7 @@ note: "termine INVARIABILE"
 ```
 
 ### Cluster: sottocrosta
+
 > Frequenza stimata: 10 | Varianti NBLM: sottocrosta, sottoposta
 
 ```yaml
@@ -214,6 +262,7 @@ note: "termine INVARIABILE. sottoposta = typo (vedi sinonimi)"
 ```
 
 ### Cluster: cristalli_tirosina
+
 > Frequenza stimata: 6 | Varianti NBLM: cristalli, tirosina, hiroshima
 
 ```yaml
@@ -226,6 +275,7 @@ note: "termine INVARIABILE. hiroshima = typo autocorrect per tirosina"
 ## SINONIMI / ABBREVIAZIONI / TYPO
 
 ### Abbreviazione: abb. → abbastanza
+
 ```yaml
 da: "abb."
 a: abbastanza
@@ -234,6 +284,7 @@ note: ""
 ```
 
 ### Abbreviazione: legg. → leggermente
+
 ```yaml
 da: "legg."
 a: leggermente
@@ -242,6 +293,7 @@ note: ""
 ```
 
 ### Abbreviazione: unif → uniforme
+
 ```yaml
 da: unif
 a: uniforme
@@ -250,6 +302,7 @@ note: ""
 ```
 
 ### Abbreviazione: vs → verso
+
 ```yaml
 da: vs
 a: verso
@@ -258,6 +311,7 @@ note: ""
 ```
 
 ### Sinonimo: gonfalone → alone centrale ampio
+
 ```yaml
 da: gonfalone
 a: alone centrale ampio
@@ -266,6 +320,7 @@ note: "probabile dialettale per grosso alone al centro — DUBBIO 1"
 ```
 
 ### Sinonimo: bi color → disomogeneo a fasce
+
 ```yaml
 da: "bi color"
 a: disomogeneo a fasce
@@ -274,6 +329,7 @@ note: ""
 ```
 
 ### Sinonimo: pochetto → leggermente
+
 ```yaml
 da: pochetto
 a: leggermente
@@ -282,6 +338,7 @@ note: "colloquiale"
 ```
 
 ### Typo: hiroshima → tirosina
+
 ```yaml
 da: hiroshima
 a: tirosina
@@ -290,6 +347,7 @@ note: "autocorrect del tablet"
 ```
 
 ### Typo: risata → rosata
+
 ```yaml
 da: risata
 a: rosata
@@ -298,6 +356,7 @@ note: ""
 ```
 
 ### Typo: rodata → rosata
+
 ```yaml
 da: rodata
 a: rosata
@@ -306,6 +365,7 @@ note: ""
 ```
 
 ### Typo: vergognose → verdognole
+
 ```yaml
 da: vergognose
 a: verdognole
@@ -314,6 +374,7 @@ note: "autocorrect ortografico"
 ```
 
 ### Typo: L'amore → l'alone
+
 ```yaml
 da: "L'amore"
 a: "l'alone"
@@ -322,6 +383,7 @@ note: "autocorrect nel commento del 2020"
 ```
 
 ### Typo: acconciatura → occhiatura
+
 ```yaml
 da: acconciatura
 a: occhiatura
@@ -330,6 +392,7 @@ note: ""
 ```
 
 ### Typo: arrangiato → aranciato
+
 ```yaml
 da: arrangiato
 a: aranciato
@@ -338,6 +401,7 @@ note: ""
 ```
 
 ### Typo: tranciato → aranciato
+
 ```yaml
 da: tranciato
 a: aranciato
@@ -346,6 +410,7 @@ note: ""
 ```
 
 ### Typo: sottoposta → sottocrosta
+
 ```yaml
 da: sottoposta
 a: sottocrosta
@@ -354,6 +419,7 @@ note: ""
 ```
 
 ### Typo: chuaro → chiaro
+
 ```yaml
 da: chuaro
 a: chiaro
@@ -364,126 +430,137 @@ note: ""
 ## DUBBI — RICHIEDE DECISIONE UMANA
 
 ### DUBBIO: "giallo gonfalone centrale"
+
 > Contesto: Q_09, seduta 3/2018 — "Giallo gonfalone centrale".
 > Opzione A → `alone ampio` (grande macchia visibile, gonfalone come bandiera)
 > Opzione B → `giallo intenso` (tonalità giallo acceso come stendardi locali)
 
 ```yaml
-scelta: ""
+scelta: "A"
 option_a: alone ampio
 option_b: giallo intenso
 note: ""
 ```
 
 ### DUBBIO: "sganciato / sganciato carico"
+
 > Contesto: più panelisti — "alone sganciato", "Sganciato carico". Termine gergale con accezioni opposte.
 > Opzione A → `netto / evidente` (difetto che stacca visivamente — sganciato carico esclude sbiadito)
 > Opzione B → `scarico` (colore che ha perso saturazione)
 
 ```yaml
-scelta: ""
+scelta: "A"
 option_a: netto evidente
 option_b: scarico
 note: ""
 ```
 
 ### DUBBIO: "immatricolata"
+
 > Contesto: TG_28, 2020 — "Immatricolata conferisce quasi un colore rosato, ma solo pochi cm dopo la crosta".
-> Opzione A → `incartatura` / marchiatura (placca/fascetta che trasferisce colore alla pasta)
+> Opzione A → `marchiatura` / marchiatura (placca/fascetta che trasferisce colore alla pasta)
 > Opzione B → `microocchiatura`
 
 ```yaml
-scelta: ""
-option_a: incartatura
+scelta: "A"
+option_a: marchiatura
 option_b: microocchiatura
 note: ""
 ```
 
 ### DUBBIO: "L'amore"
+
 > Contesto: TG_28, 2020 — "L'amore è spostato verso uno dei due piatti".
 > Opzione A → `l'alone` (amore≈alone su tastiera — alone spostato verso piatto è frase tipica)
 > Opzione B → `il colore`
 
 ```yaml
-scelta: ""
+scelta: "A"
 option_a: l'alone
 option_b: il colore
 note: ""
 ```
 
 ### DUBBIO: "bocciature"
+
 > Contesto: TG_19, 2018 — "alone centrale in sfumatura risata in corrispondenza delle bocciature". Termine non caseario.
 > Opzione A → `occhiature` (difetto strutturale attorno cui si concentra colore anomalo)
 > Opzione B → `bollature` (irregolarità sulla crosta)
 
 ```yaml
-scelta: ""
+scelta: "A"
 option_a: occhiature
 option_b: bollature
 note: ""
 ```
 
 ### DUBBIO: "ragionevoli scuro"
+
 > Contesto: Q_09, 2018 — "Molto carico grigiastro con ragionevoli scuro e chiazza allungata rodata...".
 > Opzione A → `ragionevolmente scuro` (modificatore di intensità)
 > Opzione B → `aloni scuri`
 
 ```yaml
-scelta: ""
+scelta: "A"
 option_a: ragionevolmente scuro
 option_b: aloni scuri
 note: ""
 ```
 
 ### DUBBIO: "concezione"
+
 > Contesto: TG_04, seduta 20/2021 — "Più concezione sembrano due zone di colore". Fuori contesto.
 > Opzione A → `al centro` (autocorrect per centrale)
 > Opzione B → `a zone` o `come percezione`
 
 ```yaml
-scelta: ""
+scelta: "A"
 option_a: al centro
 option_b: a zone
 note: ""
 ```
 
 ### DUBBIO: "vasca"
+
 > Contesto: TG_19, 2018 — "La vasca della frattura tende al rosa arancio, più chiaro sotto un piatto".
 > Opzione A → `fascia` (striscia di colore attorno alla frattura)
 > Opzione B → `tasca` (fessura/strappo nella struttura)
 
 ```yaml
-scelta: ""
+scelta: "B"
 option_a: fascia
 option_b: tasca
 note: ""
 ```
 
 ### DUBBIO: "originale"
+
 > Contesto: TG_15, 2018 — "Rosa e originale zona chiara". Aggettivo insolito.
 > Opzione A → `marginale` (zona periferica vicino crosta — simile ortograficamente)
 > Opzione B → `anomala` / insolita
 
 ```yaml
-scelta: ""
+scelta: "B"
 option_a: marginale
 option_b: anomala
 note: ""
 ```
 
 ### DUBBIO: "tranciato"
+
 > Contesto: Q_09 — "Tranciato con alone". Taglio o colore?
 > Opzione A → `aranciato` (typo diffuso anche come arrangiato)
 > Opzione B → `tagliato` (valutazione fetta appena tranciata)
 
 ```yaml
-scelta: ""
+scelta: "B"
 option_a: aranciato
 option_b: tagliato
 note: ""
 ```
 
 ## NOTE LIBERE
+
 ```yaml
 note: ""
 ```

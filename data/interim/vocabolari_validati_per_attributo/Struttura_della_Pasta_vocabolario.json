@@ -314,86 +314,63 @@
       "da": "stririta",
       "a": "stirata",
       "tipo": "typo"
+    },
+    {
+      "da": "ideologizzata",
+      "a": "occhiatura",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "stamattina",
+      "a": "stirata",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "degustazioni",
+      "a": "fessurazioni",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "discrezionalità",
+      "a": "disomogeneità",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "perla di Roma",
+      "a": "perla rotonda",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "Trans evidenti te",
+      "a": "tracce evidenti",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "rigeneratrice",
+      "a": "rigatura",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "realizzata",
+      "a": "sfilacciata",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "amore",
+      "a": "alcune",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "congelata",
+      "a": "compatta",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "versata",
+      "a": "gessata",
+      "tipo": "dubbio_risolto"
     }
   ],
   "conversioni_quantitative": [],
-  "dubbi_non_risolti": [
-    {
-      "termine": "ideologizzata",
-      "option_a": "occhiatura",
-      "option_b": "spugnatura",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "stamattina",
-      "option_a": "stirata",
-      "option_b": "sfogliata",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "degustazioni",
-      "option_a": "fessurazioni",
-      "option_b": "sfoglie",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "discrezionalità",
-      "option_a": "direzionalità",
-      "option_b": "disomogeneità",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "perla di Roma",
-      "option_a": "perla rotonda",
-      "option_b": "perla da 5mm",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "Trans evidenti te",
-      "option_a": "tracce evidenti",
-      "option_b": "taglio evidente",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "rigeneratrice",
-      "option_a": "rigatura",
-      "option_b": "ruvidità",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "realizzata",
-      "option_a": "ragnatela",
-      "option_b": "sfilacciata",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "amore",
-      "option_a": "ampie",
-      "option_b": "alcune",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "congelata",
-      "option_a": "compatta",
-      "option_b": "conglomerata",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "versata",
-      "option_a": "gessata",
-      "option_b": "fessurata",
-      "scelta": "",
-      "note": ""
-    }
-  ]
+  "dubbi_non_risolti": []
 }

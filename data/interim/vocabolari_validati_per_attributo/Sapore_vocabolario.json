@@ -284,65 +284,48 @@
       "da": "ecquilibrato",
       "a": "equilibrato",
       "tipo": "typo"
+    },
+    {
+      "da": "brodo",
+      "a": "umami",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "dolce come i Bresso!",
+      "a": "dolce",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "leggero umani respiro...",
+      "a": "umami retronasale",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "polvere",
+      "a": "astringente",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "ddpiccante",
+      "a": "piccante",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "unto / grasso",
+      "a": "lattico",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "mentolato!",
+      "a": "off-flavor balsamico",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "sa di vecchio / crosta di formaggio",
+      "a": "tostato",
+      "tipo": "dubbio_risolto"
     }
   ],
   "conversioni_quantitative": [],
-  "dubbi_non_risolti": [
-    {
-      "termine": "brodo",
-      "option_a": "umami",
-      "option_b": "off-flavor",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "dolce come i Bresso!",
-      "option_a": "dolce",
-      "option_b": "atipico",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "leggero umani respiro...",
-      "option_a": "umami retronasale",
-      "option_b": "leggero umami",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "polvere",
-      "option_a": "off-flavor",
-      "option_b": "astringente",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "ddpiccante",
-      "option_a": "molto piccante",
-      "option_b": "piccante",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "unto / grasso",
-      "option_a": "lattico",
-      "option_b": "struttura texture",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "mentolato!",
-      "option_a": "off-flavor balsamico",
-      "option_b": "dato dubbio",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "sa di vecchio / crosta di formaggio",
-      "option_a": "tostato",
-      "option_b": "sovramaturo",
-      "scelta": "",
-      "note": ""
-    }
-  ]
+  "dubbi_non_risolti": []
 }

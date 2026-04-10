@@ -288,72 +288,53 @@
       "da": "rfiabile",
       "a": "friabile",
       "tipo": "typo"
+    },
+    {
+      "da": "alleabile",
+      "a": "malleabile",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "ingrossa un pochetto",
+      "a": "impasta",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "gestire mediocre",
+      "a": "texture mediocre",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "perle",
+      "a": "perle",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "patatoso",
+      "a": "pastoso",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "faticoso?",
+      "a": "duro",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "immagiabile",
+      "a": "immasticabile",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "(1)",
+      "a": "intensità assente",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "farino",
+      "a": "farinoso",
+      "tipo": "dubbio_risolto"
     }
   ],
   "conversioni_quantitative": [],
-  "dubbi_non_risolti": [
-    {
-      "termine": "alleabile",
-      "option_a": "malleabile",
-      "option_b": "allappante",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "ingrossa un pochetto",
-      "option_a": "ingozza",
-      "option_b": "impasta",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "gestire mediocre",
-      "option_a": "texture mediocre",
-      "option_b": "difficile da masticare",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "perle",
-      "option_a": "cristalli",
-      "option_b": "perle",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "patatoso",
-      "option_a": "pastoso",
-      "option_b": "farinoso",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "faticoso?",
-      "option_a": "duro",
-      "option_b": "astringente",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "immagiabile",
-      "option_a": "immangiabile",
-      "option_b": "immasticabile",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "(1)",
-      "option_a": "intensità assente",
-      "option_b": "prima porzione",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "farino",
-      "option_a": "farinoso",
-      "option_b": "sensazione di farina",
-      "scelta": "",
-      "note": ""
-    }
-  ]
+  "dubbi_non_risolti": []
 }

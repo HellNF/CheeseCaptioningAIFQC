@@ -115,9 +115,9 @@
     },
     {
       "nome_cluster": "animale",
-      "forma_canonica": "animale",
+      "forma_canonica": "stalla",
       "varianti": [
-        "stalla",
+        "animale",
         "stallatico",
         "vacca",
         "letame",
@@ -199,7 +199,7 @@
     },
     {
       "nome_cluster": "difetto_chimico",
-      "forma_canonica": "difetto chimico",
+      "forma_canonica": "chimico",
       "varianti": [
         "sapone",
         "saponoso",
@@ -306,72 +306,53 @@
       "da": "fermantato",
       "a": "fermentato",
       "tipo": "typo"
+    },
+    {
+      "da": "sangue,,,",
+      "a": "metallico",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "armadio della nonna",
+      "a": "polvere",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "pratomagno",
+      "a": "fieno",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "vinavil",
+      "a": "difetto chimico",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "bitter",
+      "a": "erbe amare",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "zafferano",
+      "a": "atipico",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "acqua di fogna",
+      "a": "putrido",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "vomitevole",
+      "a": "putrido",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "formaggio con presunta struttura stirata",
+      "a": "fuori contesto",
+      "tipo": "dubbio_risolto"
     }
   ],
   "conversioni_quantitative": [],
-  "dubbi_non_risolti": [
-    {
-      "termine": "sangue,,,",
-      "option_a": "metallico",
-      "option_b": "animale",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "armadio della nonna",
-      "option_a": "ossidato",
-      "option_b": "polvere",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "pratomagno",
-      "option_a": "fieno",
-      "option_b": "brodo",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "vinavil",
-      "option_a": "difetto chimico",
-      "option_b": "fermentato",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "bitter",
-      "option_a": "erbe amare",
-      "option_b": "errore di compilazione",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "zafferano",
-      "option_a": "fieno",
-      "option_b": "atipico",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "acqua di fogna",
-      "option_a": "putrido",
-      "option_b": "animale",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "vomitevole",
-      "option_a": "fermentato",
-      "option_b": "putrido",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "formaggio con presunta struttura stirata",
-      "option_a": "lasciare intatto",
-      "option_b": "fuori contesto",
-      "scelta": "",
-      "note": ""
-    }
-  ]
+  "dubbi_non_risolti": []
 }

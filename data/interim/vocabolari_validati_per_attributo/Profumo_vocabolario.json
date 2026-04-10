@@ -323,79 +323,58 @@
       "da": "sooidato",
       "a": "ossidato",
       "tipo": "typo"
+    },
+    {
+      "da": "odore chimico tipo colpa",
+      "a": "colla",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "tanta nanna e latte",
+      "a": "panna",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "congetto, lieve nota ossidata e pungente",
+      "a": "confetto",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "nostrano come difetto",
+      "a": "nostrano atipico",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "cuoio vs stalla/letame",
+      "a": "animale stalla",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "grasso di prosciutto crudo / salame invecchiato",
+      "a": "brodo di carne",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "formaggio fritto",
+      "a": "chimico bruciato",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "leggermente propionico",
+      "a": "altro formaggio",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "crauti / salamoia crauti",
+      "a": "fermentato",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "balsamico liquirizia / erbe balsamiche",
+      "a": "cluster balsamico separato",
+      "tipo": "dubbio_risolto"
     }
   ],
   "conversioni_quantitative": [],
-  "dubbi_non_risolti": [
-    {
-      "termine": "odore chimico tipo colpa",
-      "option_a": "colla",
-      "option_b": "incomprensibile",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "tanta nanna e latte",
-      "option_a": "panna",
-      "option_b": "ignorare",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "congetto, lieve nota ossidata e pungente",
-      "option_a": "confetto",
-      "option_b": "cotto",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "nostrano come difetto",
-      "option_a": "nostrano",
-      "option_b": "nostrano atipico",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "cuoio vs stalla/letame",
-      "option_a": "animale stalla",
-      "option_b": "animale evoluto separato",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "grasso di prosciutto crudo / salame invecchiato",
-      "option_a": "brodo di carne",
-      "option_b": "ossidato",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "formaggio fritto",
-      "option_a": "latte cotto",
-      "option_b": "chimico bruciato",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "leggermente propionico",
-      "option_a": "altro formaggio",
-      "option_b": "chimico fermentato",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "crauti / salamoia crauti",
-      "option_a": "brodo vegetale",
-      "option_b": "fermentato",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "balsamico liquirizia / erbe balsamiche",
-      "option_a": "separare erbe erbaceo liquirizia caramello",
-      "option_b": "cluster balsamico separato",
-      "scelta": "",
-      "note": ""
-    }
-  ]
+  "dubbi_non_risolti": []
 }

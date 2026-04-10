@@ -230,6 +230,41 @@
       "da": "N9n",
       "a": "non",
       "tipo": "typo"
+    },
+    {
+      "da": "Christine sugli scalzi",
+      "a": "crosta sugli scalzi",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "colore sottoscritta sganciato / colore tranciato sottocrosta",
+      "a": "aranciato",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "carolata",
+      "a": "screpolata",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "spessore dispari",
+      "a": "irregolare",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "crostone",
+      "a": "molto spessa",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "sotto ac1 / media 1",
+      "a": "scala interna",
+      "tipo": "dubbio_risolto"
+    },
+    {
+      "da": "rosure / tare",
+      "a": "difetto della crosta",
+      "tipo": "dubbio_risolto"
     }
   ],
   "conversioni_quantitative": [
@@ -258,55 +293,5 @@
       "forma_canonica": "molto spessa"
     }
   ],
-  "dubbi_non_risolti": [
-    {
-      "termine": "Christine sugli scalzi",
-      "option_a": "crosta sugli scalzi",
-      "option_b": "crosticine sugli scalzi",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "colore sottoscritta sganciato / colore tranciato sottocrosta",
-      "option_a": "aranciato",
-      "option_b": "sfumato",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "carolata",
-      "option_a": "difetto della crosta",
-      "option_b": "screpolata",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "spessore dispari",
-      "option_a": "irregolare",
-      "option_b": "asimmetria totale",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "crostone",
-      "option_a": "molto spessa",
-      "option_b": "crostone",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "sotto ac1 / media 1",
-      "option_a": "sotto 1 cm",
-      "option_b": "scala interna",
-      "scelta": "",
-      "note": ""
-    },
-    {
-      "termine": "rosure / tare",
-      "option_a": "difetto della crosta",
-      "option_b": "differenziare biologico meccanico",
-      "scelta": "",
-      "note": ""
-    }
-  ]
+  "dubbi_non_risolti": []
 }
