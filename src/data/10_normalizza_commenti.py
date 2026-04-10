@@ -18,6 +18,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parents[2]))
 
 import openai
+import pandas as pd
 
 from src.data.normalizza_commenti import (
     ATTRIBUTI,
@@ -63,9 +64,12 @@ def _normalizza_con_retry(
         try:
             return normalizza_batch(batch, attributo, vocabolario, baseline, client, model)
         except Exception as exc:
-            attesa = 2 ** tentativo
-            logger.warning(f"Errore batch (tentativo {tentativo+1}/{max_retry}): {exc}. Attendo {attesa}s.")
-            time.sleep(attesa)
+            if tentativo < max_retry - 1:
+                attesa = 2 ** tentativo
+                logger.warning(f"Errore batch (tentativo {tentativo+1}/{max_retry}): {exc}. Attendo {attesa}s.")
+                time.sleep(attesa)
+            else:
+                logger.warning(f"Errore batch (tentativo {tentativo+1}/{max_retry}): {exc}.")
     logger.error(f"Batch fallito dopo {max_retry} tentativi. Marcato come ERRORE.")
     return [{"id": item["id"], "classe": "ERRORE", "caption": None} for item in batch]
 
@@ -90,7 +94,6 @@ def _carica_o_genera_baseline(attributo: str, vocabolario: dict, client, model: 
 # ── Salvataggio CSV ───────────────────────────────────────────────────────────
 
 def _salva_csv(risultati: list[dict], attributo: str) -> None:
-    import pandas as pd
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     path = OUTPUT_DIR / f"{attributo.replace(' ', '_')}_captions.csv"
     df = pd.DataFrame(risultati)
