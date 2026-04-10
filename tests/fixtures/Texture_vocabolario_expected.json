@@ -1,0 +1,35 @@
+{
+  "attributo": "Texture",
+  "versione": "1.0",
+  "validato_da": "",
+  "note_generali": "",
+  "termini_tecnici_invariabili": [
+    "cristalli", "tirosina", "solubile", "solubilità", "friabile", "friabilità",
+    "compatto", "compattezza", "cedevole", "grana", "nostrano", "stirata",
+    "scalzo", "scalzi", "piatti", "piatto", "sottocrosta", "angoli", "spigoli",
+    "microocchiatura", "occhiatura", "insilato"
+  ],
+  "cluster": [
+    {
+      "nome_cluster": "cristalli_tirosina",
+      "forma_canonica": "cristalli",
+      "varianti": ["microcristalli", "tirosina", "perle", "gnocchetti duri", "scagliette", "schioccante", "scricchiola"],
+      "frequenza_stimata": 315
+    },
+    {
+      "nome_cluster": "morbidezza",
+      "forma_canonica": "morbido",
+      "varianti": ["molle", "tenero", "molliccio"],
+      "frequenza_stimata": 152
+    }
+  ],
+  "sinonimi_diretti": [
+    {"da": "sol.", "a": "solubile", "tipo": "abbreviazione"},
+    {"da": "granuolo", "a": "granuloso", "tipo": "typo"},
+    {"da": "alleabile", "a": "malleabile", "tipo": "dubbio_risolto"}
+  ],
+  "conversioni_quantitative": [],
+  "dubbi_non_risolti": [
+    {"termine": "patatoso", "option_a": "pastoso", "option_b": "farinoso", "scelta": "", "note": ""}
+  ]
+}
