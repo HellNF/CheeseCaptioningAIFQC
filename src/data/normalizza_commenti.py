@@ -2,6 +2,7 @@
 import json
 import re
 import logging
+import pandas as pd
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
@@ -290,3 +291,49 @@ def carica_vocabolario(attributo: str, vocab_dir: Path) -> dict:
         raise FileNotFoundError(f"Vocabolario non trovato: {path}")
     with open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+def carica_commenti(attributo: str, csv_dir: Path) -> list[dict]:
+    """Carica e unisce tutti i CSV raw per l'attributo. Filtra righe vuote.
+
+    Ritorna lista di {id, anno, prodotto, panelista, commento_raw}.
+    """
+    csv_dir = Path(csv_dir)
+    pattern_match = attributo.lower().replace(" ", "").replace("_", "")
+
+    file_trovati = [
+        f for f in csv_dir.glob("*.csv")
+        if pattern_match in f.stem.lower().replace(" ", "").replace("_", "")
+    ]
+    if not file_trovati:
+        return []
+
+    righe = []
+    id_counter = 1
+    for csv_path in sorted(file_trovati):
+        anno_match = re.search(r"(20\d{2})", csv_path.stem)
+        anno = anno_match.group(1) if anno_match else "unknown"
+        try:
+            df = pd.read_csv(csv_path, encoding="utf-8", on_bad_lines="skip")
+        except Exception:
+            df = pd.read_csv(csv_path, encoding="latin-1", on_bad_lines="skip")
+
+        if "Commenti" not in df.columns:
+            continue
+        df = df.dropna(subset=["Commenti"])
+        df = df[df["Commenti"].astype(str).str.strip() != ""]
+
+        col_prodotto = "Prodotto" if "Prodotto" in df.columns else ("Prod" if "Prod" in df.columns else None)
+        col_panelista = "Panelista" if "Panelista" in df.columns else ("Sogg" if "Sogg" in df.columns else None)
+
+        for _, row in df.iterrows():
+            righe.append({
+                "id": id_counter,
+                "anno": anno,
+                "prodotto": str(row[col_prodotto]) if col_prodotto else "",
+                "panelista": str(row[col_panelista]) if col_panelista else "",
+                "commento_raw": str(row["Commenti"]).strip(),
+            })
+            id_counter += 1
+
+    return righe

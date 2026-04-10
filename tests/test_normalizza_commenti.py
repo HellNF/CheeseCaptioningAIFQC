@@ -8,6 +8,7 @@ from src.data.normalizza_commenti import (
     ATTRIBUTI,
     ATTRIBUTI_DESCRIZIONI,
     carica_vocabolario,
+    carica_commenti,
     prenormalizza_commento,
     parse_llm_response,
     genera_baseline,
@@ -245,3 +246,29 @@ def test_genera_report_alert_se_scartati_elevati(tmp_path):
     genera_report(molti_scartati, "Aroma", tmp_path / "report.md")
     content = (tmp_path / "report.md").read_text(encoding="utf-8")
     assert "ATTENZIONE" in content or "attenzione" in content.lower()
+
+
+# ── carica_commenti ────────────────────────────────────────────────────────
+
+def test_carica_commenti_filtra_vuoti(tmp_path):
+    import shutil
+    shutil.copy(FIXTURES / "Texture_commenti_fixture.csv",
+                tmp_path / "Commenti_2019_Texture.csv")
+    commenti = carica_commenti("Texture", tmp_path)
+    assert len(commenti) == 4  # 5 righe dati - 1 vuota = 4 non vuote (incluso "vedi sopra")
+    testi = [c["commento_raw"] for c in commenti]
+    assert "" not in testi
+
+def test_carica_commenti_include_metadati(tmp_path):
+    import shutil
+    shutil.copy(FIXTURES / "Texture_commenti_fixture.csv",
+                tmp_path / "Commenti_2019_Texture.csv")
+    commenti = carica_commenti("Texture", tmp_path)
+    primo = commenti[0]
+    assert "commento_raw" in primo
+    assert "prodotto" in primo
+    assert "anno" in primo
+
+def test_carica_commenti_nessun_file(tmp_path):
+    commenti = carica_commenti("Texture", tmp_path)
+    assert commenti == []
