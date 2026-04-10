@@ -44,3 +44,46 @@ def test_carica_vocabolario_nome_con_spazi():
 def test_carica_vocabolario_file_mancante(tmp_path):
     with pytest.raises(FileNotFoundError):
         carica_vocabolario("Attributo_Inesistente", tmp_path)
+
+
+# ── prenormalizza_commento ─────────────────────────────────────────────────
+
+VOCAB_FIXTURE = {
+    "attributo": "Texture",
+    "sinonimi_diretti": [
+        {"da": "gran.", "a": "grana", "tipo": "abbreviazione"},
+        {"da": "compata", "a": "compatta", "tipo": "typo"},
+        {"da": "elasticita", "a": "elasticità", "tipo": "typo"},
+    ],
+    "conversioni_quantitative": [
+        {"da": "7/10", "a": "nella norma"},
+        {"da": "9/10", "a": "elevata"},
+    ],
+    "cluster": [],
+    "termini_tecnici_invariabili": [],
+}
+
+def test_prenorm_applica_sinonimo_abbreviazione():
+    risultato = prenormalizza_commento("pasta con gran. tipica", VOCAB_FIXTURE)
+    assert "grana" in risultato
+    assert "gran." not in risultato
+
+def test_prenorm_corregge_typo():
+    risultato = prenormalizza_commento("pasta compata e omogenea", VOCAB_FIXTURE)
+    assert "compatta" in risultato
+    assert "compata" not in risultato
+
+def test_prenorm_case_insensitive():
+    risultato = prenormalizza_commento("COMPATA fine", VOCAB_FIXTURE)
+    assert "compatta" in risultato.lower()
+
+def test_prenorm_applica_conversione_quantitativa():
+    risultato = prenormalizza_commento("elasticita 7/10", VOCAB_FIXTURE)
+    assert "nella norma" in risultato
+    assert "7/10" not in risultato
+
+def test_prenorm_commento_vuoto():
+    assert prenormalizza_commento("", VOCAB_FIXTURE) == ""
+
+def test_prenorm_nessuna_regola_applicabile():
+    assert prenormalizza_commento("buona pasta", VOCAB_FIXTURE) == "buona pasta"

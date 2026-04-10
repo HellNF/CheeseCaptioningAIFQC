@@ -59,8 +59,20 @@ CLASSI_VALIDE = {"OK", "CONFORME", "FUORI_ATTRIBUTO", "RIFERIMENTO", "ILLEGGIBIL
 
 # ── Stub definitions ──────────────────────────────────────────────────────
 
-def prenormalizza_commento(commento, vocabolario):
-    raise NotImplementedError
+def prenormalizza_commento(commento: str, vocabolario: dict) -> str:
+    """Applica sostituzioni da vocabolario (sinonimi, typo, abbreviazioni,
+    conversioni quantitative) al testo grezzo.
+
+    Ritorna il testo pre-normalizzato.
+    """
+    testo = commento
+    for rule in vocabolario.get("sinonimi_diretti", []):
+        pattern = re.compile(re.escape(rule["da"]), re.IGNORECASE)
+        testo = pattern.sub(rule["a"], testo)
+    for conv in vocabolario.get("conversioni_quantitative", []):
+        pattern = re.compile(re.escape(conv["da"]), re.IGNORECASE)
+        testo = pattern.sub(conv["a"], testo)
+    return testo.strip()
 
 def parse_llm_response(response_text, expected_ids):
     raise NotImplementedError
