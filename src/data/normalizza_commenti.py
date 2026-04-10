@@ -57,7 +57,7 @@ ATTRIBUTI_DESCRIZIONI = {
 CLASSI_VALIDE = {"OK", "CONFORME", "FUORI_ATTRIBUTO", "RIFERIMENTO", "ILLEGGIBILE"}
 
 
-# ── Stub definitions ──────────────────────────────────────────────────────
+# ── Implementazioni ───────────────────────────────────────────────────────
 
 def prenormalizza_commento(commento: str, vocabolario: dict) -> str:
     """Applica sostituzioni da vocabolario (sinonimi, typo, abbreviazioni,
@@ -74,14 +74,20 @@ def prenormalizza_commento(commento: str, vocabolario: dict) -> str:
         testo = pattern.sub(conv["a"], testo)
     return testo.strip()
 
+
+# ── Stub rimanenti ────────────────────────────────────────────────────────
+
 def parse_llm_response(response_text, expected_ids):
     raise NotImplementedError
+
 
 def genera_baseline(attributo, vocabolario, client, model=MODEL_DEFAULT):
     raise NotImplementedError
 
+
 def normalizza_batch(batch, attributo, vocabolario, baseline, client, model=MODEL_DEFAULT):
     raise NotImplementedError
+
 
 def genera_report(risultati, attributo, output_path):
     raise NotImplementedError
