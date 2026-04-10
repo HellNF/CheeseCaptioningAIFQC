@@ -315,7 +315,7 @@ def carica_commenti(attributo: str, csv_dir: Path) -> list[dict]:
         anno = anno_match.group(1) if anno_match else "unknown"
         try:
             df = pd.read_csv(csv_path, encoding="utf-8", on_bad_lines="skip")
-        except Exception:
+        except UnicodeDecodeError:
             df = pd.read_csv(csv_path, encoding="latin-1", on_bad_lines="skip")
 
         if "Commenti" not in df.columns:

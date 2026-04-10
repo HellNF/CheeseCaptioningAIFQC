@@ -268,6 +268,10 @@ def test_carica_commenti_include_metadati(tmp_path):
     assert "commento_raw" in primo
     assert "prodotto" in primo
     assert "anno" in primo
+    assert "panelista" in primo
+    assert "id" in primo
+    assert primo["anno"] == "2019"
+    assert primo["panelista"] == "Q_02"
 
 def test_carica_commenti_nessun_file(tmp_path):
     commenti = carica_commenti("Texture", tmp_path)
