@@ -276,3 +276,51 @@ def test_carica_commenti_include_metadati(tmp_path):
 def test_carica_commenti_nessun_file(tmp_path):
     commenti = carica_commenti("Texture", tmp_path)
     assert commenti == []
+
+
+# ── End-to-end integration ─────────────────────────────────────────────────
+
+import shutil
+
+def test_pipeline_completa_da_fixture(tmp_path):
+    """Testa la pipeline end-to-end con CSV fixture e API mock."""
+    # Setup: copia fixture CSV nella tmp_path
+    csv_dir = tmp_path / "csv"
+    csv_dir.mkdir()
+    shutil.copy(FIXTURES / "Texture_commenti_fixture.csv",
+                csv_dir / "Commenti_2019_Texture.csv")
+
+    vocab = carica_vocabolario("Texture", VOCAB_DIR)
+
+    # Carica commenti
+    commenti = carica_commenti("Texture", csv_dir)
+    assert len(commenti) == 4  # 5 righe dati - 1 vuota = 4
+
+    # Pre-normalizzazione
+    for c in commenti:
+        c["commento_prenorm"] = prenormalizza_commento(c["commento_raw"], vocab)
+    assert all("commento_prenorm" in c for c in commenti)
+
+    # Mock LLM response
+    llm_response = "\n".join([
+        f'{{"id": {c["id"]}, "classe": "OK", "caption": "Caption per commento {c["id"]}."}}'
+        for c in commenti
+    ])
+    client = _mock_client(llm_response)
+    baseline = "La texture risulta nella norma."
+
+    # Normalizza batch
+    batch_input = [{"id": c["id"], "commento_prenorm": c["commento_prenorm"]} for c in commenti]
+    risultati = normalizza_batch(batch_input, "Texture", vocab, baseline, client)
+    assert len(risultati) == 4
+    assert all(r["classe"] == "OK" for r in risultati)
+
+    # Report
+    report_path = tmp_path / "report.md"
+    for r, c in zip(risultati, commenti):
+        r["commento_raw"] = c["commento_raw"]
+    genera_report(risultati, "Texture", report_path)
+    assert report_path.exists()
+    content = report_path.read_text(encoding="utf-8")
+    assert "Texture" in content
+    assert "4" in content
