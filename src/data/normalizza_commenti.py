@@ -92,7 +92,7 @@ _USER_MSG_HEADER = (
 )
 
 
-# ── Stub rimanenti ────────────────────────────────────────────────────────
+# ── Implementazioni ───────────────────────────────────────────────────────
 
 def parse_llm_response(response_text: str, expected_ids: list[int]) -> list[dict]:
     """Parsa la risposta LLM in formato jsonlines.
@@ -202,6 +202,8 @@ def normalizza_batch(
     batch: lista di {id, commento_prenorm}
     Ritorna lista di {id, classe, caption}.
     """
+    if not batch:
+        return []
     system_prompt = _build_system_prompt(attributo, vocabolario, baseline)
     commenti_text = "\n".join(
         f'{item["id"]}. "{item["commento_prenorm"]}"' for item in batch

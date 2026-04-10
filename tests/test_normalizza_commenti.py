@@ -197,11 +197,12 @@ def test_normalizza_batch_chiama_api_una_volta():
 
 def test_normalizza_batch_include_vocabolario_nel_prompt():
     client = _mock_client(LLM_BATCH_RESPONSE)
-    normalizza_batch(BATCH_FIXTURE, "Texture", VOCAB_FIXTURE, "Baseline.", client)
+    normalizza_batch(BATCH_FIXTURE, "Texture", VOCAB_FIXTURE_WITH_TERMS, "Baseline.", client)
     messages = client.chat.completions.create.call_args.kwargs["messages"]
     system_content = str(messages)
     assert "Texture" in system_content
     assert "Baseline." in system_content
+    assert "compattezza" in system_content  # vocabulary term from VOCAB_FIXTURE_WITH_TERMS
 
 def test_normalizza_batch_classi_corrette():
     client = _mock_client(LLM_BATCH_RESPONSE)
