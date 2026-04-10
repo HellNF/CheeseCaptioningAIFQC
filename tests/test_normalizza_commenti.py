@@ -89,6 +89,20 @@ def test_prenorm_commento_vuoto():
 def test_prenorm_nessuna_regola_applicabile():
     assert prenormalizza_commento("buona pasta", VOCAB_FIXTURE) == "buona pasta"
 
+def test_prenorm_applica_pattern_regex():
+    vocab_con_regex = {
+        "attributo": "Spessore della Crosta",
+        "sinonimi_diretti": [],
+        "conversioni_quantitative": [
+            {"pattern_regex": r"\d+\s*mm", "forma_canonica": "spessore misurato", "range_min_mm": 0, "range_max_mm": 999},
+        ],
+        "cluster": [],
+        "termini_tecnici_invariabili": [],
+    }
+    risultato = prenormalizza_commento("crosta di 15mm omogenea", vocab_con_regex)
+    assert "spessore misurato" in risultato
+    assert "15mm" not in risultato
+
 
 # ── parse_llm_response ─────────────────────────────────────────────────────
 

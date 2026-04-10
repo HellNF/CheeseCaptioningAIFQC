@@ -71,8 +71,12 @@ def prenormalizza_commento(commento: str, vocabolario: dict) -> str:
         pattern = re.compile(re.escape(rule["da"]), re.IGNORECASE)
         testo = pattern.sub(rule["a"], testo)
     for conv in vocabolario.get("conversioni_quantitative", []):
-        pattern = re.compile(re.escape(conv["da"]), re.IGNORECASE)
-        testo = pattern.sub(conv["a"], testo)
+        if "da" in conv:
+            pattern = re.compile(re.escape(conv["da"]), re.IGNORECASE)
+            testo = pattern.sub(conv["a"], testo)
+        elif "pattern_regex" in conv:
+            pattern = re.compile(conv["pattern_regex"], re.IGNORECASE)
+            testo = pattern.sub(conv["forma_canonica"], testo)
     return testo.strip()
 
 
