@@ -609,7 +609,7 @@ def run_nblm(args: List[str], timeout: int = 90, use_json: bool = True) -> Dict:
     if use_json and "--json" not in args:
         cmd.append("--json")
 
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, encoding="utf-8")
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, encoding="utf-8", errors="replace")
 
     if result.returncode not in (0, 2):  # 2 = timeout wait (accettabile)
         raise RuntimeError(
@@ -644,7 +644,8 @@ def crea_notebook(attributo: str) -> str:
     titolo = f"Grana Trentino — {attributo}"
     logger.info(f"  Creazione notebook: '{titolo}'")
     result = run_nblm(["create", titolo])
-    nb_id = result["id"]
+    # L'output ha wrapper: {"notebook": {"id": "...", ...}} oppure {"id": "..."}
+    nb_id = result.get("id") or result.get("notebook", {}).get("id")
     logger.info(f"  Notebook ID: {nb_id}")
     return nb_id
 
@@ -658,8 +659,11 @@ def aggiungi_sorgente(nb_id: str, filepath: Path, descrizione: str = "") -> Opti
     logger.info(f"  Upload: {label}")
     try:
         result = run_nblm(["source", "add", str(filepath), "--notebook", nb_id])
-        sid = result.get("source_id")
-        logger.info(f"    → source_id: {sid[:12]}..." if sid else "    → source_id non ricevuto")
+        # Prova vari formati di risposta: {"source_id": "..."} o {"source": {"id": "..."}}
+        sid = (result.get("source_id")
+               or result.get("source", {}).get("id")
+               or result.get("id"))
+        logger.info(f"    → source_id: {sid[:12]}..." if sid else "    → source_id non ricevuto (non bloccante)")
         return sid
     except RuntimeError as e:
         logger.warning(f"  Upload fallito per {label}: {e}")

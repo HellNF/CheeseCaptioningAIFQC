@@ -46,6 +46,8 @@ Thumbs.db
 !templates/*
 !src/**/*.py
 !README.md
-
+!data/interim/analisi_statistica_per_attributo/
+!data/interim/vocabolari_bozza_per_attributo/
+!data/interim/vocabolari_validati_per_attributo/
 .agents/
 skills-lock.json

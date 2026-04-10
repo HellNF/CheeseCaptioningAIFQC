@@ -1,0 +1,61 @@
+{
+  "attributo": "Profumo",
+  "versione": "1.0",
+  "data_validazione": "YYYY-MM-DD",
+  "validato_da": "",
+  "note_generali": "",
+  "termini_tecnici_invariabili": [
+    "scalzo",
+    "scalzi",
+    "piatti",
+    "piatto",
+    "sottocrosta",
+    "angoli",
+    "spigoli",
+    "microocchiatura",
+    "occhiatura",
+    "grana",
+    "frattura",
+    "stirata",
+    "cristalli",
+    "tirosina",
+    "nostrano",
+    "insilato",
+    "solubile",
+    "solubilità",
+    "friabile",
+    "friabilità",
+    "compatto",
+    "compattezza",
+    "cedevole"
+  ],
+  "cluster": [
+    {
+      "_esempio": "rimuovi questo blocco e sostituisci con cluster reali",
+      "nome_cluster": "nome_concetto_sensoriale",
+      "forma_canonica": "termine_standard",
+      "varianti": [
+        "variante1",
+        "variante2"
+      ],
+      "frequenza_stimata": 0
+    }
+  ],
+  "sinonimi_diretti": [
+    {
+      "da": "termine_originale",
+      "a": "forma_canonica",
+      "tipo": "sinonimo|abbreviazione|dialetto|typo"
+    }
+  ],
+  "conversioni_quantitative": [
+    {
+      "_nota": "solo per Spessore della Crosta",
+      "pattern_regex": "\\d+\\s*mm",
+      "range_min_mm": 0,
+      "range_max_mm": 7,
+      "forma_canonica": "molto sottile"
+    }
+  ],
+  "dubbi_non_risolti": []
+}
