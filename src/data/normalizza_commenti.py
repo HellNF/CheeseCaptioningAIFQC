@@ -77,8 +77,35 @@ def prenormalizza_commento(commento: str, vocabolario: dict) -> str:
 
 # ── Stub rimanenti ────────────────────────────────────────────────────────
 
-def parse_llm_response(response_text, expected_ids):
-    raise NotImplementedError
+def parse_llm_response(response_text: str, expected_ids: list[int]) -> list[dict]:
+    """Parsa la risposta LLM in formato jsonlines.
+
+    Ritorna lista di {id, classe, caption} per ogni id atteso.
+    Gli id mancanti o con classe invalida ottengono classe ERRORE_PARSING.
+    """
+    parsed: dict[int, dict] = {}
+    for line in response_text.strip().split("\n"):
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            obj = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if "id" not in obj or "classe" not in obj:
+            continue
+        if obj["classe"] not in CLASSI_VALIDE:
+            obj["classe"] = "ERRORE_PARSING"
+            obj["caption"] = None
+        parsed[obj["id"]] = obj
+
+    output = []
+    for id_ in expected_ids:
+        if id_ in parsed:
+            output.append(parsed[id_])
+        else:
+            output.append({"id": id_, "classe": "ERRORE_PARSING", "caption": None})
+    return output
 
 
 def genera_baseline(attributo, vocabolario, client, model=MODEL_DEFAULT):

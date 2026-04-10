@@ -1,0 +1,5 @@
+{"id": 1, "classe": "OK", "caption": "La texture risulta compatta con grana regolare."}
+{"id": 2, "classe": "CONFORME", "caption": "La texture è nella norma, tipica del Grana Trentino."}
+{"id": 3, "classe": "RIFERIMENTO", "caption": null}
+{"id": 4, "classe": "FUORI_ATTRIBUTO", "caption": null}
+{"id": 5, "classe": "ILLEGGIBILE", "caption": null}

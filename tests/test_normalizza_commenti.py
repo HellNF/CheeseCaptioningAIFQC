@@ -87,3 +87,33 @@ def test_prenorm_commento_vuoto():
 
 def test_prenorm_nessuna_regola_applicabile():
     assert prenormalizza_commento("buona pasta", VOCAB_FIXTURE) == "buona pasta"
+
+
+# ── parse_llm_response ─────────────────────────────────────────────────────
+
+def test_parse_risposta_completa():
+    response_text = (FIXTURES / "Texture_llm_response_fixture.txt").read_text(encoding="utf-8")
+    risultati = parse_llm_response(response_text, expected_ids=[1, 2, 3, 4, 5])
+    assert len(risultati) == 5
+    assert risultati[0] == {"id": 1, "classe": "OK", "caption": "La texture risulta compatta con grana regolare."}
+    assert risultati[2] == {"id": 3, "classe": "RIFERIMENTO", "caption": None}
+
+def test_parse_classe_invalida_diventa_errore():
+    response_text = '{"id": 1, "classe": "INVENTATA", "caption": "testo"}'
+    risultati = parse_llm_response(response_text, expected_ids=[1])
+    assert risultati[0]["classe"] == "ERRORE_PARSING"
+
+def test_parse_id_mancante_viene_aggiunto():
+    response_text = '{"id": 1, "classe": "OK", "caption": "testo"}'
+    risultati = parse_llm_response(response_text, expected_ids=[1, 2])
+    assert len(risultati) == 2
+    assert risultati[1] == {"id": 2, "classe": "ERRORE_PARSING", "caption": None}
+
+def test_parse_json_malformato_viene_saltato():
+    response_text = 'non è json\n{"id": 1, "classe": "OK", "caption": "testo"}'
+    risultati = parse_llm_response(response_text, expected_ids=[1])
+    assert risultati[0]["classe"] == "OK"
+
+def test_parse_risposta_vuota():
+    risultati = parse_llm_response("", expected_ids=[1, 2])
+    assert all(r["classe"] == "ERRORE_PARSING" for r in risultati)
