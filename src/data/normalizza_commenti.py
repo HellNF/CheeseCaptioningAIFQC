@@ -94,10 +94,16 @@ def parse_llm_response(response_text: str, expected_ids: list[int]) -> list[dict
             continue
         if "id" not in obj or "classe" not in obj:
             continue
+        # Fix 1: Coerce id to int, skip line if coercion fails
+        try:
+            id_int = int(obj["id"])
+        except (ValueError, TypeError):
+            continue
         if obj["classe"] not in CLASSI_VALIDE:
             obj["classe"] = "ERRORE_PARSING"
             obj["caption"] = None
-        parsed[obj["id"]] = obj
+        # Fix 2: Project output to only {id, classe, caption} keys
+        parsed[id_int] = {"id": id_int, "classe": obj["classe"], "caption": obj.get("caption")}
 
     output = []
     for id_ in expected_ids:

@@ -117,3 +117,12 @@ def test_parse_json_malformato_viene_saltato():
 def test_parse_risposta_vuota():
     risultati = parse_llm_response("", expected_ids=[1, 2])
     assert all(r["classe"] == "ERRORE_PARSING" for r in risultati)
+
+def test_parse_id_duplicato_ultimo_vince():
+    response_text = (
+        '{"id": 1, "classe": "OK", "caption": "prima"}\n'
+        '{"id": 1, "classe": "CONFORME", "caption": "seconda"}\n'
+    )
+    risultati = parse_llm_response(response_text, expected_ids=[1])
+    assert len(risultati) == 1
+    assert risultati[0]["caption"] == "seconda"  # last wins
