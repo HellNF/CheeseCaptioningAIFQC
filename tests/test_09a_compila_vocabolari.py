@@ -163,8 +163,8 @@ def test_compile_all_from_fixture(tmp_path):
     json_path = output_dir / "Texture_vocabolario.json"
     assert json_path.exists()
     vocab = json.loads(json_path.read_text(encoding="utf-8"))
-    assert vocab["attributo"] == "Texture"
-    assert len(vocab["cluster"]) == 2
-    assert len(vocab["dubbi_non_risolti"]) == 1
-    # alleabile risolto → in sinonimi
-    assert any(s["da"] == "alleabile" for s in vocab["sinonimi_diretti"])
+
+    # Compare against expected fixture, excluding dynamic field data_validazione
+    expected = json.loads((FIXTURES / "Texture_vocabolario_expected.json").read_text(encoding="utf-8"))
+    for key, expected_val in expected.items():
+        assert vocab[key] == expected_val, f"Mismatch on key '{key}': got {vocab[key]!r}, expected {expected_val!r}"

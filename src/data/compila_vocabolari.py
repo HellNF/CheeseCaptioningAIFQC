@@ -100,6 +100,7 @@ def build_vocabolario(blocks: list[dict], attributo: str) -> dict:
 
         if section == "META":
             vocab["note_generali"] = data.get("note_generali", "")
+            vocab["validato_da"] = data.get("validato_da", "")
 
         elif section == "TERMINI TECNICI INVARIABILI":
             vocab["termini_tecnici_invariabili"] = data.get("termini", [])
@@ -127,7 +128,8 @@ def build_vocabolario(blocks: list[dict], attributo: str) -> dict:
 
         elif "DUBBI" in section.upper():
             termine = _extract_dubbio_termine(header)
-            scelta = str(data.get("scelta", "")).strip()
+            scelta_raw = data.get("scelta", "")
+            scelta = "" if scelta_raw is None else str(scelta_raw).strip()
             option_a = data.get("option_a", "")
             option_b = data.get("option_b", "")
 
