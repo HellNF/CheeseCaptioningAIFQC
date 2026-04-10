@@ -21,6 +21,7 @@ transformers>=4.10.0
 tqdm>=4.62.0
 scikit-learn>=0.24.0
 openpyxl>=3.0.0  # Per leggere Excel
+openai>=1.0.0
 
 # Evaluation
 pycocoevalcap>=1.2
