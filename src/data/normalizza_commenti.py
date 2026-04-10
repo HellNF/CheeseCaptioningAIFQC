@@ -114,8 +114,31 @@ def parse_llm_response(response_text: str, expected_ids: list[int]) -> list[dict
     return output
 
 
-def genera_baseline(attributo, vocabolario, client, model=MODEL_DEFAULT):
-    raise NotImplementedError
+def genera_baseline(attributo: str, vocabolario: dict, client, model: str = MODEL_DEFAULT) -> str:
+    """Genera via LLM la descrizione di un campione conforme alla norma per l'attributo.
+
+    Ritorna la stringa baseline (15-40 parole).
+    """
+    desc = ATTRIBUTI_DESCRIZIONI.get(attributo, "")
+    termini = ", ".join(vocabolario.get("termini_tecnici_invariabili", []))
+    forme_canoniche = ", ".join(
+        c["forma_canonica"] for c in vocabolario.get("cluster", [])
+    )
+    prompt = (
+        f"Sei un esperto di valutazione sensoriale del Grana Trentino DOP.\n"
+        f"Scrivi UNA frase in italiano standard che descriva un campione di formaggio "
+        f"con caratteristiche conformi alla norma per l'attributo '{attributo}'.\n"
+        f"Definizione attributo: {desc}\n"
+        f"Termini tecnici del vocabolario da usare: {termini or forme_canoniche}\n"
+        f"Lunghezza: 15-40 parole. Rispondi con la sola frase, senza prefissi o spiegazioni."
+    )
+    response = client.chat.completions.create(
+        model=model,
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=120,
+        temperature=0.3,
+    )
+    return response.choices[0].message.content.strip()
 
 
 def normalizza_batch(batch, attributo, vocabolario, baseline, client, model=MODEL_DEFAULT):

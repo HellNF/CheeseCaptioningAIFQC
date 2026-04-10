@@ -126,3 +126,33 @@ def test_parse_id_duplicato_ultimo_vince():
     risultati = parse_llm_response(response_text, expected_ids=[1])
     assert len(risultati) == 1
     assert risultati[0]["caption"] == "seconda"  # last wins
+
+
+# ── genera_baseline ────────────────────────────────────────────────────────
+
+def _mock_client(content: str):
+    """Helper: crea un client OpenAI mock che ritorna content."""
+    client = MagicMock()
+    client.chat.completions.create.return_value = MagicMock(
+        choices=[MagicMock(message=MagicMock(content=content))]
+    )
+    return client
+
+def test_genera_baseline_ritorna_stringa():
+    client = _mock_client("La texture risulta nella norma, compatta e omogenea.")
+    baseline = genera_baseline("Texture", VOCAB_FIXTURE, client)
+    assert isinstance(baseline, str)
+    assert len(baseline) > 10
+
+def test_genera_baseline_chiama_api_una_volta():
+    client = _mock_client("Testo baseline.")
+    genera_baseline("Texture", VOCAB_FIXTURE, client)
+    client.chat.completions.create.assert_called_once()
+
+def test_genera_baseline_passa_attributo_nel_prompt():
+    client = _mock_client("Baseline.")
+    genera_baseline("Texture", VOCAB_FIXTURE, client)
+    call_kwargs = client.chat.completions.create.call_args
+    messages = call_kwargs[1]["messages"] if "messages" in call_kwargs[1] else call_kwargs[0][0]
+    prompt_text = str(messages)
+    assert "Texture" in prompt_text
