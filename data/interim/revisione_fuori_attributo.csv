@@ -1,0 +1,798 @@
+﻿attributo,id,commento_raw,caption,candidato_ok,nuova_classe
+Aroma,45,"Nocciola, formaggino",Nocciola e formaggino.,True,OK
+Aroma,141,"A proposito della fessure aggiungo : grasso, intuisco e abbasso di mezzo punto il voto","Riguardo alle fessure, percepisco grasso e abbasso di mezzo punto il voto.",True,
+Aroma,226,"cotti, animale","Cotti, animale.",True,OK
+Aroma,233,fungo,Fungo.,True,OK
+Aroma,236,"burro,",Burro.,True,OK
+Aroma,242,"difettoso, stantio, legno, crosta di formaggio secca","Il formaggio presenta difetti, con un odore stantio, note di legno e una crosta secca.",True,OK
+Aroma,243,"stantio, tostato forte, animale",Si percepisce un forte aroma di tostato e note animali.,True,OK
+Aroma,244,brodo....,,True,OK
+Aroma,248,"crosta, da grana vecchio, speziato, animale","La crosta ricorda un grana vecchio, con note speziate e animali.",True,OK
+Aroma,250,panna cotto,Si avverte un sapore di panna cotta.,True,OK
+Aroma,251,muffa,C'è un chiaro sentore di muffa.,True,OK
+Aroma,254,aumenta  l-animale,Il sapore tende ad aumentare verso note animali.,True,OK
+Aroma,284,"vacca, latte UHT",Il formaggio ha un aroma di vacca e latte UHT.,True,OK
+Aroma,294,leg cotto,Si avverte un sapore di legno cotto.,True,OK
+Aroma,304,"*burro, brodo ....",Ci sono sentori di burro e brodo.,True,OK
+Aroma,342,"crosta, cotto, rancido",La crosta è cotta e presenta un sapore rancido.,True,OK
+Aroma,361,lattico acido,C'è un chiaro sapore lattico acido.,True,OK
+Aroma,380,retrolfatto latte acidulo....,Il retrogusto è di latte acidulo.,True,OK
+Aroma,401,"deciso animale, crosta di grana, muffa, vecchio, stantio in certi pezzi","Si avverte un deciso aroma animale, con crosta di grana, muffa e note stantie in alcuni pezzi.",True,OK
+Aroma,404,"gorgonzola...non tipico, acido, disgustoso","Il gorgonzola non è tipico, con un sapore acido e disgustoso.",True,OK
+Aroma,413,nota lattea non sentita all-olfatto,La nota lattea non è percepita all'olfatto.,True,OK
+Aroma,422,"strano, burro",Ha un aroma strano di burro.,True,OK
+Aroma,441,"note lattiche caratteristiche, poco complesso, crosta di formaggio, note fermentate","Presenta note lattiche caratteristiche, è poco complesso, con crosta di formaggio e note fermentate.",True,OK
+Aroma,446,"burro, formaggio, brodo...","Ha sentori di burro, formaggio e brodo.",True,OK
+Aroma,486,latte poco da grana,Il latte ha poco sapore di grana.,True,OK
+Aroma,495,latte animale/letame  poco da grana,"Si percepiscono note di latte animale e letame, con poco sapore di grana.",True,OK
+Aroma,501,"cotto quasi bruciato, legna secca vecchia","Ha un sapore cotto quasi bruciato, con note di legna secca vecchia.",True,OK
+Aroma,503,panna da nostrano più che grana,Ricorda più la panna da nostrano che il grana.,True,OK
+Aroma,504,panna e frutta,Ha note di panna e frutta.,True,OK
+Aroma,523,panna vegetale,Ha un aroma di panna vegetale.,True,OK
+Aroma,541,"tostato male, mandorla amara, brodo animale","È tostato male, con note di mandorla amara e brodo animale.",True,OK
+Aroma,547,"note di marcio, fermantato, animale","Note di marcio, fermentato, animale.",True,OK
+Aroma,548,"emmenthal, brodo",Emmental e brodo.,True,OK
+Aroma,553,propionico,Propionico.,True,OK
+Aroma,557,cotto,Cotto.,True,OK
+Aroma,558,brodo di carne,Brodo di carne.,True,OK
+Aroma,559,panna,Panna.,True,OK
+Aroma,560,formaggio cotto,Formaggio cotto.,True,OK
+Aroma,561,panna,Panna.,True,OK
+Aroma,569,latte,Latte.,True,OK
+Aroma,570,burro,Burro.,True,OK
+Aroma,575,"burro e panna ,",Burro e panna.,True,OK
+Aroma,581,"lattico di panna, burro, formaggio grasso gradevole","Lattico di panna, burro, formaggio grasso gradevole.",True,OK
+Aroma,588,"grasso, brodo, burro","Grasso, brodo e burro.",True,OK
+Aroma,601,crosta e ossidato,Crosta e ossidato.,True,OK
+Aroma,620,fungo;muffa,Si avverte un aroma di fungo e muffa.,True,OK
+Aroma,621,formaggio cotto,Il formaggio ha un sapore cotto.,True,OK
+Aroma,641,"nota di formaggio cotto e crosta di formaggio, ricorda un po un formaggio nostrano","Si percepiscono note di formaggio cotto e crosta, ricorda un formaggio nostrano.",True,OK
+Aroma,646,animale/paglia/letame,"Si avvertono sentori di animale, paglia e letame.",True,OK
+Aroma,649,latte,Si percepisce il latte.,True,OK
+Aroma,653,panna vegetale non tanto da grana,La panna vegetale non ricorda molto il grana.,True,OK
+Aroma,661,vegetale balsamico,Si avverte un aroma vegetale balsamico.,True,OK
+Aroma,664,"nocciola tostato, caramello scuro, tostati decisi, brodo di carne","Si percepiscono nocciola tostata, caramello scuro, tostati decisi e brodo di carne.",True,OK
+Aroma,667,"poco caratteristico, propionico e di brodo di carne, tipo emmental","È poco caratteristico, con note propioniche e di brodo di carne, simile all'emmental.",True,OK
+Aroma,672,"latte cotto troppo, cacao, caramello, brodo di carne","Si avvertono latte cotto eccessivamente, cacao, caramello e brodo di carne.",True,OK
+Aroma,673,non da grana biscotto,"Non ha il sapore di grana, ricorda un biscotto.",True,OK
+Aroma,681,brodo vegetale;,Si percepisce un brodo vegetale.,True,OK
+Aroma,685,vegetale non grana,Il sapore è vegetale e non ricorda il grana.,True,OK
+Aroma,686,cavolfiore,Ha un aroma di cavolfiore.,True,OK
+Aroma,693,"piatto, monocorde, frutta fermentata, cartone, note di nostrano","Il gusto è piatto e monocorde, con note di frutta fermentata e cartone.",True,OK
+Aroma,695,panna non prorio da grana,La panna non è tipica del grana.,True,OK
+Aroma,697,formaggio FERMENTATO MOLTO FORTE;;RANCIDO FORTE,Il formaggio ha un sapore molto forte e rancido.,True,OK
+Aroma,701,fromaggio cotto,Il formaggio è cotto.,True,OK
+Aroma,703,brodo di carne,Si percepisce un aroma di brodo di carne.,True,OK
+Aroma,704,sentori di brodo e burro cotto,Ci sono sentori di brodo e burro cotto.,True,OK
+Aroma,719,brodo di carne,Si sente nuovamente il brodo di carne.,True,OK
+Aroma,721,formaggio cotto,Il formaggio è cotto.,True,OK
+Aroma,722,panna,Si percepisce la panna.,True,OK
+Aroma,725,burro bruciato e brodo,Ci sono note di burro bruciato e brodo.,True,OK
+Aroma,727,tostato e brodo di carne,Il sapore è tostato con note di brodo di carne.,True,OK
+Aroma,728,panna e vegetale,Si sentono panna e note vegetali.,True,OK
+Aroma,732,formaggio cotto,Il formaggio è cotto.,True,OK
+Aroma,733,panna,Si percepisce la panna.,True,OK
+Aroma,734,"burro fuso, panna.",Ci sono note di burro fuso e panna.,True,OK
+Aroma,737,"cipolla, cavolfiore",Cipolla e cavolfiore.,True,OK
+Aroma,738,cotto,Cotto.,True,OK
+Aroma,741,formaggio cotto&crosta,Formaggio cotto con crosta.,True,OK
+Aroma,742,"frutta fermentata, latte uht, dado industriale","Frutta fermentata, latte UHT e dado industriale.",True,OK
+Aroma,759,"non grana, fermentato, anomalo","Non è grana, è fermentato e anomalo.",True,OK
+Aroma,760,"vegetale secco, brodo, burro fuso, pi\ in generale lattico cotto","Vegetale secco, brodo e burro fuso, in generale lattico cotto.",True,OK
+Aroma,761,"burro,  crosta di formaggio che resta",Burro e crosta di formaggio che resta.,True,OK
+Aroma,762,"leggeri cotto e crosta, meglio l-aroma dell-odore","Leggeri sentori di cotto e crosta, meglio l'aroma dell'odore.",True,OK
+Aroma,763,panna ma da nostrano e poco da grana,"Panna, ma da latte nostrano e poco da grana.",True,OK
+Aroma,772,formaggio cotto e crosta,Formaggio cotto e crosta.,True,OK
+Aroma,781,panna,Panna.,True,OK
+Aroma,783,latte e burro crudi,Latte e burro crudi.,True,OK
+Aroma,801,latte cotto,Latte cotto.,True,OK
+Aroma,803,lattico cotto,Lattico cotto.,True,OK
+Aroma,806,"brodo, provolone",Brodo e provolone.,True,OK
+Aroma,822,principalmente lattico cotto,Principalmente lattico cotto.,True,OK
+Aroma,831,cotto gorgonzola,Cotto gorgonzola.,True,OK
+Aroma,836,brodo di carne lalattico cotto,Brodo di carne e lattico cotto.,True,OK
+Aroma,838,latte,Latte.,True,OK
+Aroma,841,brodo e fromaggio cotto,Brodo e formaggio cotto.,True,OK
+Aroma,842,panna,Panna.,True,OK
+Aroma,845,panna,Panna.,True,OK
+Aroma,861,"note aromatiche pi\ tipiche del nostrano che del grana, formaggio cotto, crosta di formaggio","Note aromatiche più tipiche del nostrano che del grana, formaggio cotto e crosta di formaggio.",True,OK
+Aroma,903,"non caratteristico, di formaggio svizzero, fruttato, latte cotto","Non caratteristico, ricorda un formaggio svizzero, con note fruttate e di latte cotto.",True,OK
+Aroma,922,panna,Sapore di panna.,True,OK
+Aroma,923,tostato e brodo,Note tostate e di brodo.,True,OK
+Aroma,936,vegetale cotto,Sapore di vegetale cotto.,True,OK
+Aroma,939,brodo,Sapore di brodo.,True,OK
+Aroma,961,"grana, burro",Sapore di grana e burro.,True,OK
+Aroma,962,panna,Sapore di panna.,True,OK
+Aroma,968,panna,Sapore di panna.,True,OK
+Aroma,976,panna vegetale,Panna vegetale.,True,OK
+Aroma,981,"grana, burro",Sapore di grana e burro.,True,OK
+Aroma,1041,"note aromatiche poco caratteristiche, crosta di formaggio, formaggio cotto, tela bagnata, acqua stagnante, comunque presente nota lattica di buroo","Le note aromatiche sono poco caratteristiche, con crosta di formaggio, formaggio cotto, tela bagnata e acqua stagnante, ma è presente una nota lattica di burro.",True,OK
+Aroma,1044,latte,Sapore di latte.,True,OK
+Aroma,1054,latte non da grana,Latte che non ha caratteristiche da grana.,True,OK
+Aroma,1084,"crosta e ossidato molto leggero, latticino fresco tipo quark","Crosta e ossidazione molto leggera, con latticino fresco tipo quark.",True,OK
+Aroma,1089,vegetale + panna,Sapore vegetale con panna.,True,OK
+Aroma,1090,fungo,Sapore di fungo.,True,OK
+Aroma,1091,latte e brodo,Sapore di latte e brodo.,True,OK
+Aroma,1092,cavolfiore,Sapore di cavolfiore.,True,OK
+Aroma,1,Provolone,Provolone,False,OK
+Aroma,2,Provolone,Provolone,False,OK
+Aroma,3,Non da grana,Non ha un sapore di grana.,False,OK
+Aroma,4,Cipolla,Cipolla.,False,OK
+Aroma,19,Provolone o nostrano lievemente piccante,Provolone o nostrano lievemente piccante.,False,OK
+Aroma,23,Cipolla,Cipolla.,False,OK
+Aroma,24,Lettiera,Lettiera.,False,OK
+Aroma,26,Crauti,Crauti.,False,OK
+Aroma,41,Glutammato dominante,Glutammato dominante.,False,
+Aroma,42,Inesistente,Inesistente.,False,OK
+Aroma,43,"Erbe amare, carne lessa",Erbe amare e carne lessa.,False,OK
+Aroma,44,Carne lessa,Carne lessa.,False,OK
+Aroma,47,Carne lessa,Carne lessa.,False,OK
+Aroma,48,Carne lessa,Carne lessa.,False,OK
+Aroma,49,Carne lessa,Carne lessa.,False,OK
+Aroma,53,Sapone,Sapone.,False,OK
+Aroma,54,Inconsistente,Inconsistente.,False,
+Aroma,55,"Cacao amaro vecchio, medicinale",Cacao amaro vecchio e medicinale.,False,OK
+Aroma,67,Sentore di ragù,Sentore di ragù.,False,OK
+Aroma,73,Salame,Salame,False,OK
+Aroma,91,Groviera,Groviera,False,OK
+Aroma,101,Strano comunque,È strano comunque.,False,
+Aroma,102,"Si, vi avevo detto che sono raffreddato. Nel mangiarlo e nel sentire l'aroma mi è arrivata un sentore non tipico di formaggio grana, chiamo gorgonzola","Ho notato un aroma non tipico di formaggio grana, simile al gorgonzola.",False,OK
+Aroma,107,Non piacevole!!!,Non è piacevole.,False,
+Aroma,108,Non apprezzabile,Non è apprezzabile.,False,
+Aroma,117,Non sono riuscita ad assaggiarlo ha un indefinibile orribile aroma dolciastro,"Non sono riuscita ad assaggiarlo, ha un aroma dolciastro orribile.",False,OK
+Aroma,125,Formaggio non grana... Ma non so dare definizione esatta,"Non è un formaggio grana, ma non riesco a definirlo esattamente.",False,
+Aroma,161,Yogurt,Yogurt.,False,OK
+Aroma,181,Più fumo che bruciato,Ha più sapore di fumo che di bruciato.,False,OK
+Aroma,204,Aroma compromesso dal troppo salato,L'aroma è compromesso dal troppo sale.,False,OK
+Aroma,209,"Il voto inerente a stalla sono stati due momenti e poi sparisce subito, per il salato ne manca un po’","Il voto per l'aroma di stalla è stato due momenti, poi sparisce subito; per il salato ne manca un po'.",False,OK
+Aroma,214,All’aroma non sento più il provolone…,Non sento più l'aroma di provolone.,False,OK
+Aroma,219,Formaggio con presunta struttura stirata,Formaggio con una presunta struttura stirata.,False,
+Aroma,228,emmethal,Emmental.,False,OK
+Aroma,241,"cuoio, pepe, crosta di grana","Cuoio, pepe, crosta di grana.",False,OK
+Aroma,281,sentore di stalla e crosta,Si percepiscono sentori di stalla e crosta.,False,OK
+Aroma,282,"floreale ritrovato, lattici cotti",Ci sono note floreali e di lattici cotti.,False,OK
+Aroma,309,"PEPE, VERDURE COTTE",Si percepiscono note di pepe e verdure cotte.,False,OK
+Aroma,341,provolone,Il formaggio è un provolone.,False,OK
+Aroma,368,ricorda un formaggio per; non tipico da grana,Ricorda un formaggio non tipico da grana.,False,OK
+Aroma,438,non da grana emmental,Non ricorda il grana emmental.,False,OK
+Aroma,442,"formaggio erborinato,",È un formaggio erborinato.,False,OK
+Aroma,474,"quanta stalla, signora mia!",Ha un forte odore di stalla.,False,OK
+Aroma,480,stalla e crosta,Si percepiscono note di stalla e crosta.,False,OK
+Aroma,481,medio... forse ricorda altri formaggi rispetto al retrogusto grana,È di media intensità e ricorda altri formaggi rispetto al retrogusto di grana.,False,OK
+Aroma,485,sedano,Ha un aroma di sedano.,False,OK
+Aroma,502,atipico come al naso,È atipico all'olfatto.,False,OK
+Aroma,521,"crosta di grana,",Presenta una crosta di grana.,False,OK
+Aroma,542,note da emmenthal...,Ha note che ricordano l'emmenthal.,False,OK
+Aroma,544,crosta,Crosta.,False,OK
+Aroma,546,minestrone verdura,Minestrone di verdura.,False,OK
+Aroma,550,non sa di grana,Non sa di grana.,False,OK
+Aroma,551,emmental,Emmental.,False,OK
+Aroma,565,sento emmental,Sento emmental.,False,OK
+Aroma,582,"frutta, grana",Frutta e grana.,False,OK
+Aroma,602,"inizialmente non troppo positivi, poi crosta di formaggio grana,","Inizialmente non molto positivi, poi si percepisce la crosta di formaggio grana.",False,OK
+Aroma,614,formaggio pronto,Il formaggio è pronto.,False,
+Aroma,622,"sa di altro, non di grana trentino","Ha un sapore diverso, non di grana trentino.",False,OK
+Aroma,663,formaggio piacevole ma non e' grana,Il formaggio è piacevole ma non è grana.,False,OK
+Aroma,666,crosta di formaggio,Si avverte la crosta di formaggio.,False,OK
+Aroma,675,"note di emmental, propioniche, frutta tropicale, poco complesso e poco caratteristico","Si percepiscono note di emmental, propioniche e frutta tropicale, poco complesso e caratteristico.",False,OK
+Aroma,680,crosta di formaggio,Si avverte la crosta di formaggio.,False,OK
+Aroma,682,"pessimo, poco caratteristico, acqua di fogna, marcio","È pessimo, poco caratteristico, con un sapore di acqua di fogna e marcio.",False,OK
+Aroma,688,come alla prima olfazione nasale sento una nota di formaggio non tipico trentingrana,All'olfatto si percepisce una nota di formaggio non tipico del Trentingrana.,False,OK
+Aroma,690,non da grana malga o altro formaggio,"Non ha il sapore del grana, della malga o di altri formaggi.",False,OK
+Aroma,730,"lattici cotti,",Ci sono sentori di lattici cotti.,False,OK
+Aroma,764,crosta di formaggio,Crosta di formaggio.,False,OK
+Aroma,765,pesce,Pesce.,False,OK
+Aroma,771,non da grana stagionato,Non è grana stagionato.,False,OK
+Aroma,802,crosta di formaggio,Crosta di formaggio.,False,OK
+Aroma,805,"lattici cotti,",Lattici cotti.,False,OK
+Aroma,814,"lattici cotti,",Lattici cotti.,False,OK
+Aroma,821,"lattici cotti,",Lattici cotti.,False,OK
+Aroma,825,crosta di formaggio,Crosta di formaggio.,False,OK
+Aroma,846,crosta di formaggio,Crosta di formaggio.,False,OK
+Aroma,853,"crosta di formaggio, formaggio fuso",Crosta di formaggio e formaggio fuso.,False,OK
+Aroma,864,crosta di formaggio,Crosta di formaggio.,False,OK
+Aroma,865,crosta,Crosta.,False,OK
+Aroma,868,formaggio fuso,Formaggio fuso.,False,OK
+Aroma,876,crosta di formaggio,Crosta di formaggio.,False,OK
+Aroma,882,una punta acida e crosta,Una punta acida e crosta.,False,OK
+Aroma,900,ancora taleggio/gorgonzola,Ancora taleggio o gorgonzola.,False,OK
+Aroma,901,"non tipico del grana, nostrano","Non tipico del grana, nostrano.",False,OK
+Aroma,905,non tipico del grana,Non tipico del grana.,False,OK
+Aroma,926,"lattici cotti, carne lessa",Sapore di lattici cotti e carne lessa.,False,OK
+Aroma,929,provolone piccante moderato,Provolone piccante in modo moderato.,False,OK
+Aroma,946,nota da gorgonzola non piacevole...,Nota di gorgonzola poco piacevole.,False,OK
+Aroma,949,povero rispetto a lnaso,Povero rispetto al naso.,False,OK
+Aroma,954,non da grana difetto,"Non da grana, presenta un difetto.",False,OK
+Aroma,966,formaggio stagionato,Formaggio stagionato.,False,OK
+Aroma,982,lsentori lattici,Sentori lattici.,False,OK
+Aroma,984,ritorna la crosta,Ritorna la crosta.,False,OK
+Aroma,994,non grana. non tipico,"Non è grana, non è tipico.",False,OK
+Aroma,998,non da grana,Non ha caratteristiche da grana.,False,OK
+Aroma,1049,crosta di formaggio&pasta cotta,Crosta di formaggio e pasta cotta.,False,OK
+Aroma,1061,mi sembra provolone,Mi sembra un provolone.,False,OK
+Profumo,1,Balsamico liquirizia,Sapore di balsamico e liquirizia.,True,OK
+Profumo,36,Vegetale balsamico,Note vegetali e balsamiche.,True,OK
+Profumo,43,Vegetale balsamico,Profumo vegetale e balsamico.,True,OK
+Profumo,60,Leggero gomma bruciata,Leggero sentore di gomma bruciata.,True,OK
+Profumo,61,Un solo pezzo aveva un pessimo odore,Un pezzo aveva un pessimo odore.,True,OK
+Profumo,64,Vegetale balsamico,Profumo vegetale e balsamico.,True,OK
+Profumo,96,"Un campione con odore positivo, 3 con odore negativo","Un campione ha un odore positivo, tre hanno un odore negativo.",True,OK
+Profumo,106,Alle prime operazioni sgradevole odore di grasso animale ossidato,Alle prime operazioni si percepisce un sgradevole odore di grasso animale ossidato.,True,OK
+Profumo,121,"Molto diverso alle apertura e spezzando i pezzi. Fresco prima, più stagionato poi","Molto diverso all'apertura e spezzando i pezzi; fresco prima, più stagionato poi.",True,OK
+Profumo,129,"Molto diverso alle apertura e spezzando i pezzi. Fresco prima, più stagionato poi","Molto diverso all'apertura e spezzando i pezzi; fresco prima, più stagionato poi.",True,OK
+Profumo,141,Sentore di legno,Sentore di legno.,True,OK
+Profumo,152,Note quasi di puzzone alla prima olfazione,Alla prima olfazione si percepiscono note quasi di puzzone.,True,OK
+Profumo,161,"Odore iniziale non convincente, poi sfuma","L'odore iniziale non è convincente, poi svanisce.",True,OK
+Profumo,164,Leggero e non complesso,È leggero e non complesso.,True,OK
+Profumo,168,Spezzando un pezzo no percepito un leggero odore di cipolla,"Spezzando un pezzo, si percepisce un leggero odore di cipolla.",True,OK
+Profumo,183,"Al primo olfatto, sfumatura non gradevole","Alla prima olfazione, c'è una sfumatura non gradevole.",True,OK
+Profumo,196,Il sentore di nostrano é un dubbio,Ho dei dubbi sul sentore di nostrano.,True,OK
+Profumo,229,"Dado, glutammato molto forte e spiacevole",C'è un forte e spiacevole aroma di dado e glutammato.,True,OK
+Profumo,239,"Alla prima olfazione odore anomalo, di altro formaggio quantomeno.","Alla prima olfazione percepisco un odore anomalo, di un altro formaggio.",True,OK
+Profumo,250,Media intensità. Sentore anomalo (nostrano),Intensità media con un sentore anomalo.,True,OK
+Profumo,260,"Tanto latte, burro fresco. Alla prima occasione odore di altro formaggio, fermentato che mi fa penalizzare.","Dominano sentori di latte e burro fresco, ma c'è un odore di formaggio fermentato che penalizza.",True,OK
+Profumo,261,"Lattico dominante, burro fresco",Sentore lattico dominante con burro fresco.,True,OK
+Profumo,262,Fermentato intendo alcool,Per fermentato intendo un odore di alcool.,True,OK
+Profumo,270,"Alla prima occasione percepito un odore non gradevole, poi scomparso. Non so definirlo, quindi non penalizzo","Alla prima occasione ho percepito un odore sgradevole, poi scomparso.",True,OK
+Profumo,272,Lettiera note animali,Note animali simili a lettiera.,True,OK
+Profumo,278,"Sedano. Troppo vegetale cotto, abbasso voto. Altrimenti molto intenso","Sentore di sedano e troppo vegetale cotto, abbasso il voto.",True,OK
+Profumo,323,Solo all'apertura odore stantio,Solo all'apertura si percepisce un odore stantio.,True,OK
+Profumo,338,All'apertura odore stagnante poi non si sente,"All'apertura si sente un odore stagnante, poi svanisce.",True,OK
+Profumo,344,Poco intenso manca tra i commenti?,"È poco intenso, manca qualcosa.",True,OK
+Profumo,363,Odore stantio e cipolla solo all’apertura,Odore stantio e di cipolla solo all'apertura.,True,OK
+Profumo,378,"Odore vegetale strano …,buccia anguria?","Odore vegetale strano, simile alla buccia di anguria.",True,OK
+Profumo,2,Erbe Balsamiche,Profumo di erbe balsamiche.,False,OK
+Profumo,3,"Caffè,cacao amaro",Note di caffè e cacao amaro.,False,OK
+Profumo,20,Cavolo cotto,Odore di cavolo cotto.,False,OK
+Profumo,21,"Pozzo, acqua stagnante",Profumo di pozzo e acqua stagnante.,False,OK
+Profumo,29,Cacao,Sapore di cacao.,False,OK
+Profumo,41,Troppo delicato,Il sapore è troppo delicato.,False,OK
+Profumo,42,"Cacao, alito da caffè",Note di cacao e alito di caffè.,False,OK
+Profumo,44,Scarico,Odore di scarico.,False,OK
+Profumo,45,"Il gorgonzola é un dubbio, non penalizzo troppo","Il gorgonzola suscita dei dubbi, ma non penalizzo troppo.",False,OK
+Profumo,47,Vegetale buono,Profumo vegetale gradevole.,False,OK
+Profumo,52,Sembra più  vecchio,Sembra più invecchiato.,False,OK
+Profumo,53,Cacao,Sapore di cacao.,False,OK
+Profumo,58,Alcool etilico,Odore di alcool etilico.,False,OK
+Profumo,62,Lettiera,Odore di lettiera.,False,OK
+Profumo,65,Alla apertura soltanto,Alla apertura soltanto.,False,OK
+Profumo,66,Caffè,Caffè.,False,OK
+Profumo,79,Lievito ?,Lievito?,False,OK
+Profumo,81,Moderato. Nota non convincente di verdura cotta,"Moderato, con una nota poco convincente di verdura cotta.",False,OK
+Profumo,87,Yogurt alla frutta più che parte acido,"Yogurt alla frutta, più che acido.",False,OK
+Profumo,97,Alito al Caffè ...,Alito al caffè.,False,OK
+Profumo,101,Cacao amaro in polvere,Cacao amaro in polvere.,False,OK
+Profumo,102,Caffe bevuto,Caffè bevuto.,False,OK
+Profumo,103,Un po'  di plastica gomma,Un po' di plastica gomma.,False,OK
+Profumo,104,Biscotto,Biscotto.,False,OK
+Profumo,105,PANE LIEVITO,Pane e lievito.,False,OK
+Profumo,110,Cacao?,Cacao?,False,OK
+Profumo,112,Prima olfazione non gradita. La definisco nostrano,La prima olfazione non è gradita; la definisco nostrano.,False,OK
+Profumo,137,Crauti,Crauti.,False,OK
+Profumo,148,Pecorino,Pecorino.,False,OK
+Profumo,149,Alcool,Alcol.,False,OK
+Profumo,154,Sa di grasso di prosciutto crudo,Ha un sapore di grasso di prosciutto crudo.,False,OK
+Profumo,155,Amido,Sapore di amido.,False,OK
+Profumo,159,Crem Caramel,Ricorda il cremoso al caramello.,False,OK
+Profumo,160,Liquirizia,Sente di liquirizia.,False,OK
+Profumo,169,Tanti sentori lattei. Ma anche vegetali strani,Presenta tanti sentori lattei e vegetali strani.,False,OK
+Profumo,170,Nota svizzera di groviera,Ha una nota svizzera di groviera.,False,OK
+Profumo,173,Troppa crosta,C'è troppa crosta.,False,OK
+Profumo,177,Polvere...,Sembra polvere.,False,OK
+Profumo,178,Kiwi...,Sente di kiwi.,False,OK
+Profumo,180,Stalla al primo impatto poi si apre!!!,"All'inizio ha un odore di stalla, poi si apre.",False,OK
+Profumo,181,Leggera fermentazione,C'è una leggera fermentazione.,False,OK
+Profumo,186,Molto diversi i 4 pezzi e all'apertura,I quattro pezzi sono molto diversi e all'apertura.,False,OK
+Profumo,187,Soprattutto all'apertura,Soprattutto all'apertura.,False,OK
+Profumo,192,Crosta solo accennata,La crosta è solo accennata.,False,OK
+Profumo,193,Kiwi...,Sento un aroma di kiwi.,False,OK
+Profumo,194,Peccato per il fondo di bruciato,C'è un retrogusto di bruciato.,False,OK
+Profumo,197,Strano. A tratti sentiva di pesce. Perplesso,"È strano, a tratti sembra di sentire odore di pesce.",False,OK
+Profumo,198,Alcool!,Sento un forte odore di alcool.,False,OK
+Profumo,199,Stalla ma solo al primo impatto!,"C'è un sentore di stalla, ma solo all'inizio.",False,OK
+Profumo,201,Polvere,Sento un aroma di polvere.,False,OK
+Profumo,203,Sento poco. Non so se perché  raffreddato o perché povero il fromage,"Sento poco, forse perché è raffreddato o il formaggio è di qualità bassa.",False,OK
+Profumo,209,"Tanta nanna, ma nota di formaggio non trentingrana","C'è un sapore di formaggio, ma non ricorda il trentingrana.",False,OK
+Profumo,220,Yogurt alla frutta,Sento un aroma di yogurt alla frutta.,False,OK
+Profumo,221,Liquirizia,C'è un sentore di liquirizia.,False,OK
+Profumo,222,Kiwi...,Sento un aroma di kiwi.,False,OK
+Profumo,224,Alcol,C'è un forte odore di alcool.,False,OK
+Profumo,225,Liquirizia,Sento un aroma di liquirizia.,False,OK
+Profumo,226,Grasso di prosciutto crudo,C'è un sentore di grasso di prosciutto crudo.,False,OK
+Profumo,228,Vinilico,Sento un odore vinilico.,False,OK
+Profumo,238,Liquirizia,Sento un aroma di liquirizia.,False,OK
+Profumo,241,Vaniglia?,C'è un sentore di vaniglia?,False,OK
+Profumo,264,Non equilibrato nell' espressione,Non è equilibrato nell'espressione.,False,
+Profumo,265,Quasi disturba!,Quasi disturbante.,False,
+Profumo,271,Crauti,Sentore di crauti.,False,OK
+Profumo,274,Confetteria,Sentore di confetteria.,False,OK
+Profumo,275,Difettato? Odori strani...,Difettato con odori strani.,False,OK
+Profumo,277,Profumo anomalo alla prima occasione fa diminuire i voto,Un profumo anomalo alla prima occasione fa diminuire il voto.,False,OK
+Profumo,280,Anche alcol,C'è anche un sentore di alcool.,False,OK
+Profumo,281,All'inizio stalla...ma lo cala,"All'inizio ho percepito odore di stalla, ma poi è diminuito.",False,OK
+Profumo,290,Croste di polenta,Sentore di croste di polenta.,False,OK
+Profumo,291,Crauti,Sentore di crauti.,False,OK
+Profumo,301,Alcool,Sentore di alcool.,False,OK
+Profumo,302,Polvere chiuso,Odore di polvere chiusa.,False,OK
+Profumo,307,Anche yogurt,Sentore di yogurt.,False,OK
+Profumo,310,Pomata,Ha una consistenza pomata.,False,OK
+Profumo,313,Plastica,Ha un odore di plastica.,False,OK
+Profumo,314,Lievito pane?,Ricorda il lievito per il pane.,False,OK
+Profumo,319,Alcool,Ha un sentore di alcool.,False,OK
+Profumo,321,Paglia,Odore di paglia.,False,OK
+Profumo,327,Crauti,Ricorda i crauti.,False,OK
+Profumo,329,Polvere,Ha un odore di polvere.,False,OK
+Profumo,330,Al primo impatto non buono,Al primo impatto non è gradevole.,False,
+Profumo,331,Banana verde,Ha un sentore di banana verde.,False,OK
+Profumo,334,Non buono,Non è buono.,False,
+Profumo,341,Intensità bassa,L'intensità è bassa.,False,OK
+Profumo,346,Panna cotta,Ricorda la panna cotta.,False,OK
+Profumo,348,Crauti,Ha un odore di crauti.,False,OK
+Profumo,350,Funghi freschi,Ricorda i funghi freschi.,False,OK
+Profumo,351,Eucalipto?,Potrebbe avere un sentore di eucalipto.,False,OK
+Profumo,353,Crauti,Odore di crauti.,False,OK
+Profumo,360,Paglia sporca,Ha un odore di paglia sporca.,False,OK
+Profumo,368,Odori solo all’apertura,Odori percepibili solo all'apertura.,False,OK
+Profumo,369,"Polvere,",Presenza di polvere.,False,OK
+Profumo,370,"Cavolo, odori piu evidenti all’apertura","Odore di cavolo, più evidente all'apertura.",False,OK
+Profumo,371,Sa di muffa bianca del camembert,Profumo di muffa bianca del camembert.,False,OK
+Profumo,372,Solo all’apertura stagnante,Odore stagnante solo all'apertura.,False,OK
+Profumo,374,Stagnante solo all’apertura,Stagnante solo all'apertura.,False,OK
+Profumo,376,All’apertura più evidente od sgradevole,All'apertura l'odore è più evidente e sgradevole.,False,OK
+Profumo,381,"Polvere anche,,,",Presenza di polvere.,False,OK
+Profumo,385,Minerale-roccia,"Odore minerale, simile alla roccia.",False,OK
+Profumo,386,"Peccato perla leggera nota animale,,",Peccato per la leggera nota animale.,False,OK
+Profumo,388,"Intensità messa negativa perché non piacevole, puzza,,,,","Intensità negativa perché non piacevole, puzza.",False,OK
+Profumo,392,Banana,Profumo di banana.,False,OK
+Profumo,394,Non sa di grana,Non ha il sapore del grana.,False,OK
+Sapore,2,Salato e piccante disarmonico,"Il sapore è salato e piccante, ma disarmonico.",True,OK
+Sapore,8,Il sapore è molto blando,Il sapore è molto blando.,True,OK
+Sapore,9,Insapore,È insapore.,True,OK
+Sapore,10,Leggero  amaro,Ha un leggero retrogusto amaro.,True,OK
+Sapore,12,"Amaro, e il salato finemente rispetto al piccante","È amaro, con il salato che rispetta finemente il piccante.",True,OK
+Sapore,13,"Buon equilibrio, manca il dolce, e un po' troppo amaro","C'è un buon equilibrio, ma manca il dolce ed è un po' troppo amaro.",True,OK
+Sapore,16,Poco salato,È poco salato.,True,OK
+Sapore,18,Dolciastro più che.dolce,È dolciastro più che dolce.,True,OK
+Sapore,19,Equilibrato,È equilibrato.,True,OK
+Sapore,20,Poco salato,È poco salato.,True,OK
+Sapore,43,Acido e amaro. Manca di tutto il resto,"È acido e amaro, ma manca di tutto il resto.",True,OK
+Sapore,45,"Povero. Poco umani, poco sale. Non dolce. Manca di sapore","È povero, poco saporito, poco salato e non dolce.",True,OK
+Sapore,46,Acido e amaro dominano. Non dolce,"Il sapore è dominato da note acide e amare, senza dolcezza.",True,OK
+Sapore,47,Sapore non pieno. Scarno. Manca quasi di sale,"Il sapore è scarso e poco pieno, quasi privo di sale.",True,OK
+Sapore,48,Bruciante,Il sapore è bruciante.,True,OK
+Sapore,50,Molto poco salato,Il formaggio è molto poco salato.,True,OK
+Sapore,51,Non equilibrato.  Quasi poco sale,Il sapore non è equilibrato e manca quasi di sale.,True,OK
+Sapore,56,Poco sapido,Il formaggio è poco sapido.,True,OK
+Sapore,57,"Poco dolce,un po' amaro",Il sapore è poco dolce e un po' amaro.,True,OK
+Sapore,58,Non dolce. Manca umami. Sapore non pieno,"Non è dolce e manca di umami, il sapore non è pieno.",True,OK
+Sapore,59,Un amaro netto,C'è un amaro netto.,True,OK
+Sapore,60,Amaro domina. Poco male. Non dolce. Poco umami,"L'amaro domina, con poco male, non è dolce e ha poco umami.",True,OK
+Sapore,61,"Amaro e acido dominano. Non dolce, non salato,non umami","Amaro e acido predominano, non è dolce, salato o umami.",True,OK
+Sapore,62,Poco sapido,Il formaggio è poco sapido.,True,OK
+Sapore,64,Amaro netto,C'è un amaro netto.,True,OK
+Sapore,66,Salato e non dolce,Il sapore è salato e non dolce.,True,OK
+Sapore,67,Appena un pochetto salato,È appena un po' salato.,True,OK
+Sapore,68,Piatto al palato. Una punta di piccante alla fine,"Il sapore è piatto al palato, con una punta di piccante alla fine.",True,OK
+Sapore,70,Non equilibrato,Il sapore non è equilibrato.,True,OK
+Sapore,71,"Equilibrato,ma lievemente acre in gola","È equilibrato, ma lievemente acre in gola.",True,OK
+Sapore,72,I gusti sono ben percettibili ma il piccante e acre non sono equilibrati e sono persistenti,"I gusti sono ben percettibili, ma il piccante e l'acre non sono equilibrati e risultano persistenti.",True,OK
+Sapore,73,Amaro e salato prevalgono,Il sapore amaro e salato prevalgono.,True,OK
+Sapore,74,Equilibrato. Non dolce,Il formaggio è equilibrato e non dolce.,True,OK
+Sapore,76,Leggermente sapido salato,Il sapore è leggermente sapido e salato.,True,OK
+Sapore,77,"Sapido, sgradevole",Il sapore è sapido e sgradevole.,True,OK
+Sapore,78,"Un po' troppo salato, tendente all'acido con un punta di piccante alla fine","È un po' troppo salato, tendente all'acido con una punta di piccante alla fine.",True,OK
+Sapore,79,Il sapore anomalo. Atipico del grana,Il sapore è anomalo e atipico per un grana.,True,OK
+Sapore,80,Manca di sale (non avrei mai pensato di scriverlo) e umami,Manca di sale e umami.,True,OK
+Sapore,81,Acido prevalente,Il sapore è prevalentemente acido.,True,OK
+Sapore,82,"Non piccante, né dolce. Amaro","Non è piccante né dolce, ma amaro.",True,OK
+Sapore,85,Leggermente  il pIccante,È leggermente piccante.,True,OK
+Sapore,89,Equilibrato,Il formaggio è equilibrato.,True,OK
+Sapore,94,Poco salato. No umani. Manchevolezze,È poco salato e privo di umami.,True,OK
+Sapore,95,Non dolce,Non è dolce.,True,OK
+Sapore,98,Solo leggero acido,C'è solo un leggero sapore acido.,True,OK
+Sapore,99,Scarno e pungente,Il sapore è scarno e pungente.,True,OK
+Sapore,103,"Anonimo come sapore, poco espresso con...",Il sapore è anonimo e poco espresso.,True,OK
+Sapore,123,Prevalenza però  lieve di acido amaro e salato,"C'è una lieve prevalenza di sapori acidi, amari e salati.",True,OK
+Sapore,126,Troppo salato,Troppo salato.,True,OK
+Sapore,127,Appena troppo sale. Amaro. Scarno del resto,"C'è un po' troppo sale, con un retrogusto amaro e scarso.",True,OK
+Sapore,130,Non sono sicuro di percepire dolcezza,Non sono sicuro di percepire la dolcezza.,True,OK
+Sapore,145,Ambivalenza dove:-amaro...,"C'è ambivalenza, con note amare.",True,OK
+Sapore,162,Sgraziato. Troppo amaro,Sgraziato e troppo amaro.,True,OK
+Sapore,165,Amaro domina,Il sapore amaro domina.,True,OK
+Sapore,167,"Leggero amaro ,,peccato!","C'è un leggero amaro, peccato!",True,OK
+Sapore,168,Amaro,Amaro.,True,OK
+Sapore,169,Non dolce. Salato  e amaro spiccano un po',Non è dolce; spiccano il salato e l'amaro.,True,OK
+Sapore,172,Bruciante,Il sapore è bruciante.,True,OK
+Sapore,175,Non dolce,Non ha un sapore dolce.,True,OK
+Sapore,181,Non dolce,Non ha un sapore dolce.,True,OK
+Sapore,182,Amaro e salato. No dolce,"Le note amare e salate prevalgono, non è dolce.",True,OK
+Sapore,183,Tanto umani. Non dolce,Ha un sapore molto umano e non è dolce.,True,OK
+Sapore,184,Non dolce,Non ha un sapore dolce.,True,OK
+Sapore,190,Amaro e salato prevalenti,Le note amare e salate sono prevalenti.,True,OK
+Sapore,191,Non dolce. Un pochetto troppo salato,Non è dolce e risulta un po' troppo salato.,True,OK
+Sapore,192,Appena troppo salato,È appena troppo salato.,True,OK
+Sapore,195,Pungente,Il sapore è pungente.,True,OK
+Sapore,196,"Amaro, troppo",È troppo amaro.,True,OK
+Sapore,197,"Acido, amaro e salato prevalgono","Le note acide, amare e salate prevalgono.",True,OK
+Sapore,198,Troppo sale. Pungente,C'è troppo sale e il sapore è pungente.,True,OK
+Sapore,200,Non dolce,Non è dolce.,True,OK
+Sapore,201,Anche se finale amarognolo...,Ha un finale amarognolo.,True,OK
+Sapore,241,Acido su tutti,È acido in modo predominante.,True,OK
+Sapore,260,"2 dei 4 campioni a livello di sapore si discostano in modo evidente: molto più  sale, acido e umami.","Due dei quattro campioni si discostano notevolmente per sapore: sono molto più salati, acidi e umami.",True,OK
+Sapore,261,"Non è  ""saporito"" manca sale e umami","Non è saporito, manca di sale e umami.",True,OK
+Sapore,271,Anonimo poco intenso,È anonimo e poco intenso.,True,OK
+Sapore,276,Un pochetto amaro. Umani latitante,Ha un leggero retrogusto amaro e l'umami è assente.,True,OK
+Sapore,281,Troppo salato,È troppo salato.,True,OK
+Sapore,293,Equilibrato,Il formaggio è equilibrato.,True,OK
+Sapore,306,Non equilibrato,Il formaggio non è equilibrato.,True,OK
+Sapore,309,Leggermente contrasto dolce/amaro,C'è un leggero contrasto tra dolce e amaro.,True,OK
+Sapore,312,Molto leggere le sensazioni segnate sul sapore,Le sensazioni sul sapore sono molto leggere.,True,OK
+Sapore,313,Amaro ma insipido,È amaro ma insipido.,True,OK
+Sapore,321,Medio ma non intenso il sapore,Il sapore è medio ma non intenso.,True,OK
+Sapore,324,piccante,Il formaggio è piccante.,True,OK
+Sapore,336,leg acido e sal,Ha una leggera nota acida e salata.,True,OK
+Sapore,341,salato,Il formaggio è salato.,True,OK
+Sapore,351,leg acido salato,Ha una leggera nota acida e salata.,True,OK
+Sapore,361,piccante acre in gola,Piccante e acre in gola.,True,OK
+Sapore,362,tentende piccante e amaro,Tendente al piccante e all'amaro.,True,OK
+Sapore,372,leg salato,Leggermente salato.,True,OK
+Sapore,373,piccante,Piccante.,True,OK
+Sapore,377,piccante,Piccante.,True,OK
+Sapore,379,salato,Salato.,True,OK
+Sapore,380,acido amaro,Acido e amaro.,True,OK
+Sapore,381,"Amaro percepibile. bocconi disomogenei per quel che riguarda la salatura, alcuni addirittura poco salati. poco umami. Gusto non omogeneo","Amaro percepibile, con bocconi disomogenei nella salatura; alcuni sono poco salati e c'è poco umami.",True,OK
+Sapore,392,leg salato umami,Leggermente salato e umami.,True,OK
+Sapore,410,leg amaro,Leggermente amaro.,True,OK
+Sapore,419,acido ;amaro,Acido e amaro.,True,OK
+Sapore,421,"piccante, salato",Piccante e salato.,True,OK
+Sapore,427,piccante percepito;,Piccante percepito.,True,OK
+Sapore,432,umami,Umami.,True,OK
+Sapore,436,"piccante, salato",Piccante e salato.,True,OK
+Sapore,439,leg salato,Leggermente salato.,True,OK
+Sapore,446,molto sbilanciato sull-umami,Molto sbilanciato sull'umami.,True,OK
+Sapore,461,amaro,Amaro.,True,OK
+Sapore,462,amaro ;acido,Amaro e acido.,True,OK
+Sapore,467,equilibrato,Equilibrato.,True,OK
+Sapore,468,GENERALMENTE  EQUILIBRATO,Generalmente equilibrato.,True,OK
+Sapore,469,"abbastanza neutro, piatto",Abbastanza neutro e piatto.,True,OK
+Sapore,471,acido,Acido.,True,OK
+Sapore,476,punta di acido,Punta di acido.,True,OK
+Sapore,487,sbilanciato salato,Sbilanciato sul salato.,True,OK
+Sapore,488,acido;salato,Acido e salato.,True,OK
+Sapore,492,legg acido,Leggermente acido.,True,OK
+Sapore,499,acido,Acido.,True,OK
+Sapore,501,"sapori un po slegati e un po piccante, ma non persistente","Sapori un po' slegati e un po' piccanti, ma non persistenti.",True,OK
+Sapore,502,salato e amaro...,Salato e amaro.,True,OK
+Sapore,505,"sapidit' medio/alta, poco umami, poco piccante","Sapidità medio-alta, poco umami e poco piccante.",True,OK
+Sapore,506,"UN PO- ACIDINO, E PICCANTE",Un po' acidino e piccante.,True,OK
+Sapore,510,legg amaro,Leggermente amaro.,True,OK
+Sapore,518,piccante,Piccante.,True,OK
+Sapore,520,piccante;salato;,Piccante e salato.,True,OK
+Sapore,523,acido,Acido.,True,OK
+Sapore,538,piccante;acido;,Piccante e acido.,True,OK
+Sapore,541,piccante,Piccante.,True,OK
+Sapore,542,dolce amara GRASSA,Dolce amara e grassa.,True,OK
+Sapore,554,ACIDO;piccante,Acido e piccante.,True,OK
+Sapore,562,piccante,Piccante.,True,OK
+Sapore,565,equilibrato e anche dolce..,Equilibrato e anche dolce.,True,OK
+Sapore,566,acido amaro,Acido e amaro.,True,OK
+Sapore,568,motlo umami,Molto umami.,True,OK
+Sapore,570,leg amaro,Leggermente amaro.,True,OK
+Sapore,571,legg salato,Leggermente salato.,True,OK
+Sapore,573,salato;acido,Salato e acido.,True,OK
+Sapore,579,piccante,Piccante.,True,OK
+Sapore,581,piccante;acido,Piccante e acido.,True,OK
+Sapore,601,piccante e acido,Piccante e acido.,True,OK
+Sapore,606,@sciapo.... e amaro....,È sciapo e amaro.,True,OK
+Sapore,611,equilibrato,È equilibrato.,True,OK
+Sapore,612,piccante,È piccante.,True,OK
+Sapore,614,leg piccante,Leggermente piccante.,True,OK
+Sapore,628,"ammmmmaro, acido e salatino. squilibrio","È amaro, acido e salatino, con uno squilibrio.",True,OK
+Sapore,646,legg piccante,Leggermente piccante.,True,OK
+Sapore,647,amaro piccante,È amaro e piccante.,True,OK
+Sapore,650,"piccantezza , troppo umami","La piccantezza è eccessiva, con troppo umami.",True,OK
+Sapore,652,un p; acido  e amaro,È un po' acido e amaro.,True,OK
+Sapore,658,piccantina ma equilibrata,È piccante ma equilibrata.,True,OK
+Sapore,659,"leggermente amaro, manca come di struttura, salato ,piccante ma non legati","Leggermente amaro, manca di struttura; salato e piccante ma non legati.",True,OK
+Sapore,662,acido;amaro;,È acido e amaro.,True,OK
+Sapore,669,amaro,È amaro.,True,OK
+Sapore,670,acido;amaro,È acido e amaro.,True,OK
+Sapore,677,amaro,È amaro.,True,OK
+Sapore,681,piccante salato non equilibrati,"Piccante e salato, non equilibrati.",True,OK
+Sapore,683,"acido che spicca, ma anche dolce, salato basso","L'acido spicca, ma è anche dolce, con salato basso.",True,OK
+Sapore,685,tendente all'amaro acido piccante,"Il formaggio tende all'amaro, con note acide e piccanti.",True,OK
+Sapore,691,non equilib picc e salato,Non c'è equilibrio tra il piccante e il salato.,True,OK
+Sapore,693,"poco rotondo, forse manca umami, nel complesso equilibrato","È poco rotondo e forse manca di umami, ma nel complesso è equilibrato.",True,OK
+Sapore,695,umami troppo evidente,L'umami è troppo evidente.,True,OK
+Sapore,697,latte fresco,Ha un sapore di latte fresco.,True,OK
+Sapore,702,anonimo con amaro...,Il sapore è anonimo con una nota amara.,True,OK
+Sapore,719,"eccesso di umami, e salto",C'è un eccesso di umami e una mancanza di equilibrio.,True,OK
+Sapore,722,non equi salato amaro,Non c'è equilibrio tra il salato e l'amaro.,True,OK
+Sapore,732,pizzica salato,Il salato pizzica.,True,OK
+Sapore,741,"un po' amaro, salato, umami -","È un po' amaro, salato e con umami.",True,OK
+Sapore,745,umami;acido,Ha note di umami e acidità.,True,OK
+Sapore,761,pungente,È pungente.,True,OK
+Sapore,763,salato;leggermente acido;leggermente umami,"È salato, leggermente acido e leggermente umami.",True,OK
+Sapore,767,piccantezza elevata,La piccantezza è elevata.,True,OK
+Sapore,769,leggermento acido,È leggermente acido.,True,OK
+Sapore,771,punta di acido;salato,Presenta una punta di acidità e salato.,True,OK
+Sapore,772,amaro acido,Ha un sapore amaro e acido.,True,OK
+Sapore,773,"amaro, acido. nulla spicca se non il sale, un pochetto dolce","Il formaggio è amaro e acido, con un leggero sapore dolce, ma il sale è l'unico elemento che spicca.",True,OK
+Sapore,775,lieve piccantezza finale,C'è una lieve piccantezza finale.,True,OK
+Sapore,776,leggermente squilibrato sull'acido,Il formaggio risulta leggermente squilibrato sull'acido.,True,OK
+Sapore,777,umami spiccato,Si percepisce un umami spiccato.,True,OK
+Sapore,778,piccante e credo sappia di stalla,È piccante e ha un sapore che ricorda la stalla.,True,OK
+Sapore,779,acido;salato;umami;,"Il formaggio presenta note di acido, salato e umami.",True,OK
+Sapore,780,leg salato umami piccante,"Si avverte un leggero sapore salato, umami e piccante.",True,OK
+Sapore,781,amaro,Il formaggio ha un sapore amaro.,True,OK
+Sapore,788,leg amaro,Si percepisce un leggero amaro.,True,OK
+Sapore,821,acido,Si avverte un sapore acido.,True,OK
+Sapore,822,"piccante, salato",Il formaggio è piccante e salato.,True,OK
+Sapore,823,tendente all'acido,Tende all'acido.,True,OK
+Sapore,825,"sale eccessivo, piccante",C'è un eccesso di sale e un sapore piccante.,True,OK
+Sapore,827,leggermente acido,È leggermente acido.,True,OK
+Sapore,828,"leggermenete piccante, salato e amarognolo","Si avverte una leggera piccantezza, salato e amarognolo.",True,OK
+Sapore,829,acido,Il formaggio è acido.,True,OK
+Sapore,832,"salato, amaro,",Si percepiscono sapori salato e amaro.,True,OK
+Sapore,834,amaro;umami,Amaro e umami.,True,OK
+Sapore,836,umami leggermente accentuato piccante praticamente nullo,"Umami leggermente accentuato, piccante praticamente nullo.",True,OK
+Sapore,838,tendente all'amaro,Tendente all'amaro.,True,OK
+Sapore,839,salato glutammato molto negativo,"Salato con un forte retrogusto di glutammato, molto negativo.",True,OK
+Sapore,861,acido,Acido.,True,OK
+Sapore,869,leg salato,Leggermente salato.,True,OK
+Sapore,881,amaro da subito,Amaro fin da subito.,True,OK
+Sapore,882,umami e salato molto forte,Umami e salato molto forti.,True,OK
+Sapore,883,"piccante, acido , salto, umami;soprattutto in una porzione","Piccante, acido, salato e umami, soprattutto in una porzione.",True,OK
+Sapore,884,piccante,Piccante.,True,OK
+Sapore,887,acido,Acido.,True,OK
+Sapore,888,"salato, umami,",Salato e umami.,True,OK
+Sapore,889,salato immangiabile,"Salato, immangiabile.",True,OK
+Sapore,890,salato,Salato.,True,OK
+Sapore,891,salato,Salato.,True,OK
+Sapore,894,"umami, salato, piccante","Umami, salato e piccante.",True,OK
+Sapore,897,dolce pizzica unpo- non tipico del grana,"Il formaggio ha un sapore dolce che pizzica, non tipico del grana.",True,OK
+Sapore,898,"percepisco anche il dolce, peccato sia pungente, non chiaro se piccante o di sale. penso piccante","Percepisco un sapore dolce, ma è anche pungente; non è chiaro se sia piccante o salato, penso sia piccante.",True,OK
+Sapore,899,non piccante leggermente amaro,"Non è piccante, ma ha un leggero retrogusto amaro.",True,OK
+Sapore,902,non equilibrato troppo salato,"Il sapore non è equilibrato, è troppo salato.",True,OK
+Sapore,907,"equilibrato, umami...",Il formaggio è equilibrato e presenta note di umami.,True,OK
+Sapore,915,salato e piccante non equilibrati,Il sapore salato e piccante non sono equilibrati.,True,OK
+Sapore,920,equilibrato,Il formaggio è equilibrato.,True,OK
+Sapore,921,amaro e umami percepibili,Sono percepibili note di amaro e umami.,True,OK
+Sapore,922,"amaro, dolce",Il sapore è amaro e dolce.,True,OK
+Sapore,926,TENDENTE ALL'AMARO ACIDO,Tende all'amaro e all'acido.,True,OK
+Sapore,927,salato,Il formaggio è salato.,True,OK
+Sapore,928,"salato, dolce assente","È salato, ma il dolce è assente.",True,OK
+Sapore,929,salato,Il formaggio è salato.,True,OK
+Sapore,930,salato,Il formaggio è salato.,True,OK
+Sapore,931,legg acido e piccante,Ha un leggero sapore acido e piccante.,True,OK
+Sapore,943,leg amaro leg acido e piccante (lascia leggero acre in gola),"Presenta un leggero sapore amaro, acido e piccante, lasciando un retrogusto acre in gola.",True,OK
+Sapore,945,insapore,Il formaggio è insapore.,True,OK
+Sapore,964,acido amaro,Il formaggio ha un sapore acido e amaro.,True,OK
+Sapore,965,tendente all'amaro piccante,Il sapore tende all'amaro piccante.,True,OK
+Sapore,966,leggermente amaro e acre in gola,Si percepisce un leggero amaro e un'acidità in gola.,True,OK
+Sapore,971,"umami troppo forte, poco sale",L'umami è troppo forte e il sale è poco.,True,OK
+Sapore,975,tendende all'acido,Tende all'acido.,True,OK
+Sapore,978,salato;acido,È salato e acido.,True,OK
+Sapore,979,"senza salinit' e piccante, un p; di umami","Manca di salinità e piccantezza, con un po' di umami.",True,OK
+Sapore,982,"sapidit' spiccata con buon umami e piccantezza evidente, non molto bilanciato","Ha una sapidità spiccata con buon umami e piccantezza evidente, ma non è molto bilanciato.",True,OK
+Sapore,984,"dolce, legg sbilanciato umami e salato","È dolce, con un leggero sbilanciamento tra umami e salato.",True,OK
+Sapore,987,"saporito, salato e uamai adeguati, piccante praticamente assente","È saporito, con salato e umami adeguati, mentre la piccantezza è praticamente assente.",True,OK
+Sapore,988,salato,È salato.,True,OK
+Sapore,991,molto amaro,È molto amaro.,True,OK
+Sapore,993,dolce;,È dolce.,True,OK
+Sapore,995,un po troppo acido con leggero piccante,È un po' troppo acido con un leggero piccante.,True,OK
+Sapore,997,leg salato,È leggermente salato.,True,OK
+Sapore,998,legg salato,È leggermente salato.,True,OK
+Sapore,1022,piccante,È piccante.,True,OK
+Sapore,1024,acido,Il formaggio ha un sapore acido.,True,OK
+Sapore,1061,leg salato,Ha un leggero sapore salato.,True,OK
+Sapore,1062,non equilibrato salato,"Il sapore non è equilibrato, è troppo salato.",True,OK
+Sapore,1066,acido;umami;,Presenta note di acidità e umami.,True,OK
+Sapore,1067,piccante assente. pococ umami. nele complesso equilibrato. non dolce,"Il piccante è assente, l'umami è poco presente e il complesso non è equilibrato, non è dolce.",True,OK
+Sapore,1068,acido,Il formaggio ha un sapore acido.,True,OK
+Sapore,1071,leg amaro,C'è un leggero retrogusto amaro.,True,OK
+Sapore,1075,leggermente acido;,È leggermente acido.,True,OK
+Sapore,1079,"umami un po- carico, piccante inesistente","L'umami è un po' carico, il piccante è inesistente.",True,OK
+Sapore,1080,leg amaro,C'è un leggero retrogusto amaro.,True,OK
+Sapore,1092,acido;amaro;,Ci sono note di acidità e amaro.,True,OK
+Sapore,1120,piccante,Il formaggio è piccante.,True,OK
+Sapore,1121,piccante,Il formaggio è piccante.,True,OK
+Sapore,1122,"punta di piccante, salato",C'è una punta di piccante e un sapore salato.,True,OK
+Sapore,1124,pungente sulla lingua. Amaro e acido presenti,"È pungente sulla lingua, con note di amaro e acidità.",True,OK
+Sapore,1125,amaro;acido;,Ci sono note di amaro e acidità.,True,OK
+Sapore,1126,acido,Il formaggio ha un sapore acido.,True,OK
+Sapore,1128,leg amaro,Leggermente amaro.,True,OK
+Sapore,1129,legg salato,Leggermente salato.,True,OK
+Sapore,1130,leggera punta di acido,Leggera punta di acidità.,True,OK
+Sapore,1131,troppo acido acidita,Troppo acido.,True,OK
+Sapore,1132,Amaro percepibile. Nessun sapore sovrastante. non dolce,"Amaro percepibile, senza sapori sovrastanti e non dolce.",True,OK
+Sapore,1133,acido;,Acido.,True,OK
+Sapore,1135,dolce poco percepito,Dolce poco percepito.,True,OK
+Sapore,1138,"sapido prevalente, segue il dolce e il piccante persistente (non sembra grana)","Sapido prevalente, seguito da dolce e piccante persistente.",True,OK
+Sapore,1139,"pungente per eccesso salino. acido, amaro presenti ed equilibrati.","Pungente per eccesso di sale, con acidità e amarezza equilibrate.",True,OK
+Sapore,1141,salato,Salato.,True,OK
+Sapore,1161,pungente per sale,Pungente per il sale.,True,OK
+Sapore,1163,acido;leggermente piccante;salato,"Acido, leggermente piccante e salato.",True,OK
+Sapore,1167,leg salato,Leggermente salato.,True,OK
+Sapore,1177,salato legg amaro,Salato con leggera amarezza.,True,OK
+Sapore,1179,leg amaro,Leggermente amaro.,True,OK
+Sapore,1185,un po' troppo salato,Un po' troppo salato.,True,OK
+Sapore,1186,"equilibrato, leggerm. sapido",Equilibrato e leggermente sapido.,True,OK
+Sapore,1187,acido,Acido.,True,OK
+Sapore,1188,"poco salato,",Poco salato.,True,OK
+Sapore,1189,abb equi un po salato,Abbastanza salato.,True,OK
+Sapore,1191,leg salato,Leggermente salato.,True,OK
+Sapore,1202,insapore,Insapore.,True,OK
+Sapore,1221,salato,Salato.,True,OK
+Sapore,1222,manca di pienezza. forse manca umami,"Manca di pienezza, forse manca umami.",True,OK
+Sapore,1227,salato,Salato.,True,OK
+Sapore,1230,amaro,Amaro.,True,OK
+Sapore,1231,amaro tossico  e piccante,Amaro tossico e piccante.,True,OK
+Sapore,1232,acidi;piccante;umami,"Acidi, piccante, umami.",True,OK
+Sapore,1236,amaro deciso e penalizzante,Amaro deciso e penalizzante.,True,OK
+Sapore,1237,salato,Salato.,True,OK
+Sapore,1240,salato,Salato.,True,OK
+Sapore,1242,acido;leggermente salato;,Acido e leggermente salato.,True,OK
+Sapore,1245,"solo un accento di umami, non piccante","Solo un accento di umami, non piccante.",True,OK
+Sapore,1249,leg piccante,Leggermente piccante.,True,OK
+Sapore,1251,leggermetne acido;salato ;umami;,"Leggermente acido, salato e umami.",True,OK
+Sapore,1252,"salato, aciduloe amaro","Salato, acidulo e amaro.",True,OK
+Sapore,1261,acido;,Acido.,True,OK
+Sapore,1277,acido;,Acido.,True,OK
+Sapore,1282,non equilibrato amaro,Non equilibrato e amaro.,True,OK
+Sapore,1301,un po- sbilanciato il salato,Un po' sbilanciato sul salato.,True,OK
+Sapore,1304,nulla prevale. non dolce,"Nulla prevale, non dolce.",True,OK
+Sapore,1317,legg sbilanciato il salato,Leggermente sbilanciato sul salato.,True,OK
+Sapore,1321,Acido. Amaro leggero. non dolce.,"Acido, amaro leggero e non dolce.",True,OK
+Sapore,1322,insapore,Insapore.,True,OK
+Sapore,1323,"salato, umami",Salato e umami.,True,OK
+Sapore,1326,leg salato,Leggermente salato.,True,OK
+Sapore,1329,"intenso, ma non del tutto positivo","Intenso, ma non del tutto positivo.",True,OK
+Sapore,1335,acido;amaro,Acido e amaro.,True,OK
+Sapore,1341,salato umami leg amaro,"Salato, umami e leggermente amaro.",True,OK
+Sapore,1357,dolce;,Dolce.,True,OK
+Sapore,1359,"un po' salato,",Un po' salato.,True,OK
+Sapore,1362,piccante leggero;acido moderato,Piccante leggero e acido moderato.,True,OK
+Sapore,1363,leg salato,Il formaggio ha un sapore salato.,True,OK
+Sapore,1365,leggermente acido;umami,Il formaggio è leggermente acido e presenta note di umami.,True,OK
+Sapore,1372,piccante forte,Il sapore è fortemente piccante.,True,OK
+Sapore,1374,dolce e sa di vecchio,Il formaggio è dolce e ha un sapore di vecchio.,True,OK
+Sapore,1378,"equilibrato ma con poco sale!!! ""Sciapotto""","Il sapore è equilibrato, ma con poco sale.",True,OK
+Sapore,1379,piccante e amaro,Il formaggio è piccante e amaro.,True,OK
+Sapore,1381,Amaro. non dolce,Il sapore è amaro e non dolce.,True,OK
+Sapore,1382,acido;amaro,Il formaggio è acido e amaro.,True,OK
+Sapore,1383,salato e amaro,Il sapore è salato e amaro.,True,OK
+Sapore,1385,molto salato con punta di amaro,È molto salato con una punta di amaro.,True,OK
+Sapore,1388,inizialmente molto buono ma alla fine  molto salato,"Inizialmente è molto buono, ma alla fine risulta molto salato.",True,OK
+Sapore,1389,piccante forte,Il sapore è fortemente piccante.,True,OK
+Sapore,1391,piccantino. non dolce,È piccantino e non dolce.,True,OK
+Sapore,1392,acido;amaro;piccante,"Il formaggio è acido, amaro e piccante.",True,OK
+Sapore,1393,amaro,Il sapore è amaro.,True,OK
+Sapore,1394,legg acido e piccante. salato,"È leggermente acido e piccante, con un sapore salato.",True,OK
+Sapore,1395,amara e piccante,Il formaggio è amaro e piccante.,True,OK
+Sapore,1400,nessuna nota prevalente. poco umami o nulla,"Nessuna nota prevalente, poco umami o nulla.",True,OK
+Sapore,1401,acido;amaro;,Acido e amaro.,True,OK
+Sapore,1408,amaro,Amaro.,True,OK
+Sapore,1410,umami,Umami.,True,OK
+Sapore,1411,neutro,Neutro.,True,OK
+Sapore,1469,amaro;umami;,Amaro e umami.,True,OK
+Sapore,1474,legg sbilanciato il salato,Leggermente sbilanciato il salato.,True,OK
+Sapore,1476,salato,Salato.,True,OK
+Sapore,1477,piccante;acido;,Piccante e acido.,True,OK
+Sapore,1478,piccante,Piccante.,True,OK
+Sapore,1482,pizzica salato,Pizzica salato.,True,OK
+Sapore,1483,leg amaro,Leggermente amaro.,True,OK
+Sapore,1489,amaro acido,Amaro e acido.,True,OK
+Sapore,1491,"un po' amaro, salato, umami -","Un po' amaro, salato e umami.",True,OK
+Sapore,1495,umami;acido,Umami e acido.,True,OK
+Sapore,1496,legg salato,Leggermente salato.,True,OK
+Sapore,1508,"squilibrato, salato.",Il formaggio è squilibrato e salato.,True,OK
+Sapore,1541,piuttosto insapore,Il formaggio è piuttosto insapore.,True,OK
+Sapore,1542,gusti equilibrati e no piccante,I gusti sono equilibrati e non piccanti.,True,OK
+Sapore,1544,acido,Il formaggio ha un sapore acido.,True,OK
+Sapore,1551,acido intensità leggera;piccante intensità leggera,Il formaggio ha un'acidità leggera e una piccantezza leggera.,True,OK
+Sapore,1554,acido;piccante,Il formaggio è acido e piccante.,True,OK
+Sapore,1563,acido;damaro,Il formaggio è acido e amaro.,True,OK
+Sapore,1564,"dolce, amaro",Il formaggio è dolce e amaro.,True,OK
+Sapore,1583,"acido pungente,",Il formaggio ha un'acidità pungente.,True,OK
+Sapore,1593,"neutro, insapore",Il formaggio è neutro e insapore.,True,OK
+Sapore,1,Molto equilibrio e complessità  delle note,C'è un buon equilibrio e complessità delle note.,False,OK
+Sapore,4,Leggermente  astringente,Presenta una leggera astringenza.,False,OK
+Sapore,5,Lievissima nota amara,Si avverte una lievissima nota amara.,False,OK
+Sapore,11,"Poco Miami,",Ha poco sapore.,False,OK
+Sapore,15,Il pizzicore moderato alla lingua sovrasta,Il pizzicore moderato alla lingua sovrasta.,False,OK
+Sapore,17,Astringente,Presenta astringenza.,False,OK
+Sapore,21,Non da grana,Non ha caratteristiche da formaggio grana.,False,OK
+Sapore,41,Nonostante la percezione di descrittori positivi e negativi lo valuto nel complesso positivo perché non vere ricettività ma caratteristiche attese in un formaggio stagionato,"Nonostante i descrittori positivi e negativi, lo valuto complessivamente positivo per le caratteristiche attese in un formaggio stagionato.",False,
+Sapore,49,Dolciastro,Il sapore è dolciastro.,False,OK
+Sapore,53,Poco umano e sale,Il sapore è poco umano e poco salato.,False,OK
+Sapore,92,Appena troppo sale,C'è appena troppo sale.,False,OK
+Sapore,96,Troppo sale,C'è troppo sale.,False,OK
+Sapore,97,Non da grana di 18 20 mesi,Non ha le caratteristiche di un grana di 18-20 mesi.,False,
+Sapore,116,Piatto,Piatto.,False,OK
+Sapore,121,Sapone,Sapone.,False,OK
+Sapore,125,Insipido,Insipido.,False,OK
+Sapore,133,Grasso,Grasso.,False,OK
+Sapore,134,Molto squilibrato,Molto squilibrato.,False,OK
+Sapore,135,Appena percepiti e non sovrastanti,I sapori sono appena percepiti e non sovrastano.,False,OK
+Sapore,136,Squilibrio..,C'è uno squilibrio.,False,OK
+Sapore,137,Solo leggeri...,Solo leggeri sapori.,False,OK
+Sapore,141,Prevale il sale,Il sale prevale.,False,OK
+Sapore,163,Manca di pienezza. Scarno,Manca di pienezza e risulta scarno.,False,OK
+Sapore,170,"Scarno, non pieno",Il formaggio è scarno e non pieno.,False,OK
+Sapore,171,"Tanto umano, troppo","Ha un sapore molto umano, forse troppo.",False,OK
+Sapore,174,Leggermente prevalenti,Le note sono leggermente prevalenti.,False,
+Sapore,176,Non grana,Non presenta note di grana.,False,OK
+Sapore,178,Leggera prevalenza,C'è una leggera prevalenza di sapori.,False,
+Sapore,180,Riequilibrare nel complesso senza prevalenza... Forse note acide!,"Necessita di un riequilibrio senza prevalenze, forse con note acide.",False,OK
+Sapore,189,Troppo sale,C'è troppo sale.,False,OK
+Sapore,204,"Non ancora pronto, acerbo","Non è ancora pronto, risulta acerbo.",False,
+Sapore,205,Nostrano,È un formaggio nostrano.,False,OK
+Sapore,220,Acerbo,È acerbo.,False,OK
+Sapore,222,Amati prevale un po',Il sapore di Amati prevale un po'.,False,OK
+Sapore,239,Nostrano,È un formaggio nostrano.,False,OK
+Sapore,240,Nostrano,È un formaggio nostrano.,False,OK
+Sapore,254,Equilibrio travi gusti,C'è un equilibrio tra i gusti.,False,OK
+Sapore,266,"Equilibrio strano, poco carattere",L'equilibrio è strano e ha poco carattere.,False,OK
+Sapore,272,"Scarno, non pieno",È scarno e non pieno.,False,OK
+Sapore,279,Sapidità  assente o debole,La sapidità è assente o debole.,False,OK
+Sapore,280,Ha quella nota in più,Ha una nota in più.,False,
+Sapore,283,Forse voto troppo alto,Forse ho dato un voto troppo alto.,False,
+Sapore,301,Leggermente contrastante,Il sapore è leggermente contrastante.,False,OK
+Sapore,302,"Molto squilibrato,",Il formaggio risulta molto squilibrato.,False,OK
+Sapore,303,Non sembra grana,Non sembra un formaggio grana.,False,OK
+Sapore,304,NOSTRANO,È un formaggio nostrano.,False,OK
+Sapore,311,Non grana,Non è un formaggio grana.,False,OK
+Sapore,315,Imperfezioni leggere,Ci sono leggere imperfezioni.,False,
+Sapore,316,Perde in equilibrio,Perde in equilibrio.,False,OK
+Sapore,318,Insipido!,È insipido!,False,OK
+Sapore,319,Piatto,Il sapore è piatto.,False,OK
+Sapore,320,"Un po’ disturba…,",Un po' disturba.,False,
+Sapore,365,sale,Sapore di sale.,False,OK
+Sapore,374,troppo salata!!,Troppo salato!,False,OK
+Sapore,405,grasso,Grasso.,False,OK
+Sapore,423,troppo sale,Troppo salato.,False,OK
+Sapore,478,abb equilib,Abbastanza equilibrato.,False,OK
+Sapore,503,bruciato,Bruciato.,False,OK
+Sapore,507,"difforme, positivo a zone meno in altre","Difforme, positivo a zone e meno in altre.",False,
+Sapore,514,bruciato,Bruciato.,False,OK
+Sapore,561,"Non male, ma poco caratteristico","Non male, ma poco caratteristico.",False,
+Sapore,595,equilibrio tra le diverse nte,Buon equilibrio tra le diverse note.,False,OK
+Sapore,603,manca la componente salata,Manca la componente salata.,False,OK
+Sapore,607,bassa sapidita' poca persistenza,Bassa sapidità e poca persistenza.,False,OK
+Sapore,649,troppppppo sale,C'è troppo sale.,False,OK
+Sapore,725,medio equilibrio,Presenta un equilibrio medio.,False,OK
+Sapore,740,salatino...,Ha un sapore salatino.,False,OK
+Sapore,750,pizzica,Pizzica.,False,OK
+Sapore,790,nulla domina,Nessun sapore domina.,False,OK
+Sapore,802,acida,Il formaggio è acido.,False,OK
+Sapore,824,salatissimo,È salatissimo.,False,OK
+Sapore,833,cotto,Cotto.,False,OK
+Sapore,857,molto cotto,Molto cotto.,False,OK
+Sapore,886,"sale, sale, sale. acidita' elevata. Squilibrato","Sale, sale, sale. Acidità elevata, squilibrato.",False,OK
+Sapore,893,legermente acidulo,Leggermente acidulo.,False,OK
+Sapore,918,formaggio cotto,Si tratta di un formaggio cotto.,False,OK
+Sapore,960,crosta di formaggio,Si nota la crosta di formaggio.,False,OK
+Sapore,963,sapidit' eccessiva e acidulo,Ha un'eccessiva sapidità e un sapore acidulo.,False,OK
+Sapore,970,crosta di formaggio,Presenta una crosta di formaggio.,False,OK
+Sapore,980,latte e burro,Si avvertono note di latte e burro.,False,OK
+Sapore,1003,"scarso di sale, formaggio cotto",È scarso di sale e ha un sapore di formaggio cotto.,False,OK
+Sapore,1058,troppo sale. peccato perch[ il gusto sarebbe molto pieno,"C'è troppo sale, peccato perché il gusto sarebbe molto pieno.",False,OK
+Sapore,1077,manca di sale,Manca di sale.,False,OK
+Sapore,1085,"crosta di formaggio, pane tostato",Sento la crosta di formaggio e il pane tostato.,False,OK
+Sapore,1150,"sale, sale ,sale. dietro poco","Dominanza di sale, con poco altro.",False,OK
+Sapore,1168,"acidulo, carente di sale",Acidulo e carente di sale.,False,OK
+Sapore,1193,un po- troppo sale,Un po' troppo salato.,False,OK
+Sapore,1224,nostrano,Nostrano.,False,OK
+Sapore,1241,c'è tutto anche il piccantino,"C'è tutto, anche un accenno di piccante.",False,OK
+Sapore,1243,acidulo,Acidulo.,False,OK
+Sapore,1269,acidulo,Acidulo.,False,OK
+Sapore,1338,"presenza di acidit', quasi rinfrescante, difettoso","Presenza di acidità, quasi rinfrescante, difettoso.",False,OK
+Sapore,1367,equilibrio di sapori non tipico del grana,L'equilibrio dei sapori non è tipico del grana.,False,OK
+Sapore,1371,salatissimo,Il formaggio è molto salato.,False,OK
+Sapore,1397,sapidità eccessiva,C'è un'eccessiva sapidità.,False,OK
+Sapore,1398,pizzica troppo,Pizzica troppo.,False,OK
+Sapore,1470,latte e alla fine crosta,Sapore di latte e alla fine crosta.,False,OK
+Sapore,1490,salatino...,Salatino.,False,OK
+Sapore,1500,pizzica,Pizzica.,False,OK
+Sapore,1546,"Non sgradevole, ma non lo riconosco come grana. troppo forti odori e consistenze","Non è sgradevole, ma non lo riconosco come grana; ha odori e consistenze troppo forti.",False,

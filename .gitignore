@@ -15,6 +15,7 @@ venv/
 data/raw/*
 data/interim/*
 !data/processed/*.csv
+!data/processed/caption_per_attributo/
 
 
 # Modelli addestrati
@@ -50,5 +51,7 @@ Thumbs.db
 !data/interim/vocabolari_bozza_per_attributo/
 !data/interim/vocabolari_revisione_umana/
 !data/interim/vocabolari_validati_per_attributo/
+!data/interim/residui_hallucination.csv
+!data/interim/revisione_fuori_attributo.csv
 .agents/
 skills-lock.json
