@@ -19,6 +19,9 @@ sys.path.insert(0, str(Path(__file__).parents[2]))
 
 import openai
 import pandas as pd
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from src.data.normalizza_commenti import (
     ATTRIBUTI,
@@ -65,7 +68,7 @@ def _normalizza_con_retry(
             return normalizza_batch(batch, attributo, vocabolario, baseline, client, model)
         except Exception as exc:
             if tentativo < max_retry - 1:
-                attesa = 2 ** tentativo
+                attesa = 10 * (2 ** tentativo)
                 logger.warning(f"Errore batch (tentativo {tentativo+1}/{max_retry}): {exc}. Attendo {attesa}s.")
                 time.sleep(attesa)
             else:
