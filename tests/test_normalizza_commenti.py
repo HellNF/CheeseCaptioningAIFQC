@@ -16,6 +16,7 @@ from src.data.normalizza_commenti import (
     genera_baseline,
     normalizza_batch,
     riprocessa_conforme_batch,
+    riprocessa_fuori_attributo_batch,
     genera_report,
 )
 
@@ -323,6 +324,41 @@ def test_riprocessa_conforme_include_baseline_nel_prompt():
 def test_riprocessa_conforme_batch_vuoto():
     client = _mock_client("")
     risultati = riprocessa_conforme_batch([], "Texture", VOCAB_FIXTURE, "Baseline.", client)
+    assert risultati == []
+    client.chat.completions.create.assert_not_called()
+
+
+# ── riprocessa_fuori_attributo_batch ───────────────────────────────────────
+
+BATCH_FUORI_FIXTURE = [
+    {"id": 20, "commento_raw": "burro e panna"},
+    {"id": 21, "commento_raw": "carne lessa"},
+]
+
+LLM_FUORI_RESPONSE = (
+    '{"id": 20, "caption": "Il campione presenta note di burro e panna."}\n'
+    '{"id": 21, "caption": "Sentori di carne lessa."}\n'
+)
+
+def test_riprocessa_fuori_attributo_ritorna_caption():
+    client = _mock_client(LLM_FUORI_RESPONSE)
+    risultati = riprocessa_fuori_attributo_batch(BATCH_FUORI_FIXTURE, client)
+    assert len(risultati) == 2
+    assert risultati[0] == {"id": 20, "caption": "Il campione presenta note di burro e panna."}
+    assert risultati[1] == {"id": 21, "caption": "Sentori di carne lessa."}
+
+def test_riprocessa_fuori_attributo_no_system_caseario():
+    """Verifica che il prompt non contenga il contesto di attributo specifico."""
+    client = _mock_client(LLM_FUORI_RESPONSE)
+    riprocessa_fuori_attributo_batch(BATCH_FUORI_FIXTURE, client)
+    messages = client.chat.completions.create.call_args.kwargs["messages"]
+    system_content = messages[0]["content"]
+    assert "ATTRIBUTO CORRENTE" not in system_content
+    assert "VOCABOLARIO" not in system_content
+
+def test_riprocessa_fuori_attributo_batch_vuoto():
+    client = _mock_client("")
+    risultati = riprocessa_fuori_attributo_batch([], client)
     assert risultati == []
     client.chat.completions.create.assert_not_called()
 

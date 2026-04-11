@@ -331,6 +331,38 @@ def riprocessa_conforme_batch(
     return parse_llm_response(response_text, expected_ids)
 
 
+def riprocessa_fuori_attributo_batch(
+    batch: list[dict],
+    client,
+    model: str = MODEL_DEFAULT,
+) -> list[dict]:
+    """Genera caption in linguaggio naturale per un batch di righe FUORI_ATTRIBUTO.
+
+    Non vincola la caption all'attributo di provenienza.
+    batch: lista di {id, commento_raw}
+    Ritorna lista di {id, caption}.
+    """
+    if not batch:
+        return []
+    commenti_text = "\n".join(
+        f'{item["id"]}. "{item["commento_raw"]}"' for item in batch
+    )
+    user_message = _FUORI_ATTRIBUTO_HEADER + commenti_text
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": _FUORI_ATTRIBUTO_SYSTEM},
+            {"role": "user", "content": user_message},
+        ],
+        max_tokens=len(batch) * 60,
+        temperature=0.2,
+    )
+    response_text = response.choices[0].message.content
+    expected_ids = [item["id"] for item in batch]
+    return parse_fuori_attributo_response(response_text, expected_ids)
+
+
 def genera_report(risultati: list[dict], attributo: str, output_path: Path) -> None:
     """Genera report Markdown con statistiche di normalizzazione.
 
