@@ -4,16 +4,16 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 3,OK,Non ha un sapore di grana.,Non da grana,Non da grana,2019,C0G,Q_09
 4,OK,Cipolla.,Cipolla,Cipolla,2019,C0L,Q_09
 5,OK,"Il campione presenta note aromatiche di latte cotto, con una complessità che arricchisce l'aroma tipico del Grana Trentino.",Prevalgono le note cotte,Prevalgono le note cotte,2019,C0Q,TG_20
-6,ERRORE_PARSING,,Idrocarburi,Idrocarburi,2019,C0H,TG_26
+6,OK,Si percepisce un sentore di idrocarburi.,Idrocarburi,Idrocarburi,2019,C0H,TG_26
 7,OK,"L'aroma è quasi impercettibile, con una bassa intensità che non rispecchia le caratteristiche tipiche del Grana Trentino.",Aroma quasi impercettibile,Aroma quasi impercettibile,2019,C0D,TG_28
 8,OK,"Il campione presenta un aroma buono, ma con un'intensità poco marcata, risultando meno complesso rispetto agli standard del Grana Trentino.","Buono, ma poco intenso","Buono, ma poco intenso",2019,C0A,TG_19
 9,OK,"L'aroma è leggero, con note che richiamano la tipicità del Grana Trentino.",Leggero,Leggero,2019,C0D,TG_24
 10,OK,"Si percepisce una leggera fermentazione, che contribuisce alla complessità dell'aroma.",Leggera fermentazione,Leggera fermentazione,2019,C0D,TG_35
 11,OK,"Il campione presenta un leggero affumicato, che arricchisce l'aroma senza sovrastare le note tipiche.",Leggero affumicato,Leggero affumicato,2019,C0Q,TG_35
-12,ERRORE_PARSING,,Oggi sono raffreddato,Oggi sono raffreddato,2019,C0C,TG_04
+12,ILLEGGIBILE,,Oggi sono raffreddato,Oggi sono raffreddato,2019,C0C,TG_04
 13,OK,"L'aroma è molto debole, con una scarsa complessità che non rispecchia le caratteristiche del Grana Trentino.",Molto debole,Molto debole,2019,C0H,TG_08
 14,OK,"Si avvertono note di erbe amare, che aggiungono una dimensione interessante all'aroma.",Erbe amare,Erbe amare,2019,C0D,TG_19
-15,ERRORE_PARSING,,Immangiabile  Fermentazione da Clostridium sporogenes,Immangiabile  Fermentazione da Clostridium sporogenes,2019,C0F,Q_02
+15,OK,Si avverte un aroma immangiabile con evidenti note di fermentazione anomala.,Immangiabile  Fermentazione da Clostridium sporogenes,Immangiabile  Fermentazione da Clostridium sporogenes,2019,C0F,Q_02
 16,OK,"La texture è troppo friabile, il che influisce negativamente sull'esperienza aromatica.","Texture  da modificare, troppo friabile.","Texture  da modificare, troppo friabile.",2019,C0Q,TG_14
 17,OK,"Si percepisce un sentore metallico, che non è caratteristico del Grana Trentino.",Metallico,Metallico,2019,C0Q,TG_26
 18,OK,"L'aroma è poco persistente e svanisce rapidamente, non mantenendo le caratteristiche attese.","Poco persistente, sparisce subito","Poco persistente, sparisce subito",2019,C0C,TG_28
@@ -102,7 +102,7 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 101,FUORI_ATTRIBUTO,È strano comunque.,Strano comunque,Strano comunque,2020,C0A,TG_24
 102,OK,"Ho notato un aroma non tipico di formaggio grana, simile al gorgonzola.","Si, vi avevo detto che sono raffreddato. Nel mangiarlo e nel sentire l'aroma mi è arrivata un sentore non tipico di formaggio grana, chiamo gorgonzola","Si, vi avevo detto che sono raffreddato. Nel mangiarlo e nel sentire l'aroma mi è arrivata un sentore non tipico di formaggio grana, chiamo gorgonzola",2020,C0M,TG_04
 103,OK,Il campione presenta note di acciuga e salamoia leggere.,Acciuga e salamoia leggere,Acciuga e salamoia leggere,2020,C0A,TG_24
-104,ERRORE_PARSING,,Polvere!!!!,Polvere!!!!,2020,C0N,TG_24
+104,OK,Si percepisce un odore di polvere.,Polvere!!!!,Polvere!!!!,2020,C0N,TG_24
 105,OK,"Il campione presenta note di frutta secca, in particolare mandorla amara.",Frutta secca=mandorla amara,Frutta secca=mandorla amara,2020,C0C,TG_28
 106,OK,Il campione mostra una buona intensità aromatica.,Buona intensità aromatica,Buona intensità aromatica,2020,C0C,TG_04
 107,FUORI_ATTRIBUTO,Non è piacevole.,Non piacevole!!!,Non piacevole!!!,2020,C0F,TG_24
@@ -393,8 +393,8 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 392,OK,"Presenza di erbe amare, tostato deciso e sentori animali.","erbe amare particolarmente in un pezzo, tostato deciso, animale","erbe amare particolarmente in un pezzo, tostato deciso, animale",2018,C0M,TG_19
 393,OK,Note di frutta e brodo sono percepibili.,note di frutta e brodo,note di frutta e brodo,2018,C0M,TG_14
 394,OK,"Nota aromatica non tipica del trentingrana, con sentori medicinali.","nota aromatica non tipica del trentingrana, quasi di medicina / farmaco cuoio","nota aromatica non tipica del trentingrana, quasi di medicina / farmaco cuoio",2018,C0Q,TG_20
-395,ERRORE_PARSING,,stalla,sstalla,2018,C0Q,TG_08
-396,ERRORE_PARSING,,plastica ?,plastica ?,2018,C0Q,Q_09
+395,OK,Si percepisce un aroma di stalla.,stalla,sstalla,2018,C0Q,TG_08
+396,OK,Si avverte un possibile sentore di plastica.,plastica ?,plastica ?,2018,C0Q,Q_09
 397,OK,Nota stantia ben percepita.,stantio,stantio,2018,C0Q,TG_12
 398,OK,Presenza di brodo e sentori animali.,"brodo, stalla","brodo, sstalla",2018,C0Q,TG_24
 399,OK,"Note di tostato, nocciola vegetale e cotto lattico poco presenti.","tostato, nocciola vegetale cotto lattico cotto poco presente","tostato, nocciola vegetale cotto lattico cotto poco presente",2018,C0Q,TG_35
@@ -457,8 +457,8 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 456,OK,Ricorda il nostrano.,ricorda il nostrano,ricorda il nostrano,2018,C0D,TG_13
 457,OK,Erbe amare.,erbe amare,erbe amare,2018,C0D,TG_19
 458,OK,Sentore di lessato leggerissimo ma non piacevole.,sentore di lessato leggerissimo ma non piacevole,sentore di lessato leggerissimo ma non piacevole,2018,C0D,TG_14
-459,ERRORE_PARSING,,continua a puzzare,continua a puzzare,2018,C0D,TG_04
-460,ERRORE_PARSING,,"non piacevole, strano","non piacevole, strano",2018,C0D,TG_24
+459,OK,Si avverte un odore sgradevole persistente.,continua a puzzare,continua a puzzare,2018,C0D,TG_04
+460,ILLEGGIBILE,,"non piacevole, strano","non piacevole, strano",2018,C0D,TG_24
 461,OK,Latte cotto.,latte cotto,latte cotto,2018,C0D,Q_02
 462,OK,A tratti note di frutta fermentata e latte bruciato.,a tratti note di frutta fermentata e latte bruciato,a tratti note di frutta fermentata e latte bruciato,2018,C0G,TG_20
 463,OK,Burro.,burro,burro,2018,C0G,TG_08
@@ -833,7 +833,7 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 832,OK,Il campione presenta un aroma di latte cotto e note bruciate.,latte cotto&bruciato,latte cotto&bruciato,2018,C0E,TG_11
 833,OK,"Il campione presenta un aroma di formaggio cotto e crosta, ma non fastidioso.","formaggio cotto e crosta, ma non fastidioso.","formaggio cotto e crosta, ma non fastidioso.",2018,C0E,TG_14
 834,OK,"Il campione presenta un breve e iniziale sentore animale, seguito da crosta di grana e lattici cotti.","breve e iniziale sentore animale, poi crosta di grana, lattici cotti","breve e iniziale sentore animale, poi crosta di grana, lattici cotti",2018,C0E,TG_19
-835,ERRORE_PARSING,,diffettoso,diffettoso,2018,C0E,TG_26
+835,OK,Si percepisce un aroma difettoso.,diffettoso,diffettoso,2018,C0E,TG_26
 836,OK,Brodo di carne e lattico cotto.,brodo di carne lalattico cotto,brodo di carne lalattico cotto,2018,C0E,TG_35
 837,OK,Il campione presenta un aroma di latte acidificato e yogurt con alta intensità.,latte acidificato e yogurt intensità alta,latte acidificato e yogurt intensità alta,2018,C0G,Q_02
 838,OK,Latte.,latte,latte,2018,C0G,Q_09
@@ -868,7 +868,7 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 867,OK,"Lattico prevalente, burro fuso, latte cotto, brodo di carne e nota vegetale di fieno.","lattico prevalente, burro fuso, latte cotto, brodo di carne, nota vegetale di fieno","lattico prevalente, burro fuso, latte cotto, brodo di carne, nota vegetale di fieno",2018,C0H,TG_20
 868,OK,Formaggio fuso.,formaggio fuso,formaggio fuso,2018,C0H,TG_35
 869,OK,Panna.,panna,panna,2018,C0I,Q_09
-870,ERRORE_PARSING,,tende a zero,tende a zero,2018,C0I,TG_04
+870,OK,L'intensita aromatica tende a zero.,tende a zero,tende a zero,2018,C0I,TG_04
 871,OK,"Sentore di burro, con una leggera nota piccante.","sentore di burro, ma resta un po di piccante","sentore di burro, ma resta un po di piccante",2018,C0I,TG_11
 872,OK,Burro fuso.,burro fuso,burro fuso,2018,C0I,TG_13
 873,OK,"Crosta e ossidato, con note bruciate.","crosta e ossidato, bruciato","crosta e ossidato, bruciato",2018,C0I,TG_14
@@ -926,7 +926,7 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 925,OK,Note di formaggio cotto piacevoli.,note id formaggio cotto piacevoli,note id formaggio cotto piacevoli,2018,C0A,TG_14
 926,OK,Sapore di lattici cotti e carne lessa.,"lattici cotti, carne lessa","lattici cotti, carne lessa",2018,C0A,TG_19
 927,OK,Grana tipico.,grana tipico...,grana tipico...,2018,C0A,TG_24
-928,ERRORE_PARSING,,non del tutto positivo,non del tutto positivo,2018,C0A,TG_26
+928,ILLEGGIBILE,,non del tutto positivo,non del tutto positivo,2018,C0A,TG_26
 929,OK,Provolone piccante in modo moderato.,provolone piccante moderato,provolone piccante moderato,2018,C0C,Q_02
 930,OK,"Crosta di formaggio, stantio.","crosta di formaggio, stantio","crosta di formaggio, stantio",2018,C0C,TG_11
 931,OK,Non tipico del Grana Trentino.,non tipico del grana,non tipico del grana,2018,C0C,TG_13

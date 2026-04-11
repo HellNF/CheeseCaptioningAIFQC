@@ -73,7 +73,7 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 72,OK,"I gusti sono ben percettibili, ma il piccante e l'acre non sono equilibrati e risultano persistenti.",I gusti sono ben percettibili ma il piccante e acre non sono equilibrati e sono persistenti,I gusti sono ben percettibili ma il piccantecante e acre non sono equilibratorati e sono persistenti,2020,C0D,Q_02
 73,OK,Il sapore amaro e salato prevalgono.,Amaro e salato prevalgono,Amaro e salato prevalgono,2020,C0H,TG_04
 74,OK,Il formaggio è equilibrato e non dolce.,Equilibrato. Non dolce,equilibratorato. Non dolce,2020,C0M,TG_04
-75,ERRORE_PARSING,,Solo leggermente,Solo leggermente,2020,C0C,TG_24
+75,ILLEGGIBILE,,Solo leggermente,Solo leggermente,2020,C0C,TG_24
 76,OK,Il sapore è leggermente sapido e salato.,Leggermente sapido salato,Leggermente sapido salato,2020,C0M,TG_24
 77,OK,Il sapore è sapido e sgradevole.,"Sapido, sgradevole","Sapido, sgradevole",2020,C0B,Q_10
 78,OK,"È un po' troppo salato, tendente all'acido con una punta di piccante alla fine.","Un po' troppo salato, tendente all'acido con un punta di piccante alla fine","Un po' troppo salato, tendente all'acido con un punta di piccantecante alla fine",2020,C0F,Q_10
@@ -1545,10 +1545,10 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 1544,OK,Il formaggio ha un sapore acido.,acido,acido,2018,C0Q,TG_26
 1545,OK,"Il Grana Trentino DOP si distingue per un sapore equilibrato, con una perfetta armonia tra dolcezza e sapidità.",equilibrato,equilibratorato,2018,C0R,Q_02
 1546,FUORI_ATTRIBUTO,"Non è sgradevole, ma non lo riconosco come grana; ha odori e consistenze troppo forti.","Non sgradevole, ma non lo riconosco come grana. troppo forti odori e consistenze","Non sgradevole, ma non lo riconosco come grana. troppo forti odori e consistenze",2018,C0R,TG_04
-1547,ERRORE_PARSING,,poco salato,poco salato,2018,C0R,TG_11
+1547,OK,Il sapore si presenta poco salato.,poco salato,poco salato,2018,C0R,TG_11
 1548,OK,Il sapore ha una leggera predominanza umami.,leggera predominanza umami,leggera predominanza umami,2018,C0R,TG_14
 1549,OK,"Il sapore è dolce, con sapidità medio bassa e una nota amara.","dolce, sapidit' medio bassa, con nota amara","dolce, sapidit' medio bassa, con nota amara",2018,C0R,TG_20
-1550,ERRORE_PARSING,,amaro,amaro,2018,C0R,TG_26
+1550,OK,Il sapore presenta una nota amara.,amaro,amaro,2018,C0R,TG_26
 1551,OK,Il formaggio ha un'acidità leggera e una piccantezza leggera.,acido intensità leggera;piccante intensità leggera,acido intensità leggera;piccantecante intensità leggera,2018,C0C,Q_02
 1552,OK,"Il formaggio presenta una nota leggera, che contribuisce a un'esperienza gustativa complessiva piacevole.",leggero,leggero,2018,C0C,Q_09
 1553,OK,"Il Grana Trentino DOP offre un buon equilibrio, con una leggera dolcezza che si fonde con le note salate.","buon equilibrio, fors'anche dolce","buon equilibratorio, fors'anche dolce",2018,C0C,TG_04
