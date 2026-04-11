@@ -242,7 +242,7 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 241,OK,"Cuoio, pepe, crosta di grana.","cuoio, pepe, crosta di grana","cuoio, pepe, crosta di grana",2018,C0I,TG_19
 242,OK,"Il formaggio presenta difetti, con un odore stantio, note di legno e una crosta secca.","difettoso, stantio, legno, crosta di formaggio secca","difettoso, stantio, legno, crosta di formaggio secca",2018,C0M,TG_20
 243,OK,Si percepisce un forte aroma di tostato e note animali.,"stantio, tostato forte, animale","stantio, tostato forte, animale",2018,C0M,Q_02
-244,OK,,brodo....,brodo....,2018,C0M,TG_24
+244,OK,Si percepisce un aroma di brodo.,brodo....,brodo....,2018,C0M,TG_24
 245,OK,"Il campione presenta note di fieno, tipiche del Grana Trentino.",fieno,fieno,2018,C0M,TG_08
 246,CONFORME,"Il campione è conforme, con un aroma che rispecchia le caratteristiche attese per il Grana Trentino.",Scarso,Scarso,2018,C0M,TG_04
 247,OK,"Il campione presenta un aroma vecchio, non caratteristico del Grana Trentino.",vecchio,vecchio,2018,C0M,TG_11
