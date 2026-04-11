@@ -16,6 +16,7 @@ data/raw/*
 data/interim/*
 !data/processed/*.csv
 !data/processed/caption_per_attributo/
+!data/processed/caption_per_attributo/*.csv
 
 
 # Modelli addestrati
@@ -53,5 +54,6 @@ Thumbs.db
 !data/interim/vocabolari_validati_per_attributo/
 !data/interim/residui_hallucination.csv
 !data/interim/revisione_fuori_attributo.csv
+!07_captioning risultati grana Trentino/validation_reports/*.csv
 .agents/
 skills-lock.json
