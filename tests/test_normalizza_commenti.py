@@ -15,6 +15,7 @@ from src.data.normalizza_commenti import (
     parse_fuori_attributo_response,
     genera_baseline,
     normalizza_batch,
+    riprocessa_conforme_batch,
     genera_report,
 )
 
@@ -281,6 +282,49 @@ def test_normalizza_batch_classi_corrette():
     assert classi[1] == "OK"
     assert classi[2] == "CONFORME"
     assert classi[3] == "RIFERIMENTO"
+
+
+# ── riprocessa_conforme_batch ──────────────────────────────────────────────
+
+BATCH_CONFORME_FIXTURE = [
+    {"id": 10, "commento_raw": "Paglierino"},
+    {"id": 11, "commento_raw": "ok"},
+]
+
+LLM_CONFORME_RESPONSE = (
+    '{"id": 10, "classe": "OK", "caption": "Il campione presenta una pasta di colore paglierino."}\n'
+    '{"id": 11, "classe": "CONFORME", "caption": "Il campione presenta caratteristiche visive conformi alla norma, con colore uniforme e omogeneo."}\n'
+)
+
+def test_riprocessa_conforme_ritorna_risultati_per_tutti():
+    client = _mock_client(LLM_CONFORME_RESPONSE)
+    risultati = riprocessa_conforme_batch(
+        BATCH_CONFORME_FIXTURE, "Colore della Pasta", VOCAB_FIXTURE, "Baseline.", client
+    )
+    assert len(risultati) == 2
+
+def test_riprocessa_conforme_classi_ok_e_conforme():
+    client = _mock_client(LLM_CONFORME_RESPONSE)
+    risultati = riprocessa_conforme_batch(
+        BATCH_CONFORME_FIXTURE, "Colore della Pasta", VOCAB_FIXTURE, "Baseline.", client
+    )
+    classi = {r["id"]: r["classe"] for r in risultati}
+    assert classi[10] == "OK"
+    assert classi[11] == "CONFORME"
+
+def test_riprocessa_conforme_include_baseline_nel_prompt():
+    client = _mock_client(LLM_CONFORME_RESPONSE)
+    riprocessa_conforme_batch(
+        BATCH_CONFORME_FIXTURE, "Colore della Pasta", VOCAB_FIXTURE, "Baseline specifica.", client
+    )
+    messages = client.chat.completions.create.call_args.kwargs["messages"]
+    assert "Baseline specifica." in str(messages)
+
+def test_riprocessa_conforme_batch_vuoto():
+    client = _mock_client("")
+    risultati = riprocessa_conforme_batch([], "Texture", VOCAB_FIXTURE, "Baseline.", client)
+    assert risultati == []
+    client.chat.completions.create.assert_not_called()
 
 
 # ── genera_report ──────────────────────────────────────────────────────────

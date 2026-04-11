@@ -293,6 +293,44 @@ def normalizza_batch(
     return parse_llm_response(response_text, expected_ids)
 
 
+def riprocessa_conforme_batch(
+    batch: list[dict],
+    attributo: str,
+    vocabolario: dict,
+    baseline: str,
+    client,
+    model: str = MODEL_DEFAULT,
+) -> list[dict]:
+    """Riprocessa un batch di righe CONFORME via LLM.
+
+    Distingue tra commenti con contenuto specifico (→ classe OK, caption specifica)
+    e commenti puramente generici (→ classe CONFORME, caption variata dalla baseline).
+
+    batch: lista di {id, commento_raw}
+    Ritorna lista di {id, classe, caption}.
+    """
+    if not batch:
+        return []
+    system_prompt = _build_system_prompt(attributo, vocabolario, baseline)
+    commenti_text = "\n".join(
+        f'{item["id"]}. "{item["commento_raw"]}"' for item in batch
+    )
+    user_message = _CONFORME_REPROCESS_HEADER + commenti_text
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_message},
+        ],
+        max_tokens=len(batch) * 80,
+        temperature=0.2,
+    )
+    response_text = response.choices[0].message.content
+    expected_ids = [item["id"] for item in batch]
+    return parse_llm_response(response_text, expected_ids)
+
+
 def genera_report(risultati: list[dict], attributo: str, output_path: Path) -> None:
     """Genera report Markdown con statistiche di normalizzazione.
 
