@@ -186,12 +186,38 @@ data/processed/caption_per_attributo/
 
 ---
 
-## 9. Punti aperti
+## 9. Correzioni post-review (sessione grilling)
 
-- **Profumo ERRORE_PARSING (16 righe, 4.1%):** il tasso più alto tra gli attributi. Da investigare
-  se i template di risposta LLM per Profumo hanno un problema strutturale.
-- **1 caption OK vuota in Aroma:** singola riga con caption mancante, da correggere.
-- **CONFORME residui con hallucination potential:** non verificato se i 177 CONFORME abbiano
-  caption baseline differenziate o tutte identiche.
-- **Struttura/Spessore:** 47% FUORI non esaminati per falsi negativi (analoga revisione potrebbe
-  recuperare ulteriori campioni validi).
+Dopo la stesura del report, sono stati applicati i seguenti fix:
+
+| Fix | Righe | Dettaglio |
+|-----|------:|---------|
+| Aroma id=244 caption null | 1 | "brodo...." -> "Si percepisce un aroma di brodo." |
+| Profumo ERRORE_PARSING | 16 | 15 -> OK con caption diretta, 1 -> ILLEGGIBILE |
+| Sapore ERRORE_PARSING | 3 | 2 -> OK, 1 -> ILLEGGIBILE |
+| Aroma ERRORE_PARSING | 11 | 8 -> OK, 3 -> ILLEGGIBILE |
+| Colonna `peso` su tutti i CSV | 177 | CONFORME -> 0.5, resto -> 1.0 |
+
+**Stato finale dopo fix:** 0 ERRORE_PARSING su tutti e 7 gli attributi, 0 caption OK vuote.
+
+### Statistiche aggiornate
+
+| Attributo | Righe | OK | CONFORME | FUORI | ILLEGGIBILE |
+|-----------|------:|----:|--------:|------:|------------:|
+| Sapore | 1.599 | 1.541 (96.4%) | 29 | 13 | 16 |
+| Aroma | 1.097 | 1.050 (95.7%) | 8 | 9 | 28 |
+| Profumo | 395 | 375 (94.9%) | 4 | 4 | 12 |
+| Spessore della Crosta | 1.058 | 473 (44.7%) | 47 | 498 | 32 |
+| Struttura della Pasta | 1.916 | 905 (47.2%) | 29 | 875 | 106 |
+| Colore della Pasta | 1.522 | 1.080 (71.0%) | 49 | 368 | 25 |
+| Texture | 1.385 | 934 (67.4%) | 11 | 413 | 26 |
+| **Totale** | **8.972** | **6.358 (70.9%)** | 177 | 2.180 | 245 |
+
+---
+
+## 10. Punti aperti (rimandati)
+
+- **Struttura/Spessore FUORI (~47%):** non esaminati per falsi negativi. Da rivalutare
+  solo se il training mostra underfitting su questi attributi specifici.
+- **CONFORME variance:** i 177 CONFORME hanno tutti caption = baseline (output identico).
+  Gestito con `peso=0.5` nel CSV; valutare esclusione totale se il modello sovrafitta.
