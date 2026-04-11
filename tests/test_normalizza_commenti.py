@@ -1,5 +1,6 @@
 # tests/test_normalizza_commenti.py
 import json
+import pandas as pd
 import pytest
 from pathlib import Path
 from unittest.mock import MagicMock
@@ -15,6 +16,8 @@ from src.data.normalizza_commenti import (
     parse_fuori_attributo_response,
     genera_baseline,
     normalizza_batch,
+    trova_hallucinate,
+    normalizza_faithful_batch,
     riprocessa_conforme_batch,
     riprocessa_fuori_attributo_batch,
     genera_report,
@@ -471,3 +474,87 @@ def test_pipeline_completa_da_fixture(tmp_path):
     content = report_path.read_text(encoding="utf-8")
     assert "Texture" in content
     assert "4" in content
+
+
+# ── trova_hallucinate ──────────────────────────────────────────────────────
+
+def test_trova_hallucinate_identifica_baseline_ripetuta():
+    baseline = "Il campione presenta un sapore equilibrato, con dolcezza delicata e sapiditá marcata."
+    # 6 righe OK con la caption = baseline, 2 con caption diversa
+    rows = [{"classe": "OK", "caption": baseline}] * 6 + [
+        {"classe": "OK", "caption": "Il campione è amaro."},
+        {"classe": "OK", "caption": "Note di piccante intenso."},
+    ]
+    df = pd.DataFrame(rows)
+    sospette = trova_hallucinate(df, baseline, min_count=5, sim_threshold=0.45)
+    assert len(sospette) == 6
+    assert all(sospette["caption"] == baseline)
+
+def test_trova_hallucinate_non_flagga_brevi_legittime():
+    baseline = "Il campione presenta un sapore equilibrato, con dolcezza delicata e sapiditá marcata."
+    # "Sapone." appare 7 volte ma è breve e non simile alla baseline
+    rows = [{"classe": "OK", "caption": "Sapone."}] * 7 + [
+        {"classe": "OK", "caption": "Il campione è amaro."},
+    ]
+    df = pd.DataFrame(rows)
+    sospette = trova_hallucinate(df, baseline, min_count=5, sim_threshold=0.45)
+    # count=7 < 15, similarity bassa → non flaggate
+    assert len(sospette) == 0
+
+def test_trova_hallucinate_soglia_count_alta_senza_similarita():
+    baseline = "Testo baseline completamente diverso da qualsiasi caption."
+    # Caption con count=20 ma bassa similarità alla baseline → flaggata per count >= 15
+    rows = [{"classe": "OK", "caption": "Molto compatto e friabile."}] * 20
+    df = pd.DataFrame(rows)
+    sospette = trova_hallucinate(df, baseline, min_count=5, sim_threshold=0.45)
+    assert len(sospette) == 20
+
+def test_trova_hallucinate_ignora_classi_non_ok():
+    baseline = "Il campione presenta un sapore equilibrato."
+    rows = [
+        {"classe": "CONFORME", "caption": baseline},
+        {"classe": "FUORI_ATTRIBUTO", "caption": baseline},
+        {"classe": "OK", "caption": "Amaro intenso."},
+    ] * 10
+    df = pd.DataFrame(rows)
+    sospette = trova_hallucinate(df, baseline, min_count=5, sim_threshold=0.45)
+    assert all(sospette["classe"] == "OK")
+
+def test_trova_hallucinate_df_vuoto():
+    df = pd.DataFrame(columns=["classe", "caption"])
+    sospette = trova_hallucinate(df, "baseline", min_count=5)
+    assert len(sospette) == 0
+
+
+# ── normalizza_faithful_batch ──────────────────────────────────────────────
+
+LLM_FAITHFUL_RESPONSE = (
+    '{"id": 1, "classe": "OK", "caption": "Il sapore è troppo salato e amaro."}\n'
+    '{"id": 2, "classe": "OK", "caption": "Piccantezza eccessiva, brucia la lingua."}\n'
+)
+
+def test_normalizza_faithful_ritorna_risultati():
+    client = _mock_client(LLM_FAITHFUL_RESPONSE)
+    batch = [
+        {"id": 1, "commento_prenorm": "sale, troppo. amaro"},
+        {"id": 2, "commento_prenorm": "brucia la lingua"},
+    ]
+    risultati = normalizza_faithful_batch(batch, "Sapore", VOCAB_FIXTURE, "Baseline.", client)
+    assert len(risultati) == 2
+    assert risultati[0]["caption"] == "Il sapore è troppo salato e amaro."
+
+def test_normalizza_faithful_usa_prompt_fedelta():
+    """Verifica che il prompt contenga la regola di fedeltà."""
+    client = _mock_client(LLM_FAITHFUL_RESPONSE)
+    batch = [{"id": 1, "commento_prenorm": "amaro"}]
+    normalizza_faithful_batch(batch, "Sapore", VOCAB_FIXTURE, "Baseline.", client)
+    messages = client.chat.completions.create.call_args.kwargs["messages"]
+    user_content = messages[1]["content"]
+    assert "FEDELTÀ" in user_content or "fedelt" in user_content.lower()
+    assert "NON" in user_content
+
+def test_normalizza_faithful_batch_vuoto():
+    client = _mock_client("")
+    risultati = normalizza_faithful_batch([], "Sapore", VOCAB_FIXTURE, "Baseline.", client)
+    assert risultati == []
+    client.chat.completions.create.assert_not_called()

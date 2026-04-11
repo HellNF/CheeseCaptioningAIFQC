@@ -1,4 +1,5 @@
 # src/data/normalizza_commenti.py
+import difflib
 import json
 import re
 import logging
@@ -125,6 +126,27 @@ _FUORI_ATTRIBUTO_HEADER = (
     "Normalizza i seguenti commenti in linguaggio naturale.\n"
     "Per ciascuno restituisci una riga JSON:\n"
     "{\"id\": N, \"caption\": \"...\"}\n\n"
+    "Commenti:\n"
+)
+
+_FAITHFUL_MSG_HEADER = (
+    "Normalizza i seguenti commenti di panel sensoriale. "
+    "Per ciascuno restituisci un oggetto JSON su una riga separata:\n"
+    '{"id": N, "classe": "OK|CONFORME|FUORI_ATTRIBUTO|RIFERIMENTO|ILLEGGIBILE", "caption": "..."|null}\n\n'
+    "Classi:\n"
+    "- OK: commento che esprime QUALSIASI concetto relativo all'attributo → caption normalizzata\n"
+    "- CONFORME: SOLO espressioni di generica conformità ('ok','buono','nella media') "
+    "→ espandi con la descrizione baseline\n"
+    "- FUORI_ATTRIBUTO: riguarda un attributo diverso → caption in linguaggio naturale\n"
+    "- RIFERIMENTO: rimanda ad altra scheda → caption null\n"
+    "- ILLEGGIBILE: incomprensibile → caption null\n\n"
+    "⚠️ REGOLA DI FEDELTÀ — obbligatoria:\n"
+    "La caption DEVE rispecchiare fedelmente il commento originale, anche se descrive:\n"
+    "- difetti (es. 'troppo salato', 'amaro eccessivo', 'bruciato')\n"
+    "- note negative o atipiche\n"
+    "- caratteristiche fuori standard\n"
+    "NON usare la formulazione standard del campione conforme.\n"
+    "NON edulcorare, NON trasformare difetti in pregi.\n\n"
     "Commenti:\n"
 )
 
@@ -278,6 +300,75 @@ def normalizza_batch(
         f'{item["id"]}. "{item["commento_prenorm"]}"' for item in batch
     )
     user_message = _USER_MSG_HEADER + commenti_text
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_message},
+        ],
+        max_tokens=len(batch) * 80,
+        temperature=0.2,
+    )
+    response_text = response.choices[0].message.content
+    expected_ids = [item["id"] for item in batch]
+    return parse_llm_response(response_text, expected_ids)
+
+
+def trova_hallucinate(
+    df: pd.DataFrame,
+    baseline: str,
+    min_count: int = 5,
+    sim_threshold: float = 0.45,
+) -> pd.DataFrame:
+    """Individua righe OK con caption probabilmente hallucinate (baseline ripetuta).
+
+    Criteri: caption appare >= min_count volte tra le righe OK
+    E (similarità con baseline >= sim_threshold OPPURE count >= 15).
+
+    Ritorna sottoinsieme del DataFrame con le righe sospette.
+    """
+    ok_rows = df[df["classe"] == "OK"].copy()
+    if ok_rows.empty:
+        return ok_rows.iloc[0:0]
+
+    counts = ok_rows["caption"].value_counts()
+    baseline_lower = baseline.lower()
+
+    sospette: set[str] = set()
+    for caption, count in counts.items():
+        if count < min_count or not isinstance(caption, str):
+            continue
+        sim = difflib.SequenceMatcher(None, caption.lower(), baseline_lower).ratio()
+        if sim >= sim_threshold or count >= 15:
+            sospette.add(caption)
+
+    return ok_rows[ok_rows["caption"].isin(sospette)]
+
+
+def normalizza_faithful_batch(
+    batch: list[dict],
+    attributo: str,
+    vocabolario: dict,
+    baseline: str,
+    client,
+    model: str = MODEL_DEFAULT,
+) -> list[dict]:
+    """Ri-normalizza un batch usando un prompt con regola di fedeltà esplicita.
+
+    Identico a normalizza_batch ma usa _FAITHFUL_MSG_HEADER che vieta
+    esplicitamente di edulcorare commenti negativi o usare la formulazione baseline.
+
+    batch: lista di {id, commento_prenorm}
+    Ritorna lista di {id, classe, caption}.
+    """
+    if not batch:
+        return []
+    system_prompt = _build_system_prompt(attributo, vocabolario, baseline)
+    commenti_text = "\n".join(
+        f'{item["id"]}. "{item["commento_prenorm"]}"' for item in batch
+    )
+    user_message = _FAITHFUL_MSG_HEADER + commenti_text
 
     response = client.chat.completions.create(
         model=model,
