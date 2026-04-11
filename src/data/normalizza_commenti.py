@@ -92,9 +92,39 @@ _USER_MSG_HEADER = (
     "- CONFORME: SOLO espressioni di generica conformità senza informazioni specifiche "
     "('ok','buono','nella media','conforme','nella norma','regolare','normale') "
     "→ espandi con la descrizione baseline\n"
-    "- FUORI_ATTRIBUTO: riguarda un attributo diverso → caption null\n"
+    "- FUORI_ATTRIBUTO: riguarda un attributo diverso → caption in linguaggio naturale "
+    "che descrive il commento (non vincolarsi all'attributo corrente)\n"
     "- RIFERIMENTO: rimanda ad altra scheda ('vedi sopra') → caption null\n"
     "- ILLEGGIBILE: incomprensibile o corrotto → caption null\n\n"
+    "Commenti:\n"
+)
+
+_CONFORME_REPROCESS_HEADER = (
+    "Riprocessa i seguenti commenti già classificati come CONFORME.\n"
+    "Per ciascuno decidi:\n"
+    "- Se contiene un descrittore specifico (colore, intensità, nota sensoriale, "
+    "misura, aggettivo tecnico) → classe \"OK\" con caption specifica in italiano "
+    "naturale (15-60 parole)\n"
+    "- Se è puramente generico senza informazione specifica (\"ok\", \"bello\", "
+    "\"positivo\", \"buono\", \"nella media\", \"ottimo\", \"conforme\") → "
+    "classe \"CONFORME\" con caption che descriva campione conforme alla norma, "
+    "DIVERSA dalla baseline standard (varia la formulazione)\n\n"
+    "Formato risposta — una riga JSON per commento:\n"
+    "{\"id\": N, \"classe\": \"OK\"|\"CONFORME\", \"caption\": \"...\"}\n\n"
+    "Commenti:\n"
+)
+
+_FUORI_ATTRIBUTO_SYSTEM = (
+    "Sei un assistente che normalizza commenti di panel sensoriale di formaggio.\n"
+    "Trasforma il commento grezzo in una frase in italiano standard, chiara e naturale.\n"
+    "Non aggiungere informazioni non presenti nel commento originale.\n"
+    "Lunghezza: 10-40 parole."
+)
+
+_FUORI_ATTRIBUTO_HEADER = (
+    "Normalizza i seguenti commenti in linguaggio naturale.\n"
+    "Per ciascuno restituisci una riga JSON:\n"
+    "{\"id\": N, \"caption\": \"...\"}\n\n"
     "Commenti:\n"
 )
 
