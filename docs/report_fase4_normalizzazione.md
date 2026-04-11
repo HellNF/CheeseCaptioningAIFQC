@@ -2,7 +2,7 @@
 
 **Data:** 2026-04-11  
 **Branch:** `feature/per-attribute-captioning`  
-**Commit finale:** `03bb0b8`
+**Commit finale:** `8a11305`
 
 ---
 
@@ -142,16 +142,84 @@ il LLM non sempre interpreta come pertinenti.
 
 ---
 
-## 7. Decisioni di design rilevanti
+## 7. Decisioni di design e motivazioni
 
-| Decisione | Alternativa scartata | Motivazione |
-|-----------|---------------------|-------------|
-| GPT-4o-mini | GPT-4o | Costo/prestazioni: mini sufficiente per task di normalizzazione strutturata |
-| Batch JSONL | Chiamata singola per commento | Efficienza API e costo |
-| Checkpoint per attributo | Checkpoint per batch | Granularità sufficiente, più semplice |
-| `commento_raw` per fix hallucination | `commento_prenorm` | Prenorm può degradare il commento originale |
-| Heuristic keyword per falsi negativi | Secondo passaggio LLM | Velocità + trasparenza del criterio |
-| Revisione AI-assistita (non full-LLM) | Ri-esecuzione completa LLM | Le allucinazioni residue erano resistenti al secondo passaggio |
+### 7a. Decisioni architetturali (pipeline)
+
+**GPT-4o-mini invece di GPT-4o**
+Il task di normalizzazione è strutturato e vincolato dal system prompt e dal vocabolario: non richiede
+ragionamento complesso, solo classificazione e parafrasi guidata. GPT-4o-mini offre un rapporto
+costo/prestazioni nettamente superiore per questo tipo di compito; GPT-4o sarebbe giustificato solo
+per task con ambiguità alta o giudizio contestuale profondo.
+
+**Batch JSONL invece di chiamate singole**
+Ogni batch aggrega fino a 30 commenti in una sola chiamata API. Il risparmio è circa 30x sul numero
+di richieste, con impatto diretto su costo e latenza. Il parsing JSONL è robusto: un errore su una
+riga non invalida l'intero batch.
+
+**Checkpoint per attributo invece che per batch**
+Il checkpoint salva il CSV dopo ogni attributo completato. Granularità sufficiente per il recovery
+(il dataset per attributo non supera le 2000 righe) senza aggiungere complessità di stato
+intermedio. Un checkpoint per batch avrebbe reso il codice più fragile senza benefici pratici.
+
+**`commento_raw` per il fix delle allucinazioni invece di `commento_prenorm`**
+La pre-normalizzazione può introdurre perdita di informazione (abbreviazioni espanse, misure
+convertite) che riduce la specificità del testo e favorisce il collasso sul template baseline.
+Usando `commento_raw` il LLM lavora sul testo più vicino all'intenzione originale del panelista.
+
+---
+
+### 7b. Decisioni sulla qualità dei dati
+
+**Rilevamento allucinazioni con soglie `min_count=5, sim_threshold=0.45`**
+Le soglie sono state calibrate empiricamente: `min_count=5` filtra varianti casuali mantenendo solo
+pattern sistematici; `sim_threshold=0.45` cattura parafasi della baseline senza colpire caption
+legittime con lessico parzialmente sovrapposto. Dopo i fix, il dry-run su tutti gli attributi
+restituisce 0 sospette — le soglie sono appropriate e non richiedono ricalibrazione.
+
+**Heuristic keyword per falsi negativi invece di un secondo passaggio LLM**
+Un secondo passaggio LLM avrebbe potuto produrre nuovi falsi negativi o ribaltare classificazioni
+corrette. Le keyword del vocabolario offrono un criterio trasparente, verificabile e deterministico.
+Il tasso di recupero (97% dei candidati reclassificati OK dopo revisione) conferma che l'euristica
+era ben calibrata.
+
+**Revisione AI-assistita sui residui invece di ri-esecuzione LLM**
+Le 41 allucinazioni residue dopo due passaggi LLM erano concentrate su commenti genuinamente
+ambigui (es. "Ottimo equilibrio", "Deciso ed equilibrato") dove il LLM non riesce a distinguere
+un'osservazione specifica dalla conformità generica. La revisione diretta è più affidabile: si
+applica la scala quantitativa del vocabolario (es. misure mm → "nella norma") e si scrive una
+caption letterale al commento senza passare attraverso il modello.
+
+**ERRORE_PARSING corretti con caption dirette invece di ri-esecuzione API**
+I batch con parsing fallito contenevano esclusivamente commenti brevi e non ambigui (es. "alcol",
+"cipolla", "tostato", "marcio"). Una ri-esecuzione API avrebbe avuto costo non nullo senza
+garanzie di successo. La caption diretta è più rapida, più controllabile e produce risultati di
+qualità identica.
+
+---
+
+### 7c. Decisioni sul formato del dataset
+
+**Colonna `peso` per il training (CONFORME → 0.5)**
+I 177 CONFORME hanno tutti caption identica alla baseline dell'attributo: stesso input di classe
+diverso, stesso output. Includerli con peso pieno farebbe sì che il modello riceva 177 esempi
+con output identico, rischiando di sovrastimare la probabilità della formulazione standard e di
+appiattire la generazione su pochi template. Il peso 0.5 mantiene il segnale di questa classe
+(il modello deve saper riconoscere la conformità generica) senza che domini il gradiente.
+
+**FUORI_ATTRIBUTO inclusi nel training senza filtraggio**
+Le 2.180 righe FUORI sono esempi negativi fondamentali: insegnano al modello a riconoscere e
+gestire commenti fuori scope per ciascun attributo. Escluderle produrrebbe un modello fragile
+sui dati reali, dove commenti fuori attributo arrivano frequentemente. Il loro peso è 1.0 perché
+rappresentano una classe distinta con segnale proprio, non duplicati.
+
+**Revisione FUORI rimandataa per Struttura e Spessore**
+A differenza di Sapore/Aroma/Profumo (dove il FUORI era principalmente un problema di
+classificazione LLM su terminologia comparativa), per Struttura e Spessore l'alto tasso di FUORI
+(~47%) è in buona parte fisiologico: i panelisti commentano questi attributi con osservazioni
+trasversali o riportano misure che il LLM correttamente non riconduce all'attributo. Una revisione
+rischiosa di sporcare le classi senza benefici chiari. Decisione: rivalutare solo se il training
+mostra underfitting specifico su questi attributi.
 
 ---
 
