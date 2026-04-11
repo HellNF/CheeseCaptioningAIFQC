@@ -20,24 +20,24 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 19,OK,Si percepiscono note di nocciola.,Nocciola,Nocciola,2019,C0Q,TG_24
 20,OK,Odore di cavolo cotto.,Cavolo cotto,Cavolo cotto,2019,C0D,TG_26
 21,OK,Profumo di pozzo e acqua stagnante.,"Pozzo, acqua stagnante","Pozzo, acqua stagnante",2019,C0M,TG_20
-22,ERRORE_PARSING,,Alcol,Alcol,2019,C0B,TG_24
-23,ERRORE_PARSING,,Solvente acetone,Solvente acetone,2019,C0L,TG_24
+22,OK,Si percepisce un sentore di alcol.,Alcol,Alcol,2019,C0B,TG_24
+23,OK,Si avverte un sentore di solvente acetonico.,Solvente acetone,Solvente acetone,2019,C0L,TG_24
 24,OK,Il profumo del campione è intenso.,Intenso,Intenso,2019,C0D,TG_26
 25,OK,Il profumo del campione è debolissimo.,Debolissimo,Debolissimo,2019,C0H,TG_26
-26,ERRORE_PARSING,,Fermentazione da Clostridium sporogenes,Fermentazione da Clostridium sporogenes,2019,C0F,Q_02
+26,OK,Si percepisce un aroma di fermentazione anomala.,Fermentazione da Clostridium sporogenes,Fermentazione da Clostridium sporogenes,2019,C0F,Q_02
 27,OK,Il profumo del campione è leggero.,Leggero,Leggero,2019,C0O,Q_09
 28,OK,Il profumo del campione è debole.,Profumo debole,Profumo debole,2019,C0R,TG_13
 29,OK,Sapore di cacao.,Cacao,Cacao,2019,C0F,TG_19
 30,OK,Il profumo del campione presenta bassa intensità.,Bassa intensità,Bassa intensità,2019,C0O,TG_19
-31,ERRORE_PARSING,,"Soprattutto uovo sodo, zolfo","Soprattutto uovo sodo, zolfo",2019,C0P,TG_19
-32,ERRORE_PARSING,,Teli sporchi,Teli sporchi,2019,C0G,Q_09
-33,ERRORE_PARSING,,Erbe balsamiche,Erbe balsamiche,2019,C0I,Q_09
-34,ERRORE_PARSING,,Alito di caffè,Alito di caffè,2019,C0H,TG_19
+31,OK,Si avvertono soprattutto note di uovo sodo e zolfo.,"Soprattutto uovo sodo, zolfo","Soprattutto uovo sodo, zolfo",2019,C0P,TG_19
+32,OK,Si percepisce un odore di teli sporchi.,Teli sporchi,Teli sporchi,2019,C0G,Q_09
+33,OK,Si avverte un profumo di erbe balsamiche.,Erbe balsamiche,Erbe balsamiche,2019,C0I,Q_09
+34,OK,Si percepisce un sentore di alito di caffe.,Alito di caffè,Alito di caffè,2019,C0H,TG_19
 35,OK,Il profumo del campione è poco intenso.,Poco intenso,Poco intenso,2019,C0Q,TG_26
 36,OK,Note vegetali e balsamiche.,Vegetale balsamico,vegetaleetale balsamico,2019,C0M,Q_09
-37,ERRORE_PARSING,,"Ho segnato cuoio ma in realtà ho sentito odore di suola di scarpe, o gomma","Ho segnato cuoio ma in realtà ho sentito odore di suola di scarpe, o gomma",2019,C0E,TG_28
-38,ERRORE_PARSING,,Sentore di grasso animale ossidato (eg: salame invecchiato),Sentore di grasso animale ossidato (eg: salame invecchiato),2019,C0O,TG_04
-39,ERRORE_PARSING,,Cipolla,Cipolla,2019,C0E,TG_26
+37,OK,"Si avverte un odore di cuoio, simile a suola di scarpe o gomma.","Ho segnato cuoio ma in realtà ho sentito odore di suola di scarpe, o gomma","Ho segnato cuoio ma in realtà ho sentito odore di suola di scarpe, o gomma",2019,C0E,TG_28
+38,OK,"Si percepisce un sentore di grasso animale ossidato, simile a salame invecchiato.",Sentore di grasso animale ossidato (eg: salame invecchiato),Sentore di grasso animale ossidato (eg: salame invecchiato),2019,C0O,TG_04
+39,OK,Si percepisce un sentore di cipolla.,Cipolla,Cipolla,2019,C0E,TG_26
 40,OK,"Olfatto con ammoniaca solo all'apertura, seguito da un profumo troppo delicato.","Ammoniaca solo alla apertura,dopo profumo troppo delicato","Ammoniaca solo alla apertura,dopo profumo troppo delicato",2019,C0N,TG_19
 41,OK,Il sapore è troppo delicato.,Troppo delicato,Troppo delicato,2019,C0A,TG_19
 42,OK,Note di cacao e alito di caffè.,"Cacao, alito da caffè","Cacao, alito da caffè",2019,C0E,TG_19
@@ -333,7 +333,7 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 332,OK,Il profumo è fresco.,Profumo fresco,Profumo fresco,2020,C0M,TG_04
 333,OK,Il profumo presenta una nota polverosa che ne compromette la qualità.,Peccato presenza nota polverosa,Peccato presenza nota polverosa,2020,C0M,TG_24
 334,FUORI_ATTRIBUTO,Non è buono.,Non buono,Non buono,2020,C0Q,TG_24
-335,ERRORE_PARSING,,Qualcosa di non ottimale che non so definire,Qualcosa di non ottimale che non so definire,2020,C0I,TG_19
+335,ILLEGGIBILE,,Qualcosa di non ottimale che non so definire,Qualcosa di non ottimale che non so definire,2020,C0I,TG_19
 336,OK,Il profumo è complesso e piacevole.,Complesso e piacevole,Complesso e piacevole,2020,C0G,TG_24
 337,OK,Il profumo presenta note di gomma.,gomma,gomma,2020,C0G,TG_28
 338,OK,"All'apertura si sente un odore stagnante, poi svanisce.",All'apertura odore stagnante poi non si sente,All'apertura odore stagnante poi non si sente,2020,C0N,Q_09
@@ -347,17 +347,17 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista
 346,OK,Ricorda la panna cotta.,Panna cotta,Panna cotta,2021,C0N,TG_19
 347,OK,Tenue senza particolari note negative.,Tenue senza particolari note negative,Tenue senza particolari note negative,2021,C0Q,Q_10
 348,OK,Ha un odore di crauti.,Crauti,Crauti,2021,C0C,TG_19
-349,ERRORE_PARSING,,Marcio,Marcio,2021,C0A,TG_19
+349,OK,Si avverte un odore di marcio.,Marcio,Marcio,2021,C0A,TG_19
 350,OK,Ricorda i funghi freschi.,Funghi freschi,Funghi freschi,2021,C0G,TG_28
 351,OK,Potrebbe avere un sentore di eucalipto.,Eucalipto?,Eucalipto?,2021,C0A,Q_09
 352,CONFORME,"Il profumo del campione è neutro, conforme agli standard senza note anomale o difetti.",Neutro,Neutro,2021,C0R,Q_10
 353,OK,Odore di crauti.,Crauti,Crauti,2021,C0I,TG_19
-354,ERRORE_PARSING,,Gomma bruciata,Gomma bruciata,2021,C0P,Q_09
+354,OK,Si percepisce un sentore di gomma bruciata.,Gomma bruciata,Gomma bruciata,2021,C0P,Q_09
 355,ILLEGGIBILE,,Insilato,insilatoilato,2021,C0P,TG_24
-356,ERRORE_PARSING,,Agrumato,Agrumato,2021,C0Q,TG_19
+356,OK,Si avverte un profumo agrumato.,Agrumato,Agrumato,2021,C0Q,TG_19
 357,OK,"Ho il dubbio di aver sentito un cattivo odore iniziale, ma non penalizzo.",Ho il dubbio di aver sentito un cattivo odore iniziale. Non riesco a qualificarsi poi...non penalizzo,Ho il dubbio di aver sentito un cattivo odore iniziale. Non riesco a qualificarsi poi...non penalizzo,2021,C0C,TG_04
-358,ERRORE_PARSING,,Tostato,Tostato,2021,C0Q,TG_28
-359,ERRORE_PARSING,,All' apertura plastica bruciata,All' apertura plastica bruciata,2021,C0M,Q_09
+358,OK,Si avverte un profumo tostato.,Tostato,Tostato,2021,C0Q,TG_28
+359,OK,All'apertura si percepisce un sentore di plastica bruciata.,All' apertura plastica bruciata,All' apertura plastica bruciata,2021,C0M,Q_09
 360,OK,Ha un odore di paglia sporca.,Paglia sporca,Paglia sporca,2021,C0E,TG_19
 361,OK,Liquirizia e radice.,Liquirizia radice,Liquirizia radice,2021,C0M,TG_19
 362,OK,Molto elegante.,Molto elegante,Molto elegante,2021,C0F,TG_24
