@@ -8,6 +8,7 @@ from src.data.normalizza_commenti import (
     ATTRIBUTI,
     ATTRIBUTI_DESCRIZIONI,
     carica_vocabolario,
+    carica_baseline,
     carica_commenti,
     prenormalizza_commento,
     parse_llm_response,
@@ -45,6 +46,22 @@ def test_carica_vocabolario_nome_con_spazi():
 def test_carica_vocabolario_file_mancante(tmp_path):
     with pytest.raises(FileNotFoundError):
         carica_vocabolario("Attributo_Inesistente", tmp_path)
+
+
+# ── carica_baseline ────────────────────────────────────────────────────────
+
+def test_carica_baseline_ritorna_stringa(tmp_path):
+    import json
+    (tmp_path / "Texture_baseline.json").write_text(
+        json.dumps({"attributo": "Texture", "baseline": "Testo baseline di prova."}),
+        encoding="utf-8"
+    )
+    risultato = carica_baseline("Texture", tmp_path)
+    assert risultato == "Testo baseline di prova."
+
+def test_carica_baseline_file_mancante(tmp_path):
+    with pytest.raises(FileNotFoundError):
+        carica_baseline("Attributo_Inesistente", tmp_path)
 
 
 # ── prenormalizza_commento ─────────────────────────────────────────────────

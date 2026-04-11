@@ -87,8 +87,10 @@ _USER_MSG_HEADER = (
     "Per ciascuno restituisci un oggetto JSON su una riga separata:\n"
     '{"id": N, "classe": "OK|CONFORME|FUORI_ATTRIBUTO|RIFERIMENTO|ILLEGGIBILE", "caption": "..."|null}\n\n'
     "Classi:\n"
-    "- OK: commento con contenuto specifico → caption normalizzata in linguaggio naturale\n"
-    "- CONFORME: breve/generico che esprime conformità ('ok','buono','nella media') "
+    "- OK: commento che esprime QUALSIASI concetto relativo all'attributo, anche breve "
+    "(es. 'Intenso', 'Moderata intensità', 'Friabile', 'Gommoso') → caption normalizzata in linguaggio naturale\n"
+    "- CONFORME: SOLO espressioni di generica conformità senza informazioni specifiche "
+    "('ok','buono','nella media','conforme','nella norma','regolare','normale') "
     "→ espandi con la descrizione baseline\n"
     "- FUORI_ATTRIBUTO: riguarda un attributo diverso → caption null\n"
     "- RIFERIMENTO: rimanda ad altra scheda ('vedi sopra') → caption null\n"
@@ -295,6 +297,19 @@ def carica_vocabolario(attributo: str, vocab_dir: Path) -> dict:
         raise FileNotFoundError(f"Vocabolario non trovato: {path}")
     with open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+def carica_baseline(attributo: str, baseline_dir: Path) -> str:
+    """Carica la baseline pre-generata per l'attributo.
+
+    Ritorna la stringa baseline.
+    Lancia FileNotFoundError se il file non esiste.
+    """
+    path = Path(baseline_dir) / f"{attributo.replace(' ', '_')}_baseline.json"
+    if not path.exists():
+        raise FileNotFoundError(f"Baseline non trovata: {path}")
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)["baseline"]
 
 
 def carica_commenti(attributo: str, csv_dir: Path) -> list[dict]:
