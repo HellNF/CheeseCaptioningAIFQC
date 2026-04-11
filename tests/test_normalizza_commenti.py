@@ -12,6 +12,7 @@ from src.data.normalizza_commenti import (
     carica_commenti,
     prenormalizza_commento,
     parse_llm_response,
+    parse_fuori_attributo_response,
     genera_baseline,
     normalizza_batch,
     genera_report,
@@ -165,6 +166,34 @@ def test_parse_id_duplicato_ultimo_vince():
     risultati = parse_llm_response(response_text, expected_ids=[1])
     assert len(risultati) == 1
     assert risultati[0]["caption"] == "seconda"  # last wins
+
+
+# ── parse_fuori_attributo_response ─────────────────────────────────────────
+
+def test_parse_fuori_attributo_risposta_completa():
+    response_text = (
+        '{"id": 1, "caption": "Il campione ha un odore di burro."}\n'
+        '{"id": 2, "caption": "Note di panna cotta."}\n'
+    )
+    risultati = parse_fuori_attributo_response(response_text, expected_ids=[1, 2])
+    assert len(risultati) == 2
+    assert risultati[0] == {"id": 1, "caption": "Il campione ha un odore di burro."}
+    assert risultati[1] == {"id": 2, "caption": "Note di panna cotta."}
+
+def test_parse_fuori_attributo_id_mancante():
+    response_text = '{"id": 1, "caption": "Testo."}'
+    risultati = parse_fuori_attributo_response(response_text, expected_ids=[1, 2])
+    assert len(risultati) == 2
+    assert risultati[1] == {"id": 2, "caption": None}
+
+def test_parse_fuori_attributo_json_malformato():
+    response_text = 'non json\n{"id": 1, "caption": "Testo."}'
+    risultati = parse_fuori_attributo_response(response_text, expected_ids=[1])
+    assert risultati[0]["caption"] == "Testo."
+
+def test_parse_fuori_attributo_risposta_vuota():
+    risultati = parse_fuori_attributo_response("", expected_ids=[1])
+    assert risultati[0] == {"id": 1, "caption": None}
 
 
 # ── genera_baseline ────────────────────────────────────────────────────────

@@ -138,6 +138,38 @@ def parse_llm_response(response_text: str, expected_ids: list[int]) -> list[dict
     return output
 
 
+def parse_fuori_attributo_response(response_text: str, expected_ids: list[int]) -> list[dict]:
+    """Parsa la risposta LLM per riprocessamento FUORI_ATTRIBUTO.
+
+    Ritorna lista di {id, caption} per ogni id atteso.
+    Gli id mancanti ottengono caption None.
+    """
+    parsed: dict[int, dict] = {}
+    for line in response_text.strip().split("\n"):
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            obj = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if "id" not in obj:
+            continue
+        try:
+            id_int = int(obj["id"])
+        except (ValueError, TypeError):
+            continue
+        parsed[id_int] = {"id": id_int, "caption": obj.get("caption")}
+
+    output = []
+    for id_ in expected_ids:
+        if id_ in parsed:
+            output.append(parsed[id_])
+        else:
+            output.append({"id": id_, "caption": None})
+    return output
+
+
 def genera_baseline(attributo: str, vocabolario: dict, client, model: str = MODEL_DEFAULT) -> str:
     """Genera via LLM la descrizione di un campione conforme alla norma per l'attributo.
 
