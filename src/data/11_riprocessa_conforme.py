@@ -104,8 +104,9 @@ def processa_attributo(attributo, client, model, batch_size, max_retry, dry_run)
     df.to_csv(csv_path, index=False)
 
     promossi = sum(1 for r in tutti_risultati if r["classe"] == "OK")
-    variati = sum(1 for r in tutti_risultati if r["classe"] == "CONFORME")
-    logger.info(f"[{attributo}] Promossi OK: {promossi}, CONFORME variati: {variati}")
+    errori = sum(1 for r in tutti_risultati if r["classe"] == "ERRORE")
+    rimasti_conforme = len(tutti_risultati) - promossi - errori
+    logger.info(f"[{attributo}] Promossi OK: {promossi}, CONFORME con caption variata: {rimasti_conforme}")
 
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     report_path = REPORTS_DIR / f"riprocessa_conforme_{attributo.replace(' ', '_')}.md"
@@ -114,8 +115,8 @@ def processa_attributo(attributo, client, model, batch_size, max_retry, dry_run)
         "",
         f"- Righe riprocessate: {len(conforme_rows)}",
         f"- Promosse a OK: {promossi}",
-        f"- CONFORME con caption variata: {variati}",
-        f"- Errori: {len(conforme_rows) - promossi - variati}",
+        f"- CONFORME con caption variata: {rimasti_conforme}",
+        f"- Errori: {errori}",
     ]
     report_path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -132,13 +133,15 @@ def main() -> int:
     client = None if args.dry_run else openai.OpenAI()
     attributi = [args.attributo] if args.attributo else ATTRIBUTI
 
+    n_errori = 0
     for attributo in attributi:
         try:
             processa_attributo(attributo, client, args.model, args.batch_size, args.max_retry, args.dry_run)
         except Exception as exc:
             logger.error(f"[{attributo}] Errore fatale: {exc}")
+            n_errori += 1
 
-    return 0
+    return 1 if n_errori else 0
 
 
 if __name__ == "__main__":
