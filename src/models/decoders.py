@@ -28,7 +28,7 @@ class LSTMDecoder(nn.Module):
     ) -> torch.Tensor:
         """
         Args:
-            visual_feat: (B, hidden_dim) — vettore globale dalla CNN
+            visual_feat: (B, visual_dim) — vettore globale dalla CNN
             captions:    (B, seq_len) — indici parole (teacher forcing)
         Returns:
             logits: (B, seq_len, vocab_size)
