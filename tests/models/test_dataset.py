@@ -1,9 +1,11 @@
-"""Tests for build_caption_index() — TDD written before implementation."""
+"""Tests for build_caption_index() and GranaTrentinoDataset — TDD written before implementation."""
 import pytest
 import pandas as pd
+import torch
 from pathlib import Path
+from PIL import Image
 
-from src.models.dataset import build_caption_index
+from src.models.dataset import build_caption_index, GranaTrentinoDataset
 
 
 # ---------------------------------------------------------------------------
@@ -178,3 +180,51 @@ def test_build_caption_index_deduplicates_date(tmp_path):
     assert len(result) == 1
     # The first date (earliest) should be selected
     assert result.iloc[0]["fetta_path"] == "fetta_jun.bmp"
+
+
+# ---------------------------------------------------------------------------
+# Tests for GranaTrentinoDataset
+# ---------------------------------------------------------------------------
+
+def _make_fake_df(tmp_path: Path, n: int = 3) -> pd.DataFrame:
+    """Create n fake BMP images and return a minimal DataFrame."""
+    rows = []
+    for i in range(n):
+        fetta = tmp_path / f"fetta_{i}.bmp"
+        grana = tmp_path / f"grana_{i}.bmp"
+        Image.new("RGB", (224, 224)).save(fetta)
+        Image.new("RGB", (224, 224)).save(grana)
+        rows.append(
+            {
+                "fetta_path": str(fetta),
+                "grana_path": str(grana),
+                "caption": f"Caption numero {i}.",
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def test_dataset_len(tmp_path):
+    """len(dataset) must equal the number of rows in the DataFrame."""
+    n = 4
+    df = _make_fake_df(tmp_path, n)
+    ds = GranaTrentinoDataset(df)
+    assert len(ds) == n
+
+
+def test_dataset_getitem_returns_tensors(tmp_path):
+    """__getitem__ must return (fetta_tensor, grana_tensor, caption_str) with correct shapes."""
+    df = _make_fake_df(tmp_path, 2)
+    ds = GranaTrentinoDataset(df)
+
+    fetta_tensor, grana_tensor, caption_str = ds[0]
+
+    # Both images must be 3-channel 224×224 tensors
+    assert isinstance(fetta_tensor, torch.Tensor), "fetta_tensor is not a Tensor"
+    assert isinstance(grana_tensor, torch.Tensor), "grana_tensor is not a Tensor"
+    assert fetta_tensor.shape == (3, 224, 224), f"fetta shape: {fetta_tensor.shape}"
+    assert grana_tensor.shape == (3, 224, 224), f"grana shape: {grana_tensor.shape}"
+
+    # caption must be a plain Python string
+    assert isinstance(caption_str, str), "caption is not a str"
+    assert caption_str == df.iloc[0]["caption"]

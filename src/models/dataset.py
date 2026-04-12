@@ -7,6 +7,10 @@ from __future__ import annotations
 from pathlib import Path
 
 import pandas as pd
+from PIL import Image
+import torch
+from torch.utils.data import Dataset
+from torchvision import transforms
 
 
 def _load_codifica(codifica_path: Path) -> pd.DataFrame:
@@ -139,3 +143,62 @@ def build_caption_index(
     )
 
     return result
+
+
+# ---------------------------------------------------------------------------
+# Default transform (ImageNet normalisation, 224×224)
+# ---------------------------------------------------------------------------
+DEFAULT_TRANSFORM = transforms.Compose(
+    [
+        transforms.Resize((224, 224)),
+        transforms.ToTensor(),
+        transforms.Normalize(
+            mean=[0.485, 0.456, 0.406],
+            std=[0.229, 0.224, 0.225],
+        ),
+    ]
+)
+
+
+class GranaTrentinoDataset(Dataset):
+    """PyTorch Dataset for the Grana Trentino image-captioning task.
+
+    Parameters
+    ----------
+    dataframe:
+        pd.DataFrame with columns ``fetta_path``, ``grana_path``, ``caption``.
+    transform:
+        torchvision transform applied to both images.  Defaults to
+        ``DEFAULT_TRANSFORM`` (Resize 224×224 + ToTensor + ImageNet normalise).
+    tokenizer:
+        Optional tokenizer stored as an attribute; not used internally.
+        Intended for use in a custom ``collate_fn``.
+    """
+
+    def __init__(
+        self,
+        dataframe: pd.DataFrame,
+        transform=None,
+        tokenizer=None,
+    ) -> None:
+        self.df = dataframe.reset_index(drop=True)
+        self.transform = transform if transform is not None else DEFAULT_TRANSFORM
+        self.tokenizer = tokenizer
+
+    # ------------------------------------------------------------------
+    def __len__(self) -> int:
+        return len(self.df)
+
+    # ------------------------------------------------------------------
+    def __getitem__(self, idx: int):
+        row = self.df.iloc[idx]
+
+        fetta_img = Image.open(row["fetta_path"]).convert("RGB")
+        grana_img = Image.open(row["grana_path"]).convert("RGB")
+
+        fetta_tensor: torch.Tensor = self.transform(fetta_img)
+        grana_tensor: torch.Tensor = self.transform(grana_img)
+
+        caption_str: str = str(row["caption"])
+
+        return fetta_tensor, grana_tensor, caption_str
