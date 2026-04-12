@@ -17,13 +17,19 @@ def _collate_fn(batch, tokenizer: ItalianTokenizer, max_caption_len: int):
     fettas = torch.stack(fettas)
     granas = torch.stack(granas)
 
-    # tokenizza con BOS/EOS + padding
-    encoded = tokenizer.batch_encode(
-        list(captions),
-        max_length=max_caption_len + 1,
-        padding=True,
-    )
-    ids = encoded["input_ids"]  # (B, max_len+1)
+    # encode each caption with BOS/EOS
+    all_ids = []
+    for cap in captions:
+        ids_list = tokenizer.encode(cap, add_special_tokens=True)  # [BOS, w1,...,wn, EOS]
+        ids_list = ids_list[:max_caption_len + 1]  # truncate if needed
+        all_ids.append(ids_list)
+
+    # pad to uniform length
+    max_len = max(len(ids) for ids in all_ids)
+    pad_id = tokenizer.pad_id
+    ids = torch.full((len(all_ids), max_len), pad_id, dtype=torch.long)
+    for i, id_list in enumerate(all_ids):
+        ids[i, :len(id_list)] = torch.tensor(id_list, dtype=torch.long)
 
     # teacher forcing: input = ids[:, :-1], target = ids[:, 1:]
     caption_input = ids[:, :-1]   # (B, max_len)
@@ -83,7 +89,9 @@ def train_model(
     """
     checkpoint_dir = Path(checkpoint_dir)
     checkpoint_dir.mkdir(parents=True, exist_ok=True)
-    device = torch.device(device if torch.cuda.is_available() else "cpu")
+    if device == "cuda" and not torch.cuda.is_available():
+        device = "cpu"
+    device = torch.device(device)
     model = model.to(device)
 
     collate = lambda b: _collate_fn(b, tokenizer, max_caption_len)
