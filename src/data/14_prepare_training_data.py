@@ -121,6 +121,10 @@ def main() -> None:
         codifica_csv=args.codifica_csv,
     )
 
+    if len(result) == 0:
+        print("ATTENZIONE: nessuna riga nel dataset. Verifica i path e il file codifica.", file=sys.stderr)
+        sys.exit(1)
+
     print(f"\nDataset costruito: {len(result):,} righe, {result['sample_id'].nunique():,} campioni unici")
     print("\nDistribuzione per attributo:")
     print(result.groupby("attributo").size().to_string())

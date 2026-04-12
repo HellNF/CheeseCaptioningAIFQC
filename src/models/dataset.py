@@ -58,15 +58,26 @@ def build_caption_index(
     campioni_csv = Path(campioni_csv)
     codifica_csv = Path(codifica_csv)
 
+    if not campioni_csv.exists():
+        raise FileNotFoundError(f"campioni_csv not found: {campioni_csv}")
+    if not codifica_csv.exists():
+        raise FileNotFoundError(f"codifica_csv not found: {codifica_csv}")
+    if not captions_dir.is_dir():
+        raise NotADirectoryError(f"captions_dir not found: {captions_dir}")
+
     # ------------------------------------------------------------------
     # 1. Load all *_captions.csv files and tag with attributo name
     # ------------------------------------------------------------------
     caption_frames: list[pd.DataFrame] = []
     for csv_file in sorted(captions_dir.glob("*_captions.csv")):
         attributo = csv_file.stem.replace("_captions", "")
-        df = pd.read_csv(csv_file)
-        df["attributo"] = attributo
-        caption_frames.append(df)
+        cap_df = pd.read_csv(csv_file)
+        required_cols = {"caption", "prodotto", "anno"}
+        missing = required_cols - set(cap_df.columns)
+        if missing:
+            raise ValueError(f"Colonne mancanti in {csv_file.name}: {missing}")
+        cap_df["attributo"] = attributo
+        caption_frames.append(cap_df)
 
     if not caption_frames:
         return pd.DataFrame(
