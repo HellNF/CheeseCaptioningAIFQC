@@ -37,7 +37,7 @@ def load_model(model_key: str, attributo: str, tokenizer: ItalianTokenizer, devi
     ModelClass = MODEL_CLASSES[model_key]
     model = ModelClass(vocab_size=tokenizer.vocab_size, frozen_encoder=False)
     ckpt = Path(f"models/{model_key}_{attributo}/best_model.pt")
-    model.load_state_dict(torch.load(ckpt, map_location=device))
+    model.load_state_dict(torch.load(ckpt, map_location=device, weights_only=True))
     model = model.to(device)
     model.eval()
     return model
@@ -122,7 +122,7 @@ def main():
         )
 
     report = "\n".join(lines)
-    out_path = Path("reports/training_results.md")
+    out_path = Path(f"reports/training_results_{args.attributo}.md")
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(report, encoding="utf-8")
     print(f"\nReport salvato in {out_path}")
