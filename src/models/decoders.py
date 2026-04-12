@@ -11,14 +11,15 @@ class LSTMDecoder(nn.Module):
     Ad ogni step riceve l'embedding della parola precedente.
     """
 
-    def __init__(self, vocab_size: int, embed_dim: int = 256, hidden_dim: int = 512):
+    def __init__(self, vocab_size: int, embed_dim: int = 256, hidden_dim: int = 512, visual_dim: int = None):
         super().__init__()
+        visual_dim = visual_dim or hidden_dim
         self.embedding = nn.Embedding(vocab_size, embed_dim)
         self.lstm = nn.LSTM(embed_dim, hidden_dim, batch_first=True)
         self.fc_out = nn.Linear(hidden_dim, vocab_size)
         # proiezione: feature visiva → hidden state iniziale LSTM
-        self.visual_to_hidden = nn.Linear(hidden_dim, hidden_dim)
-        self.visual_to_cell = nn.Linear(hidden_dim, hidden_dim)
+        self.visual_to_hidden = nn.Linear(visual_dim, hidden_dim)
+        self.visual_to_cell = nn.Linear(visual_dim, hidden_dim)
 
     def forward(
         self,
