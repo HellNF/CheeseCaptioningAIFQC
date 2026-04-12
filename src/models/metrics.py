@@ -81,7 +81,7 @@ def generate_caption(
         max_len: lunghezza massima caption generata
         device: 'cpu' o 'cuda'
     Returns:
-        stringa caption generata
+        stringa caption generata (può essere troncata a max_len token se EOS non viene predetto)
     """
     model.eval()
     device = torch.device(device)
