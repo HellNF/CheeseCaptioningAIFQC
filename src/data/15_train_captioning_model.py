@@ -33,14 +33,6 @@ MODEL_CLASSES = {
     "m3": ViTTransformer,
 }
 
-AUGMENT_TRANSFORM = T.Compose([
-    T.RandomResizedCrop(224, scale=(0.8, 1.0)),
-    T.RandomHorizontalFlip(),
-    T.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.1),
-    T.ToTensor(),
-    T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-])
-
 
 def main():
     parser = argparse.ArgumentParser()
@@ -57,17 +49,23 @@ def main():
     args = parser.parse_args()
 
     print(f"Caricamento dataset: {args.dataset_csv}")
-    df = pd.read_csv(args.dataset_csv)
-    df = df[df["attributo"] == args.attributo].reset_index(drop=True)
+    df_full = pd.read_csv(args.dataset_csv)
+    df = df_full[df_full["attributo"] == args.attributo].reset_index(drop=True)
+    print(f"Righe per {args.attributo}: {len(df)}")
+    if df.empty:
+        valid_attrs = sorted(df_full["attributo"].dropna().unique().tolist())
+        raise SystemExit(
+            f"Nessuna riga trovata per attributo '{args.attributo}'.\n"
+            f"Attributi disponibili: {valid_attrs}"
+        )
 
     # prepend image root if provided
     if args.image_root:
         root = Path(args.image_root)
         df["fetta_path"] = df["fetta_path"].apply(lambda p: str(root / p))
         df["grana_path"] = df["grana_path"].apply(lambda p: str(root / p))
-    print(f"Righe per {args.attributo}: {len(df)}")
 
-    # split stratificato per sample_id (nessun campione in train E val)
+    # split per sample_id (nessun campione in train E val)
     sample_ids = df["sample_id"].unique().tolist()
     train_ids, val_ids = train_test_split(sample_ids, test_size=0.15, random_state=42)
     test_ids = val_ids[:len(val_ids)//2]
