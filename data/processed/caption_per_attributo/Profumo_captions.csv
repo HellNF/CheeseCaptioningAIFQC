@@ -189,7 +189,7 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista,peso
 188,OK,Poco intenso e poco complesso.,Poco intenso e poco complesso,Poco intenso e poco complesso,2020,C0N,TG_20,1.0
 189,OK,Poco complesso.,Poco complesso,Poco complesso,2020,C0P,TG_20,1.0
 190,OK,Intenso e molto equilibrato.,Intenso e molto equilibrato,Intenso e molto equilibrato,2020,C0A,TG_24,1.0
-191,CONFORME,"Il campione si presenta conforme agli standard, con un profumo equilibrato e privo di anomalie.",Molto buono!,Molto buono!,2020,C0G,TG_24,0.5
+191,CONFORME,"Il campione presenta caratteristiche conformi, senza difetti evidenti e con un profilo aromatico accettabile.",Molto buono!,Molto buono!,2020,C0G,TG_24,0.5
 192,OK,La crosta è solo accennata.,Crosta solo accennata,Crosta solo accennata,2020,C0I,TG_24,1.0
 193,OK,Sento un aroma di kiwi.,Kiwi...,Kiwi...,2020,C0N,TG_24,1.0
 194,OK,C'è un retrogusto di bruciato.,Peccato per il fondo di bruciato,Peccato per il fondo di bruciato,2020,C0P,TG_24,1.0
@@ -290,7 +290,7 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista,peso
 289,OK,Il profumo del campione presenta una intensità limitata.,Intensità  limitata,Intensità  limitata,2020,C0M,TG_04,1.0
 290,OK,Sentore di croste di polenta.,Croste di polenta,Croste di polenta,2020,C0L,TG_19,1.0
 291,OK,Sentore di crauti.,Crauti,Crauti,2020,C0A,TG_19,1.0
-292,CONFORME,"Il campione rispetta le normative, mostrando un profumo gradevole e tipico del Grana Trentino.",Ottimo,Ottimo,2020,C0O,TG_24,0.5
+292,CONFORME,"Il campione rispetta gli standard di qualità, mostrando un profumo equilibrato e privo di anomalie.",Ottimo,Ottimo,2020,C0O,TG_24,0.5
 293,OK,"Il profumo presenta note bruciate, che penalizzano leggermente la qualità.",Peccato per bruciato,Peccato per bruciato,2020,C0R,TG_24,1.0
 294,OK,"Il profumo presenta sentori positivi di brodo di carne e pane tostato, ma il NOSTRANO è molto intenso e caratterizzante.",Ci sono comunque sentori positivi come brodo di carne e pane tostato ma il NOSTRANO è MOLTO INTENSO e caratterizzante,Ci sono comunque sentori positivi come brodo di carne e pane tostato ma il NOSTRANO è MOLTO INTENSO e caratterizzante,2020,C0E,Q_02,1.0
 295,ILLEGGIBILE,,All'apertura stagnante,All'apertura stagnante,2020,C0A,Q_09,1.0
@@ -350,7 +350,7 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista,peso
 349,OK,Si avverte un odore di marcio.,Marcio,Marcio,2021,C0A,TG_19,1.0
 350,OK,Ricorda i funghi freschi.,Funghi freschi,Funghi freschi,2021,C0G,TG_28,1.0
 351,OK,Potrebbe avere un sentore di eucalipto.,Eucalipto?,Eucalipto?,2021,C0A,Q_09,1.0
-352,CONFORME,"Il profumo del campione è neutro, conforme agli standard senza note anomale o difetti.",Neutro,Neutro,2021,C0R,Q_10,0.5
+352,CONFORME,"Il campione si presenta conforme, con un profumo neutro e senza note difettose.",Neutro,Neutro,2021,C0R,Q_10,0.5
 353,OK,Odore di crauti.,Crauti,Crauti,2021,C0I,TG_19,1.0
 354,OK,Si percepisce un sentore di gomma bruciata.,Gomma bruciata,Gomma bruciata,2021,C0P,Q_09,1.0
 355,ILLEGGIBILE,,Insilato,insilatoilato,2021,C0P,TG_24,1.0
@@ -380,7 +380,7 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista,peso
 379,OK,Molto interessante.,Molto interessante,Molto interessante,2021,C0G,TG_24,1.0
 380,OK,Vaniglia all'apertura.,Vaniglia all’apertura,Vaniglia all’apertura,2021,C0D,TG_19,1.0
 381,OK,Presenza di polvere.,"Polvere anche,,,","Polvere anche,,,",2021,C0Q,TG_24,1.0
-382,CONFORME,"Il campione si distingue per un profumo interessante, conforme alle caratteristiche del Grana Trentino.",Molto interessante,Molto interessante,2021,C0G,TG_24,0.5
+382,CONFORME,"Il campione è conforme alle aspettative, con un profumo interessante e privo di difetti.",Molto interessante,Molto interessante,2021,C0G,TG_24,0.5
 383,OK,Intrigante.,Intrigante,Intrigante,2021,C0L,TG_24,1.0
 384,OK,Leggermente bruciato.,Leggermente bruciato,Leggermente bruciato,2021,C0N,TG_24,1.0
 385,OK,"Odore minerale, simile alla roccia.",Minerale-roccia,Minerale-roccia,2021,C0B,TG_24,1.0
@@ -394,3 +394,1086 @@ id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista,peso
 393,OK,Crauti.,Crauti,Crauti,2021,C0N,TG_19,1.0
 394,OK,Non ha il sapore del grana.,Non sa di grana,Non sa di grana,2021,C0M,TG_19,1.0
 395,OK,Plastica bruciata.,Plastica bruciata,Plastica bruciata,2021,C0P,Q_09,1.0
+396,FUORI_ATTRIBUTO,latte cotto,latte cotto,latte cotto,2018,C0A,Q_02,1.0
+397,FUORI_ATTRIBUTO,albume,albume,albume,2018,C0A,Q_09,1.0
+398,OK,"Il profumo presenta note di burro, latte, tostato e nocciola.","burro, latte, tostato e nocciola","burro, latte, tostato e nocciola",2018,C0A,TG_04,1.0
+399,OK,"Il profumo è netto, con note di burro fuso e burro.","netto, burro fuso, e burro","netto, burro fuso, e burro",2018,C0A,TG_08,1.0
+400,FUORI_ATTRIBUTO,profumo di cotto,profumo di cotto,profumo di cotto,2018,C0A,TG_13,1.0
+401,OK,"La nota pungente all'apertura è seguita da una dolcezza leggermente propionica, che prevale sui lattici cotti, panna e burro sciolto, migliorando con l'asciugatura.","nota pungente all apertura e poi dolciastra, leggermente propionica che prevale sui lattici cotti, panna e burro sciolto successivi, asciugandosi migliora","nota pungente all apertura e poi dolciastra, leggermente propionica che prevale sui lattici cotti, panna e burro sciolto successivi, asciugandosi migliora",2018,C0A,TG_19,1.0
+402,OK,"Il profumo è complesso, abbastanza caratteristico, ma presenta note di frutta fermentata molto volatili.","complesso, abbastanza caratteristico ma con note di frutta fermentata molto volatili","complesso, abbastanza caratteristico ma con note di frutta fermentata molto volatili",2018,C0A,TG_20,1.0
+403,FUORI_ATTRIBUTO,"Il profumo ricorda il formaggio, fiori e una leggera tostatura.","formaggio, fiore, leggera tostatura","formaggio, fiore, leggera tostatura",2018,C0A,TG_24,1.0
+404,FUORI_ATTRIBUTO,"Il profumo presenta note di burro, panna, fruttato, tostato, mallo di noce e brodo di carne.",burro panna fruttato tostato mallo di noce brodo di carne,burro panna fruttato tostato mallo di noce brodo di carne,2018,C0A,TG_35,1.0
+405,OK,Una porzione rispetto alle altre ha un profumo di animale.,una porzione ripsetto alle altre ha un profumo di animale,una porzione ripsetto alle altre ha un profumo di animale,2018,C0C,Q_02,1.0
+406,OK,Il profumo ha una discreta intensità.,"discreta intensita',","discreta intensita',",2018,C0C,TG_04,1.0
+407,OK,"Il profumo è composto da burro, latte fresco e burro fuso.",burro< latte fresco< burro fuso,burro< latte fresco< burro fuso,2018,C0C,TG_08,1.0
+408,FUORI_ATTRIBUTO,Le note sono poco tipiche e caratteristiche.,note poco tipiche e caratteristiche,note poco tipiche e caratteristiche,2018,C0C,TG_20,1.0
+409,OK,"Il profumo presenta note di panna, burro e miele.","paana, burro, miele...","panna, burro, miele...",2018,C0C,TG_24,1.0
+410,OK,"Il profumo è di brodo di carne, burro e panna tostato.",brodo di carne burro e panna tostato,brodo di carne burro e panna tostato,2018,C0C,TG_35,1.0
+411,OK,"Il profumo è leggero, ma delicatamente delizioso nelle note lattee e di panna.","leggero, ma delicatamente delizioso nelle note lattee, panna","leggero, ma delicatamente delizioso nelle note lattee, panna",2018,C0D,TG_04,1.0
+412,OK,"L'intensità è elevata, con note di burro fuso.","intensit' elevata, di burro fuso, burro,","intensit' elevata, di burro fuso, burro,",2018,C0D,TG_08,1.0
+413,FUORI_ATTRIBUTO,salato,salato,salato,2018,C0D,TG_11,1.0
+414,OK,Il profumo è leggero.,profumo leggero,profumo leggero,2018,C0D,TG_13,1.0
+415,OK,"Il profumo presenta note di panna, latte lievemente cotto e burro fresco.","panna, latte lievemente cotto, burro fresco,","panna, latte lievemente cotto, burro fresco,",2018,C0D,TG_19,1.0
+416,FUORI_ATTRIBUTO,"Il commento descrive un profumo poco complesso, con note di panna, latte cotto e burro fuso, ma mancano le note evolute.","poco complesso ma pulito, panna, latte cotto, burro fuso, mancano le note evolute","poco complesso ma pulito, panna, latte cotto, burro fuso, mancano le note evolute",2018,C0D,TG_20,1.0
+417,OK,"Il profumo presenta note da grana tipico, leggermente tostato.","da grana tipico, leggermete tostato pero=","da grana tipico, leggermete tostato pero=",2018,C0D,TG_24,1.0
+418,OK,"Il profumo è intenso, con note di panna, burro fuso, leggermente speziato e tostato.",inteso panna burro fuso leggermete speziato e tostato,inteso panna burro fuso leggermete speziato e tostato,2018,C0D,TG_35,1.0
+419,OK,Il profumo è caratterizzato da panna e latte cotto.,panna leg cotto,panna leg cotto,2018,C0I,Q_09,1.0
+420,FUORI_ATTRIBUTO,"Il commento indica un aroma non molto intenso e complesso, con una nota di emmental che non viene considerata nel punteggio.",aroma non molto intenso e complesso. quasi una nota di emmental che pero' non considero nel pu nteggio perch[ non sicuro,aroma non molto intenso e complesso. quasi una nota di emmental che pero' non considero nel pu nteggio perch[ non sicuro,2018,C0I,TG_04,1.0
+421,OK,"Il profumo presenta note di burro e burro fuso, insieme a latte fresco.","burro e burro fuso, latte fresco","burro e burro fuso, latte fresco",2018,C0I,TG_08,1.0
+422,FUORI_ATTRIBUTO,"Il commento descrive una puzza di marcio putrido avvertita solo spezzando i pezzi, che si attenua asciugandosi.","solo spezzando i pezzi e al momento della frattura si avverte puzza di marcio putrido, che x lo piu se ne va asciugamdosi","solo spezzando i pezzi e al momento della frattura si avverte puzza di marcio putrido, che x lo piu se ne va asciugamdosi",2018,C0I,TG_19,1.0
+423,FUORI_ATTRIBUTO,"Il commento evidenzia note fruttate poco caratteristiche e la mancanza di descrittori tipici come burro fuso, fieno e brodo.","note fruttate poco caratteristiche, mancano i descrittori tipici come il burro fuso, il fieno, il brodo, c-[ la panna ed il latte cotto","note fruttate poco caratteristiche, mancano i descrittori tipici come il burro fuso, il fieno, il brodo, c-[ la panna ed il latte cotto",2018,C0I,TG_20,1.0
+424,OK,"Il profumo presenta note positive, ma con una tostatura leggermente invadente.",note positive ma tostatura leggerm invadente,note positive ma tostatura leggerm invadente,2018,C0I,TG_24,1.0
+425,OK,"Il profumo è caratterizzato da panna e burro fuso molto presenti, seguiti da note tostate, fruttate e di brodo di carne.","Panna e burro fuso molto presenti, segue il tostatofruttato e il brodo di carne","Panna e burro fuso molto presenti, segue il tostatofruttato e il brodo di carne",2018,C0I,TG_35,1.0
+426,OK,"Il profumo è forte e persistente, tipico di formaggio stagionato.",forte persistente formaggio stagionato....,forte persistente formaggio stagionato....,2018,C0M,Q_02,1.0
+427,OK,Il profumo presenta note bruciate.,strinato,bruciato,2018,C0M,Q_09,1.0
+428,FUORI_ATTRIBUTO,"Il commento descrive un profumo essenziale, con poco latte e note vegetali e di fieno.","essenziale. poco latte. note vegetali, fieno","essenziale. poco latte. note vegetaleetali, fieno",2018,C0M,TG_04,1.0
+429,OK,"Il profumo è caratterizzato da latte, leggero burro e crosta di formaggio.","latte,leggero burro e crosta di formaggio","latte,leggero burro e crosta di formaggio",2018,C0M,TG_08,1.0
+430,OK,Il profumo presenta note fruttate di ananas.,fruttato ananas,fruttato ananas,2018,C0M,TG_12,1.0
+431,OK,Il profumo è poco intenso e presenta note fermentate.,"poco intenso, fermentato","poco intenso, fermentato",2018,C0M,TG_13,1.0
+432,FUORI_ATTRIBUTO,"Il commento descrive un profumo cotto, speziato tipo pepe, con note animali, polverose e di crosta vecchia.","cotti molto, speziato tipo pepe, animale, polveroso, crosta vecchia","cotti molto, speziato tipo pepe, animale, polveroso, crosta vecchia",2018,C0M,TG_19,1.0
+433,FUORI_ATTRIBUTO,"Il commento indica un profumo poco armonico, con note di crosta di formaggio e stantio.","poco armonico, crosta di formaggio, stantio","poco armonico, crosta di formaggio, stantio",2018,C0M,TG_20,1.0
+434,OK,"Il profumo presenta note di burro, fiore e grana, risultando piacevole.","burro, fiore, grana ...piacevole","burro, fiore, grana ...piacevole",2018,C0M,TG_24,1.0
+435,OK,"Il profumo è caratterizzato da panna, latte cotto, burro e brodo di carne.",panna latte cotto burro brodo di carne,panna latte cotto burro brodo di carne,2018,C0M,TG_35,1.0
+436,FUORI_ATTRIBUTO,"Il campione presenta note di animale, muffa e ossidato.","animale, muffa, ossidato","animale, muffa, ossidato",2018,C0Q,Q_02,1.0
+437,FUORI_ATTRIBUTO,Il commento esprime una sensazione di sporco all'inizio.,leggero all-inizio di sporco,leggero all-inizio di sporco,2018,C0Q,Q_09,1.0
+438,OK,"Il campione mostra una buona intensità, ma una complessità non elevata, con note di tostato.","Buona intensita', non grande la complessita'. tostato","Buona intensita', non grande la complessita'. tostato",2018,C0Q,TG_04,1.0
+439,OK,"Il profumo presenta note di burro fuso, burro e un accenno di fieno.","burro fuso, burro, un po di fieno","burro fuso, burro, un po di fieno",2018,C0Q,TG_08,1.0
+440,OK,Il campione ha note di lattici cotti e un leggero sentore animale non penalizzante.,"lattici cotti, animale leggero non penalizzante,","lattici cotti, animale leggero non penalizzante,",2018,C0Q,TG_19,1.0
+441,OK,"Il profumo non è particolarmente armonico, con note dominanti di brodo, latte cotto e a tratti bruciato.","non particolarmente armonico, note dominanti di brodo e di latte cotto, a tratti bruciato","non particolarmente armonico, note dominanti di brodo e di latte cotto, a tratti bruciato",2018,C0Q,TG_20,1.0
+442,OK,"Il campione presenta note positive di grana tipico e latte, con una tostatura forte, sebbene molto piacevole.","note positive da grana tipico, latte, ma con tostatura anche forte... sebbene molto piacevole","note positive da grana tipico, latte, ma con tostatura anche forte... sebbene molto piacevole",2018,C0Q,TG_24,1.0
+443,OK,Moderata persistenza di una sensazione acida e un possibile inizio di fermentazione.,moderata persistenza dei una senzaione acida e forse un inizio di fermentazione,moderata persistenza dei una senzaione acida e forse un inizio di fermentazione,2018,C0Q,TG_35,1.0
+444,ILLEGGIBILE,,leg,leg,2018,C0B,Q_09,1.0
+445,OK,"Il profumo è leggero, senza grandi freschezze, con note di panna e vegetale.",leggero. Senza grandi freschezze. panna. note vegetali,leggero. Senza grandi freschezze. panna. note vegetaleetali,2018,C0B,TG_04,1.0
+446,OK,"Il campione presenta note di panna, burro fuso, latte cotto e una leggera tostatura.","soprattutto panna, burro fuso, latte cotto e tostatoleggero","soprattutto panna, burro fuso, latte cotto e tostatoleggero",2018,C0B,TG_35,1.0
+447,OK,"Il profumo è caratterizzato da panna, note animali e un'intensità marcata.","panna, animale, intenso","panna, animale, intenso",2018,C0B,TG_19,1.0
+448,OK,"Il campione è molto leggero, quasi impercettibile, con un leggero sentore di cotto.","molto leggero, quasi impercettibile. Leggero sentore di cotto","molto leggero, quasi impercettibile. Leggero sentore di cotto",2018,C0D,TG_13,1.0
+449,FUORI_ATTRIBUTO,Il commento menziona brodo vegetale e panna.,brodo vegetale panna,brodo vegetaleetale panna,2018,C0D,Q_09,1.0
+450,OK,Il profumo è pronunciato di latte cotto.,pronunciato di latte cotto,pronunciato di latte cotto,2018,C0D,Q_02,1.0
+451,OK,"Profumi maturi o cotti, con note di crosta, vegetale e leggermente animali/cuoio, senza difetti.","Profumi maturi o cotti, crosta. note vegetali e leggermente animali/cuoio. Non difetti","Profumi maturi o cotti, crosta. note vegetaleetali e leggermente animali/cuoio. Non difetti",2018,C0D,TG_04,1.0
+452,OK,"Il campione presenta note di latte cotto, burro, umami, verdure lesse e una leggera crosta di formaggio.","Latte cotto, burro , umami, verdure lesse e una legger crosta di formaggio","Latte cotto, burro , umami, verdure lesse e una legger crosta di formaggio",2018,C0D,TG_35,1.0
+453,OK,Il profumo è caratterizzato da una nota dolce.,con nota dolce,con nota dolce,2018,C0D,TG_11,1.0
+454,OK,Il campione presenta note fermentate.,fermentato,fermentato,2018,C0D,TG_19,1.0
+455,FUORI_ATTRIBUTO,Il commento menziona un odore anomalo che non è riconoscibile.,leg odore anomalo che non riconsoco,leg odore anomalo che non riconsoco,2018,C0F,Q_09,1.0
+456,FUORI_ATTRIBUTO,Il commento esprime una percezione di leggerezza e povertà aromatica.,leggero e povero,leggero e povero,2018,C0F,TG_04,1.0
+457,OK,"Il profumo presenta note intense di formaggio grigliato e tostato, seguite da panna, latte cotto e burro fuso.","Prevale il probumo di formaggio grigliato e tostato, segue panna, latte cotto e burro fuso","Prevale il probumo di formaggio grigliato e tostato, segue panna, latte cotto e burro fuso",2018,C0F,TG_35,1.0
+458,ILLEGGIBILE,,legg fruttato *ananas(,legg fruttato *ananas(,2018,C0F,TG_12,1.0
+459,OK,"Il profumo è fermentato deciso e dolciastro, percepito solo allo spezzarsi dei pezzi.","Fermentato deciso, dolciastro, solo allo spezzarsi dei pezzi","Fermentato deciso, dolciastro, solo allo spezzarsi dei pezzi",2018,C0F,TG_19,1.0
+460,FUORI_ATTRIBUTO,"Il commento fa riferimento a note vegetali e balsamiche, con scarsa tipicità di grana.",vegetale balsamico * poco da grana,vegetaleetale balsamico * poco da grana,2018,C0I,Q_09,1.0
+461,OK,Il profumo presenta note animali.,animale,animale,2018,C0I,Q_02,1.0
+462,OK,"Il profumo è caratterizzato da latte cotto, crosta e brodo vegetale.","latte cotto, crosta. Brodo vegetale","latte cotto, crosta. Brodo vegetaleetale",2018,C0I,TG_04,1.0
+463,OK,"Il profumo presenta note di brodo di carne, burro fuso e latte cotto, con leggere note di sottobosco e tostato.","Brodo di carna, burro fuso e latte cotto, leggero sottobosco e tostato","Brodo di carna, burro fuso e latte cotto, leggero sottobosco e tostato",2018,C0I,TG_35,1.0
+464,OK,Il profumo è leggero ma positivo.,profumo leggero ma positivo,profumo leggero ma positivo,2018,C0L,TG_13,1.0
+465,FUORI_ATTRIBUTO,Il commento esprime una percezione di pezze sporche.,leg pezze sporche,leg pezze sporche,2018,C0L,Q_09,1.0
+466,OK,Il profumo presenta note di panna.,panna,panna,2018,C0L,Q_02,1.0
+467,OK,"Il profumo è caratterizzato da note cotte, crosta e burro fuso, senza percezione di latte fresco.","Note cotte, crosta,burro fuso. non sento note latte fresche","Note cotte, crosta,burro fuso. non sento note latte fresche",2018,C0L,TG_04,1.0
+468,OK,"Il profumo presenta note di brodo di carne, latte cotto, burro fuso e nocciola tostato, con leggera intensità.",brodo di carne latte cotto burro fuso nocciola tostato leggereo,brodo di carne latte cotto burro fuso nocciola tostato leggereo,2018,C0L,TG_35,1.0
+469,OK,"Il profumo è pungente all'apertura del tappo, con frutta molto matura alla rottura e panna decisa.","pungente all apertura del tappo, frutta molto matura alla rottura, panna decisa","pungente all apertura del tappo, frutta molto matura alla rottura, panna decisa",2018,C0L,TG_19,1.0
+470,OK,Il profumo presenta un sentore di ossidato.,sentore di ossidato,sentore di ossidato,2018,C0O,TG_13,1.0
+471,FUORI_ATTRIBUTO,Il commento esprime una percezione di cotto.,leg cotto,leg cotto,2018,C0O,Q_09,1.0
+472,OK,"L'intensità non è elevata, con note di burro, latte cotto, panna e tostato lieve, in un contesto maturo.","Intensit' non elevata. Burro, latte cotto. Panna. Tostato lieve. Maturo","Intensit' non elevata. Burro, latte cotto. Panna. Tostato lieve. Maturo",2018,C0O,TG_04,1.0
+473,OK,"Il profumo presenta note di siero, latte cotto, brodo e leggera crosta di formaggio.","siero, latte cotto, brodo e leggera crosta di formaggio","siero, latte cotto, brodo e leggera crosta di formaggio",2018,C0O,TG_35,1.0
+474,OK,"Il profumo è caratteristico e abbastanza complesso, con note di latte cotto, burro cotto, brodo e lievissima nota ossidata.","caratteristico, abbastanza complesso, nite di latte cotto e burro cotto, brodo, lievissima nota ossidata","caratteristico, abbastanza complesso, nite di latte cotto e burro cotto, brodo, lievissima nota ossidata",2018,C0A,TG_20,1.0
+475,OK,Il profumo presenta note di latte fresco.,latte fresco,latte fresco,2018,C0A,TG_15,1.0
+476,FUORI_ATTRIBUTO,Delicato ma positivo.,delicato ma positivo.,delicato ma positivo.,2018,C0A,TG_13,1.0
+477,OK,"Il campione presenta note di grana tipico, nocciola e burro.","grana tipico, nocciola e burro","grana tipico, nocciola e burro",2018,C0A,TG_24,1.0
+478,OK,"Il profumo è burroso, con leggero sentore erbaceo.","burroso, con leggero sentore erbaceo","burroso, con leggero sentore erbaceo",2018,C0A,TG_14,1.0
+479,OK,"Il campione ha note di panna e floreale, ma risulta un po' stucchevole.","panna e floreale, ma un po stucchevole","panna e floreale, ma un po stucchevole",2018,C0A,TG_19,1.0
+480,FUORI_ATTRIBUTO,"Poco intenso e complesso, con a tratti note di formaggio nostrano, scarico.","poco intenso e complesso, a tratti note di formaggio nostrano, scarico","poco intenso e complesso, a tratti note di formaggio nostrano, scarico",2018,C0C,TG_20,1.0
+481,OK,"Il profumo è delicato con note di frutta tropicale, leggermente fermentata.","delicato frutta tropicale, leggermente fermentata","delicato frutta tropicale, leggermente fermentata",2018,C0C,TG_15,1.0
+482,OK,"Il campione è poco intenso, con sentore di cotto.","poco intenso, sentore di cotto","poco intenso, sentore di cotto",2018,C0C,TG_13,1.0
+483,OK,"Il profumo presenta grana tipico, tostatura e note anche florali.","grana tipico, tostatura e note anche florali","grana tipico, tostatura e note anche florali",2018,C0C,TG_24,1.0
+484,OK,Il campione ha note di burro fuso e tostato.,burro fuso e tostato,burro fuso e tostato,2018,C0C,TG_14,1.0
+485,OK,"Lieve nota ossidata di cetriolo/cimice, per il resto piuttosto piatto.","lieve nota ossidata di cetriolo / cimice, per il resto piuttosto piatto","lieve nota ossidata di cetriolo / cimice, per il resto piuttosto piatto",2018,C0E,TG_20,1.0
+486,FUORI_ATTRIBUTO,Ananas.,ananas,ananas,2018,C0E,TG_15,1.0
+487,FUORI_ATTRIBUTO,Leggero sentore di kefir/yogurt insilato mais.,leg kefir/yogurt ins mais,leg kefir/yogurt insilato mais,2018,C0E,Q_09,1.0
+488,OK,Il profumo è burroso ma con tostatura forte.,burroso ma con tostatura forte...,burroso ma con tostatura forte...,2018,C0E,TG_24,1.0
+489,OK,"Il campione presenta panna e latte fresco, con sentore di frutta secca.","panna e latte fresco, sentore di frutta secca","panna e latte fresco, sentore di frutta secca",2018,C0E,TG_14,1.0
+490,OK,"Il profumo è delicato ma lattico, caratteristico.","delicato ma lattico, caratteristico","delicato ma lattico, caratteristico",2018,C0G,TG_20,1.0
+491,FUORI_ATTRIBUTO,"Cipolla, minestrone verdura.","cipolla, minestrone verdura","cipolla, minestrone verdura",2018,C0G,TG_15,1.0
+492,FUORI_ATTRIBUTO,Leggero sentore di fieno.,leg fieno,leg fieno,2018,C0G,Q_09,1.0
+493,OK,Il campione presenta note di panna.,panna,panna,2018,C0G,TG_13,1.0
+494,OK,Il profumo è intenso e burroso con leggera tostatura.,intenso e burroso con leggera tostatura,intenso e burroso con leggera tostatura,2018,C0G,TG_24,1.0
+495,OK,Il campione ha note di burro.,burro,burro,2018,C0G,TG_05,1.0
+496,FUORI_ATTRIBUTO,Il commento si riferisce a latte privo di particolari note.,latte privo di particolari note,latte privo di particolari note,2018,C0G,TG_14,1.0
+497,FUORI_ATTRIBUTO,"Il commento menziona note lattiche bruciate, con presenza di note caratteristiche.","note lattiche bruciate, comunque non mancano le note caratteristiche","note lattiche bruciate, comunque non mancano le note caratteristiche",2018,C0N,TG_20,1.0
+498,OK,Il campione presenta note di fermentato.,note di fermentato,note di fermentato,2018,C0N,TG_15,1.0
+499,FUORI_ATTRIBUTO,Il commento si riferisce a yogurt.,yogurt,yogurt,2018,C0N,Q_09,1.0
+500,OK,Il campione ha un sentore di fermentato.,sentore di fermentato,sentore di fermentato,2018,C0N,TG_13,1.0
+501,OK,"Il campione presenta note di grana, latte e floreale.","grana, latte e florale..","grana, latte e florale..",2018,C0N,TG_24,1.0
+502,FUORI_ATTRIBUTO,Rompendo un paio di pezzi si percepisce un odore più dolciastro e di cavolfiore cotto.,Rompendo un paio di pezzi odore piu dolciastro e da cavolfiore cotto,Rompendo un paio di pezzi odore piu dolciastro e da cavolfiore cotto,2018,C0N,TG_19,1.0
+503,FUORI_ATTRIBUTO,"Il commento indica uno sbilanciamento sul vegetale e sul brodo di verdura, con nota lattica presente ma poco intensa.","sbilanciato sul vegetale e sul brodo di verdura, nota lattica presente ma comunque poco intensa","sbilanciato sul vegetaleetale e sul brodo di verdura, nota lattica presente ma comunque poco intensa",2018,C0R,TG_20,1.0
+504,FUORI_ATTRIBUTO,Il commento si riferisce a yogurt e frutta tropicale.,"yogurt,frutta tropicale","yogurt,frutta tropicale",2018,C0R,TG_15,1.0
+505,FUORI_ATTRIBUTO,Il commento menziona leg cotto.,leg cotto,leg cotto,2018,C0R,Q_09,1.0
+506,FUORI_ATTRIBUTO,Il commento si riferisce a un sentore di cotto.,sentore di cotto,sentore di cotto,2018,C0R,TG_13,1.0
+507,OK,Il campione presenta un bel naso da grana con leggera tostatura.,bel naso da grana con leggera tostatura...,bel naso da grana con leggera tostatura...,2018,C0R,TG_24,1.0
+508,OK,Il campione ha note di burro fuso e bruciato.,"burro fuso e bruciato,","burro fuso e bruciato,",2018,C0R,TG_14,1.0
+509,OK,Il campione presenta note di panna scaldata.,panna scaldata,panna scaldata,2018,C0R,TG_19,1.0
+510,OK,"Il campione ha note lattiche intense, con lievi sentori fermentati e animali.","lattico, intenso, lievi sentori fermentati e animali","lattico, intenso, lievi sentori fermentati e animali",2018,C0A,TG_20,1.0
+511,OK,Il campione presenta note di caramella mou e latte cotto.,"CARAMELLA MOU, LATTE COTTO","CARAMELLA MOU, LATTE COTTO",2018,C0A,TG_15,1.0
+512,OK,"Il campione è molto leggero, quasi impercettibile.","molto leggero, quasi impercettibile","molto leggero, quasi impercettibile",2018,C0A,TG_13,1.0
+513,FUORI_ATTRIBUTO,Il commento si riferisce a un leggero sentore di pane e lievito.,leggero di pane lievito,leggero di pane lievito,2018,C0A,Q_09,1.0
+514,FUORI_ATTRIBUTO,"Il commento indica un profilo leggero, non molto caratterizzato e anonimo.",leggero. non molto caratterizzato. Anonimo,leggero. non molto caratterizzato. Anonimo,2018,C0A,TG_04,1.0
+515,OK,"Il campione mostra una buona complessità aromatica, con note dolciastre e mature che arricchiscono il profumo.","mediamente buono, ma con punte dolciastre e mature","mediamente buono, ma con punte dolciastre e mature",2018,C0A,TG_19,1.0
+516,OK,Intenso da grana.,intenso da grana...,intenso da grana...,2018,C0A,TG_24,1.0
+517,FUORI_ATTRIBUTO,"Su un pezzo nota animale di cuoio, cavallo; sui restanti pezzi odore un po' scarico e poco complesso.","su un pezzo nota animale di cuoio, cavallo, sui restanti pezzi odore un po scarico e poco complesso","su un pezzo nota animale di cuoio, cavallo, sui restanti pezzi odore un po scarico e poco complesso",2018,C0C,TG_20,1.0
+518,FUORI_ATTRIBUTO,Latte cotto.,LATTE COTTO,LATTE COTTO,2018,C0C,TG_15,1.0
+519,FUORI_ATTRIBUTO,Cotto e leggero da letame.,cotto e leggero da letame,cotto e leggero da letame,2018,C0C,Q_09,1.0
+520,OK,Grana con leggera tostatura e poche note florali.,grana con leggera tostatura e poche note florali,grana con leggera tostatura e poche note florali,2018,C0C,TG_24,1.0
+521,OK,"Prevalenti note di cotto, latte cotto, panna cotta, burro cotto, quasi caramello.","prevalenti note di cotto, latte cotto, panna cotta, burro cotto, quasi caramello","prevalenti note di cotto, latte cotto, panna cotta, burro cotto, quasi caramello",2018,C0D,TG_20,1.0
+522,FUORI_ATTRIBUTO,"Cavolfiore, minestrone, verdura.","CAVOLFIORE , MINESTRONE VERDURA","CAVOLFIORE , MINESTRONE VERDURA",2018,C0D,TG_15,1.0
+523,OK,Sentore di crosta e di latte cotto.,sentore di crosta e di latte cotto,sentore di crosta e di latte cotto,2018,C0D,TG_13,1.0
+524,OK,Il profumo risulta chiuso.,chiuso,chiuso,2018,C0D,TG_26,1.0
+525,OK,"Latte, panna, burro fresco crudo. Nocciola leggera.","latte, panna, burro fresco crudo. Nocciola leggero","latte, panna, burro fresco crudo. Nocciola leggero",2018,C0D,TG_04,1.0
+526,OK,"Intenso con note leggermente tostate, burro e formaggio fuso.","intenso con note leggermente tostate, burro e form.fuso","intenso con note leggermente tostate, burro e formaggiofuso",2018,C0D,TG_24,1.0
+527,OK,"Poco intenso, note lattiche scariche, burro cotto, brodo.","poco intenso, note lattiche scariche, burro cotto, brodo","poco intenso, note lattiche scariche, burro cotto, brodo",2018,C0G,TG_20,1.0
+528,FUORI_ATTRIBUTO,"Vegetale, burro fresco.","VEGETALE , BURRO FRESCO","vegetaleETALE , BURRO FRESCO",2018,C0G,TG_15,1.0
+529,OK,"Burro sciolto e cotto, latte cotto, tostatura.","Burro sciolto e cotto, latte cotto. tostatura.","Burro sciolto e cotto, latte cotto. tostatura.",2018,C0G,TG_04,1.0
+530,FUORI_ATTRIBUTO,Qualche nota di verdura lessa.,qualche nota di verdura lessa,qualche nota di verdura lessa,2018,C0G,TG_19,1.0
+531,OK,Grana tipico medio intenso.,grana tipico medio intenso..,grana tipico medio intenso..,2018,C0G,TG_24,1.0
+532,OK,"Intenso e complesso, note di crosta di formaggio e frutta fermentata, non particolarmente equilibrato.","intenso e complesso, note di crosta di formaggio e frutta fermentata, non particolarmente equilibrato","intenso e complesso, note di crosta di formaggio e frutta fermentata, non particolarmente equilibrato",2018,C0H,TG_20,1.0
+533,FUORI_ATTRIBUTO,"Latte acido, pungente, fermentato.","LATTE ACIDO, PUNGENTE, FERMENTATO","LATTE ACIDO, PUNGENTE, FERMENTATO",2018,C0H,TG_15,1.0
+534,OK,"Il campione presenta un profumo positivo, privo di difetti, ma con un'intensità leggermente bassa.",positivo no difetti poco intenso,positivo no difetti poco intenso,2018,C0H,TG_26,1.0
+535,OK,Fieno.,fieno,fieno,2018,C0H,Q_09,1.0
+536,FUORI_ATTRIBUTO,"Il commento si riferisce a note olfattive di insilato di mais, non pertinenti al profumo del Grana Trentino.",insilato di mais dominante,insilatoilato di mais dominante,2018,C0H,TG_04,1.0
+537,FUORI_ATTRIBUTO,"Il commento descrive note di acetone, fiore e solvente, che non sono caratteristiche del profumo del Grana Trentino.","strano.. acetone, fiore e solvente","strano.. acetone, fiore e solvente",2018,C0H,TG_24,1.0
+538,FUORI_ATTRIBUTO,"Il commento si riferisce a un odore salato, non pertinente al profumo del Grana Trentino.",odore salato,odore salato,2018,C0H,TG_11,1.0
+539,FUORI_ATTRIBUTO,"Il commento menziona una nota ossidata e fermentata, con una complessità ridotta, non attinente al profumo del Grana Trentino.","nota ossidata / fermentata, poco complesso","nota ossidata / fermentata, poco complesso",2018,C0Q,TG_20,1.0
+540,OK,Il profumo presenta note gradevoli di latte cotto e una leggera crosta.,gradevole di latte cotto e leggera crosta,gradevole di latte cotto e leggera crosta,2018,C0Q,TG_15,1.0
+541,OK,Il profumo è chiuso e poco intenso.,chiuso poco intenso,chiuso poco intenso,2018,C0Q,TG_26,1.0
+542,FUORI_ATTRIBUTO,"Il commento descrive note vegetali e floreali, non specifiche del profumo del Grana Trentino.","su note mature mi parve sentire note vegetali, anche floreali all-inizio","su note mature mi parve sentire note vegetaleetali, anche floreali all-inizio",2018,C0Q,TG_04,1.0
+543,OK,"Alcuni pezzi presentano note tostate molto decise, quasi eccessive, con una leggera speziatura.","alcuni pezzi con tostati molto decisi quasi troppo, speziati,","alcuni pezzi con tostati molto decisi quasi troppo, speziati,",2018,C0Q,TG_19,1.0
+544,OK,Il profumo è intenso ma presenta note di chimico bruciato e crosta.,intenso ma con note da formaggio fritto&crosta,intenso ma con note da chimico bruciato&crosta,2018,C0Q,TG_24,1.0
+545,OK,"Il profumo è poco intenso ma equilibrato, con predominanza di burro fuso.","poco intenso ma equilibrato, burro fuso dominante","poco intenso ma equilibrato, burro fuso dominante",2018,C0A,TG_20,1.0
+546,OK,Il profumo presenta note di frutta tropicale.,frutta tropicale,frutta tropicale,2018,C0A,TG_15,1.0
+547,OK,"Il profumo è molto intenso, con note di grana, leggera tostatura e sentori floreali.",molto intenso da grana con leggera tostatura e florale,molto intenso da grana con leggera tostatura e florale,2018,C0A,TG_24,1.0
+548,FUORI_ATTRIBUTO,"Il commento indica un profumo non caratteristico, principalmente animale, non pertinente al Grana Trentino.",non caratteristico principalmente animale,non caratteristico principalmente animale,2018,C0A,Q_02,1.0
+549,OK,Il profumo presenta note mature e qualche lieve nota fresca.,"oltre altostato e al maturo, presente qualche lieve nota fresca","oltre altostato e al maturo, presente qualche lieve nota fresca",2018,C0A,TG_04,1.0
+550,OK,"Il profumo è caratterizzato da panna, burro, brodo e una leggera nota animale.","panna e burro, brodo, leggera notaa animale","panna e burro, brodo, leggera notaa animale",2018,C0A,TG_14,1.0
+551,OK,"Il profumo è poco intenso, con una nota fruttata oltre a quelle caratteristiche.","non molto intenso, nota fruttata oltre a quelle caratteristiche","non molto intenso, nota fruttata oltre a quelle caratteristiche",2018,C0C,TG_20,1.0
+552,OK,Un paio di pezzi presentano un profumo di verdura lessa.,un paio di pezzi profumo verdura lessa,un paio di pezzi profumo verdura lessa,2018,C0C,TG_19,1.0
+553,OK,Il profumo è caratterizzato da burro fuso.,burro fuso,burro fuso,2018,C0C,TG_13,1.0
+554,OK,Il profumo presenta note di ananas leggero.,ananas leggero,ananas leggero,2018,C0C,TG_15,1.0
+555,ILLEGGIBILE,,meido alta con un poco di tostatura per;,meido alta con un poco di tostatura per;,2018,C0C,TG_24,1.0
+556,FUORI_ATTRIBUTO,"Il commento esprime una valutazione negativa, indicando pochi pregi e una lieve insufficienza.","pochi pregi, lieve","pochi pregi, lieve",2018,C0C,TG_04,1.0
+557,FUORI_ATTRIBUTO,"Il campione presenta note di rancido, indicando un difetto olfattivo.",note di rancido,note di rancido,2018,C0C,TG_14,1.0
+558,OK,"Il campione è abbastanza equilibrato, con note caratteristiche presenti.","abbastanza equilibrato, note caratteristiche presenti","abbastanza equilibrato, note caratteristiche presenti",2018,C0M,TG_20,1.0
+559,OK,"Il profumo è floreale e fruttato, fresco e con note pannose.","floreale e fruttato, fresco, pannoso","floreale e fruttato, fresco, pannoso",2018,C0M,TG_19,1.0
+560,OK,Si percepisce un leggero sentore di fermentato.,leggero sentore di fermentato,leggero sentore di fermentato,2018,C0M,TG_13,1.0
+561,OK,Il campione presenta note fruttate.,fruttato,fruttato,2018,C0M,TG_15,1.0
+562,FUORI_ATTRIBUTO,"Il commento evidenzia tostatura e note polverose, non specifiche per il profumo.",tostatura e note polverose,tostatura e note polverose,2018,C0M,TG_24,1.0
+563,FUORI_ATTRIBUTO,"Il campione è debole e scarno, senza difetti ma con pochi pregi, con note tostate e cotte.","debole, scarno. Nessun difetto ma pochi pregi. Tostato, cotto","debole, scarno. Nessun difetto ma pochi pregi. Tostato, cotto",2018,C0M,TG_04,1.0
+564,FUORI_ATTRIBUTO,"Il commento fa riferimento a salamoia di crauti, un attributo diverso.",salamoia crauti,salamoia crauti,2018,C0M,TG_14,1.0
+565,OK,"Il campione è mediamente intenso, con note di frutta fermentata su alcuni pezzi.","mediamente intenso, su qualche pezzo note di frutta fermentata","mediamente intenso, su qualche pezzo note di frutta fermentata",2018,C0N,TG_20,1.0
+566,OK,Il profumo presenta note di panna.,panna,panna,2018,C0N,Q_09,1.0
+567,FUORI_ATTRIBUTO,"Il commento menziona frutta e verdura lessa, non specifico per il profumo.","frutta , verdura lessa","frutta , verdura lessa",2018,C0N,TG_15,1.0
+568,OK,"Il campione presenta note di latte, floreale e grana.","latte, florale e grana..","latte, florale e grana..",2018,C0N,TG_24,1.0
+569,FUORI_ATTRIBUTO,Una porzione penalizza per un sentore di fermentato.,una porzione penalizza perche di fermentato,una porzione penalizza perche di fermentato,2018,C0N,Q_02,1.0
+570,OK,"Il campione è mediamente intenso, con note lattiche, floreali e ossidate, e note vegetali di paglia.","mediamente intenso, note lattiche presenti ma con profumi che riconducono al floreale e all-ossidato, note vegetali di paglia","mediamente intenso, note lattiche presenti ma con profumi che riconducono al floreale e all-ossidato, note vegetaleetali di paglia",2018,C0O,TG_20,1.0
+571,OK,Si percepisce un leggero sentore poco percettibile.,leggero poco percettibile,leggero poco percettibile,2018,C0O,TG_13,1.0
+572,OK,Il campione presenta note di frutta fermentata.,frutta fermentata,frutta fermentata,2018,C0O,TG_15,1.0
+573,OK,Si notano note leggermente tostate che prevalgono.,note leggermente tostate che prevalgono,note leggermente tostate che prevalgono,2018,C0O,TG_24,1.0
+574,OK,"Il campione è leggero, con sentori maturi e cotti, ma poco fresco.","leggero. sentori maturi, cotti tostarti. poco fresco","leggero. sentori maturi, cotti tostarti. poco fresco",2018,C0O,TG_04,1.0
+575,OK,"Si percepisce un leggero sentore di cotto, con odore dominante di latte fresco.","leggero sentore di cotto, odore dominante di latte fresco","leggero sentore di cotto, odore dominante di latte fresco",2018,C0O,TG_14,1.0
+576,FUORI_ATTRIBUTO,"Il commento descrive un profumo poco pulito, con note pungenti e sentori di pozzo e acqua stagnante.","poco pulito, note pungenti al naso, sentori di pozzo e acqua stagnante,","poco pulito, note pungenti al naso, sentori di pozzo e acqua stagnante,",2018,C0Q,TG_20,1.0
+577,OK,Il profumo è impercettibile.,impercettibile,impercettibile,2018,C0Q,TG_13,1.0
+578,FUORI_ATTRIBUTO,Il commento esprime una nota di latte acidino.,latte acidino,latte acidino,2018,C0Q,TG_15,1.0
+579,OK,"Il profumo è intenso, con note di grana e formaggio fuso.",intenso grana e formaggio fuso,intenso grana e formaggio fuso,2018,C0Q,TG_24,1.0
+580,FUORI_ATTRIBUTO,Il commento esprime un profumo fermentato con sentori animali.,fermentato animale,fermentato animale,2018,C0Q,Q_02,1.0
+581,FUORI_ATTRIBUTO,"Il profumo inizialmente presenta odori sgradevoli di stalla e fecale, ma poi si dissolve, risultando comunque povero e maturo.","al primo olfatto odore sgradevole, stalla, fecale. poi dissolve. Resta comunque povero e maturo","al primo olfatto odore sgradevole, stalla, fecale. poi dissolve. Resta comunque povero e maturo",2018,C0Q,TG_04,1.0
+582,OK,"Il profumo presenta note di burro fuso, brodo e leggeri sentori di emmental.","burro fuso, brodo, emmental leggeri","burro fuso, brodo, emmental leggeri",2018,C0Q,TG_14,1.0
+583,OK,"Il profumo è lattico di burro fuso, con note lievemente pungenti e quasi fermentate, con un evidente sentore di brodo.","lattico di burro fuso ma con note lievemente pungenti, quasi fermentate, brodo evidente","lattico di burro fuso ma con note lievemente pungenti, quasi fermentate, brodo evidente",2018,C0A,TG_20,1.0
+584,OK,"Il profumo è caratterizzato da burro, note floreali e burro fuso, con una leggera presenza di latte.","burro, floreale,burro fuso poco,latte","burro, floreale,burro fuso poco,latte",2018,C0A,TG_08,1.0
+585,OK,Il profumo presenta note di panna.,PANNA,PANNA,2018,C0A,Q_09,1.0
+586,RIFERIMENTO,,forse uno dei pi\ interessanti della batteria...,forse uno dei pi\ interessanti della batteria...,2018,C0A,TG_24,1.0
+587,OK,Il profumo è leggero.,leggero,leggero,2018,C0A,TG_04,1.0
+588,FUORI_ATTRIBUTO,Il commento esprime la presenza di latte fermentato leggero in alcuni pezzi alla rottura.,un po di latte fermentato leggero in alcuni pezzi alla rottura,un po di latte fermentato leggero in alcuni pezzi alla rottura,2018,C0A,TG_19,1.0
+589,OK,"Il profumo è intenso, con note di lattico cotto e vegetale, con una leggera nota briciata.","intenso, lattico cotto e vegetale secco, forse lieve nota briciata","intenso, lattico cotto e vegetaleetale secco, forse lieve nota briciata",2018,C0E,TG_20,1.0
+590,OK,Il profumo presenta note di panna.,panna,panna,2018,C0E,TG_11,1.0
+591,OK,"Il profumo è caratterizzato da latte e burro, con note di burro fuso.","latte, burro, burro fuso","latte, burro, burro fuso",2018,C0E,TG_08,1.0
+592,FUORI_ATTRIBUTO,Il commento esprime una leggera nota di teli sporchi.,leggere di teli sporchi,leggere di teli sporchi,2018,C0E,Q_09,1.0
+593,FUORI_ATTRIBUTO,Il profumo presenta note di noce moscata e frutta secca.,"noce moscata, frutta secca","noce moscata, frutta secca",2018,C0E,TG_12,1.0
+594,OK,"Il profumo è intenso, con note di tostatura e lievemente insilato.",intenso ma con note da tostatura e leggerm. insilati,intenso ma con note da tostatura e leggerm. insilatoilati,2018,C0E,TG_24,1.0
+595,OK,"Il profumo presenta note di brodo vegetale, su sentori cotti.","trovo del brodo vegetale, su note cotte","trovo del brodo vegetaleetale, su note cotte",2018,C0E,TG_04,1.0
+596,FUORI_ATTRIBUTO,"Il commento evidenzia un odore negativo, che non è conforme alle caratteristiche del Grana Trentino.",2 porzioni su 4 con leggero odore negativo,2 porzioni su 4 con leggero odore negativo,2018,C0E,Q_02,1.0
+597,OK,Il campione presenta un profumo molto pannoso.,molto pannoso,molto pannoso,2018,C0E,TG_19,1.0
+598,FUORI_ATTRIBUTO,Il commento indica un difetto con note di paglia o lettiera.,"difettoso, nota di paglia / lettiera","difettoso, nota di paglia / lettiera",2018,C0F,TG_20,1.0
+599,OK,Il profumo del campione ricorda burro fuso.,"burro fuso, burro,","burro fuso, burro,",2018,C0F,TG_08,1.0
+600,FUORI_ATTRIBUTO,"Il commento menziona note vegetali e balsamiche, con riferimento all'eucalipto.",vegetale balsamico eucalipto?,vegetaleetale balsamico eucalipto?,2018,C0F,Q_09,1.0
+601,OK,Il campione presenta un profumo di crosta con una leggera speziatura.,"crosta, legg speziato","crosta, legg speziato",2018,C0F,TG_12,1.0
+602,OK,"Il profumo del campione è caratterizzato da note di grana, nocciola e fieno.","grana, nocciola, fieno","grana, nocciola, fieno",2018,C0F,TG_24,1.0
+603,OK,"Il campione ha un profumo di lattico cotto, tostato e verdure lesse.",lattico cotto tostato e verdure lesse,lattico cotto tostato e verdure lesse,2018,C0F,TG_35,1.0
+604,FUORI_ATTRIBUTO,"Il commento descrive una forte nota floreale e fruttata, considerata anomala ma gradevole.","Su un plateau di sensazioni mature spicca una forte nota floreale, addirittura fruttata. anomalo, gradevole","Su un plateau di sensazioni mature spicca una forte nota floreale, addirittura fruttata. anomalo, gradevole",2018,C0F,TG_04,1.0
+605,FUORI_ATTRIBUTO,"Il commento esprime un odore putrido, considerato terribile.","Putrido, trremendo","Putrido, trremendo",2018,C0F,TG_19,1.0
+606,FUORI_ATTRIBUTO,Il commento evidenzia un odore animale.,odore animale,odore animale,2018,C0F,TG_14,1.0
+607,OK,"La nota lattica è meno evidente rispetto a quella di brodo, che risulta predominante.","nota lattica meno evidente rispetto a quella di brodo, che un po domina","nota lattica meno evidente rispetto a quella di brodo, che un po domina",2018,C0H,TG_20,1.0
+608,OK,Il profumo presenta un intenso aroma di burro e burro fuso.,burro e burro fuso intenso,burro e burro fuso intenso,2018,C0H,TG_08,1.0
+609,FUORI_ATTRIBUTO,Il commento menziona note vegetali e fieno.,leg vegetale fieno,leg vegetaleetale fieno,2018,C0H,Q_09,1.0
+610,OK,Il campione ha un profumo piuttosto intenso con una tostatura prevalente.,piuttosto intenso con tostaura anche prevalente,piuttosto intenso con tostaura anche prevalente,2018,C0H,TG_24,1.0
+611,OK,Il profumo è caratterizzato da note di verdura lessa.,verdura lessa,verdura lessa,2018,C0H,TG_35,1.0
+612,OK,"Il campione ha una buona intensità olfattiva, con sentori maturi di brodo, crosta e burro cotto.","Buona intensita. Sentori maturi. brodo, crosta, burro cotto","Buona intensita. Sentori maturi. brodo, crosta, burro cotto",2018,C0H,TG_04,1.0
+613,OK,Il profumo è caratterizzato da una prevalenza di panna.,panna prevalente,panna prevalente,2018,C0H,TG_19,1.0
+614,OK,Il campione presenta note di brodo e burro.,"brodo, burro","brodo, burro",2018,C0H,TG_14,1.0
+615,FUORI_ATTRIBUTO,Il commento descrive una nota animale quasi sporca e note aromatiche tipiche di formaggi svizzeri come lo sbrinz.,nota animale quasi sporca e note aromatiche tipiche dei formaggi svizzeri tipo sbrinz,nota animale quasi sporca e note aromatiche tipiche dei formaggi svizzeri tipo sbrinz,2018,C0M,TG_20,1.0
+616,FUORI_ATTRIBUTO,Il commento descrive note di latte e burro fuso.,"latte, burro fuso, burro","latte, burro fuso, burro",2018,C0M,TG_08,1.0
+617,OK,"Il profumo del campione presenta note intense di grana, con tostatura e note florali, accompagnate da un accenno di miele.","grana intenso con tostatura e note florali, miele","grana intenso con tostatura e note florali, miele",2018,C0M,TG_24,1.0
+618,OK,"Il profumo è caratterizzato da note di lattico cotto, burro e un leggero accenno di tostatura.","lattico cotto, burro ve leggero tostato","lattico cotto, burro ve leggero tostato",2018,C0M,TG_35,1.0
+619,OK,"Il profumo è leggero, con note di pane, latte fresco e burro, anche se risulta poco intenso.","leggero. pane, latte anche fresco, burro. peccato che poco intenso","leggero. pane, latte anche fresco, burro. peccato che poco intenso",2018,C0M,TG_04,1.0
+620,OK,"All'apertura del barattolino si percepiscono note fruttate e vanigliate, molto particolari, mentre alla rottura dei pezzi emergono note di panna e lattici freschi, con un campione non così buono.","all apertura del barattolino profumo fruttato e vanigliato, molto particolare, poi alla rottura dei pezzi piu panna e lattici freschi, uno non cosi buono","all apertura del barattolino profumo fruttato e vanigliato, molto particolare, poi alla rottura dei pezzi piu panna e lattici freschi, uno non cosi buono",2018,C0M,TG_19,1.0
+621,OK,Il profumo presenta note fruttate.,fruttato,fruttato,2018,C0M,TG_14,1.0
+622,OK,"Il profumo è poco intenso e complesso, con note di burro fuso e una lieve nota di stantio.","poco intenso e complesso, burro fuso, lieve nota di stantio","poco intenso e complesso, burro fuso, lieve nota di stantio",2018,C0Q,TG_20,1.0
+623,FUORI_ATTRIBUTO,Il commento fa riferimento a note di latte acido.,leg latte acido,leg latte acido,2018,C0Q,Q_09,1.0
+624,OK,"Il profumo è fruttato, con note di mela e crosta.","fruttato *mela(, crosta","fruttato *mela(, crosta",2018,C0Q,TG_12,1.0
+625,OK,La tostatura è troppo prevalente nel profumo.,tostatura tyroppo prevalente,tostatura tyroppo prevalente,2018,C0Q,TG_24,1.0
+626,OK,"Il profumo è leggero e poco intenso, con note di crosta e cotto.","leggero d-intensita. Crosta, cotto","leggero d-intensita. Crosta, cotto",2018,C0Q,TG_04,1.0
+627,FUORI_ATTRIBUTO,Il commento menziona la presenza di leggeri difetti percepibili.,leggeri difetti percepibili,leggeri difetti percepibili,2018,C0Q,Q_02,1.0
+628,OK,"Alla rottura si percepisce un profumo pungente in un pezzo, dolciastro in altri, con leggeri accenni di cipolla cotta e panna un po' passata.","alla rottura pungente in un pezzo, dolciastro in altri, leggeri cipolla cotta e panna un po passata","alla rottura pungente in un pezzo, dolciastro in altri, leggeri cipolla cotta e panna un po passata",2018,C0Q,TG_19,1.0
+629,OK,Il profumo presenta note di crosta e cotto.,"crosta, cotto","crosta, cotto",2018,C0Q,TG_14,1.0
+630,OK,Il profumo presenta note bruciate.,bruciato,bruciato,2018,C0B,TG_14,1.0
+631,OK,"Il profumo è caratterizzato da note di burro fuso, burro e note floreali.","burro fuso, burro, florale","burro fuso, burro, florale",2018,C0B,TG_08,1.0
+632,OK,"La tostatura è evidente, ma il profumo risulta in genere equilibrato.","tostaura evidente, ma in genere equilibrato","tostaura evidente, ma in genere equilibrato",2018,C0B,TG_24,1.0
+633,OK,Il profumo presenta note di crosta e fruttato di mela.,"crosta, fruttato mela","crosta, fruttato mela",2018,C0B,TG_12,1.0
+634,OK,"Il profumo è di formaggio maturo, tendente alla sovramaturazione.",formaggio maturo tendente alla sovramaturazione,formaggio maturo tendente alla sovramaturazione,2018,C0B,Q_02,1.0
+635,ILLEGGIBILE,,insilato negativo,insilatoilato negativo,2018,C0B,TG_26,1.0
+636,FUORI_ATTRIBUTO,"Il commento descrive note di secco, legno e fieno.","crosta. secco, legno, fieno","crosta. secco, legno, fieno",2018,C0B,TG_04,1.0
+637,FUORI_ATTRIBUTO,Il commento si riferisce a latte acido.,latte acido,latte acido,2018,C0B,TG_15,1.0
+638,OK,Il campione presenta note di caramello leggero.,leggero caramello,leggero caramello,2018,C0D,TG_14,1.0
+639,OK,Il profumo del campione è caratterizzato da note di fieno e burro fuso.,"fieno, burro fuso","fieno, burro fuso",2018,C0D,TG_08,1.0
+640,OK,"Il campione ha un profumo molto intenso, con note di burro e grana.","molto intenso, burro e grana .......","molto intenso, burro e grana .......",2018,C0D,TG_24,1.0
+641,FUORI_ATTRIBUTO,"Il campione non presenta difetti, ma non è tipico.",no difetti ma non tipico,no difetti ma non tipico,2018,C0D,TG_26,1.0
+642,OK,"Il profumo è poco intenso, con note vegetali e di brodo vegetale.","poco intenso ma anche note vegetali , brodo vegetale","poco intenso ma anche note vegetaleetali , brodo vegetaleetale",2018,C0D,TG_04,1.0
+643,FUORI_ATTRIBUTO,Il commento descrive note di latte cotto e brodo di carne con cipolla.,"latte cotto e brodo di carne, cipolla","latte cotto e brodo di carne, cipolla",2018,C0D,TG_15,1.0
+644,OK,Il campione presenta note di burro e burro fuso.,"burro, burro fuso","burro, burro fuso",2018,C0I,TG_08,1.0
+645,OK,Il profumo è intenso e tipico di grana.,intenso da grana,intenso da grana,2018,C0I,TG_24,1.0
+646,FUORI_ATTRIBUTO,Il commento si riferisce a note vegetali.,vegetale,vegetaleetale,2018,C0I,Q_09,1.0
+647,OK,C'è un accenno di crosta nel profumo del campione.,accenno di crosta,accenno di crosta,2018,C0I,TG_12,1.0
+648,FUORI_ATTRIBUTO,"Il campione ha un profumo intenso positivo, tranne su un pezzetto leggermente fermentato.",intenso positivo tranne su un pezzetto leggermente fermentato,intenso positivo tranne su un pezzetto leggermente fermentato,2018,C0I,TG_26,1.0
+649,FUORI_ATTRIBUTO,Il commento menziona un po' di cuoio e note animali.,tra l'altro un po' di cuoio-animale,tra l'altro un po' di cuoio-animale,2018,C0I,TG_04,1.0
+650,FUORI_ATTRIBUTO,Il commento si riferisce a note vegetali fermentate.,vegetale fermentato,vegetaleetale fermentato,2018,C0I,TG_19,1.0
+651,FUORI_ATTRIBUTO,Il commento descrive note di brodo di carne.,brodo di carne,brodo di carne,2018,C0I,TG_15,1.0
+652,OK,Il profumo è caratterizzato da burro fuso e burro.,"burro fuso, burro","burro fuso, burro",2018,C0M,TG_08,1.0
+653,OK,"Il campione presenta note fruttate, floreali e di nocciola, con un accenno di tostato.","fruttato, florale, nocciola/tostato un po- troppo","fruttato, florale, nocciola/tostato un po- troppo",2018,C0M,TG_24,1.0
+654,OK,"Il profumo è delicato e floreale, con note di latte cotto, pane e frutta secca tostata leggera.","delicato e floreale. latte cotto, pane, frutta secca tostata leggera","delicato e floreale. latte cotto, pane, frutta secca tostata leggera",2018,C0M,TG_04,1.0
+655,FUORI_ATTRIBUTO,Il commento menziona note vegetali negative e fermentate.,"note vegetali negative, fermentate","note vegetaleetali negative, fermentate",2018,C0M,TG_19,1.0
+656,FUORI_ATTRIBUTO,"Il commento esprime note gradevoli di latte, ma con intensità leggera.",gradevole di latte ma leggero,gradevole di latte ma leggero,2018,C0M,TG_15,1.0
+657,FUORI_ATTRIBUTO,"Il commento descrive note di burro fuso, burro e spezia.","burro fuso, burro, spezia","burro fuso, burro, spezia",2018,C0O,TG_08,1.0
+658,OK,Il profumo del campione presenta note intense e tipiche di grana nostrano.,grana tipico intenso...,grana tipico intenso...,2018,C0O,TG_24,1.0
+659,ILLEGGIBILE,,vegetale,vegetaleetale,2018,C0O,Q_09,1.0
+660,FUORI_ATTRIBUTO,Il commento si riferisce alla crosta del formaggio.,crosta,crosta,2018,C0O,TG_12,1.0
+661,FUORI_ATTRIBUTO,Il commento esprime una leggera nota fermentata.,legg fermentato,legg fermentato,2018,C0O,TG_26,1.0
+662,FUORI_ATTRIBUTO,"Il commento descrive un primo olfatto sgradevole, con note di altro formaggio non tipico.","primo olfatto>puzza / come di altro formaggio, non tipico trrentingrana. svanisce poi. non convince.","primo olfatto>puzza / come di altro formaggio, non tipico trrentingrana. svanisce poi. non convince.",2018,C0O,TG_04,1.0
+663,FUORI_ATTRIBUTO,Il commento esprime note vegetali cotte.,leggero vegetale cotto allo spezzare,leggero vegetaleetale cotto allo spezzare,2018,C0O,TG_19,1.0
+664,OK,Il profumo presenta note di latte fresco e frutta tropicale.,latte fresco frutta tropicale,latte fresco frutta tropicale,2018,C0O,TG_15,1.0
+665,OK,Il commento esprime note di nocciola.,nocciola,nocciola,2018,C0R,TG_14,1.0
+666,FUORI_ATTRIBUTO,Il commento indica la presenza di note di stalla e insilato.,"presenza di note un p; di stalla, insilato","presenza di note un p; di stalla, insilatoilato",2018,C0R,TG_08,1.0
+667,OK,"Il profumo presenta note di grana, nocciola e burro.","grana, nocciola, burro","grana, nocciola, burro",2018,C0R,TG_24,1.0
+668,FUORI_ATTRIBUTO,"Il commento descrive note di latte bruciato, caramello e vaniglia.",latte bruciato forse caramello vanilgia mah,latte bruciato forse caramello vanilgia mah,2018,C0R,Q_09,1.0
+669,OK,Il commento esprime una intensità decisamente scarsa.,intensit' decisamente scarsa,intensit' decisamente scarsa,2018,C0R,TG_12,1.0
+670,OK,Il profumo presenta note mature di latte cotto e fieno.,note  mature. latte  cotto. fieno,note  mature. latte  cotto. fieno,2018,C0R,TG_04,1.0
+671,FUORI_ATTRIBUTO,"Il commento descrive note di cacao, caffè, tostato, cuoio e caramello.","cacao, caffè, tostato, cuoio, caramello - soprattutto all'apertura del barattolo, poi tostati più semplici e lattico cotto, leggermente speziato","cacao, caffè, tostato, cuoio, caramello - soprattutto all'apertura del barattolo, poi tostati più semplici e lattico cotto, leggermente speziato",2018,C0R,TG_19,1.0
+672,OK,Il profumo presenta note di caramello e latte cotto.,"caramello, latte cotto","caramello, latte cotto",2018,C0R,TG_15,1.0
+673,OK,Il commento descrive un burro fuso dominante con leggera nota pungente.,"burro fuso dominante, forse leggera nota pungente che ricorda il latte fermentato","burro fuso dominante, forse leggera nota pungente che ricorda il latte fermentato",2018,C0A,TG_20,1.0
+674,OK,Il commento esprime note di burro e burro fuso.,"burro, burro fuso","burro, burro fuso",2018,C0A,TG_08,1.0
+675,FUORI_ATTRIBUTO,Il commento esprime note di brodo vegetale.,brodo vegetale,brodo vegetaleetale,2018,C0A,TG_19,1.0
+676,FUORI_ATTRIBUTO,L'odore sgradevole di fumo è accompagnato da note non identificabili.,odore sgradevole di fumo e altro che non riesco be a identificare,odore sgradevole di fumo e altro che non riesco be a identificare,2018,C0A,TG_14,1.0
+677,OK,"I sentori sono maturi, con note di latte cotto, poco burro, frutta secca e pane.","maturi i sentori, latte cotto, poco burro, frutta secca, pane","maturi i sentori, latte cotto, poco burro, frutta secca, pane",2018,C0A,TG_04,1.0
+678,OK,"Il campione presenta note di grana, yogurt e un'intensità marcata.","grana, yogurth, intenso..","grana, yogurth, intenso..",2018,C0A,TG_24,1.0
+679,FUORI_ATTRIBUTO,Difetti e pregi si annullano reciprocamente.,difetti e pregi che si annullano,difetti e pregi che si annullano,2018,C0A,Q_02,1.0
+680,OK,"Si percepiscono note di crosta di formaggio che ricordano un nostrano, accompagnate da frutta fermentata.","nota di crosta di formaggio che ricordano un po un nostrano, frutta fermentata","nota di crosta di formaggio che ricordano un po un nostrano, frutta fermentata",2018,C0C,TG_20,1.0
+681,OK,Il campione presenta note di burro fuso e formaggio da crosta.,"burro fuso, formaggio da crosta","burro fuso, formaggio da crosta",2018,C0C,TG_08,1.0
+682,ILLEGGIBILE,,vegetale acre,vegetaleetale acre,2018,C0C,Q_09,1.0
+683,OK,Si avvertono note di fieno fermentato e crosta di grana.,"fieno fermentato, crosta di grana","fieno fermentato, crosta di grana",2018,C0C,TG_19,1.0
+684,OK,Si percepisce un leggero odore di insilato.,leggero  odore di insilato,leggero  odore di insilatoilato,2018,C0C,TG_14,1.0
+685,OK,"Il campione presenta note leggere, con elementi vegetali e floreali.","leggero, anche qualcosa di vegetale e floreale","leggero, anche qualcosa di vegetaleetale e floreale",2018,C0C,TG_04,1.0
+686,OK,"Il profumo è intenso ed equilibrato, con una prevalenza di tostatura.","intenso ed equilibrato, forse prevalenza tostatura...","intenso ed equilibrato, forse prevalenza tostatura...",2018,C0C,TG_24,1.0
+687,FUORI_ATTRIBUTO,"Il campione non è equilibrato, con un predominio di brodo vegetale.","non equilibrato, brodo vegetale dominante","non equilibrato, brodo vegetaleetale dominante",2018,C0D,TG_20,1.0
+688,OK,"Si avvertono note di burro fuso, burro e una leggera crosta pungente.","burro fuso, burro, leggera crosta pungente","burro fuso, burro, leggera crosta pungente",2018,C0D,TG_08,1.0
+689,FUORI_ATTRIBUTO,Il campione presenta note di cotto.,cotto,cotto,2018,C0D,Q_09,1.0
+690,FUORI_ATTRIBUTO,Si percepisce un difetto con note di biscotto tostato.,"difetto, biscotto tostato","difetto, biscotto tostato",2018,C0D,TG_26,1.0
+691,FUORI_ATTRIBUTO,Si avvertono odori di latticini freschi e verdura lessata.,odore i latticini freschi + e verdura lessata -,odore i latticini freschi + e verdura lessata -,2018,C0D,TG_14,1.0
+692,FUORI_ATTRIBUTO,"Si percepisce una nota fecale, ma fortunatamente è leggera.",leggero. per fortuna perche' percepisco una nota fecale,leggero. per fortuna perche' percepisco una nota fecale,2018,C0D,TG_04,1.0
+693,OK,Il campione presenta una tostatura eccessiva e note di gomma bruciata.,"tostatura eccessiva, gomma bruciata","tostatura eccessiva, gomma bruciata",2018,C0D,TG_24,1.0
+694,OK,Si percepiscono note di latte cotto.,latte cotto,latte cotto,2018,C0D,Q_02,1.0
+695,OK,"Il profumo è intenso e abbastanza equilibrato, con una nota dominante di latte cotto che vira verso il bruciato.","intenso, abbastanza equilibrato, nota di latte cotto dominante, su un pezzo vira verso il bruciato","intenso, abbastanza equilibrato, nota di latte cotto dominante, su un pezzo vira verso il bruciato",2018,C0G,TG_20,1.0
+696,FUORI_ATTRIBUTO,Il commento esprime note di burro e burro fuso.,"burro, burro fuso","burro, burro fuso",2018,C0G,TG_08,1.0
+697,FUORI_ATTRIBUTO,Il commento menziona note di latte.,latte,latte,2018,C0G,Q_09,1.0
+698,FUORI_ATTRIBUTO,Il commento indica un leggero sentore fermentato.,leggero fermentato,leggero fermentato,2018,C0G,TG_19,1.0
+699,FUORI_ATTRIBUTO,Il commento descrive un profumo chiuso.,chiuso,chiuso,2018,C0G,TG_26,1.0
+700,OK,Il campione presenta un sentore di panna.,sentore di panna,sentore di panna,2018,C0G,TG_14,1.0
+701,OK,"Il profumo è intenso, con note di latte cotto, burro e crosta.","profumo intenso. latte cotto, burro, crosta","profumo intenso. latte cotto, burro, crosta",2018,C0G,TG_04,1.0
+702,OK,"Il profumo include latte, burro, grana, fieno e nocciola.","latte, burro, grana, fieno e nocciola","latte, burro, grana, fieno e nocciola",2018,C0G,TG_24,1.0
+703,FUORI_ATTRIBUTO,Il commento esprime note animali.,animale,animale,2018,C0G,Q_02,1.0
+704,OK,"Il profumo non è particolarmente intenso, presenta note piatte, animali e di paglia, con un accenno di acqua ristagnante.","non particolarmente intenso, piatto, note animali e di paglia, a tratti di acqua ristagnante","non particolarmente intenso, piatto, note animali e di paglia, a tratti di acqua ristagnante",2018,C0N,TG_20,1.0
+705,FUORI_ATTRIBUTO,Il commento menziona burro fuso e latte.,"burrro fuso, latte","burrro fuso, latte",2018,C0N,TG_08,1.0
+706,OK,"Il profumo è molto delicato, quasi impercettibile.","profumo molto delicato, quasi impercettibile.","profumo molto delicato, quasi impercettibile.",2018,C0N,TG_13,1.0
+707,OK,"Il campione presenta note di panna, vaniglia, frutta e farina.","panna, vaniglia, frutta, farina","panna, vaniglia, frutta, farina",2018,C0N,TG_19,1.0
+708,FUORI_ATTRIBUTO,Il commento indica un difetto.,legg difettoso,legg difettoso,2018,C0N,TG_26,1.0
+709,FUORI_ATTRIBUTO,Il commento menziona crosta e note cotte.,crosta e cotto,crosta e cotto,2018,C0N,TG_14,1.0
+710,OK,"Il profumo presenta una nota di stalla, formaggio cotto, burro e una discreta intensità.","una nota di stalla, formaggio cotto, tanto,  e burro. discreta l-intensita'","una nota di stalla, formaggio cotto, tanto,  e burro. discreta l-intensita'",2018,C0N,TG_04,1.0
+711,OK,"Il campione presenta note fermentative, insilato e kiwi stramaturato, non piacevoli.","note fermentative, insilato e kiwi stramaturo, non piacevole","note fermentative, insilatoilato e kiwi stramaturo, non piacevole",2018,C0N,TG_24,1.0
+712,FUORI_ATTRIBUTO,Il commento esprime note animali stallatiche.,animale stallatico,animale stallatico,2018,C0N,Q_02,1.0
+713,OK,"Il profumo è intenso, equilibrato, con piacevoli note lattiche cotte e di brodo.","intenso, equilibrato, piacevoli note lattiche cotte e di brodo","intenso, equilibrato, piacevoli note lattiche cotte e di brodo",2018,C0Q,TG_20,1.0
+714,OK,Il campione presenta un leggero sentore di ossidato e di erba fermentata.,leggero sentore di ossidato e di erba fermentata,leggero sentore di ossidato e di erba fermentata,2018,C0Q,TG_13,1.0
+715,OK,Il profumo presenta sentori di panna e burro.,"sentore di panna, burro","sentore di panna, burro",2018,C0Q,TG_26,1.0
+716,FUORI_ATTRIBUTO,leggero odore di stalla,leggero odore di stalla,leggero odore di stalla,2018,C0Q,TG_14,1.0
+717,FUORI_ATTRIBUTO,"latte/grana e un poco fruttato, ma non intensi i profumi",latte/grana e un poco fruttato.. ma non intensi i profumi,latte/grana e un poco fruttato.. ma non intensi i profumi,2018,C0Q,TG_24,1.0
+718,ILLEGGIBILE,,vegetali fermentato,vegetaleetali fermentato,2018,C0Q,Q_02,1.0
+719,ILLEGGIBILE,,vegetale fieno?,vegetaleetale fieno?,2018,C0B,Q_09,1.0
+720,FUORI_ATTRIBUTO,"oltre alla panna, anche del vegetale lesso","oltre alla panna, anche del vegetale lesso","oltre alla panna, anche del vegetaleetale lesso",2018,C0B,TG_19,1.0
+721,OK,"non molto intenso ma abbastanza caratteristico, poco complesso, con note di lattico cotto prevalenti","non molto intenso ma abbastanza caratteristico, poco complesso, note di lattico cotto prevalenti","non molto intenso ma abbastanza caratteristico, poco complesso, note di lattico cotto prevalenti",2018,C0B,TG_20,1.0
+722,OK,poco intenso ma positivo,poco intenso ma positivo,poco intenso ma positivo,2018,C0B,TG_26,1.0
+723,OK,leggermente crosta,legg crosta,legg crosta,2018,C0C,TG_12,1.0
+724,FUORI_ATTRIBUTO,"note vegetali lessate, cipolla passata, latte cotto","note vegetali lesse, cipolla passata, latte cotto","note vegetaleetali lesse, cipolla passata, latte cotto",2018,C0C,TG_19,1.0
+725,OK,"poco intenso, con nota lattica di burro fuso evidente e fieno","poco intenso, nota lattica di burro fuso evidente, fieno","poco intenso, nota lattica di burro fuso evidente, fieno",2018,C0C,TG_20,1.0
+726,OK,delicato e poco percettibile,delicato e poco percettibile,delicato e poco percettibile,2018,C0D,TG_13,1.0
+727,OK,"poco intenso, con caramella mou e note di formaggio nostrano","poco intenso, caramella mou, note di formaggio nostrano","poco intenso, caramella mou, note di formaggio nostrano",2018,C0D,TG_20,1.0
+728,OK,fruttato di mela,fruttato mela,fruttato mela,2018,C0F,TG_12,1.0
+729,FUORI_ATTRIBUTO,odore leggero di stantio,odore leggero di stantio,odore leggero di stantio,2018,C0F,TG_13,1.0
+730,FUORI_ATTRIBUTO,"marcio, putrido, fermentato e marcito","marcio, putrido, fermentato e marcito","marcio, putrido, fermentato e marcito",2018,C0F,TG_19,1.0
+731,FUORI_ATTRIBUTO,"nota di sedano, brodo vegetale, latte caramellato","nota di sedano, brodo vegetale, latte caramellato","nota di sedano, brodo vegetaleetale, latte caramellato",2018,C0F,TG_20,1.0
+732,ILLEGGIBILE,,legg insilatopungente;,legg insilatoilatopungente;,2018,C0F,TG_26,1.0
+733,OK,burro fuso,burro fuso,burro fuso,2018,C0N,TG_13,1.0
+734,OK,panna,panna,panna,2018,C0N,TG_19,1.0
+735,OK,caratteristico ma con lieve nota pungente,caratteristico ma con lieve nota pungente,caratteristico ma con lieve nota pungente,2018,C0N,TG_20,1.0
+736,FUORI_ATTRIBUTO,Il commento fa riferimento a note vegetali e balsamiche.,vegetale balsamico,vegetaleetale balsamico,2018,C0R,Q_09,1.0
+737,FUORI_ATTRIBUTO,Il commento esprime una nota erbacea.,erba,erba,2018,C0R,TG_11,1.0
+738,OK,Il campione presenta note fruttate di mela.,fruttato mela,fruttato mela,2018,C0R,TG_12,1.0
+739,OK,Il campione presenta una nota ossidata.,ossidato,ossidato,2018,C0R,TG_13,1.0
+740,FUORI_ATTRIBUTO,"Il commento menziona note di terra, animale e putrido.","terra, animale, putrido,","terra, animale, putrido,",2018,C0R,TG_19,1.0
+741,FUORI_ATTRIBUTO,Il commento descrive un profilo atipico con frutta fermentata e crosta di formaggio.,"atipico, frutta fermentata, crosta di formaggio","atipico, frutta fermentata, crosta di formaggio",2018,C0R,TG_20,1.0
+742,OK,Il campione presenta una leggera nota fruttata.,leggermente fruttato,leggermente fruttato,2018,C0E,TG_14,1.0
+743,OK,Il campione ha un lieve sentore di cotto e erba fermentata.,lieve sentore di cotto e erba fermentata,lieve sentore di cotto e erba fermentata,2018,C0E,TG_13,1.0
+744,OK,"Il campione presenta una moderata intensità con note di crosta, brodo vegetale e una leggera nota animale.","intensit' moderata. crosta, brodo veetale. una nota animale appena sentito poi sfuma","intensit' moderata. crosta, brodo veetale. una nota animale appena sentito poi sfuma",2018,C0E,TG_04,1.0
+745,OK,Il campione presenta note di cotto.,cotto,cotto,2018,C0E,TG_26,1.0
+746,FUORI_ATTRIBUTO,"Il commento indica discreta qualità, ma con presenza di marcio e note putride in un campione.","dicreto buono in 3 pezzi su 4, ma in 1 c'è del marcio, putrido","dicreto buono in 3 pezzi su 4, ma in 1 c'è del marcio, putrido",2018,C0E,TG_19,1.0
+747,OK,Il campione presenta note di latte cotto e caramello.,"latte cotto, caramello","latte cotto, caramello",2018,C0E,TG_15,1.0
+748,OK,Il campione ha un'intensità di tostato forte.,tostato forte,tostato forte,2018,C0G,TG_14,1.0
+749,FUORI_ATTRIBUTO,Il commento fa riferimento a note vegetali.,vegetale,vegetaleetale,2018,C0G,Q_02,1.0
+750,OK,"Il campione presenta una nota lievissima, quasi impercettibile.","lievissimo, quasi inesistente, come un presidente di Fondazione","lievissimo, quasi inesistente, impercettibile",2018,C0G,TG_04,1.0
+751,OK,"Il campione si distingue per l'assenza di odori negativi, presentando un profumo intenso e positivo.",assenza di odori negativi abb intenso e positivo,assenza di odori negativi abb intenso e positivo,2018,C0G,TG_26,1.0
+752,OK,"Il campione ha un profilo lattico cotto prevalente, con note erbacee (fieno) e di brodo di carne.",lattico cotto prevalente ma anche erbaceio (fieno) e brodo di carcne,lattico cotto prevalente ma anche erbaceio (fieno) e brodo di carne,2018,C0G,TG_35,1.0
+753,FUORI_ATTRIBUTO,"Il commento descrive note di minestrone, verdura e cipolla.","minestrone verdura, cipolla","minestrone verdura, cipolla",2018,C0G,TG_15,1.0
+754,FUORI_ATTRIBUTO,"Il commento menziona note vegetali, fieno e balsamico, descritto come non spiacevole ma un po' estraneo.",vegetale fieno balsamico non spiacevole ma un po estraneo,vegetaleetale fieno balsamico non spiacevole ma un po estraneo,2018,C0I,Q_09,1.0
+755,OK,"Il campione presenta note di crosta, verdure lesse e tostato forte.","crosta, verdure lesse, tostato forte","crosta, verdure lesse, tostato forte",2018,C0I,TG_14,1.0
+756,FUORI_ATTRIBUTO,Ossidato e stantio.,"ossidato, stantio","ossidato, stantio",2018,C0I,TG_13,1.0
+757,FUORI_ATTRIBUTO,Frutta secca e crosta di formaggio stagionato.,frutta secca;crosta/formaggio stagionato,frutta secca;crosta/formaggio stagionato,2018,C0I,Q_02,1.0
+758,OK,Leggero.,leggero,leggero,2018,C0I,TG_04,1.0
+759,OK,Pungente stagionato.,pungente stagionato,pungente stagionato,2018,C0I,TG_26,1.0
+760,FUORI_ATTRIBUTO,"Note animali, tostato deciso, liquirizia, caramello scuro e cacao.","animale, tostato deciso, liquirizia, caramello scuro, cacao","animale, tostato deciso, liquirizia, caramello scuro, cacao",2018,C0I,TG_19,1.0
+761,FUORI_ATTRIBUTO,Predomina l'odore di verdure cotte.,predomina l'odore di verdure cotte,predomina l'odore di verdure cotte,2018,C0I,TG_35,1.0
+762,FUORI_ATTRIBUTO,Frutta e latte acido.,"frutta, latte acido","frutta, latte acido",2018,C0I,TG_15,1.0
+763,FUORI_ATTRIBUTO,Brodo e tostato bruciato.,brodo / tostato bruciato,brodo / tostato bruciato,2018,C0L,TG_14,1.0
+764,OK,Burro fuso e panna.,burro fuso e panna,burro fuso e panna,2018,C0L,TG_13,1.0
+765,FUORI_ATTRIBUTO,Note animali e vegetali percepibili.,una porzione con percepibili note animali e vegetali,una porzione con percepibili note animali e vegetaleetali,2018,C0L,Q_02,1.0
+766,OK,"Il campione mostra una buona intensità olfattiva, con un profilo aromatico equilibrato.",intensita' buona.,intensita' buona.,2018,C0L,TG_04,1.0
+767,FUORI_ATTRIBUTO,Note vegetali dolci e cotte.,anche vegetale dolce cotto,anche vegetaleetale dolce cotto,2018,C0L,TG_19,1.0
+768,FUORI_ATTRIBUTO,Formaggio cotto e brodo di carne prevalenti.,Formaggio cotto e brodo di carne prevalenti,Formaggio cotto e brodo di carne prevalenti,2018,C0L,TG_35,1.0
+769,OK,"Gradevole di lattico cotto, ma leggero.",gradevole di lattico cotto ma un po- leggero,gradevole di lattico cotto ma un po- leggero,2018,C0L,TG_15,1.0
+770,OK,Quasi impercettibile.,quasi imperteccibile...,quasi imperteccibile...,2018,C0M,TG_13,1.0
+771,OK,"Intensità moderata con note di panna, latte cotto, pane, burro sciolto e fieno, lieve ma complesso.",intensita' moderata. un pochetto di panna. latte cotto. Pane. burro sciolto. Fieno. lieve ma complesso,intensita' moderata. un pochetto di panna. latte cotto. Pane. burro sciolto. Fieno. lieve ma complesso,2018,C0M,TG_04,1.0
+772,OK,Leggermente pungente.,legg pungente,legg pungente,2018,C0M,TG_26,1.0
+773,FUORI_ATTRIBUTO,"Panna, verdura lessa dolciastra, leggero fermentato e odore di marcio in un pezzo.","3 su 4 panna, verdura lessa dolciastra, leggero fermentato, in 1 pezzo odore di marcio","3 su 4 panna, verdura lessa dolciastra, leggero fermentato, in 1 pezzo odore di marcio",2018,C0M,TG_19,1.0
+774,FUORI_ATTRIBUTO,Predominante il lattico cotto e il brodo.,predominante il lattico cotto e il brodo,predominante il lattico cotto e il brodo,2018,C0M,TG_35,1.0
+775,FUORI_ATTRIBUTO,Frutta tropicale e ananas.,"frutta tropicale, ananas","frutta tropicale, ananas",2018,C0M,TG_15,1.0
+776,FUORI_ATTRIBUTO,L'odore di stantio è una nota negativa che indica un difetto di freschezza.,odore di stantio,odore di stantio,2018,C0O,TG_14,1.0
+777,OK,Il profumo è delicato.,delicato,delicato,2018,C0O,Q_02,1.0
+778,OK,"Il campione presenta una buona intensità con profumi maturi, burro fuso, note di tostato e frutta secca.","buona intensita'. profumi maturi, burro fusolatte cotto.  anche un pochetto di tostato  e frutta seccasecca","buona intensita'. profumi maturi, burro fusolatte cotto.  anche un pochetto di tostato  e frutta seccasecca",2018,C0O,TG_04,1.0
+779,OK,Il profumo è leggermente cotto.,un po cotto,un po cotto,2018,C0O,TG_26,1.0
+780,FUORI_ATTRIBUTO,"Il profumo presenta note vegetali e floreali, con un pezzo negativo e gli altri discreti.","vegetale floreale all'apertura, 1 pezzo negativo, gli altri discreti buoni","vegetaleetale floreale all'apertura, 1 pezzo negativo, gli altri discreti buoni",2018,C0O,TG_19,1.0
+781,OK,Il profumo di burro fresco è debole.,"burro fresco, debole","burro fresco, debole",2018,C0O,TG_15,1.0
+782,OK,Il profumo presenta note di panna e burro.,panna;burro,panna;burro,2018,C0A,TG_05,1.0
+783,OK,"Il profumo è caratterizzato da latte, burro e frutta matura.","latte, burro e frutta matura","latte, burro e frutta matura",2018,C0A,TG_24,1.0
+784,OK,Il profumo presenta punte di fruttato ed erbaceo.,punte di fruttato ed erbaceo,punte di fruttato ed erbaceo,2018,C0A,TG_14,1.0
+785,FUORI_ATTRIBUTO,Il profumo presenta note di frutta tropicale e dado.,"frutta tropicale, dado","frutta tropicale, dado",2018,C0A,TG_15,1.0
+786,OK,"Il profumo è composto da panna, burro e latte fresco.",panna;burro;latte fresco,panna;burro;latte fresco,2018,C0C,TG_05,1.0
+787,OK,Il profumo è caratterizzato da latte cotto e nocciola.,latte cotto e nocciola,latte cotto e nocciola,2018,C0C,TG_24,1.0
+788,FUORI_ATTRIBUTO,Il profumo presenta note di crosta e stantio.,crosta e stantio,crosta e stantio,2018,C0C,TG_14,1.0
+789,FUORI_ATTRIBUTO,Il profumo è caratterizzato dalla presenza di crosta.,crosta,crosta,2018,C0C,TG_12,1.0
+790,FUORI_ATTRIBUTO,Il profumo presenta note di frutta tropicale e latte acido.,"frutta tropicale, latte acido","frutta tropicale, latte acido",2018,C0C,TG_15,1.0
+791,FUORI_ATTRIBUTO,Il profumo presenta note di fungo.,fungo,fungo,2018,C0D,TG_05,1.0
+792,OK,"Il profumo è intenso, equilibrato e tipico del grana.","intenso, equilibrato e da grana tipico","intenso, equilibrato e da grana tipico",2018,C0D,TG_24,1.0
+793,FUORI_ATTRIBUTO,Il profumo presenta note di latticini frachi.,latticini frachi,latticini frachi,2018,C0D,TG_14,1.0
+794,FUORI_ATTRIBUTO,Il profumo è cotto con una leggera nota negativa.,cotto  legg neg,cotto  legg neg,2018,C0D,TG_26,1.0
+795,OK,Il profumo è di latte cotto leggero.,latte cotto leggero,latte cotto leggero,2018,C0D,TG_15,1.0
+796,OK,Il profumo del campione è molto pannoso e piacevole.,"molto pannoso, piacevole","molto pannoso, piacevole",2018,C0D,TG_19,1.0
+797,FUORI_ATTRIBUTO,Il commento riguarda un latte acido.,latte acido,latte acido,2018,C0I,TG_05,1.0
+798,FUORI_ATTRIBUTO,"Il commento menziona yogurt, formaggio e note floreali.","yogurth, formaggio..., florale...","yogurth, formaggio..., florale...",2018,C0I,TG_24,1.0
+799,OK,Il profumo presenta note fruttate di ananas.,fruttato ananas,fruttato ananas,2018,C0I,TG_14,1.0
+800,FUORI_ATTRIBUTO,Il commento riguarda note vegetali e crosta.,"vegetale, crosta","vegetaleetale, crosta",2018,C0I,TG_12,1.0
+801,FUORI_ATTRIBUTO,Il commento esprime una nota animale.,animale,animale,2018,C0I,Q_02,1.0
+802,FUORI_ATTRIBUTO,Il commento indica una tendenza negativa forte verso il sedano.,tende negativo forte sedano,tende negativo forte sedano,2018,C0I,TG_26,1.0
+803,OK,Il profumo presenta note di frutta fermentata.,frutta fermentata,frutta fermentata,2018,C0I,TG_15,1.0
+804,FUORI_ATTRIBUTO,Il commento esprime note di marcio e putrido.,"marcio, putrido,","marcio, putrido,",2018,C0I,TG_19,1.0
+805,FUORI_ATTRIBUTO,Il commento menziona muffa.,muffa,muffa,2018,C0M,TG_05,1.0
+806,OK,Il profumo presenta una leggera tostatura che prevale.,leggera tostatura che prevale...,leggera tostatura che prevale...,2018,C0M,TG_24,1.0
+807,OK,Il profumo è caratterizzato da note leggere di crosta e formaggio cotto.,leggero crosta e formaggio cotto,leggero crosta e formaggio cotto,2018,C0M,TG_14,1.0
+808,FUORI_ATTRIBUTO,Il commento riguarda la crosta.,crosta,crosta,2018,C0M,TG_12,1.0
+809,OK,Il profumo presenta note fermentate.,fermentato,fermentato,2018,C0M,TG_13,1.0
+810,FUORI_ATTRIBUTO,Il commento menziona profumi vegetali.,profumi vegetali,profumi vegetaleetali,2018,C0M,Q_02,1.0
+811,FUORI_ATTRIBUTO,Il commento indica una leggera difettosità.,legg difettoso,legg difettoso,2018,C0M,TG_26,1.0
+812,OK,Il profumo presenta note di fiori e frutta.,fiori e frutta,fiori e frutta,2018,C0M,TG_15,1.0
+813,FUORI_ATTRIBUTO,Il commento riguarda il brodo.,brodo,brodo,2018,C0M,TG_11,1.0
+814,OK,"Il profumo presenta note di grana, burro e floreali.","grana, burro, florale","grana, burro, florale",2018,C0N,TG_24,1.0
+815,OK,"Il profumo è di latte cotto, con una nota delicata.",latte cotto mt delicato,latte cotto mt delicato,2018,C0N,TG_15,1.0
+816,OK,"Intensità moderata, con qualità positive ed armoniche.","intensita' moderata, ma qualit' positive ed armoniche","intensita' moderata, ma qualit' positive ed armoniche",2018,C0A,TG_04,1.0
+817,FUORI_ATTRIBUTO,"Note negative, marcio, fermentato.","note negative, marcio, fermentato","note negative, marcio, fermentato",2018,C0A,TG_19,1.0
+818,OK,"Moderato, poco complesso.",moderato. poco complesso,moderato. poco complesso,2018,C0C,TG_04,1.0
+819,OK,Panna.,panna,panna,2018,C0C,TG_05,1.0
+820,OK,"Floreale, panna.","floreale, panna","floreale, panna",2018,C0C,TG_19,1.0
+821,OK,Panna.,panna,panna,2018,C0G,Q_09,1.0
+822,OK,"Bouquet moderato con note vegetali e di brodo vegetale, latte, crosta.","bouquet moderato con note vegetali e di brodo vegetale, latte, crosta","bouquet moderato con note vegetaleetali e di brodo vegetaleetale, latte, crosta",2018,C0G,TG_04,1.0
+823,OK,Fruttato.,fruttato;,fruttato;,2018,C0G,TG_05,1.0
+824,OK,"Leggero sentore di cotto, profumo poco marcato.","leggero sentore di cotto, profumo poco marcato","leggero sentore di cotto, profumo poco marcato",2018,C0G,TG_13,1.0
+825,OK,Ammoniacale e pungente all'apertura.,ammoniacale e pungente all'apertura,ammoniacale e pungente all'apertura,2018,C0G,TG_19,1.0
+826,OK,"Il campione ha una buona intensità, con sentori di latte cotto, poca panna, pane tostato e frutta secca.","buona intensita';latte cotto, poca panna, pane, tostato, frutta secca, burro fuso","buona intensita';latte cotto, poca panna, pane, tostato, frutta secca, burro fuso",2018,C0M,TG_04,1.0
+827,OK,Impercettibile.,impercettibile,impercettibile,2018,C0M,TG_13,1.0
+828,OK,Frutta matura.,frutta matura,frutta matura,2018,C0M,TG_19,1.0
+829,OK,Intenso positivo.,intenso positivo,intenso positivo,2018,C0M,TG_26,1.0
+830,OK,"Nota animale alla prima olfazione, poi si allegerisce, non punisco. Pane, burro, latte cotto.","nota animale alla prima olfazione, poi si allegerisce, non punisco. pane, burro. latte cotto","nota animale alla prima olfazione, poi si allegerisce, non punisco. pane, burro. latte cotto",2018,C0O,TG_04,1.0
+831,OK,"Latte fresco, muschio.",latte fresco;muschio,latte fresco;muschio,2018,C0O,TG_05,1.0
+832,OK,Salato.,salato,salato,2018,C0O,TG_11,1.0
+833,OK,Fruttato e floreale all'apertura del barattolo.,fruttato e floreale all'apertura del barattolo,fruttato e floreale all'apertura del barattolo,2018,C0O,TG_19,1.0
+834,OK,Vegetale e panna.,vegetale panna,vegetaleetale panna,2018,C0Q,Q_09,1.0
+835,OK,"Evanescente, restano poche sensazioni dopo l'apertura.","evenescente, restano poche sensazioni dopo l'apertura","evenescente, restano poche sensazioni dopo l'apertura",2018,C0Q,TG_04,1.0
+836,FUORI_ATTRIBUTO,latte cotto,latte cotto,latte cotto,2018,C0Q,TG_05,1.0
+837,FUORI_ATTRIBUTO,"in qualche pezzo note aspre, di fermentato, negative, in altri no","in qualche pezzo note aspre, di fermentato, negative, in altri no","in qualche pezzo note aspre, di fermentato, negative, in altri no",2018,C0Q,TG_19,1.0
+838,FUORI_ATTRIBUTO,nota animale,nota animale,nota animale,2018,C0A,TG_04,1.0
+839,FUORI_ATTRIBUTO,latticini freschi leggero erbaceo,latticini freschi leggero erbaceo,latticini freschi leggero erbaceo,2018,C0A,TG_14,1.0
+840,FUORI_ATTRIBUTO,"poco intenso e complesso, lattico cotto e brodo","poco intenso e complesso, lattico cotto e brodo","poco intenso e complesso, lattico cotto e brodo",2018,C0A,TG_20,1.0
+841,FUORI_ATTRIBUTO,"yogurth, nocciola, tostato","yogurth, nocciola, tostato","yogurth, nocciola, tostato",2018,C0A,TG_24,1.0
+842,FUORI_ATTRIBUTO,dolce un po' di cotto,dolce un po- di cotto,dolce un po- di cotto,2018,C0A,TG_26,1.0
+843,FUORI_ATTRIBUTO,cotto crosta,cotto crosta,cotto crosta,2018,C0C,Q_09,1.0
+844,FUORI_ATTRIBUTO,non molto intenso. note vegetaleetali e minerali. poco complesso,non molto intenso. note vegetali e minerali. poco complesso,non molto intenso. note vegetaleetali e minerali. poco complesso,2018,C0C,TG_04,1.0
+845,FUORI_ATTRIBUTO,stantio e cotto,stantio e cotto,stantio e cotto,2018,C0C,TG_14,1.0
+846,FUORI_ATTRIBUTO,"Ammoniaca iniziale, un po' di stantio, crosta di grana","Ammoniaca iniziale, un po' di stantio, crosta di grana","Ammoniaca iniziale, un po' di stantio, crosta di grana",2018,C0C,TG_19,1.0
+847,FUORI_ATTRIBUTO,"poco intenso e complesso, presenti le note caratteristiche ma scarico","poco intenso e complesso, presenti le note caratteristiche ma scarico","poco intenso e complesso, presenti le note caratteristiche ma scarico",2018,C0C,TG_20,1.0
+848,OK,molto intenso da formaggio grana con piccole note anche di formaggio fuso,molto intenso da formaggio grana con piccole note anche di formaggio fuso,molto intenso da formaggio grana con piccole note anche di formaggio fuso,2018,C0C,TG_24,1.0
+849,FUORI_ATTRIBUTO,leggero spunto di stalla e di crosta,leggero spunto di stalla e di crosta,leggero spunto di stalla e di crosta,2018,C0C,TG_26,1.0
+850,FUORI_ATTRIBUTO,cotto,cotto,cotto,2018,C0D,Q_09,1.0
+851,FUORI_ATTRIBUTO,"poca panna, latte e burro non crudi. un fondo animale e stalla. fieno","poca panna, latte e burro non crudi. un fondo animale\stalla. fieno","poca panna, latte e burro non crudi. un fondo animale\stalla. fieno",2018,C0D,TG_04,1.0
+852,FUORI_ATTRIBUTO,brodo,brodo,brodo,2018,C0D,TG_12,1.0
+853,FUORI_ATTRIBUTO,"sentori di cotto, affumicato, lessato","sentori di cotto, affumicato, lessato","sentori di cotto, affumicato, lessato",2018,C0D,TG_14,1.0
+854,FUORI_ATTRIBUTO,"Erbaceo all'apertura, poi classici","Erbaceo all'apertura, poi classici","Erbaceo all'apertura, poi classici",2018,C0D,TG_19,1.0
+855,FUORI_ATTRIBUTO,"nota lievemente bruciata, per il resto caratteristico","nota blievemente bruciata, per iol resto caratteristico","nota blievemente bruciata, per iol resto caratteristico",2018,C0D,TG_20,1.0
+856,FUORI_ATTRIBUTO,"Il commento descrive note di fieno, tostato e nocciola, che non sono direttamente correlate al profumo del Grana Trentino.","fieno, tostato, nocciola","fieno, tostato, nocciola",2018,C0D,TG_24,1.0
+857,FUORI_ATTRIBUTO,"Il commento menziona pregi e difetti, con una tendenza allo stallatico, che non è un attributo del profumo.",pregi e difetti...TENDENTE ALLO STALLATICO,pregi e difetti...TENDENTE ALLO STALLATICO,2018,C0H,Q_02,1.0
+858,OK,Il campione presenta note fruttate.,fruttato,fruttato,2018,C0H,Q_09,1.0
+859,OK,Il profumo è poco intenso e poco complesso.,poco profumato. poco complesso,poco profumato. poco complesso,2018,C0H,TG_04,1.0
+860,FUORI_ATTRIBUTO,"Il commento indica note stantie e passate, che non si riferiscono al profumo del Grana Trentino.","stantio, passato","stantio, passato",2018,C0H,TG_13,1.0
+861,OK,Il profumo presenta note di bruciato.,bruciato,bruciato,2018,C0H,TG_14,1.0
+862,OK,Alla rottura dei pezzi prevale una nota putrida.,putrido prevalente alla rottura dei pezzi,putrido prevalente alla rottura dei pezzi,2018,C0H,TG_19,1.0
+863,FUORI_ATTRIBUTO,"Il commento descrive un profumo difettoso con note di frutta fermentata e chimiche, oltre a note stantie.","difettoso, frutta fermentata, nota chimica, stantio","difettoso, frutta fermentata, nota chimica, stantio",2018,C0H,TG_20,1.0
+864,ILLEGGIBILE,,"fum[, nocciola, frytta matura","fum[, nocciola, frytta matura",2018,C0H,TG_24,1.0
+865,FUORI_ATTRIBUTO,"Il commento menziona stalla e insilato in modo negativo, non correlato al profumo.","stalla, insilato non positivo","stalla, insilatoilato non positivo",2018,C0H,TG_26,1.0
+866,FUORI_ATTRIBUTO,"Il commento fa riferimento a burro cotto e latte UHT, che non sono attributi del profumo.","burro cotto, crosta, latte cotto o uht","burro cotto, crosta, latte cotto o uht",2018,C0N,TG_04,1.0
+867,FUORI_ATTRIBUTO,"Il commento indica note cotte e ossidate, che non si riferiscono al profumo del Grana Trentino.",cotto e ossidato,cotto e ossidato,2018,C0N,TG_13,1.0
+868,OK,Il campione presenta note ossidate.,ossidato,ossidato,2018,C0N,TG_14,1.0
+869,FUORI_ATTRIBUTO,"Il commento descrive un profumo complesso con note di cantina, muffa e tostati decisi, non specifico per il Grana Trentino.","all'apertura, cantina e muffa, tostati decisi, poi lattici molto stagionati","all'apertura, cantina e muffa, tostati decisi, poi lattici molto stagionati",2018,C0N,TG_19,1.0
+870,OK,"Il campione presenta una lieve nota fermentata, con lattico presente e caratteristico.","lieve nota fermentata, lattico presente e caratteristico","lieve nota fermentata, lattico presente e caratteristico",2018,C0N,TG_20,1.0
+871,OK,"Il profumo è molto intenso, con note di grana, floreali e leggera tostatura.",molto intenso da grana e con note florali e leggera tostatura,molto intenso da grana e con note florali e leggera tostatura,2018,C0N,TG_24,1.0
+872,OK,"Il profumo è debole, con note di fieno e pane, risultando poco fresco.","debole. fieno, pane. poco fresco","debole. fieno, pane. poco fresco",2018,C0Q,TG_04,1.0
+873,OK,Il campione presenta un profumo leggero e poco percettibile.,leggero poco percettibile,leggero poco percettibile,2018,C0Q,TG_13,1.0
+874,FUORI_ATTRIBUTO,"Il commento indica un profumo molto variegato con frutta matura e panna, ma anche note negative come ammoniaca e fermentato.","Molto variegati all'apertura e nei singoli pezzi. Frutta matura e panna, ma anche negativi e volatili, tipo ammoniaca e fermentato, quasi marcio","Molto variegati all'apertura e nei singoli pezzi. Frutta matura e panna, ma anche negativi e volatili, tipo ammoniaca e fermentato, quasi marcio",2018,C0Q,TG_19,1.0
+875,OK,"Il profumo è poco intenso e complesso, con una nota quasi floreale e di burro sciolto.","poco intenso e complesso, nota quasi floreale, burro sciolto","poco intenso e complesso, nota quasi floreale, burro sciolto",2018,C0Q,TG_20,1.0
+876,FUORI_ATTRIBUTO,Intensità media con note di frutta matura e un po' di emmenthal non troppo tipico.,intensit' media con note da frutta matura e un p; di emmenthal non troppo tipico,intensit' media con note da frutta matura e un p; di emmenthal non troppo tipico,2018,C0Q,TG_24,1.0
+877,OK,Panna leggera con sentori di fungo.,panna leggere fungo,panna leggere fungo,2018,C0H,Q_09,1.0
+878,OK,"Latte UHT, burro fuso, panna e lieve tostatura.","latte uht, burro fuso, panna, lieve tostatura","latte uht, burro fuso, panna, lieve tostatura",2018,C0H,TG_04,1.0
+879,OK,"Crosta di grana all'apertura, con leggero erbaceo fresco.","Crosta di grana all'apertura, poi anche leggero erbaceo fresco","Crosta di grana all'apertura, poi anche leggero erbaceo fresco",2018,C0H,TG_19,1.0
+880,OK,"Piatto, poco complesso, con nota lattica di burro fuso e nota fruttata.","piatto, poco complesso, nota lattica burro fuso, nota fruttata","piatto, poco complesso, nota lattica burro fuso, nota fruttata",2018,C0H,TG_20,1.0
+881,OK,Panna fresca con sentori lattici e verdure lesse.,Panna fresca sentori lattici e verdure lesse,Panna fresca sentori lattici e verdure lesse,2018,C0H,TG_35,1.0
+882,ILLEGGIBILE,,all'apertuta insilato vegetale allapertura vegetale balsamico eucalipto?,all'apertuta insilatoilato vegetaleetale allapertura vegetaleetale balsamico eucalipto?,2018,C0N,Q_09,1.0
+883,FUORI_ATTRIBUTO,"Sentori animali tendenti alla stalla, con note di tostato e pane cotto.","animale tendente alla stalla. tostato, pane. cotto","animale tendente alla stalla. tostato, pane. cotto",2018,C0N,TG_04,1.0
+884,FUORI_ATTRIBUTO,Brodo.,brodo,brodo,2018,C0N,TG_11,1.0
+885,OK,Leggero sentore di cotto.,leggero sentore di cotto,leggero sentore di cotto,2018,C0N,TG_13,1.0
+886,OK,"Leggero cotto, burro fuso e crosta.","leggero cotto, burro fuso e crosta","leggero cotto, burro fuso e crosta",2018,C0N,TG_14,1.0
+887,OK,Crosta di grana con verdura lessa.,"Crosta di grana, verdura lessa","Crosta di grana, verdura lessa",2018,C0N,TG_19,1.0
+888,OK,"Poco armonico, con nota cotta di formaggio cotto, brodo e poco caratteristico.","poco armonico, nota cotta di formaggio cotto, brodo, poco caratteristico","poco armonico, nota cotta di formaggio cotto, brodo, poco caratteristico",2018,C0N,TG_20,1.0
+889,OK,Positivo e intenso.,positivo intenso,positivo intenso,2018,C0N,TG_26,1.0
+890,OK,Lattico acido con note di yogurt e tostato di burro fuso.,lattico acido yogurt tostato burro fuso,lattico acido yogurt tostato burro fuso,2018,C0N,TG_35,1.0
+891,FUORI_ATTRIBUTO,Formaggio pronto.,formaggio pronto,formaggio pronto,2018,C0Q,Q_02,1.0
+892,ILLEGGIBILE,,iniziale diverso (teli sporco) poi vegetali e eun po cotto,iniziale diverso (teli sporco) poi vegetaleetali e eun po cotto,2018,C0Q,Q_09,1.0
+893,OK,"Intensità appena più che leggera, con note lattee mature e cotte, e sentore vegetale leggero.","intensita' appena piu' che leggera. note lattee mature, cotte. sentore vegetale leggero","intensita' appena piu' che leggera. note lattee mature, cotte. sentore vegetaleetale leggero",2018,C0Q,TG_04,1.0
+894,OK,Latticini freschi.,latticini freschi,latticini freschi,2018,C0Q,TG_14,1.0
+895,OK,Note vegetali a tratti anche intense.,Note vegetali a tratti anche intense,Note vegetaleetali a tratti anche intense,2018,C0Q,TG_19,1.0
+896,OK,"Il profumo del campione è intenso e complesso, con note di latte cotto e burro cotto, accompagnate da una lievissima nota di bruciato e salvia.","intenso, complesso, equilibrato, note di latte cotto e burro cotto, lievissima nota di bruciato, salvia","intenso, complesso, equilibrato, note di latte cotto e burro cotto, lievissima nota di bruciato, salvia",2018,C0Q,TG_20,1.0
+897,FUORI_ATTRIBUTO,Il campione presenta note tipiche di un altro formaggio.,leggermente propionico,altro formaggio,2018,C0Q,TG_26,1.0
+898,FUORI_ATTRIBUTO,"Il profumo è caratterizzato da note di latte acido, panna e yogurt.",latte acido panna yogurt,latte acido panna yogurt,2018,C0Q,TG_35,1.0
+899,FUORI_ATTRIBUTO,Il campione presenta note di fungo e muffa.,fungo;muffa,fungo;muffa,2018,C0D,Q_02,1.0
+900,OK,Il profumo è leggermente cotto.,cotto leggero,cotto leggero,2018,C0D,Q_09,1.0
+901,FUORI_ATTRIBUTO,"Il campione presenta un odore sgradevole verso l'animale, con il resto che funge da sfondo.",prima olfazione>odore sgradevole verso animale. il resto e' sfondo,prima olfazione>odore sgradevole verso animale. il resto e' sfondo,2018,C0D,TG_04,1.0
+902,OK,Il profumo è caratterizzato da note di latte cotto.,latte cotto,latte cotto,2018,C0D,TG_05,1.0
+903,OK,"Il campione presenta note di burro fuso, panna e burro.","burro fuso,panna, burro","burro fuso,panna, burro",2018,C0D,TG_08,1.0
+904,FUORI_ATTRIBUTO,Il profumo è caratterizzato da note di brodo vegetale.,brodo vegetale,brodo vegetaleetale,2018,C0D,TG_11,1.0
+905,OK,Il profumo presenta note di yogurt e frutta tropicale.,"yogurt, frutta tropicale","yogurt, frutta tropicale",2018,C0D,TG_15,1.0
+906,OK,"Il profumo è dominato da note lattiche, burro fuso e burro cotto, con una nota di brodo; è poco complesso ma abbastanza intenso.","lattico dominante, burro fuso, burro cotto, nota di brodo, poco complesso ma abbastanza intenso","lattico dominante, burro fuso, burro cotto, nota di brodo, poco complesso ma abbastanza intenso",2018,C0D,TG_20,1.0
+907,OK,Il campione presenta note forti tostate e di emmenthal/grana.,note forti tostate e emmenthal/grana,note forti tostate e emmenthal/grana,2018,C0D,TG_24,1.0
+908,FUORI_ATTRIBUTO,Il profumo presenta una leggera nota pungente.,legg pungente,legg pungente,2018,C0D,TG_26,1.0
+909,FUORI_ATTRIBUTO,"Il campione presenta note vegetali pungenti, ma non ricordo il vegetale specifico.",vegetale pungente (non ricordo il vegetale),vegetaleetale pungente (non ricordo il vegetaleetale),2018,C0E,Q_02,1.0
+910,FUORI_ATTRIBUTO,"Il profumo inizia con note di stracci sporchi, poi evolve verso note vegetali balsamiche e cotte.",stracci sporchi all'inizio poi vegetale balsamico + cotto,stracci sporchi all'inizio poi vegetaleetale balsamico + cotto,2018,C0E,Q_09,1.0
+911,OK,"Il profumo ha un'intensità moderata, con note vegetali e di brodo, su base di burro e latte UHT, e presenta una crosta.","intensit' moderata.  note vegetali, anche brodo, su base di burro e latte uht. crosta","intensit' moderata.  note vegetaleetali, anche brodo, su base di burro e latte uht. crosta",2018,C0E,TG_04,1.0
+912,FUORI_ATTRIBUTO,Il campione presenta note di fruttato e muschio.,fruttato;muschio,fruttato;muschio,2018,C0E,TG_05,1.0
+913,FUORI_ATTRIBUTO,Il profumo è caratterizzato da note di brodo vegetale e formaggio cotto.,"brodo vegetale , formaggio cotto","brodo vegetaleetale , formaggio cotto",2018,C0E,TG_11,1.0
+914,FUORI_ATTRIBUTO,"Il campione presenta note di frutta e burro, con una leggera ossidazione.","frutta, burro un po- ossidato","frutta, burro un po- ossidato",2018,C0E,TG_15,1.0
+915,OK,"Il profumo è intenso e quasi pungente, con note di frutta fermentata oltre alle caratteristiche note lattiche.","intenso, quasi pungente, nota di frutta fermentata oltre alle caratteristiche note lattiche","intenso, quasi pungente, nota di frutta fermentata oltre alle caratteristiche note lattiche",2018,C0E,TG_20,1.0
+916,OK,Il profumo presenta note tipiche di grana con una leggera tostatura.,grana tipico leggermente tostato,grana tipico leggermente tostato,2018,C0E,TG_24,1.0
+917,ILLEGGIBILE,,legg pungente un po chiusolegg insilato;,legg pungente un po chiusolegg insilatoilato;,2018,C0E,TG_26,1.0
+918,OK,Il profumo presenta note di panna.,panna,panna,2018,C0G,Q_09,1.0
+919,OK,"Il campione presenta una buona intensità, con note di latte fresco, panna e burro sciolto, accompagnate da sentori dolci.","buona intensita'. latte fresco, panna, burro sciolto. Sentori dolci e lattei","buona intensita'. latte fresco, panna, burro sciolto. Sentori dolci e lattei",2018,C0G,TG_04,1.0
+920,FUORI_ATTRIBUTO,Il commento fa riferimento a note di formaggio cotto e latte.,formaggio cotto;latte,formaggio cotto;latte,2018,C0G,TG_05,1.0
+921,OK,"Il profumo presenta note di burro fuso e crosta di formaggio, con intensità bassa.","burro fuso e crosta di formaggio, poco intenso","burro fuso e crosta di formaggio, poco intenso",2018,C0G,TG_08,1.0
+922,OK,Il profumo presenta una nota di brodo vegetale.,nota di brodo vegetale,nota di brodo vegetaleetale,2018,C0G,TG_11,1.0
+923,OK,Il profumo è leggermente fermentato con note di frutta matura.,"leggermente fermentato, frutta matura","leggermente fermentato, frutta matura",2018,C0G,TG_15,1.0
+924,OK,"Il profumo è abbastanza intenso ma poco pulito, con note di pozzo di scarico e crosta di formaggio.","abbastanza intenso ma poco pulito, nota di pozzo di scarico, crosta di formaggio","abbastanza intenso ma poco pulito, nota di pozzo di scarico, crosta di formaggio",2018,C0G,TG_20,1.0
+925,OK,Il profumo è intenso con note tipiche e anche di burro.,intenso con note tipiche ed anche da burro,intenso con note tipiche ed anche da burro,2018,C0G,TG_24,1.0
+926,OK,"Il profumo è poco intenso, con note di burro fuso, fermentato e brodo.","poco intenso, burro fuso, nota fermentata, brodo","poco intenso, burro fuso, nota fermentata, brodo",2018,C0D,TG_20,1.0
+927,FUORI_ATTRIBUTO,Il commento fa riferimento a latte cotto e burro tostato.,Latto cotto burro tostato,Latto cotto burro tostato,2018,C0D,TG_35,1.0
+928,OK,"Il profumo presenta note di burro, burro fuso e crosta, con intensità leggera.","burro, burro fuso e crosta, leggeri","burro, burro fuso e crosta, leggeri",2018,C0D,TG_14,1.0
+929,FUORI_ATTRIBUTO,Il commento fa riferimento a latte/panna e cotto.,"latte/panna , cotto","latte/panna , cotto",2018,C0D,Q_09,1.0
+930,OK,"Il profumo presenta note floreali su base di latte, panna e burro freschi, con lieve tostatura e buona intensità.","note floreali su base latte, panna e burro freschi. lieve tostatura. intensit' buona","note floreali su base latte, panna e burro freschi. lieve tostatura. intensit' buona",2018,C0D,TG_04,1.0
+931,OK,"Il profumo presenta sentori di marcio, fermentato e putrido.","in più di un pezzo sentore di marcio, fermentato cattico, putrido","in più di un pezzo sentore di marcio, fermentato cattico, putrido",2018,C0D,TG_19,1.0
+932,CONFORME,"Il campione è conforme, con un profumo positivo ma con una leggera mancanza di intensità.",positivo ma poco intenso,positivo ma poco intenso,2018,C0D,TG_26,1.0
+933,OK,Il profumo presenta note di latte.,latte,latte,2018,C0D,TG_11,1.0
+934,OK,"Il profumo presenta note di latte fresco, panna e brodo vegetale.",latte fresco;panna;brodo vegetale,latte fresco;panna;brodo vegetaleetale,2018,C0D,TG_05,1.0
+935,OK,"Il profumo è mediamente intenso, con note di panna, burro fuso e brodo.","mediamente intenso, panna, burro fuso, brodo","mediamente intenso, panna, burro fuso, brodo",2018,C0H,TG_20,1.0
+936,FUORI_ATTRIBUTO,"Il commento descrive note di panna prevalente, vegetale secco e tostato.",panna prevalente segue il vegetale secco e il tostato,panna prevalente segue il vegetaleetale secco e il tostato,2018,C0H,TG_35,1.0
+937,OK,"Il profumo presenta note di burro, latte e un leggero sentore di formaggio cotto.","burro, latte, leggero sentore di formaggio cotto","burro, latte, leggero sentore di formaggio cotto",2018,C0H,TG_14,1.0
+938,ILLEGGIBILE,,vegetale,vegetaleetale,2018,C0H,Q_09,1.0
+939,OK,Il profumo è molto debole.,profumo molto debole,profumo molto debole,2018,C0H,TG_13,1.0
+940,OK,"Il profumo è leggero, non complesso, con poche note fresche, cotto e crosta, e tostato.",leggero. non complesso. poche note fresche. pi\ cotto e crosta. tostato,leggero. non complesso. poche note fresche. pi\ cotto e crosta. tostato,2018,C0H,TG_04,1.0
+941,OK,Il profumo è molto intenso e positivo.,molto intenso e positivo,molto intenso e positivo,2018,C0H,TG_26,1.0
+942,FUORI_ATTRIBUTO,Il commento menziona note di panna e brodo vegetale.,panna e brodo vegetale,panna e brodo vegetaleetale,2018,C0H,TG_11,1.0
+943,FUORI_ATTRIBUTO,Il profumo presenta note di latte cotto e fieno.,latte cotto;fieno;,latte cotto;fieno;,2018,C0H,TG_05,1.0
+944,OK,"Il profumo è intenso ma poco caratteristico, con note stantie, chiuso e catina.","intenso ma poco caratteristico, stantio, chiuso, catina","intenso ma poco caratteristico, stantio, chiuso, catina",2018,C0L,TG_20,1.0
+945,OK,"Il profumo presenta note di panna, burro, leggero cotto e tostato.",Panna burro lato cotto leggero tostato,Panna burro lato cotto leggero tostato,2018,C0L,TG_35,1.0
+946,FUORI_ATTRIBUTO,Il profumo presenta note di brodo di carne e burro fuso.,"brodo di carne, burro fuso","brodo di carne, burro fuso",2018,C0L,TG_14,1.0
+947,FUORI_ATTRIBUTO,"Il profumo è leggero, con note di stracci sporchi all'inizio, poi panna vegetale.",leggero stracci sporchi all'inizio poi panna vegetale,leggero stracci sporchi all'inizio poi panna vegetaleetale,2018,C0L,Q_09,1.0
+948,OK,"Il profumo è stantio, con note di cavolfiore.","stantio, cavolfiore","stantio, cavolfiore",2018,C0L,TG_12,1.0
+949,OK,Il profumo presenta sentori di cotto e tostato.,"sentore di cotto, tostato","sentore di cotto, tostato",2018,C0L,TG_13,1.0
+950,OK,"Il profumo ha un'intensità moderata, con sentori lattei, burro, poca panna, tostato e crosta.","intensita' moderata. sentori lattei, burro, poca panna. tostato. crosta","intensita' moderata. sentori lattei, burro, poca panna. tostato. crosta",2018,C0L,TG_04,1.0
+951,OK,"All'apertura si percepisce un odore pungente, quasi ammoniacale, seguito da tostati decisi e speziati, latte cotto quasi bruciato, cacao amaro e caffè.","all'apertura ododre pungente, quasi ammoniacale, poi tostati decisi e speziati, latte cotto quasi bruciato, cacao amaro e caffé","all'apertura ododre pungente, quasi ammoniacale, poi tostati decisi e speziati, latte cotto quasi bruciato, cacao amaro e caffé",2018,C0L,TG_19,1.0
+952,CONFORME,"Il campione rispetta gli standard, mostrando un profilo aromatico chiuso ma privo di difetti.",no difetti ma chiuso,no difetti ma chiuso,2018,C0L,TG_26,1.0
+953,OK,Il profumo è di burro.,burro,burro,2018,C0L,TG_11,1.0
+954,FUORI_ATTRIBUTO,Il profumo presenta note di latte crudo e fruttato.,latte crudo;fruttato,latte crudo;fruttato,2018,C0L,TG_05,1.0
+955,OK,"Il profumo è poco intenso, monotono, con note di brodo di carne.","poco intenso, monotono, brodo di carne","poco intenso, monotono, brodo di carne",2018,C0M,TG_20,1.0
+956,FUORI_ATTRIBUTO,Il commento descrive note vegetali e aromatiche di burro e tostato.,"Vegetalke cotto, burro, panna, tostato leggero","vegetaleetalke cotto, burro, panna, tostato leggero",2018,C0M,TG_35,1.0
+957,OK,Il profumo presenta note di panna.,panna,panna,2018,C0M,Q_09,1.0
+958,OK,"Il campione mostra una buona intensità con profumi di latte cotto, burro sciolto e frutta secca.","premio la buona intensita'. frofumi di latte cotto, burro sciolto. frutta secca.","premio la buona intensita'. frofumi di latte cotto, burro sciolto. frutta secca.",2018,C0M,TG_04,1.0
+959,OK,"Il profumo è caratterizzato da note di latte cotto, mou e cacao non zuccherato.","latte cotto molto, quando si attacca alla padella, mou, cacao non zuccherato,","latte cotto molto, quando si attacca alla padella, mou, cacao non zuccherato,",2018,C0M,TG_19,1.0
+960,ILLEGGIBILE,,chiuso legg ammoniaca,chiuso legg ammoniaca,2018,C0M,TG_26,1.0
+961,OK,Il profumo presenta note di panna e burro.,panna e burro,panna e burro,2018,C0M,TG_11,1.0
+962,OK,Il campione ha un profumo che ricorda note chimiche bruciate.,formaggio fritto;,chimico bruciato;,2018,C0M,TG_05,1.0
+963,OK,"Il profumo è mediamente intenso, con note di latte bruciato e lieve pungenza.","mediamente intenso, latte bruciato, lieve pungenza","mediamente intenso, latte bruciato, lieve pungenza",2018,C0Q,TG_20,1.0
+964,OK,"Il profumo presenta panna, latte cotto, note tostate e un leggero fruttato.","Panna, latte cotto, tostato, con un po di fruttato","Panna, latte cotto, tostato, con un po di fruttato",2018,C0Q,TG_35,1.0
+965,OK,Il profumo è caratterizzato da burro fuso e un leggero sentore di affumicato.,"burro fuso, leggero sentore di affumicato","burro fuso, leggero sentore di affumicato",2018,C0Q,TG_13,1.0
+966,OK,Il campione presenta profumi leggeri.,profumi leggeri,profumi leggeri,2018,C0Q,TG_04,1.0
+967,OK,"All'apertura si percepiscono note di frutta e fiori, seguite da panna.","all'apertura anche frutta e fiori, poi panna","all'apertura anche frutta e fiori, poi panna",2018,C0Q,TG_19,1.0
+968,OK,Il profumo presenta una leggera nota propionica.,legg propionico,legg propionico,2018,C0Q,TG_26,1.0
+969,OK,Il profumo è caratterizzato da note di panna.,panna,panna,2018,C0Q,TG_11,1.0
+970,OK,"Il profumo presenta note chimiche bruciate, latte cotto e panna.",formaggio fritto;latte cotto;panna;,chimico bruciato;latte cotto;panna;,2018,C0Q,TG_05,1.0
+971,FUORI_ATTRIBUTO,"Il campione mostra un profumo intenso ma difettoso, con note di marcio e putrido.","intenso ma difettoso, pozzo, marcio, putrido","intenso ma difettoso, pozzo, marcio, putrido",2018,C0R,TG_20,1.0
+972,FUORI_ATTRIBUTO,"Il profumo è caratterizzato da latte acido, note tostate e un leggero vegetale secco.","Latte acido, tostato con leggero vegetale secco","Latte acido, tostato con leggero vegetaleetale secco",2018,C0R,TG_35,1.0
+973,FUORI_ATTRIBUTO,"Il profumo presenta note di burro fuso, tostato e brodo vegetale, con un'insilato non del tutto gradevole.","odore di burro fuso, con note di tostato e brodo vegetale, nell'insieme non del tutto gradevole","odore di burro fuso, con note di tostato e brodo vegetaleetale, nell'insilatoieme non del tutto gradevole",2018,C0R,TG_14,1.0
+974,FUORI_ATTRIBUTO,Il profumo è caratterizzato da note tostate bruciate e vegetali cotti.,tostato bruciato (caffe?) vegetali cotti,tostato bruciato (caffe?) vegetaleetali cotti,2018,C0R,Q_09,1.0
+975,FUORI_ATTRIBUTO,"Il profumo presenta note di brodo vegetale, verdure lesse e un sentore stantio.","brodo vegetale, verdure lesse, stantio","brodo vegetaleetale, verdure lesse, stantio",2018,C0R,TG_12,1.0
+976,FUORI_ATTRIBUTO,Il commento si riferisce a note di latte cotto o bruciato.,latte cotto o bruciato,latte cotto o bruciato,2018,C0R,TG_13,1.0
+977,OK,"Il campione presenta una leggera intensità con note di pane tostato, burro, latte cotto e sentori di fungo e tartufo.","leggero/moderato come intensita'.  note di pane tostato. burro, latte cotto. fungo/tartufo","leggero/moderato come intensita'.  note di pane tostato. burro, latte cotto. fungo/tartufo",2018,C0R,TG_04,1.0
+978,OK,"Il profumo del campione è caratterizzato da note di lattici cotti, tostati, liquirizia, cacao, caffè e mou.","lattici cotti, tostati, liquirizia, cacao, caffè, mou","lattici cotti, tostati, liquirizia, cacao, caffè, mou",2018,C0R,TG_19,1.0
+979,FUORI_ATTRIBUTO,Il commento indica che il campione non è tipico di un altro formaggio cotto.,non tipico da altro formaggio cotto,non tipico da altro formaggio cotto,2018,C0R,TG_26,1.0
+980,OK,Il campione presenta note di brodo.,brodo,brodo,2018,C0R,TG_11,1.0
+981,OK,Il profumo è caratterizzato da latte cotto e panna.,latte cotto;panna;,latte cotto;panna;,2018,C0R,TG_05,1.0
+982,OK,"Il campione ha un profumo poco intenso, piatto e pungente, con note di frutta fermentata, burro cotto e legno.","poco intenso, piatto, pungente, frutta fermentata, burro cotto, legno","poco intenso, piatto, pungente, frutta fermentata, burro cotto, legno",2018,C0A,TG_20,1.0
+983,OK,Il campione presenta un leggero profumo di formaggio cotto.,leggero formaggio cotto,leggero formaggio cotto,2018,C0A,TG_14,1.0
+984,OK,Il profumo è leggero.,legero,legero,2018,C0A,Q_09,1.0
+985,CONFORME,"Il campione si presenta tendenzialmente positivo, con difetti assenti e un profilo aromatico accettabile.",tendenzialmente positivo difetti assenti,tendenzialmente positivo difetti assenti,2018,C0A,TG_26,1.0
+986,OK,Il profumo è debole.,debole,debole,2018,C0A,TG_13,1.0
+987,OK,Il campione presenta un forte profumo di formaggio fermentato.,formaggio ;fermentato FORTE,formaggio ;fermentato FORTE,2018,C0A,Q_02,1.0
+988,OK,"All'apertura si percepisce un odore pungente, ma non è presente nei pezzi.","odore pungente all'apertura, ma che poi non trovo nei pezzi","odore pungente all'apertura, ma che poi non trovo nei pezzi",2018,C0A,TG_19,1.0
+989,OK,Il profumo è caratterizzato da note di latte.,latte,latte,2018,C0A,TG_05,1.0
+990,OK,Il profumo è leggero.,leggero,leggero,2018,C0A,TG_04,1.0
+991,OK,Il campione presenta note di latte cotto e brodo.,"latte cotto , brodo","latte cotto , brodo",2018,C0A,TG_11,1.0
+992,OK,"Il profumo è poco intenso, con note non caratteristiche da nostrano, lettiera e ossidato.","poco intenso, note non caratteristiche da nostrano, lettiera, ossidato","poco intenso, note non caratteristiche da nostrano, lettiera, ossidato",2018,C0C,TG_20,1.0
+993,OK,Il campione presenta un leggero profumo di formaggio cotto e crosta.,leggero formaggio cotto e crosta,leggero formaggio cotto e crosta,2018,C0C,TG_14,1.0
+994,OK,Il profumo è dolce e intenso di latte.,latte dolce  intenso,latte dolce  intenso,2018,C0C,TG_26,1.0
+995,OK,Il campione presenta note di rancido moderato e speziato moderato.,rancido MODERATO;spezziato MODERATO,rancido MODERATO;spezziato MODERATO,2018,C0C,Q_02,1.0
+996,OK,"L'intensità è medio bassa, con note lattee, burro e latte cotto.","intensita' medio bassa. note lattee, burro, latte cotto","intensita' medio bassa. note lattee, burro, latte cotto",2018,C0C,TG_04,1.0
+997,OK,"Il profumo presenta note di latte cotto, formaggio cotto e brodo.","latte cotto, formaggio cotto e brodo","latte cotto, formaggio cotto e brodo",2018,C0C,TG_11,1.0
+998,FUORI_ATTRIBUTO,"Il profumo presenta note di frutta matura, pozzo di scarico e topo morto.","frutta matura, pozzo di scarico, topo morto","frutta matura, pozzo di scarico, topo morto",2018,C0F,TG_20,1.0
+999,OK,Il profumo presenta note bruciate e di crosta.,"bruciato, crosta","bruciato, crosta",2018,C0F,TG_14,1.0
+1000,ILLEGGIBILE,,vegetale e cotto leg bruciato,vegetaleetale e cotto leg bruciato,2018,C0F,Q_09,1.0
+1001,OK,Il campione è difettoso.,difettoso,difettoso,2018,C0F,TG_26,1.0
+1002,OK,Il profumo è molto debole e presenta solo odore di formaggio vecchio e passato.,"profumo molto debole ed inoltre si sente solo odore di formaggio vecchio, passato","profumo molto debole ed inoltre si sente solo odore di formaggio vecchio, passato",2018,C0F,TG_13,1.0
+1003,OK,"Il profumo presenta note di verdura lessa, con moderata intensità di cavolfiore e una porzione moderata di animale, letame.","verdura lessa: cavolfiore MODERATO, una porzione su 4 animale: letame MODERATO","verdura lessa: cavolfiore MODERATO, una porzione su 4 animale: letame MODERATO",2018,C0F,Q_02,1.0
+1004,OK,"Il profumo presenta note fermentate, con un po' di marcio.","fermentato, un po' anche marcio","fermentato, un po' anche marcio",2018,C0F,TG_19,1.0
+1005,OK,Il profumo presenta note di latte cotto e chimico bruciato.,latte cotto;formaggio fritto,latte cotto;chimico bruciato,2018,C0F,TG_05,1.0
+1006,OK,"Il profumo presenta note di burro sciolto, latte, panna e sentori maturi, con buona intensità e poco di frutta secca tostata.",burro sciolto. Latte. panna. sentori maturi. buona intensita'.. poco di frutta secca tostata,burro sciolto. Latte. panna. sentori maturi. buona intensita'.. poco di frutta secca tostata,2018,C0F,TG_04,1.0
+1007,FUORI_ATTRIBUTO,Il profumo presenta note di brodo vegetale.,brodo vegetale,brodo vegetaleetale,2018,C0F,TG_11,1.0
+1008,OK,"Il profumo presenta note di burro, panna, pozzo di scarico e latte acido.","burro, panna, pozzo di ascarico, latte acido","burro, panna, pozzo di ascarico, latte acido",2018,C0G,TG_20,1.0
+1009,OK,Il profumo presenta note di panna e latticini freschi con un po' di vegetale lessato.,panna e latticini freschi con un po- di vegetale/lessato,panna e latticini freschi con un po- di vegetaleetale/lessato,2018,C0G,TG_14,1.0
+1010,OK,Il profumo presenta note di latte cotto.,legg cotto,legg cotto,2018,C0G,TG_26,1.0
+1011,OK,Il profumo presenta note di crosta e formaggio stantio.,"crosta, formaggio stantio","crosta, formaggio stantio",2018,C0G,TG_13,1.0
+1012,OK,"Il profumo presenta note moderate di animale e crauti, con un leggero sentore di cipolla.",animale MODERATO;crauti MODERATO;cipolla LEGGERO,animale MODERATO;crauti MODERATO;cipolla LEGGERO,2018,C0G,Q_02,1.0
+1013,OK,"Il profumo presenta note tostate di caffè e cacao, con forte presenza di latte cotto.","tostati - caffè, cacao - latte cotto molto,","tostati - caffè, cacao - latte cotto molto,",2018,C0G,TG_19,1.0
+1014,OK,"Alla prima olfazione si percepisce un sentore di stalla, seguito da note di latte e burro cotti e tostati.",prima olfazione sentore di stalla. per il resto latte burro cotti. tostato,prima olfazione sentore di stalla. per il resto latte burro cotti. tostato,2018,C0G,TG_04,1.0
+1015,OK,Il profumo presenta note di panna.,panna,panna,2018,C0G,TG_11,1.0
+1016,OK,"Il profumo del campione è mediamente intenso, con note di panna, burro fuso, brodo, confetto e una lieve nota ossidata e pungente.","mediamente intenso, panna, burro fuso, brodo, congetto, lieve nota ossidata e pungente","mediamente intenso, panna, burro fuso, brodo, confetto, lieve nota ossidata e pungente",2018,C0M,TG_20,1.0
+1017,FUORI_ATTRIBUTO,Non presenta aroma particolare.,nessu aroma particoare,nessu aroma particoare,2018,C0M,TG_14,1.0
+1018,OK,Il profumo è leggero.,leggero,leggero,2018,C0M,Q_09,1.0
+1019,ILLEGGIBILE,,insilato pungente,insilatoilato pungente,2018,C0M,TG_26,1.0
+1020,OK,"Il profumo è debole, con un leggero sentore di fermentato.","debole, leggero sentore di fermentato","debole, leggero sentore di fermentato",2018,C0M,TG_13,1.0
+1021,OK,Il profumo presenta note di panna alta.,panna alto,panna alto,2018,C0M,Q_02,1.0
+1022,FUORI_ATTRIBUTO,"In un pezzo si avverte un odore negativo deciso, mentre negli altri prevalgono i lattici.","In un pezzo odore negativo deciso, mentre negli altri prevalgono i lattici","In un pezzo odore negativo deciso, mentre negli altri prevalgono i lattici",2018,C0M,TG_19,1.0
+1023,OK,Il profumo è caratterizzato da latte crudo e panna.,latte crudo;panna;,latte crudo;panna;,2018,C0M,TG_05,1.0
+1024,OK,"Il profumo è leggero, con note lattee delicate e sentori vegetali e di brodo vegetale.","leggero. su note lattee delicate rinvengo sentori vegetali, di brodo vegetale","leggero. su note lattee delicate rinvengo sentori vegetaleetali, di brodo vegetaleetale",2018,C0M,TG_04,1.0
+1025,OK,Il profumo presenta note di burro cotto.,burro cotto,burro cotto,2018,C0M,TG_11,1.0
+1026,FUORI_ATTRIBUTO,"Il profumo è caratterizzato da note di stalla, marcio e fermentato.","stalla, marcio, fermentato","stalla, marcio, fermentato",2018,C0N,TG_20,1.0
+1027,OK,"Il profumo è tostato forte, con note di crosta e formaggio cotto.","tostato forte, crosta, formaggio cotto","tostato forte, crosta, formaggio cotto",2018,C0N,TG_14,1.0
+1028,OK,Il profumo presenta note leggere di fruttato.,leggero fruttato,leggero fruttato,2018,C0N,Q_09,1.0
+1029,FUORI_ATTRIBUTO,"Il profumo è difettoso, con una nota di cipolla sgradevole.",difettoso cipolla sgradevole,difettoso cipolla sgradevole,2018,C0N,TG_26,1.0
+1030,OK,Il profumo presenta note di burro fuso e crosta.,"burro fuso, crosta.","burro fuso, crosta.",2018,C0N,TG_13,1.0
+1031,FUORI_ATTRIBUTO,"Il profumo è ossidato moderato, con note di frutta come ananas e speziato, tutti con un contributo negativo.","ossidato MODERATO, frutta: ananas MODERATO, speziato MOderato;(tutti questi parmetri hanno un contributo negativo)","ossidato MODERATO, frutta: ananas MODERATO, speziato MOderato;(tutti questi parmetri hanno un contributo negativo)",2018,C0N,Q_02,1.0
+1032,FUORI_ATTRIBUTO,"All'apertura si avverte un po' di fumo, seguito da note di fermentato.","all'apertura un po' di fumo, poi fermentato,","all'apertura un po' di fumo, poi fermentato,",2018,C0N,TG_19,1.0
+1033,OK,"Il profumo ha una buona intensità, con note di latte intero, panna, burro sciolto e poco brodo di carne.","intensita' buona. latte intero, panna, burro sciolto. poco brodo di carne","intensita' buona. latte intero, panna, burro sciolto. poco brodo di carne",2018,C0N,TG_04,1.0
+1034,OK,Il profumo presenta note di burro e brodo vegetale.,burro e brodo vegetale,burro e brodo vegetaleetale,2018,C0N,TG_11,1.0
+1035,OK,Il profumo è caratterizzato da burro fuso.,burro fuso,burro fuso,2018,C0A,TG_13,1.0
+1036,FUORI_ATTRIBUTO,"Il commento descrive note di brodo vegetale, fruttato e lattico cotto.","brodo vegetale, fruttato e lattico cotto","brodo vegetaleetale, fruttato e lattico cotto",2018,C0A,TG_35,1.0
+1037,OK,"Il profumo presenta note molto intense di panna, burro e latte fresco, con una tostatura fine.","panna molto intensa. burro, latte fresco. tostano fino","panna molto intensa. burro, latte fresco. tostano fino",2018,C0A,TG_04,1.0
+1038,OK,"Il campione mostra note di latte cotto, burro e fruttato.",latte cotto;burro;fruttato,latte cotto;burro;fruttato,2018,C0A,TG_05,1.0
+1039,FUORI_ATTRIBUTO,Il commento si riferisce a note di brodo vegetale.,brodo vegetale,brodo vegetaleetale,2018,C0A,TG_11,1.0
+1040,FUORI_ATTRIBUTO,Il commento descrive note di cioccolato fondente.,cioccolato fondente,cioccolato fondente,2018,C0A,TG_15,1.0
+1041,FUORI_ATTRIBUTO,Il commento si riferisce a note vegetali.,vegetale,vegetaleetale,2018,C0B,Q_09,1.0
+1042,OK,Si percepisce un leggero sentore di cotto.,leggero sentore di cotto,leggero sentore di cotto,2018,C0B,TG_13,1.0
+1043,OK,"Il profumo presenta note di panna e burro fresco, con un fruttato e un leggero tostato.","panna e burro fresco,  fruttato e leggero tostato","panna e burro fresco,  fruttato e leggero tostato",2018,C0B,TG_35,1.0
+1044,OK,"Il campione mostra note di tostato, pane biscottato, biscotto e vaniglia, con intensità bassa.","tostato, pane biscottato, biscotto, vaniglia. intensit' bassa","tostato, pane biscottato, biscotto, vaniglia. intensit' bassa",2018,C0B,TG_04,1.0
+1045,FUORI_ATTRIBUTO,Il commento si riferisce a note di brodo vegetale e latte cotto.,brodo vegetale;latte cotto;,brodo vegetaleetale;latte cotto;,2018,C0B,TG_05,1.0
+1046,OK,Il profumo presenta note di burro.,burro,burro,2018,C0B,TG_11,1.0
+1047,OK,Il campione mostra note di panna e burro crudo.,"panna, burro crudo","panna, burro crudo",2018,C0B,TG_15,1.0
+1048,OK,Si percepisce un leggero sentore fermentato.,"leggero, fermentato","leggero, fermentato",2018,C0C,TG_13,1.0
+1049,FUORI_ATTRIBUTO,Il commento descrive note di latte acido e panna con un leggero sentore di insilato.,"latte acido, panna leggero insilato","latte acido, panna leggero insilatoilato",2018,C0C,TG_35,1.0
+1050,FUORI_ATTRIBUTO,Il commento si riferisce a un'intensità contenuta e note di fogna.,"intensita' contenuta, fogna","intensita' contenuta, fogna",2018,C0C,TG_04,1.0
+1051,OK,Il campione presenta note di latte cotto e burro fuso.,latte cotto;burro fuso;,latte cotto;burro fuso;,2018,C0C,TG_05,1.0
+1052,OK,Si percepiscono note di panna con un leggero sentore di brodo.,"panna, leggero sentore di brodo","panna, leggero sentore di brodo",2018,C0C,TG_11,1.0
+1053,OK,Il profumo presenta note pungenti e lattiche.,un po- pungente note lattiche,un po- pungente note lattiche,2018,C0C,TG_15,1.0
+1054,FUORI_ATTRIBUTO,Il commento descrive note di frutta fermentata.,frutta fermentata,frutta fermentata,2018,C0E,TG_15,1.0
+1055,FUORI_ATTRIBUTO,Il commento si riferisce a note vegetali e balsamiche.,vegetale balsamico,vegetaleetale balsamico,2018,C0E,Q_09,1.0
+1056,FUORI_ATTRIBUTO,Il campione presenta note ossidate e fermentate.,ossidato. forse fermentato.,ossidato. forse fermentato.,2018,C0E,TG_13,1.0
+1057,FUORI_ATTRIBUTO,"Il campione presenta note di brodo di carne, panna, burro leggero e latte acido.","brodo di carne, panna, burro leggero latte acido","brodo di carne, panna, burro leggero latte acido",2018,C0E,TG_35,1.0
+1058,FUORI_ATTRIBUTO,"Il campione ha un aroma di formaggio quasi fermentato, non tipico del Trentingrana, con una nota non sgradevole.","su base lattea delicata spicca un aroma di formaggio quasi fermentato non tipico del trentingrana. non una puzza, ma quasi","su base lattea delicata spicca un aroma di formaggio quasi fermentato non tipico del trentingrana. non una puzza, ma quasi",2018,C0E,TG_04,1.0
+1059,OK,Il campione presenta una nota acida.,acido,acido,2018,C0E,TG_05,1.0
+1060,OK,Il campione presenta una nota fermentata.,fermentato,fermentato,2018,C0E,TG_11,1.0
+1061,OK,Il campione ha una debole nota di frutta matura.,debole frutta matura,debole frutta matura,2018,C0H,TG_15,1.0
+1062,OK,Il campione presenta note fruttate di ananas.,fruttato ananas,fruttato ananas,2018,C0H,TG_12,1.0
+1063,OK,"Il campione ha un profumo positivo di burro e panna, con un leggero sentore di cotto.",positivo di burro e panna. leggero sentoee di cotto,positivo di burro e panna. leggero sentoee di cotto,2018,C0H,TG_13,1.0
+1064,OK,Il campione presenta note fruttate e un aroma lattico fresco di panna e burro.,frutato e lattico fresco (panna burro),frutato e lattico fresco (panna burro),2018,C0H,TG_35,1.0
+1065,OK,"Il campione ha un'intensità moderata con sentori di panna, latte intero e burro sciolto, accompagnati da una lieve nota tostato.","intensita' moderata. semtori di panna, latte intero, burro sciolto. lieve tostato","intensita' moderata. semtori di panna, latte intero, burro sciolto. lieve tostato",2018,C0H,TG_04,1.0
+1066,FUORI_ATTRIBUTO,Il campione presenta note di latte e brodo.,latte e brodo,latte e brodo,2018,C0H,TG_11,1.0
+1067,OK,Il campione ha note di caramella mou e burro cotto.,"caramella mou, burro cotto","caramella mou, burro cotto",2018,C0Q,TG_15,1.0
+1068,OK,Il campione presenta una nota di panna.,panna;,panna;,2018,C0Q,Q_09,1.0
+1069,OK,Il campione presenta note di crosta.,crosta,crosta,2018,C0Q,TG_12,1.0
+1070,OK,Il campione ha un profumo poco marcato con un leggero sentore di cotto.,"poco marcato, leggero sentore di cotto","poco marcato, leggero sentore di cotto",2018,C0Q,TG_13,1.0
+1071,OK,"Il campione presenta un leggero fruttato e lattico cotto, con note di brodo e tostato.","leggero fruttato e lattico cotto, poco brodo e tostato","leggero fruttato e lattico cotto, poco brodo e tostato",2018,C0Q,TG_35,1.0
+1072,OK,Il campione ha un'intensità lieve.,intensita' lieve.,intensita' lieve.,2018,C0Q,TG_04,1.0
+1073,FUORI_ATTRIBUTO,"Il campione presenta note chimiche bruciate, vegetali e di latte crudo.",formaggio fritto;bordo vegetale;latte crudo,chimico bruciato;bordo vegetaleetale;latte crudo,2018,C0Q,TG_05,1.0
+1074,OK,Il campione è equilibrato e piacevole.,"equilibrato, piacevole","equilibrato, piacevole",2018,C0A,TG_13,1.0
+1075,FUORI_ATTRIBUTO,"Il campione presenta note di crosta, cotto e verdura lessa.","crosta, cotto, verdura lessa","crosta, cotto, verdura lessa",2018,C0A,TG_14,1.0
+1076,ILLEGGIBILE,,latte e brodo vegetale,latte e brodo vegetaleetale,2018,C0A,TG_11,1.0
+1077,FUORI_ATTRIBUTO,Il commento descrive note di latte cotto e cipolla.,"latte cotto, cipolla","latte cotto, cipolla",2018,C0A,TG_15,1.0
+1078,OK,"Il profumo presenta principalmente note di panna e fruttato, seguite da burro, latte cotto e un leggero tostato.","Principalmente panna e fruttato, segue il burro, il latte cotto e un leggero tostato","Principalmente panna e fruttato, segue il burro, il latte cotto e un leggero tostato",2018,C0A,TG_35,1.0
+1079,OK,Il profumo ha un'intensità di burro fuso medio alta.,in positivo intensità burro fuso medio alta,in positivo intensità burro fuso medio alta,2018,C0A,Q_02,1.0
+1080,OK,"All'apertura si percepiscono sentori vegetali, seguiti da note di lattici cotti e affumicato.","Sentore vegetale all'apertura, poi anche lattici cotti un po' troppo, affumicato,","Sentore vegetaleetale all'apertura, poi anche lattici cotti un po' troppo, affumicato,",2018,C0A,TG_19,1.0
+1081,OK,"La prima olfazione presenta note di stalla, seguite da tostato, pane e frutta secca, con un'intensità più che moderata.","prima olfazione: stalla/fecale.  poiresta una sensazione di tostato, pane frutta secca. intensità più che moderata, ignoro il primo odore sgradevole","prima olfazione: stalla/fecale.  poiresta una sensazione di tostato, pane frutta secca. intensità più che moderata, ignoro il primo odore sgradevole",2018,C0A,TG_04,1.0
+1082,OK,"Il profumo è caratterizzato da burro, latte, yogurt, note affumicate e floreali.","burro, latte, yoguth, fumè, florale...","burro, latte, yoguth, fumè, florale...",2018,C0A,TG_24,1.0
+1083,OK,Il profumo presenta note di latte cotto e panna.,latte cotto;panna;,latte cotto;panna;,2018,C0A,TG_05,1.0
+1084,FUORI_ATTRIBUTO,Il commento fa riferimento a un formaggio fresco.,"da formaggio fresco,","da formaggio fresco,",2018,C0C,TG_26,1.0
+1085,OK,"Il profumo presenta note di ossidato e crosta, con leggeri sentori.","ossidato e crosta, leggeri","ossidato e crosta, leggeri",2018,C0C,TG_14,1.0
+1086,OK,Il profumo è leggermente caratterizzato da panna.,leggero panna,leggero panna,2018,C0C,Q_09,1.0
+1087,OK,Il profumo presenta note di panna e burro.,panna e burro,panna e burro,2018,C0C,TG_11,1.0
+1088,OK,Il profumo è caratterizzato da cipolla e burro crudo leggero.,"cipolla, burro crudo leggero","cipolla, burro crudo leggero",2018,C0C,TG_15,1.0
+1089,OK,"Il profumo presenta note di fruttato, burro fuso e latte cotto, con una nota tostata finale.","fruttato burro fuso e latte cotto, nota tostata finale","fruttato burro fuso e latte cotto, nota tostata finale",2018,C0C,TG_35,1.0
+1090,OK,Il profumo presenta note di frutta secca con intensità media.,frutta secca intensità media,frutta secca intensità media,2018,C0C,Q_02,1.0
+1091,OK,Il profumo è caratterizzato da note vegetali e lattiche fresche.,note vegetali e lattiche fresche,note vegetaleetali e lattiche fresche,2018,C0C,TG_19,1.0
+1092,OK,"Il profumo ha una buona intensità, con note di burro cotto e panna leggera, e un accenno di tostato.",Intensità buona. burro cotto. panna leggero. tostato,Intensità buona. burro cotto. panna leggero. tostato,2018,C0C,TG_04,1.0
+1093,OK,"Il profumo presenta note di grana, kiwi, nocciola e tostato.","grana, kiwi, nocciola e tostato..","grana, kiwi, nocciola e tostato..",2018,C0C,TG_24,1.0
+1094,FUORI_ATTRIBUTO,Il commento descrive note di latte e brodo di carne.,latte ;brodo di carne,latte ;brodo di carne,2018,C0C,TG_05,1.0
+1095,OK,Il profumo presenta sentori di cotto e ossidato.,sentore di cotto e ossidato,sentore di cotto e ossidato,2018,C0D,TG_13,1.0
+1096,FUORI_ATTRIBUTO,"Il commento descrive note di burro e panna, che non sono specifiche per il profumo del Grana Trentino.",burro e panna,burro e panna,2018,C0D,TG_14,1.0
+1097,FUORI_ATTRIBUTO,"Il commento menziona panna e yogurt, che non sono caratteristiche del profumo del Grana Trentino.",panna yogurt,panna yogurt,2018,C0D,Q_09,1.0
+1098,FUORI_ATTRIBUTO,"Il commento fa riferimento a panna e burro, che non sono attributi specifici del profumo del Grana Trentino.",panna e burro,panna e burro,2018,C0D,TG_11,1.0
+1099,FUORI_ATTRIBUTO,"Il commento descrive un latte crudo delicato, che non è pertinente al profumo del Grana Trentino.",latte crudo delicato,latte crudo delicato,2018,C0D,TG_15,1.0
+1100,FUORI_ATTRIBUTO,"Il commento menziona latte cotto, burro fuso, brodo di carne e note di tostato e fruttato, che non sono specifiche per il profumo del Grana Trentino.","latte cotto, burro fuso brodo di carne e leggero tostato e fruttato","latte cotto, burro fuso brodo di carne e leggero tostato e fruttato",2018,C0D,TG_35,1.0
+1101,FUORI_ATTRIBUTO,"Il commento descrive burro fuso e note stantio, che non sono caratteristiche del profumo del Grana Trentino.",burro fuso intensità alta;stantio intensità alta,burro fuso intensità alta;stantio intensità alta,2018,C0D,Q_02,1.0
+1102,OK,"Il profumo presenta note intense di vegetale all'apertura, seguite da verdure cotte, crosta di grana e formaggio cotto.","Intenso vegetale all'apertura, poi verdure cotte, crosta di grana e formaggio cotto","Intenso vegetaleetale all'apertura, poi verdure cotte, crosta di grana e formaggio cotto",2018,C0D,TG_19,1.0
+1103,OK,"Il commento indica una fragranza leggerissima, che può riferirsi a un profumo delicato.",leggerissimo,leggerissimo,2018,C0D,TG_04,1.0
+1104,OK,"Il profumo è caratterizzato da note di grana, floreali e fruttate, con intensità elevata.","grana, florale, frutta... intenso","grana, florale, frutta... intenso",2018,C0D,TG_24,1.0
+1105,FUORI_ATTRIBUTO,"Il commento menziona note chimiche bruciate, latte e burro, che non sono specifiche per il profumo del Grana Trentino.",formaggio fritto;latte;burro,chimico bruciato;latte;burro,2018,C0D,TG_05,1.0
+1106,FUORI_ATTRIBUTO,"Il commento fa riferimento a un odore di formaggio vecchio, che non è pertinente al profumo del Grana Trentino.",odore di formaggio vecchio,odore di formaggio vecchio,2018,C0I,TG_13,1.0
+1107,OK,Il commento esprime un giudizio positivo con intensità alta.,positivo intenso,positivo intenso,2018,C0I,TG_26,1.0
+1108,FUORI_ATTRIBUTO,"Il commento menziona crosta e note ossidate, che non sono specifiche per il profumo del Grana Trentino.",crosta e ossidato,crosta e ossidato,2018,C0I,TG_14,1.0
+1109,FUORI_ATTRIBUTO,"Il commento descrive un impatto iniziale di stracci sporchi, che non è pertinente al profumo del Grana Trentino.",al primo impatto stracci sporchi,al primo impatto stracci sporchi,2018,C0I,Q_09,1.0
+1110,FUORI_ATTRIBUTO,"Il commento menziona semplicemente 'brodo', che non è specifico per il profumo del Grana Trentino.",brodo,brodo,2018,C0I,TG_11,1.0
+1111,OK,Il profumo presenta note fermentate e pungenti.,"fermentato, pungente","fermentato, pungente",2018,C0I,TG_15,1.0
+1112,OK,Il profumo è molto intenso con note fruttate di ananas e tropicali.,fruttato molto intenso ananas e tropicale,fruttato molto intenso ananas e tropicale,2018,C0I,TG_35,1.0
+1113,OK,Il profumo presenta un siero acido con intensità medio alta.,siero acido intensità medio alta,siero acido intensità medio alta,2018,C0I,Q_02,1.0
+1114,OK,Il commento indica un leggero sentore di fermentato e insilato.,"Leggero sentore di fermentato, insilato","Leggero sentore di fermentato, insilatoilato",2018,C0I,TG_19,1.0
+1115,OK,"Il profumo ha intensità bassa, con prevalenza di profumi erbacei e vegetali freschi, con un bouquet strano ma gradevole.","intensità bassa. prevalgono profumi erbacei, vegetali freschi, fors'anche floreali. Strano bouquet, gradevole","intensità bassa. prevalgono profumi erbacei, vegetaleetali freschi, fors'anche floreali. Strano bouquet, gradevole",2018,C0I,TG_04,1.0
+1116,OK,"L'intensità è elevata, con note tipiche di grana, burro e leggera tostatura.","intensità elevata con grana tipico, burro e leggera tostatura","intensità elevata con grana tipico, burro e leggera tostatura",2018,C0I,TG_24,1.0
+1117,FUORI_ATTRIBUTO,Il commento presenta note di odore acido e frutta marcita.,odore di acido;frutta marcita,odore di acido;frutta marcita,2018,C0I,TG_05,1.0
+1118,OK,Il profumo è caratterizzato da note di panna e burro fuso.,panna e burro fuso,panna e burro fuso,2018,C0N,TG_13,1.0
+1119,OK,Il campione presenta una nota ossidata.,ossidato,ossidato,2018,C0N,TG_14,1.0
+1120,FUORI_ATTRIBUTO,Il commento fa riferimento a note vegetali e formaggio cotto.,vegetale cotto,vegetaleetale cotto,2018,C0N,Q_09,1.0
+1121,OK,Il profumo è dominato da note di burro.,burro,burro,2018,C0N,TG_11,1.0
+1122,FUORI_ATTRIBUTO,Il commento menziona frutta e crosta di formaggio.,frutta ma anche di crosta di formaggio,frutta ma anche di crosta di formaggio,2018,C0N,TG_15,1.0
+1123,OK,"Il profumo presenta burro fresco, verdure cotte, brodo di carne e una leggera nota di fermentazione.","burro freasco e verdure cotte, brodo di carne, leggera nota di fermentazione","burro freasco e verdure cotte, brodo di carne, leggera nota di fermentazione",2018,C0N,TG_35,1.0
+1124,FUORI_ATTRIBUTO,Il commento indica una bassa intensità animale e una alta intensità di latte cotto e siero acido.,in negativo animale intensità bassa;;in positivo latte coto e siero acido intensità alta,in negativo animale intensità bassa;;in positivo latte coto e siero acido intensità alta,2018,C0N,Q_02,1.0
+1125,OK,"Si percepisce una sensazione pungente all'apertura, seguita da note vegetali un po' fermentate, affumicato e lattico cotto.","sensazione pungente all'apertura, poi note vegetali un po' fermentate, un po' di affumicato, lattico cotto","sensazione pungente all'apertura, poi note vegetaleetali un po' fermentate, un po' di affumicato, lattico cotto",2018,C0N,TG_19,1.0
+1126,OK,"L'intensità è bassa, con pochissime note lattee fresche; il resto è noia.",intensità bassa. pochissime note lattee fresche. il resto è noia,intensità bassa. pochissime note lattee fresche. il resto è noia,2018,C0N,TG_04,1.0
+1127,OK,"Il profumo presenta note di fieno, crosta di formaggio e grana.","fieno, crosta di formaggio e grana","fieno, crosta di formaggio e grana",2018,C0N,TG_24,1.0
+1128,OK,Il campione presenta note di latte cotto e crosta di formaggio.,latte cotto;crosta di formaggio,latte cotto;crosta di formaggio,2018,C0N,TG_05,1.0
+1129,FUORI_ATTRIBUTO,Il commento esprime una sensazione di sporco non positivo.,sporco non positivo,sporco non positivo,2018,C0O,TG_26,1.0
+1130,OK,"Il profumo è caratterizzato da burro, panna e una leggera nota ossidata.","burro, panna, leggermente ossidato","burro, panna, leggermente ossidato",2018,C0O,TG_14,1.0
+1131,OK,Il profumo è leggero.,leggero,leggero,2018,C0O,Q_09,1.0
+1132,FUORI_ATTRIBUTO,Il commento menziona latte e brodo vegetale.,latte e brodo vegetale,latte e brodo vegetaleetale,2018,C0O,TG_11,1.0
+1133,FUORI_ATTRIBUTO,Il commento presenta note di caramella mou e latte UHT.,"caramella mou , latte UHT","caramella mou , latte UHT",2018,C0O,TG_15,1.0
+1134,OK,"Si percepisce un'iniziale nota tostata, seguita da panna, latte cotto e burro fuso.","iniziale nota tostata, segue panna latte cotto e burro fuso","iniziale nota tostata, segue panna latte cotto e burro fuso",2018,C0O,TG_35,1.0
+1135,OK,"Il profumo è caratterizzato da latte cotto e panna cotta, con intensità medio alta.",latte cotto e panna cotta intensità medio alta,latte cotto e panna cotta intensità medio alta,2018,C0O,Q_02,1.0
+1136,OK,Il profumo presenta note floreali e di panna.,"Floreale, panna","Floreale, panna",2018,C0O,TG_19,1.0
+1137,OK,"Il campione ha una moderata intensità con note di panna, cotto, frutta secca e anche note vegetali di brodo.","moderata intensità. panna, cotto. frutta secca. anche note vegetali di brodo","moderata intensità. panna, cotto. frutta secca. anche note vegetaleetali di brodo",2018,C0O,TG_04,1.0
+1138,OK,"Il profumo è caratterizzato da note dolciastre con sentori floreali e di frutta, con una leggera presenza di grana.",note dolciastre con florale e frutta.. un pò di grana!,note dolciastre con florale e frutta.. un pò di grana!,2018,C0O,TG_24,1.0
+1139,OK,Il campione presenta note fruttate.,fruttato,fruttato,2018,C0O,TG_05,1.0
+1140,OK,Il profumo è di frutta matura con intensità medio-alta.,frutta matura intensità medio alta,frutta matura intensità medio alta,2018,C0A,Q_02,1.0
+1141,OK,"Il campione ha un'intensità discreta; alla prima olfazione si percepisce una nota animale, che poi svanisce, con sentori di latte UHT, cotto, burro sciolto e tostato.","intensità discreta. alla prima olfazione quasi nota animale, poi si perde. latte uht. cotto. burro sciolto. tostato","intensità discreta. alla prima olfazione quasi nota animale, poi si perde. latte uht. cotto. burro sciolto. tostato",2018,C0A,TG_04,1.0
+1142,FUORI_ATTRIBUTO,"Il profumo presenta note di latte, panna e brodo vegetale.",latte;panna;brodo vegetale;,latte;panna;brodo vegetaleetale;,2018,C0A,TG_05,1.0
+1143,FUORI_ATTRIBUTO,Il campione ha note di crosta e brodo vegetale.,crosta e brodo vegetale,crosta e brodo vegetaleetale,2018,C0A,TG_11,1.0
+1144,OK,"Il profumo è equilibrato, con sentori di panna e latte cotto.",profumo equilibrato di panna e latte cotto,profumo equilibrato di panna e latte cotto,2018,C0A,TG_13,1.0
+1145,OK,Il campione presenta note di burro fuso.,burro fuso,burro fuso,2018,C0A,TG_14,1.0
+1146,OK,"All'apertura si percepiscono note vegetali intense, seguite da sentori lattici cotti e tostati, quasi di caffè, complessivamente non negativi.","all'apertura vegetali intensi, poi lattici cotti, tostati quasi caffè, complessivamente non negativi","all'apertura vegetaleetali intensi, poi lattici cotti, tostati quasi caffè, complessivamente non negativi",2018,C0A,TG_19,1.0
+1147,OK,"Il profumo è caratterizzato da note di brodo di carne, burro fuso e panna.",brodo di carne burro fuso e panna,brodo di carne burro fuso e panna,2018,C0A,TG_35,1.0
+1148,OK,Il campione presenta note di frutta matura con intensità alta.,frutta matura intensità alta,frutta matura intensità alta,2018,C0C,Q_02,1.0
+1149,OK,Il profumo ha una nota animale di letame.,animale letame,animale letame,2018,C0C,Q_09,1.0
+1150,OK,Il campione presenta un odore sgradevole simile a puzza di piedi.,puzza di piedi,puzza di piedi,2018,C0C,TG_04,1.0
+1151,FUORI_ATTRIBUTO,Il profumo presenta note di crosta e brodo.,crosta e brodo,crosta e brodo,2018,C0C,TG_11,1.0
+1152,FUORI_ATTRIBUTO,Il campione è molto delicato e non ricorda il grana.,"molto delicato, non ricorda il grana","molto delicato, non ricorda il grana",2018,C0C,TG_13,1.0
+1153,OK,Il profumo presenta note ossidate e di crosta.,ossidato e crosta,ossidato e crosta,2018,C0C,TG_14,1.0
+1154,OK,Il campione presenta note di formaggio cotto.,formaggio cotto,formaggio cotto,2018,C0C,TG_19,1.0
+1155,FUORI_ATTRIBUTO,"Il campione ha note di emmental, senza difetti ma non tipico.",emmental no difetti ma non tipico,emmental no difetti ma non tipico,2018,C0C,TG_26,1.0
+1156,OK,"Il campione presenta note fruttate, di panna e burro fuso, con un leggero sentore di verdure cotte e pane tostato.","fruttato, panna, burro fusoe leggero sentore di verdure cotte e pane tostato","fruttato, panna, burro fusoe leggero sentore di verdure cotte e pane tostato",2018,C0C,TG_35,1.0
+1157,FUORI_ATTRIBUTO,"Il commento evidenzia una disomogeneità tra le porzioni, con note positive di latte e panna ad alta intensità e note negative di verdure lesse ad alta intensità.",disomogeneo tra le porzioni;2 in positivo latte e panna intensità alta;2 in negativo verdure lesse intensità alta,disomogeneo tra le porzioni;2 in positivo latte e panna intensità alta;2 in negativo verdure lesse intensità alta,2018,C0E,Q_02,1.0
+1158,ILLEGGIBILE,,vegetale e latte cotto,vegetaleetale e latte cotto,2018,C0E,Q_09,1.0
+1159,OK,Il profumo è fievole.,fievole,fievole,2018,C0E,TG_04,1.0
+1160,FUORI_ATTRIBUTO,Il campione presenta note chimiche bruciate e crosta di formaggio.,formaggio fritto;e crosta di formaggio,chimico bruciato;e crosta di formaggio,2018,C0E,TG_05,1.0
+1161,OK,Si percepisce un debole sentore di brodo.,debole sentore di brodo,debole sentore di brodo,2018,C0E,TG_11,1.0
+1162,OK,Il campione ha note di burro fuso e una leggera crosta.,"burro fuso, leggera crosta","burro fuso, leggera crosta",2018,C0E,TG_13,1.0
+1163,FUORI_ATTRIBUTO,Il commento menziona note di formaggio cotto.,"formaggio cotto,","formaggio cotto,",2018,C0E,TG_14,1.0
+1164,FUORI_ATTRIBUTO,"All'apertura si percepiscono note floreali leggere e volatili, seguite da lattici cotti e crosta di grana, con difformità tra i pezzi.","all'apertura leggero floreale molto volatile, poi lattici cotti e crosta di grana, anche difformi fra i pezzi","all'apertura leggero floreale molto volatile, poi lattici cotti e crosta di grana, anche difformi fra i pezzi",2018,C0E,TG_19,1.0
+1165,FUORI_ATTRIBUTO,Il campione presenta una leggera nota propionica.,legg propionico,legg propionico,2018,C0E,TG_26,1.0
+1166,FUORI_ATTRIBUTO,"Il commento descrive note di ruttato, latte cotto e una leggera nota fermentata.","ruttato, latioco cotto e legera nota fermentata","ruttato, latioco cotto e legera nota fermentata",2018,C0E,TG_35,1.0
+1167,OK,Il profumo presenta note di latte e panna con intensità media.,latte e panna intensità media,latte e panna intensità media,2018,C0G,Q_02,1.0
+1168,FUORI_ATTRIBUTO,Il campione presenta note vegetali e cotte.,vegetale e cotto,vegetaleetale e cotto,2018,C0G,Q_09,1.0
+1169,OK,"Su base lattea dolce si percepiscono alcune note vegetali e di brodo, con intensità medio-bassa.",su base lattea dolce qualche nota vegetale. brodo. intensità medio-bassa,su base lattea dolce qualche nota vegetaleetale. brodo. intensità medio-bassa,2018,C0G,TG_04,1.0
+1170,FUORI_ATTRIBUTO,Il commento menziona pasta cotta.,pasta cotta,pasta cotta,2018,C0G,TG_11,1.0
+1171,OK,Si percepiscono note di burro fresco e formaggio cotto.,burro fresco e formaggio cotto...,burro fresco e formaggio cotto...,2018,C0G,TG_14,1.0
+1172,OK,Il campione presenta molta panna.,Molta panna,Molta panna,2018,C0G,TG_19,1.0
+1173,FUORI_ATTRIBUTO,Il commento menziona un brodo leggermente difettoso.,brodo legg difettoso,brodo legg difettoso,2018,C0G,TG_26,1.0
+1174,OK,"Il profumo presenta note di fermentazione insilato, panna fresca, burro fresco e leggera tostatura.","fermentazione (insilato) panna fresca, burro fresco e leggera tostatura","fermentazione (insilatoilato) panna fresca, burro fresco e leggera tostatura",2018,C0G,TG_35,1.0
+1175,OK,Il campione presenta note di frutta secca con intensità media e un finale fermentato ad alta intensità.,frutta secca intensità media;fineo fermentato intensità alta,frutta secca intensità media;fineo fermentato intensità alta,2018,C0N,Q_02,1.0
+1176,FUORI_ATTRIBUTO,Cotto.,cotto,cotto,2018,C0N,Q_09,1.0
+1177,OK,"Buona intensità con note di latte intero fresco, panna e burro.","buona intensità. latte intero fresco, panna. burro","buona intensità. latte intero fresco, panna. burro",2018,C0N,TG_04,1.0
+1178,FUORI_ATTRIBUTO,Brodo.,brodo,brodo,2018,C0N,TG_11,1.0
+1179,FUORI_ATTRIBUTO,"Ossidato e fermentato, non piacevole.","ossidato, fermentato. non piacevole","ossidato, fermentato. non piacevole",2018,C0N,TG_13,1.0
+1180,FUORI_ATTRIBUTO,"Decisamente ossidato, quasi rancido.","decismente ossidato, quasi rancido","decismente ossidato, quasi rancido",2018,C0N,TG_14,1.0
+1181,OK,"Note un po' pungenti all'apertura, poi lattici cotti e formaggio cotto.","Note un po' pungenti all'apertura, poi lattici cotti, formaggio cotto","Note un po' pungenti all'apertura, poi lattici cotti, formaggio cotto",2018,C0N,TG_19,1.0
+1182,OK,"Latte cotto, burro fuso, vegetale secco (fieno), fruttato e poco tostato.",latte cotto burro fuso vegelale secco (fieno) fruttato e poco tostato,latte cotto burro fuso vegetaleelale secco (fieno) fruttato e poco tostato,2018,C0N,TG_35,1.0
+1183,OK,"Moderata intensità con sentori cotti, tostato e quasi fumo.","moderata l'intensità. sentori cotti. tostato, quasi fumo","moderata l'intensità. sentori cotti. tostato, quasi fumo",2018,C0Q,TG_04,1.0
+1184,OK,Panna e burro.,"panna, burro","panna, burro",2018,C0Q,TG_11,1.0
+1185,OK,Delicato con leggero sentore di cotto.,"delicato, leggero sentore di cotto","delicato, leggero sentore di cotto",2018,C0Q,TG_13,1.0
+1186,OK,"Burro fuso, cotto, crosta e ossidato, poco intensi.","burro fuso, cotto, crosta e sooidato, poco intensi","burro fuso, cotto, crosta e ossidato, poco intensi",2018,C0Q,TG_14,1.0
+1187,OK,Lattici cotti e leggera verdura lessa.,lattici cotti e verdura lessa leggera,lattici cotti e verdura lessa leggera,2018,C0Q,TG_19,1.0
+1188,FUORI_ATTRIBUTO,"Principalmente vegetale cotto, segue panna e burro fuso.","principlamente vegetale  cotto, segue panna e burro fuso","principlamente vegetaleetale  cotto, segue panna e burro fuso",2018,C0Q,TG_35,1.0
+1189,FUORI_ATTRIBUTO,Vegetale e balsamico.,vegetale balsamico,vegetaleetale balsamico,2018,C0F,Q_09,1.0
+1190,OK,"Il campione ha una buona intensità, con sentori lattei, sebbene non particolarmente freschi, e note di latte cotto e burro.","buona intensità. sentori lattei anche se poco freschi. sentore di latte cotto, burro. comunque corretto","buona intensità. sentori lattei anche se poco freschi. sentore di latte cotto, burro. comunque corretto",2018,C0F,TG_04,1.0
+1191,OK,Burro e panna con leggero brodo.,"burro e panna, leggero brodo","burro e panna, leggero brodo",2018,C0F,TG_11,1.0
+1192,OK,Leggera crosta.,legg crosta,legg crosta,2018,C0F,TG_12,1.0
+1193,OK,"Debole e poco percettibile, con sentore di erbaceo e leggero fermentato.",debole e poco percettibile. Si sente un sentore di erbaceo e leggero fermentato,debole e poco percettibile. Si sente un sentore di erbaceo e leggero fermentato,2018,C0F,TG_13,1.0
+1194,OK,"Leggero sentore di crosta di formaggio e cotto, più burro.","leggero sentore di corsta di fromaggio e cotto, piu' burro","leggero sentore di corsta di fromaggio e cotto, piu' burro",2018,C0F,TG_14,1.0
+1195,FUORI_ATTRIBUTO,"Non molto intenso, crosta di formaggio, acqua stagnante, pozzo di scarico e note del nostrano.","non molto intenso, crosta di formaggio, acqua stagnante, pozzo di scarico, note del nostrano","non molto intenso, crosta di formaggio, acqua stagnante, pozzo di scarico, note del nostrano",2018,C0F,TG_20,1.0
+1196,FUORI_ATTRIBUTO,Il commento esprime note vegetali e aromatiche di cipolla e sedano.,"vegetale, cipolla sedano","vegetaleetale, cipolla sedano",2018,C0F,TG_26,1.0
+1197,OK,"Il campione presenta note di fermentazione, seguite da panna, fruttato e un leggero aroma che ricorda i biscotti.","fermentazione, segue panna, fruttato (floreale) e un legereo aroma che ricorda i prodotti da formo (biscotti)","fermentazione, segue panna, fruttato (floreale) e un legereo aroma che ricorda i prodotti da formo (biscotti)",2018,C0F,TG_35,1.0
+1198,OK,Il profumo è leggero.,leggero,leggero,2018,C0H,Q_09,1.0
+1199,OK,Il profumo è leggero e non presenta difetti.,leggero. nessun difetto,leggero. nessun difetto,2018,C0H,TG_04,1.0
+1200,OK,Il campione presenta note di panna.,panna,panna,2018,C0H,TG_11,1.0
+1201,OK,Il campione presenta note di crosta.,crosta,crosta,2018,C0H,TG_12,1.0
+1202,OK,Si percepisce un leggero sentore di cotto e ossidato.,leggero sentore di cotto e ossidato,leggero sentore di cotto e ossidato,2018,C0H,TG_13,1.0
+1203,OK,Il profumo presenta note ossidate.,ossidato,ossidato,2018,C0H,TG_14,1.0
+1204,OK,"Il campione ha un'intensità media con note di burro fuso, latte cotto e una lieve nota di bruciato.","intensita media, burro fuso, latte cotto, lieve nota di bruciato","intensita media, burro fuso, latte cotto, lieve nota di bruciato",2018,C0H,TG_20,1.0
+1205,OK,"Il profumo è fruttato e tostato, con note di latte fresco.",fruttato e tostato leggereo lattio fresco,fruttato e tostato leggereo lattio fresco,2018,C0H,TG_35,1.0
+1206,OK,Si percepiscono note di frutta fermentata.,frutta fermentata,frutta fermentata,2018,C0I,Q_09,1.0
+1207,OK,Il profumo ha un'intensità bassa.,intensità bassa;,intensità bassa;,2018,C0I,TG_04,1.0
+1208,OK,Il campione presenta note di crosta di formaggio e brodo.,crosta di formaggio e brodo,crosta di formaggio e brodo,2018,C0I,TG_11,1.0
+1209,OK,Il profumo è ossidato e presenta note di vecchio.,"ossidato, vecchio","ossidato, vecchio",2018,C0I,TG_14,1.0
+1210,OK,"Il campione ha un profumo intenso con note fermentate, di frutta fermentata e burro sciolto.","intenso, nota fermentata, frutta fermentata, burro sciolto","intenso, nota fermentata, frutta fermentata, burro sciolto",2018,C0I,TG_20,1.0
+1211,ILLEGGIBILE,,insilato,insilatoilato,2018,C0I,TG_26,1.0
+1212,OK,"Il profumo è fruttato intenso, con note di pesca.",fruttato intenso (pesca),fruttato intenso (pesca),2018,C0I,TG_35,1.0
+1213,OK,"Il campione tende ai sentori cotti e tostati, con note di nocciola e panna, presentando una media intensità.","tende ai sentori cotti, tostato, nocciola. panna. media intensità","tende ai sentori cotti, tostato, nocciola. panna. media intensità",2018,C0O,TG_04,1.0
+1214,OK,Il campione presenta note di latte acido.,latte acido,latte acido,2018,C0O,TG_05,1.0
+1215,FUORI_ATTRIBUTO,Il commento esprime note di latte e burro.,latte e burro,latte e burro,2018,C0O,TG_11,1.0
+1216,OK,Il profumo presenta note di burro e panna.,note di burro e panna,note di burro e panna,2018,C0O,TG_14,1.0
+1217,OK,"Il campione ha un profumo poco intenso, con note di burro fuso, poco complesso e piatto.","poco intenso, burro fuso, poco complesso, piatto","poco intenso, burro fuso, poco complesso, piatto",2018,C0O,TG_20,1.0
+1218,OK,"Il profumo è fruttato, con leggero tostato e note di brodo, con panna percettibile e poco di verdure cotte.","fruttato, leggero tostato e brodo, panna percettibile e poco verdure cotte","fruttato, leggero tostato e brodo, panna percettibile e poco verdure cotte",2018,C0O,TG_35,1.0
+1219,OK,"Il campione presenta un'intensità moderata, con una leggera nota animale che non penalizza, e una sottile nota vegetale e floreale.",intensità moderata. leggermente animale che non penalizza. nota vegetal-floreale sottile,intensità moderata. leggermente animale che non penalizza. nota vegetaleetal-floreale sottile,2018,C0Q,TG_04,1.0
+1220,FUORI_ATTRIBUTO,Il profumo presenta note di crosta e brodo.,crosta e brodo,crosta e brodo,2018,C0Q,TG_11,1.0
+1221,OK,Il profumo è delicato.,delicato,delicato,2018,C0Q,TG_13,1.0
+1222,OK,"Il campione ha note di crosta, ossidato e animale.","note di crosta, ossidato e animale","note di crosta, ossidato e animale",2018,C0Q,TG_14,1.0
+1223,OK,"Il profumo è poco intenso, con deboli note lattiche e una leggera sensazione di stantio.","poco intenso, note lattiche deboli, stantio","poco intenso, note lattiche deboli, stantio",2018,C0Q,TG_20,1.0
+1224,OK,Il campione presenta un leggero sentore di stalla.,leggermente di stalla,leggermente di stalla,2018,C0Q,TG_26,1.0
+1225,OK,"Il profumo ha un leggero sentore di crosta di formaggio, latte acido e panna.",leggero sentore di crosta di formaggio latte acido e panna,leggero sentore di crosta di formaggio latte acido e panna,2018,C0Q,TG_35,1.0
+1226,OK,Il profumo è caratterizzato dalla presenza di panna.,panna,panna,2018,C0R,Q_09,1.0
+1227,OK,"Il campione ha buona intensità, con note di cotto e tostato, panna e burro sciolto.",buona intensità.  cotto e tostato. panna. burro sciolto,buona intensità.  cotto e tostato. panna. burro sciolto,2018,C0R,TG_04,1.0
+1228,OK,Il profumo è di brodo.,brodo,brodo,2018,C0R,TG_11,1.0
+1229,OK,Il campione presenta note di mela.,mela,mela,2018,C0R,TG_12,1.0
+1230,OK,Non percepisco particolari odori.,non percesco particolari odori,non percesco particolari odori,2018,C0R,TG_14,1.0
+1231,OK,"Il profumo è lattico dominante, con burro cotto, burro sciolto e poco intenso, accompagnato da note di brodo.","lattico dominante, burro cotto, burro sciolto, poco intenso. brodo","lattico dominante, burro cotto, burro sciolto, poco intenso. brodo",2018,C0R,TG_20,1.0
+1232,OK,"Il campione presenta fermentazione percettibile, latte cotto e burro sciolto.","fermentazione percettibile, latte cotto e burro sciolto","fermentazione percettibile, latte cotto e burro sciolto",2018,C0R,TG_35,1.0
+1233,OK,"In negativo, il profumo presenta note di brodo vegetale e di animale/letame con intensità media.",in negativo spezzando i cubetti profumo brodo vegetale e di animale/letame intensità media,in negativo spezzando i cubetti profumo brodo vegetaleetale e di animale/letame intensità media,2018,C0A,Q_02,1.0
+1234,OK,Il profumo è di cotto.,cotto,cotto,2018,C0A,Q_09,1.0
+1235,OK,"Alla prima olfazione si percepisce un sentore di formaggio 'altro'. La fermentazione non è tipica del Trentingrana, poi si perde e resta un'intensità bassa.","alla prima olfazione sentore di formaggio ""altro"". Fermentazione non tipica trentingrana. poi si perde e resta un'intensità bassa","alla prima olfazione sentore di formaggio ""altro"". Fermentazione non tipica trentingrana. poi si perde e resta un'intensità bassa",2018,C0A,TG_04,1.0
+1236,FUORI_ATTRIBUTO,leggero e quasi impercettibile,leggero e quasi impercettibile,leggero e quasi impercettibile,2018,C0A,TG_13,1.0
+1237,FUORI_ATTRIBUTO,"intenso e pungente all'apertura, poi a tratti fermentato, crosta di formaggio, disomogeneo nei pezzi","intenso e pungente all'apertura, poi a tratti fermentato, crosta di formaggio, disomogeneo nei pezzi","intenso e pungente all'apertura, poi a tratti fermentato, crosta di formaggio, disomogeneo nei pezzi",2018,C0A,TG_19,1.0
+1238,FUORI_ATTRIBUTO,"mediamente intenso, lieve nota propionica, nota di acqua stagnante, pozzo","mediamente intenso, lieve nota propionica, nota di acqua stagnante, pozzo","mediamente intenso, lieve nota propionica, nota di acqua stagnante, pozzo",2018,C0A,TG_20,1.0
+1239,OK,"Il campione presenta note fruttate, panna, fieno e una leggera nota fermentata.","Fruttato, panna, fieno e nota fermentata molto leggera","Fruttato, panna, fieno e nota fermentata molto leggera",2018,C0A,TG_35,1.0
+1240,OK,Il profumo presenta un'intensità alta con note animali e di stalla.,animale e stalla intensità alta,animale e stalla intensità alta,2018,C0C,Q_02,1.0
+1241,CONFORME,"Il campione è conforme, presentando un profumo semplice e privo di difetti.",latte,latte,2018,C0C,Q_09,1.0
+1242,FUORI_ATTRIBUTO,"intenso taleggio al primo olfatto, poi il nulla.",una botta di taleggio al primo olfatto....poi il nulla,intenso taleggio al primo olfatto....poi il nulla,2018,C0C,TG_04,1.0
+1243,FUORI_ATTRIBUTO,"leggero, non del tutto da grana.","leggero, non del tutto da grana","leggero, non del tutto da grana",2018,C0C,TG_13,1.0
+1244,FUORI_ATTRIBUTO,"assolutamente non caratteristico, a tratti putrido, frutta fermentata.","assoluntamente non caratteristico, a tratti putrido, frutta fermentata","assoluntamente non caratteristico, a tratti putrido, frutta fermentata",2018,C0C,TG_20,1.0
+1245,OK,"Il profumo è prevalentemente di brodo vegetale, panna, burro e verdure cotte.","Prevalentemente brodo vegetale, panna, burro  e verdure cotte","Prevalentemente brodo vegetaleetale, panna, burro  e verdure cotte",2018,C0C,TG_35,1.0
+1246,FUORI_ATTRIBUTO,"negativo, intensità alta.",negativo intenistà alta,negativo intenistà alta,2018,C0E,Q_02,1.0
+1247,FUORI_ATTRIBUTO,acidi grassi.,acidi grassi,acidi grassi,2018,C0E,Q_09,1.0
+1248,OK,"Il campione presenta un'intensità leggero-moderata, bouquet floreale perlopiù, anche vegetale. Molto delicato ed elegante.","intensità leggero-moderata. Bouquet floreale per lopiù, anche vegetale. Molto delicato e elegante. Particolare","intensità leggero-moderata. Bouquet floreale per lopiù, anche vegetaleetale. Molto delicato e elegante. Particolare",2018,C0E,TG_04,1.0
+1249,FUORI_ATTRIBUTO,ossidato e punta di fermentato.,ossidato e punta di fermentato,ossidato e punta di fermentato,2018,C0E,TG_13,1.0
+1250,FUORI_ATTRIBUTO,"cotti prevalenti, quasi caffellatte.","cotti prevalenti, quasi caffellatte","cotti prevalenti, quasi caffellatte",2018,C0E,TG_19,1.0
+1251,FUORI_ATTRIBUTO,"latte acido, yogurt, fermentato, panna acida, difettoso.","latte acido, yogurt, fermentato, panna acida, difettoso","latte acido, yogurt, fermentato, panna acida, difettoso",2018,C0E,TG_20,1.0
+1252,FUORI_ATTRIBUTO,"prevalentemente latte acido, panna acida e brodo.","prevalente mente latte acido, panna acida e brodo","prevalente mente latte acido, panna acida e brodo",2018,C0E,TG_35,1.0
+1253,FUORI_ATTRIBUTO,vegetale e cotto/bruciato.,vegetale e cotto/bruciato,vegetaleetale e cotto/bruciato,2018,C0L,Q_09,1.0
+1254,OK,Il profumo presenta burro fresco e panna con buona intensità.,"Burro fresco, panna. Buona intensità","Burro fresco, panna. Buona intensità",2018,C0L,TG_04,1.0
+1255,FUORI_ATTRIBUTO,debole.,debole,debole,2018,C0L,TG_13,1.0
+1256,FUORI_ATTRIBUTO,"Il commento descrive note di lattici cotti e tostati, con una presenza decisa di caffè.",lattici cotti e tostati anche troppo decisi (caffè),lattici cotti e tostati anche troppo decisi (caffè),2018,C0L,TG_19,1.0
+1257,OK,"Il profumo è intenso, con note di caramello, latte cotto e una lieve nota bruciata.","intenso, caramello, latte cotto, lieve nota bruciata","intenso, caramello, latte cotto, lieve nota bruciata",2018,C0L,TG_20,1.0
+1258,FUORI_ATTRIBUTO,"Il commento menziona brodo, formaggio fuso e burro fuso.","brodo, formagio fuso e burro fusu","brodo, formagio fuso e burro fusu",2018,C0L,TG_35,1.0
+1259,OK,Il profumo presenta una intensità medio alta di latte e panna.,latte e panna intensità medio alta,latte e panna intensità medio alta,2018,C0M,Q_02,1.0
+1260,OK,"Il profumo è moderato, con note lattee e di pane tostato.",moderato. note lattee. pane. tostato,moderato. note lattee. pane. tostato,2018,C0M,TG_04,1.0
+1261,OK,Il profumo è caratterizzato da burro fuso e latte cotto.,burro fuso;latte cotto,burro fuso;latte cotto,2018,C0M,TG_05,1.0
+1262,OK,Il profumo è leggero.,leggero,leggero,2018,C0M,TG_13,1.0
+1263,FUORI_ATTRIBUTO,Il commento fa riferimento a una nota di verdura lessa.,un po' di verdura lessa,un po' di verdura lessa,2018,C0M,TG_19,1.0
+1264,OK,"Il profumo è mediamente intenso e equilibrato, con note di burro fuso, burro cotto e brodo.","burro fuso, burro cotto,brodo, mediamente intenso, equilibrato","burro fuso, burro cotto,brodo, mediamente intenso, equilibrato",2018,C0M,TG_20,1.0
+1265,OK,"Inizialmente si percepisce una leggera fermentazione, seguita da panna fresca, burro fresco e note fruttate.","Inizialmente si percepisce una leggera fermentazione, segue panna fresca, burro fresco e fruttato","Inizialmente si percepisce una leggera fermentazione, segue panna fresca, burro fresco e fruttato",2018,C0M,TG_35,1.0
+1266,OK,Il profumo di latte cotto ha un'intensità medio bassa.,latte cotto intensità medio bassa,latte cotto intensità medio bassa,2018,C0N,Q_02,1.0
+1267,OK,Il profumo è leggero e presenta note di panna.,leggero panna,leggero panna,2018,C0N,Q_09,1.0
+1268,OK,Il profumo è leggero.,leggero.,leggero.,2018,C0N,TG_04,1.0
+1269,OK,Il profumo è burroso.,burroso,burroso,2018,C0N,TG_13,1.0
+1270,OK,"All'apertura si percepisce un profumo fruttato dolce, quasi di banana, seguito da note lattiche e di formaggio cotto.","all'apertura anche fruttato dolce, quasi banana, poi solo lattici, anche formaggio cotto","all'apertura anche fruttato dolce, quasi banana, poi solo lattici, anche formaggio cotto",2018,C0N,TG_19,1.0
+1271,OK,"Il profumo è poco intenso, con note di panna, burro sciolto, una lieve nota propionica e crosta di formaggio.","poco intenso, panna, burro sciolto, lieve nota proprionica, poco intenso, crosta di formaggio","poco intenso, panna, burro sciolto, lieve nota proprionica, poco intenso, crosta di formaggio",2018,C0N,TG_20,1.0
+1272,OK,"Il profumo presenta burro fuso, panna fresca, note fruttate e di pane tostato.","burro msciolto, panna fresca, fruttato e pane tostato","burro msciolto, panna fresca, fruttato e pane tostato",2018,C0N,TG_35,1.0
+1273,OK,"Il profumo è moderato, con note di latte cotto e fermentato.",latte cotto moderato;fermentato moderato,latte cotto moderato;fermentato moderato,2018,C0A,Q_02,1.0
+1274,OK,Il profumo è leggero e presenta note di cotto.,Leggero. cotto.,Leggero. cotto.,2018,C0A,TG_04,1.0
+1275,OK,Il profumo è caratterizzato da burro e una leggera nota acida.,burro;un po- acido,burro;un po- acido,2018,C0A,TG_05,1.0
+1276,OK,Il profumo presenta note di panna.,panna,panna,2018,C0A,TG_11,1.0
+1277,OK,Il campione emana un profumo di burro e formaggio cotto.,burro e formaggio cotto,burro e formaggio cotto,2018,C0A,TG_14,1.0
+1278,OK,"All'apertura si percepiscono note di fieno, formaggio cotto, crosta di grana e latte cotto.","All'apertura anche fieno, formaggio cotto, crosta di grana, latte cotto","All'apertura anche fieno, formaggio cotto, crosta di grana, latte cotto",2018,C0A,TG_19,1.0
+1279,OK,"Il profumo è caratterizzato da latte, nocciola e una leggera tostatura.","latte, nocciola, leggera tostatura","latte, nocciola, leggera tostatura",2018,C0A,TG_24,1.0
+1280,OK,Si avverte un forte profumo di latte fermentato.,latte fermentato forte,latte fermentato forte,2018,C0C,Q_02,1.0
+1281,OK,Il campione presenta una leggera nota ossidata.,leggero ossidato,leggero ossidato,2018,C0C,Q_09,1.0
+1282,OK,"Il profumo ha una discreta intensità, con note animali, latte cotto e burro cotto.","Anche di discreta intensità, ma sento una note animale. Latte cotto e burro cotto","Anche di discreta intensità, ma sento una note animale. Latte cotto e burro cotto",2018,C0C,TG_04,1.0
+1283,FUORI_ATTRIBUTO,Il profumo ricorda un brodo.,brodo,brodo,2018,C0C,TG_11,1.0
+1284,OK,Il profumo è debole.,debole,debole,2018,C0C,TG_13,1.0
+1285,OK,"Si percepiscono note vegetali, erbacee e cotte.","vegetale, erbaceo, cotto","vegetaleetale, erbaceo, cotto",2018,C0C,TG_14,1.0
+1286,FUORI_ATTRIBUTO,"All'apertura si avvertono ottime note di panna e lattici; alla rottura di un pezzo si percepisce un odore un po' sgradevole, tendente allo stantio.","All'apertura, ottimo panna e lattici; alla rottura di un pezzo odore un po' sgradevole, tendente allo stantio","All'apertura, ottimo panna e lattici; alla rottura di un pezzo odore un po' sgradevole, tendente allo stantio",2018,C0C,TG_19,1.0
+1287,OK,"Il profumo presenta note di grana, mela, fruttato e floreale.","grana, mela-fruttato e florale anche","grana, mela-fruttato e florale anche",2018,C0C,TG_24,1.0
+1288,FUORI_ATTRIBUTO,"Si avverte una leggera nota propionica, insilato e difettosa.","legg propionico, insilato, difettoso","legg propionico, insilatoilato, difettoso",2018,C0C,TG_26,1.0
+1289,OK,"Il profumo è di latte e panna cotta forte, con note di fieno forte.",latte e panna cotta forte;fieno forte,latte e panna cotta forte;fieno forte,2018,C0G,Q_02,1.0
+1290,OK,"Il profumo è caratterizzato da pane tostato, latte cotto e un po' di panna, con intensità bassa.",pane. Tostato. Latte cottto. un po' di panna. Intensità bassa,pane. Tostato. Latte cottto. un po' di panna. Intensità bassa,2018,C0G,TG_04,1.0
+1291,FUORI_ATTRIBUTO,Il profumo ricorda un brodo.,brodo,brodo,2018,C0G,TG_11,1.0
+1292,OK,"Inizialmente si percepiscono note di burro fresco, seguite da note di bruciato alla frattura.","inizialmente burro fresco, alla frattura note di bruciato","inizialmente burro fresco, alla frattura note di bruciato",2018,C0G,TG_14,1.0
+1293,OK,Si avverte una leggera presenza di fungo-muffa.,leggera presenza di fungo-muffa,leggera presenza di fungo-muffa,2018,C0G,TG_24,1.0
+1294,OK,"Il profumo è intenso, con una nota leggermente erbacea in un pezzo.",intenso positivouna nota leggeerbacea in un pezzo,intenso positivouna nota leggeerbacea in un pezzo,2018,C0G,TG_26,1.0
+1295,OK,"Il profumo è di latte cotto forte, con note di latte bruciato e stalla moderato.",latte cotto forte;latte bruciato e stalla moderato,latte cotto forte;latte bruciato e stalla moderato,2018,C0H,Q_02,1.0
+1296,OK,Leggermente cotto.,leggero cotto,leggero cotto,2018,C0H,Q_09,1.0
+1297,OK,Intensità al più moderata.,Intensità al più moderata,Intensità al più moderata,2018,C0H,TG_04,1.0
+1298,FUORI_ATTRIBUTO,Panna e brodo.,panna e brodo,panna e brodo,2018,C0H,TG_11,1.0
+1299,OK,Ossidato e bruciato.,ossidata e bruciata,ossidata e bruciata,2018,C0H,TG_14,1.0
+1300,OK,Fermentato.,fermentato,fermentato,2018,C0H,TG_19,1.0
+1301,OK,Intenso fruttato con note di nocciola e latte.,intenso fruttato.. e nocciola-latte,intenso fruttato.. e nocciola-latte,2018,C0H,TG_24,1.0
+1302,OK,Latte e panna forte con note di fieno forte.,latte e panna forte;fieno forte,latte e panna forte;fieno forte,2018,C0M,Q_02,1.0
+1303,FUORI_ATTRIBUTO,Cotto e brodo vegetale.,cotto e brodo veg,cotto e brodo vegetale,2018,C0M,Q_09,1.0
+1304,OK,Intensità media con note lattee tendenti al cotto e maturo.,Intensità media. note lattee tendenti al cotto/maturo,Intensità media. note lattee tendenti al cotto/maturo,2018,C0M,TG_04,1.0
+1305,OK,Acido.,acido,acido,2018,C0M,TG_05,1.0
+1306,OK,Crosta di formaggio.,crosta di formaggio,crosta di formaggio,2018,C0M,TG_11,1.0
+1307,OK,"Burro fuso, formaggio cotto, leggermente ossidato.","burro fuso, formaggio cotto, leggermete ossidato","burro fuso, formaggio cotto, leggermete ossidato",2018,C0M,TG_14,1.0
+1308,OK,"All'apertura odore pungente, fermentato, poi crosta di formaggio, cotti intensi, fino al caffè.","All'apertura odore pungente, fermentato, poi crosta di formaggio, cotti intensi, fino al caffè","All'apertura odore pungente, fermentato, poi crosta di formaggio, cotti intensi, fino al caffè",2018,C0M,TG_19,1.0
+1309,OK,"Intenso con note florali, kiwi e panna.","intenso con note florali, kiwi e panna","intenso con note florali, kiwi e panna",2018,C0M,TG_24,1.0
+1310,OK,Animale.,animale,animale,2018,C0M,TG_26,1.0
+1311,OK,Latte cotto moderato con note animali moderate e forti.,latte cotto moderato;animale moderato/forte,latte cotto moderato;animale moderato/forte,2018,C0N,Q_02,1.0
+1312,OK,Cotto.,cotto,cotto,2018,C0N,Q_09,1.0
+1313,OK,"Profumo leggero, senza difetti o sentori strani, evanescente e tostato.",profumo leggero. nessun difetto o sentore strano. evanescente. tostato,profumo leggero. nessun difetto o sentore strano. evanescente. tostato,2018,C0N,TG_04,1.0
+1314,FUORI_ATTRIBUTO,Latte cotto.,latte cotto,latte cotto,2018,C0N,TG_11,1.0
+1315,FUORI_ATTRIBUTO,"Verdura lessa, formaggio cotto e burro.",verdura lessa e formaggio cotto e burro,verdura lessa e formaggio cotto e burro,2018,C0N,TG_14,1.0
+1316,FUORI_ATTRIBUTO,"All'apertura ottimi lattici freschi, poi anche cotti","All'apertura ottimi lattici freschi, poi anche cotti","All'apertura ottimi lattici freschi, poi anche cotti",2018,C0N,TG_19,1.0
+1317,OK,"Il profumo presenta note di grana, tostato, fieno e panna.","grana, tostato, fieno, panna","grana, tostato, fieno, panna",2018,C0N,TG_24,1.0
+1318,FUORI_ATTRIBUTO,La verdura cotta non è un elemento positivo.,verdora cotta non positivo,verdora cotta non positivo,2018,C0N,TG_26,1.0
+1319,OK,"L'intensità è moderata, con note di pane, frutta secca, latte e poca panna.",intensità moderata. Pane. frutta secca. latte. poca panna,intensità moderata. Pane. frutta secca. latte. poca panna,2018,C0A,TG_04,1.0
+1320,FUORI_ATTRIBUTO,Il commento si riferisce alla pasta cotta.,pasta cotta,pasta cotta,2018,C0A,TG_11,1.0
+1321,OK,Il profumo è debole e poco percettibile.,debole. poco percettibile,debole. poco percettibile,2018,C0A,TG_13,1.0
+1322,OK,"L'intensità è media, con note fruttate all'apertura.","Intensità media, all'apertura anche fruttato","Intensità media, all'apertura anche fruttato",2018,C0A,TG_19,1.0
+1323,OK,"Il profumo è intenso e caratteristico, con note di burro fuso, brodo vegetale e lieve puzza di tele bagnate.","intenso, caratteristico, burro fuso, brodo, vegetale secco, lieve puzza di tele bagnate","intenso, caratteristico, burro fuso, brodo, vegetaleetale secco, lieve puzza di tele bagnate",2018,C0A,TG_20,1.0
+1324,OK,"Il profumo presenta note di grana, nocciola e tostatura.","grana, nocciola, tostatura...","grana, nocciola, tostatura...",2018,C0A,TG_24,1.0
+1325,OK,Il profumo presenta una leggera nota propionica.,legg propionico;,legg propionico;,2018,C0A,TG_26,1.0
+1326,OK,"Il profumo è tostato, con burro fuso, latte cotto, vegetale (fieno) e fruttato.","Tostato mburro fuso latte cotto, vegetale (fieno) e fruttato","Tostato mburro fuso latte cotto, vegetaleetale (fieno) e fruttato",2018,C0A,TG_35,1.0
+1327,OK,"L'intensità è moderata, con note di latte UHT, burro sciolto e pane.","moderata l'intensità. Latte uht, burro sciolto. pane","moderata l'intensità. Latte uht, burro sciolto. pane",2018,C0D,TG_04,1.0
+1328,OK,Il profumo presenta note di burro.,burro,burro,2018,C0D,TG_11,1.0
+1329,OK,Il profumo presenta note di cavolfiore.,cavolfiore,cavolfiore,2018,C0D,TG_12,1.0
+1330,OK,"I lattici cotti sono intensi, con una leggera nota di fermentato vegetale all'apertura.","Lattici cotti intensi, all'apertura anche un po' di fermentato vegetale","Lattici cotti intensi, all'apertura anche un po' di fermentato vegetaleetale",2018,C0D,TG_19,1.0
+1331,OK,"Il profumo è piatto, con note lattiche di burro fuso, brodo e lievi note animali, non del tutto pulito.","piatto, note lattiche presenti di burro fuso, brodo, lievi note animali, non del tutto pulito","piatto, note lattiche presenti di burro fuso, brodo, lievi note animali, non del tutto pulito",2018,C0D,TG_20,1.0
+1332,OK,"Il profumo presenta note di latte, kiwi e nocciola.","latte, kiwi. nocciola","latte, kiwi. nocciola",2018,C0D,TG_24,1.0
+1333,OK,Il profumo è intenso e privo di difetti.,intenso no difetti,intenso no difetti,2018,C0D,TG_26,1.0
+1334,OK,"Il profumo è fruttato, con note di panna e burro fresco.",Fruttato panna e burro fresco,Fruttato panna e burro fresco,2018,C0D,TG_35,1.0
+1335,OK,Il profumo presenta note di brodo vegetale.,brodo vegetale,brodo vegetaleetale,2018,C0E,Q_09,1.0
+1336,FUORI_ATTRIBUTO,"Il commento esprime una percezione di intensità lieve e poca complessità, con riferimenti al latte.",intensità lieve. poca complessità. Latte e poco più,intensità lieve. poca complessità. Latte e poco più,2018,C0E,TG_04,1.0
+1337,FUORI_ATTRIBUTO,Il commento indica una nota acida.,acido,acido,2018,C0E,TG_05,1.0
+1338,OK,Il profumo presenta note di panna e burro.,panna&burro,panna&burro,2018,C0E,TG_11,1.0
+1339,FUORI_ATTRIBUTO,"Il commento descrive un profumo debole e delicato, equilibrato.",debole e delicato. equilibrato,debole e delicato. equilibrato,2018,C0E,TG_13,1.0
+1340,FUORI_ATTRIBUTO,"Il commento segnala una certa pungente all'apertura, seguita da un odore negativo di putrido.","all'apertura una cerrta pungenza, poi anche in 3 pezzi odore negativo, di putrido","all'apertura una cerrta pungenza, poi anche in 3 pezzi odore negativo, di putrido",2018,C0E,TG_19,1.0
+1341,OK,"Il profumo presenta una nota pungente di latte e panna fermentata, con richiami a panna fresca e burro fresco.","nota pungente di latte e panna fermentata, panna fresca, burro fresco","nota pungente di latte e panna fermentata, panna fresca, burro fresco",2018,C0E,TG_20,1.0
+1342,OK,"Il profumo è intenso, con note di grana e frutta matura.","intenso, da grana e frutta matura","intenso, da grana e frutta matura",2018,C0E,TG_24,1.0
+1343,OK,"Il campione presenta una fermentazione leggera, con note di crosta di formaggio e panna acida.","fermentazione leggera, crosta di formaggio e panna acida","fermentazione leggera, crosta di formaggio e panna acida",2018,C0E,TG_35,1.0
+1344,FUORI_ATTRIBUTO,Il commento esprime una percezione molto leggera.,molto leggero,molto leggero,2018,C0H,Q_09,1.0
+1345,OK,"Il profumo ha un'intensità medio-moderata, con note lattee mature e un accenno vegetale leggero.","intensità medio-moderata. oltre a note lattee mature, c'è qualcosa di vegetale leggero","intensità medio-moderata. oltre a note lattee mature, c'è qualcosa di vegetaleetale leggero",2018,C0H,TG_04,1.0
+1346,OK,Il profumo presenta note di latte crudo.,latte crudo,latte crudo,2018,C0H,TG_05,1.0
+1347,OK,"Il campione ha note di crosta, con una leggera percezione di bruciato.","crosta, leggermente bruciato","crosta, leggermente bruciato",2018,C0H,TG_11,1.0
+1348,ILLEGGIBILE,,solvente *___(,solvente *___(,2018,C0H,TG_12,1.0
+1349,OK,"Il profumo presenta note leggere di fermentato, con un odore debole.",leggero fermentato. odore debole,leggero fermentato. odore debole,2018,C0H,TG_13,1.0
+1350,OK,"Il profumo è intenso all'apertura, con note di panna e vegetale fresco, e un accenno floreale.","Intenso all'apertura, panna e anche vegetale fresco, floreale","Intenso all'apertura, panna e anche vegetaleetale fresco, floreale",2018,C0H,TG_19,1.0
+1351,OK,"Il profumo presenta note di panna e burro fresco, con richiami a frutta tropicale e frutta fermentata, risultando poco caratteristico.","panna e burro fresco, ma frutta tropicale, frutta fermentata, poco caratteristico","panna e burro fresco, ma frutta tropicale, frutta fermentata, poco caratteristico",2018,C0H,TG_20,1.0
+1352,OK,"Il profumo presenta note di latte e panna, con un accenno di tostato.","latte, panna ma tostato...","latte, panna ma tostato...",2018,C0H,TG_24,1.0
+1353,FUORI_ATTRIBUTO,"Il commento descrive note di pane tostato, brodo, panna e burro, con un fruttato molto leggero.","pane tostato brodo, panne e burro, fruttato molto leggero","pane tostato brodo, panne e burro, fruttato molto leggero",2018,C0H,TG_35,1.0
+1354,FUORI_ATTRIBUTO,Il commento menziona panna e latte acido.,panna latte acido,panna latte acido,2018,C0M,Q_09,1.0
+1355,OK,"Il campione mostra una buona intensità, con sentori di burro, latte cotto e crosta.","buona intensità. Burro, latte cotto, panna. crosta","buona intensità. Burro, latte cotto, panna. crosta",2018,C0M,TG_04,1.0
+1356,FUORI_ATTRIBUTO,animale stalla,stalla,stalla,2018,C0M,TG_05,1.0
+1357,OK,Panna e un leggero brodo vegetale.,panna e un leggero brodo,panna e un leggero brodo,2018,C0M,TG_11,1.0
+1358,FUORI_ATTRIBUTO,brodo vegetale: cavolfiore.,cavolfiore;,cavolfiore;,2018,C0M,TG_12,1.0
+1359,OK,"Intensità molto lieve, all'apertura presenta note di erba tagliata.","Intensità molto lieve, all'apertura anche erba tagliata","Intensità molto lieve, all'apertura anche erba tagliata",2018,C0M,TG_19,1.0
+1360,OK,"Abbastanza intenso, con note di formaggio nostrano, lievemente ossidato e burro cotto.","abbastanza intenso, note di formaggio nostrano, lievemente ossidato, burro cotto","abbastanza intenso, note di formaggio nostrano, lievemente ossidato, burro cotto",2018,C0M,TG_20,1.0
+1361,OK,"Fieno, yogurt e tostatura.","fieno, yogurth e tostatura","fieno, yogurth e tostatura",2018,C0M,TG_24,1.0
+1362,OK,"Burro fuso, latte cotto, fruttato, tostato e verdure cotte.","burro mfuso latte cotto fruttato, tostato e verdure cotte","burro mfuso latte cotto fruttato, tostato e verdure cotte",2018,C0M,TG_35,1.0
+1363,OK,"Intensità moderata, con sentori di latte, cotto e poco cuoio.",intensità moderata. latte. sentore cotto. poco cuoio,intensità moderata. latte. sentore cotto. poco cuoio,2018,C0Q,TG_04,1.0
+1364,FUORI_ATTRIBUTO,altro formaggio: formaggio cotto.,formaggio cotto,formaggio cotto,2018,C0Q,TG_11,1.0
+1365,OK,"Il campione presenta note di burro fuso e latte cotto, risultando buono nel complesso.","burro fuso, latte cotto. buono","burro fuso, latte cotto. buono",2018,C0Q,TG_13,1.0
+1366,OK,"Profumo caratteristico, con media intensità.","Profumo caratteristico, media intensità","Profumo caratteristico, media intensità",2018,C0Q,TG_19,1.0
+1367,FUORI_ATTRIBUTO,"Poco caratteristico, con note di frutta fermentata e acqua stagnante.","poco caratteristico, frutta fermentata, acqua stagnante","poco caratteristico, frutta fermentata, acqua stagnante",2018,C0Q,TG_20,1.0
+1368,OK,"Frutta matura, fieno e animale stalla, con note di grana.","frutta matura, fieno-stalla, grana","frutta matura, fieno-stalla, grana",2018,C0Q,TG_24,1.0
+1369,OK,"Nota di latte acido prevalente, seguita da panna e burro fresco, fruttato e vegetale cotto.","nota di latte acido prevalente, segue la panna e il burro fresco, fruttato e vegetale cotto","nota di latte acido prevalente, segue la panna e il burro fresco, fruttato e vegetaleetale cotto",2018,C0Q,TG_35,1.0
+1370,ILLEGGIBILE,,vegetale fieno?,vegetaleetale fieno?,2018,C0A,Q_09,1.0
+1371,OK,"Oltre alla panna, anche note di vegetale lesso.","oltre alla panna, anche del vegetale lesso","oltre alla panna, anche del vegetaleetale lesso",2018,C0A,TG_14,1.0
+1372,OK,"Non molto intenso ma abbastanza caratteristico, poco complesso, con note di lattico cotto prevalenti.","non molto intenso ma abbastanza caratteristico, poco complesso, note di lattico cotto prevalenti","non molto intenso ma abbastanza caratteristico, poco complesso, note di lattico cotto prevalenti",2018,C0A,TG_19,1.0
+1373,OK,Poco intenso ma positivo.,poco intenso ma positivo,poco intenso ma positivo,2018,C0A,TG_20,1.0
+1374,OK,Leggermente crosta.,legg crosta,legg crosta,2018,C0B,TG_11,1.0
+1375,OK,"Note vegetali lesse, con cipolla passata e latte cotto.","note vegetali lesse, cipolla passata, latte cotto","note vegetaleetali lesse, cipolla passata, latte cotto",2018,C0B,TG_14,1.0
+1376,FUORI_ATTRIBUTO,Il campione presenta una nota lattica di burro fuso evidente e sentori di fieno.,"poco intenso, nota lattica di burro fuso evidente, fieno","poco intenso, nota lattica di burro fuso evidente, fieno",2018,C0B,TG_19,1.0
+1377,OK,Il profumo è delicato e poco percettibile.,delicato e poco percettibile,delicato e poco percettibile,2018,C0C,TG_13,1.0
+1378,FUORI_ATTRIBUTO,Il campione ha un profumo poco intenso con note di caramella mou e formaggio nostrano.,"poco intenso, caramella mou, note di formaggio nostrano","poco intenso, caramella mou, note di formaggio nostrano",2018,C0C,TG_19,1.0
+1379,OK,Il profumo presenta note fruttate di mela.,fruttato mela,fruttato mela,2018,C0G,TG_11,1.0
+1380,FUORI_ATTRIBUTO,Il campione emana un odore leggero di stantio.,odore leggero di stantio,odore leggero di stantio,2018,C0G,TG_13,1.0
+1381,FUORI_ATTRIBUTO,"Il profumo è caratterizzato da note di marcio, putrido, fermentato e marcito.","marcio, putrido, fermentato e marcito","marcio, putrido, fermentato e marcito",2018,C0G,TG_14,1.0
+1382,FUORI_ATTRIBUTO,"Il campione presenta una nota di sedano, brodo vegetale e latte caramellato.","nota di sedano, brodo vegetale, latte caramellato","nota di sedano, brodo vegetaleetale, latte caramellato",2018,C0G,TG_19,1.0
+1383,ILLEGGIBILE,,legg insilatopungente;,legg insilatoilatopungente;,2018,C0G,TG_20,1.0
+1384,OK,Il profumo è di burro fuso.,burro fuso,burro fuso,2018,C0L,TG_13,1.0
+1385,OK,Il profumo è di panna.,panna,panna,2018,C0L,TG_14,1.0
+1386,OK,Il profumo è caratteristico ma presenta una lieve nota pungente.,caratteristico ma con lieve nota pungente,caratteristico ma con lieve nota pungente,2018,C0L,TG_19,1.0
+1387,FUORI_ATTRIBUTO,Il campione ha un profumo vegetale e balsamico.,vegetale balsamico,vegetaleetale balsamico,2018,C0N,Q_09,1.0
+1388,OK,Il profumo presenta note erbacee.,erba,erba,2018,C0N,TG_05,1.0
+1389,OK,Il profumo è fruttato con sentori di mela.,fruttato mela,fruttato mela,2018,C0N,TG_11,1.0
+1390,FUORI_ATTRIBUTO,Il campione presenta note ossidate.,ossidato,ossidato,2018,C0N,TG_13,1.0
+1391,FUORI_ATTRIBUTO,"Il profumo è caratterizzato da note di terra, animale e putrido.","terra, animale, putrido,","terra, animale, putrido,",2018,C0N,TG_14,1.0
+1392,FUORI_ATTRIBUTO,Il campione presenta note atipiche di frutta fermentata e crosta di formaggio.,"atipico, frutta fermentata, crosta di formaggio","atipico, frutta fermentata, crosta di formaggio",2018,C0N,TG_19,1.0
+1393,FUORI_ATTRIBUTO,"Il profumo è disomogeneo tra i diversi pezzi, da latte acidificato a formaggio stagionato con intensità moderata.",disomogeneo tra i diversi pezzi da latte acidificato a formaggio stagionato latte cotto intensità moderata,disomogeneo tra i diversi pezzi da latte acidificato a formaggio stagionato latte cotto intensità moderata,2018,C0A,Q_02,1.0
+1394,FUORI_ATTRIBUTO,Il campione emana un odore di teli sporchi all'inizio.,all'inizio teli sporchi,all'inizio teli sporchi,2018,C0A,Q_09,1.0
+1395,OK,Il profumo ha un'intensità buona con una nota di cuoio su base di burro e panna.,"intensità buona, una nota di cuoio su base di burro e panna","intensità buona, una nota di cuoio su base di burro e panna",2018,C0A,TG_04,1.0
+1396,FUORI_ATTRIBUTO,"Il commento si riferisce a un attributo diverso, descrivendo un sentore di brodo.",brodo,brodo,2018,C0A,TG_11,1.0
+1397,OK,"Il campione presenta note di burro fuso, con una leggera ossidazione e un profumo di formaggio cotto.","cotto, leggermente ossidato, burro fuso","cotto, leggermente ossidato, burro fuso",2018,C0A,TG_14,1.0
+1398,OK,"Il profumo è delicato, con note di crosta di formaggio, burro cotto e una lieve nota di nostrano.","delicato, crosta di formaggio, burro cotto, lieve nota di nostrano","delicato, crosta di formaggio, burro cotto, lieve nota di nostrano",2018,C0A,TG_20,1.0
+1399,OK,"Il campione ha un profumo di formaggio stagionato, con note di brodo, latte cotto e panna, con intensità moderata.","formaggio stagionato, brodo, latte cotto, panna con inensità moderata","formaggio stagionato, brodo, latte cotto, panna con inensità moderata",2018,C0C,Q_02,1.0
+1400,OK,"Il profumo presenta un'intensità contenuta, con note lattee e un sentore floreale.",intensità contenuta. su note lattee rinvengo anche un sentore floreale,intensità contenuta. su note lattee rinvengo anche un sentore floreale,2018,C0C,TG_04,1.0
+1401,ILLEGGIBILE,,brodo vegetale,brodo vegetaleetale,2018,C0C,TG_11,1.0
+1402,OK,Il campione ha un leggero odore di verdura lessa.,leggero odore verdura lessa,leggero odore verdura lessa,2018,C0C,TG_14,1.0
+1403,OK,"Il profumo è gradevole ed equilibrato, con note di latte cotto, burro fuso, fieno e brodo.","gradevole, equilibrato, latte cotto, burro fuso, fieno, brodo","gradevole, equilibrato, latte cotto, burro fuso, fieno, brodo",2018,C0C,TG_20,1.0
+1404,OK,Il campione presenta un profumo chiuso.,chiuso,chiuso,2018,C0C,TG_26,1.0
+1405,OK,"Il profumo è caratterizzato da latte cotto, frutta secca e formaggio stagionato con intensità moderata.","latte cotto, fruta secca, formaggio stagionato intensità moderata","latte cotto, fruta secca, formaggio stagionato intensità moderata",2018,C0E,Q_02,1.0
+1406,ILLEGGIBILE,,brodo vegetale,brodo vegetaleetale,2018,C0E,Q_09,1.0
+1407,OK,"Il campione ha una media moderata intensità, con note di panna, latte intero e burro sciolto, con poca crosta.","medio moderata intensità. Panna, latte intero, burro sciolto. poca crosta","medio moderata intensità. Panna, latte intero, burro sciolto. poca crosta",2018,C0E,TG_04,1.0
+1408,OK,Il profumo presenta note di burro sciolto.,burro sciolto,burro sciolto,2018,C0E,TG_11,1.0
+1409,FUORI_ATTRIBUTO,"Il commento descrive un misto di brodo vegetale, stalla e un'intensità piuttosto marcata di ossidato.","misto di brodo vegetale, stalla e ossidato piuttosto intenso","misto di brodo vegetaleetale, stalla e ossidato piuttosto intenso",2018,C0E,TG_14,1.0
+1410,FUORI_ATTRIBUTO,"Il profumo presenta note pungenti, di tela bagnata e acqua ristagnante.","note pungenti, tela bagnata, acqua ristagnante","note pungenti, tela bagnata, acqua ristagnante",2018,C0E,TG_20,1.0
+1411,FUORI_ATTRIBUTO,"Il commento si riferisce a un profumo chiuso con note di verdura cotta, non del tutto positivo.",chiuso verdura cotta non del tutto positivo,chiuso verdura cotta non del tutto positivo,2018,C0E,TG_26,1.0
+1412,OK,Il campione presenta un'intensità leggera/moderata di latte cotto e siero acido.,latte cotto  intensità leggero/moderata;siero acido intensità leggera,latte cotto  intensità leggero/moderata;siero acido intensità leggera,2018,C0G,Q_02,1.0
+1413,OK,"Il profumo ha una buona intensità, con note di tostato e cuoio su base lattea.","buona intensità . tostato, cuoio su base lattea","buona intensità . tostato, cuoio su base lattea",2018,C0G,TG_04,1.0
+1414,OK,Il campione presenta note di formaggio cotto.,formaggio cotto,formaggio cotto,2018,C0G,TG_11,1.0
+1415,OK,"Il profumo è caratterizzato da note di tostato, bruciato e fumo leggeri.","totato, bruciato, fumo leggeri","totato, bruciato, fumo leggeri",2018,C0G,TG_14,1.0
+1416,FUORI_ATTRIBUTO,"Il commento descrive un profilo aromatico caratterizzato da note di panna, burro fuso e brodo di pollo, ma non si riferisce specificamente al profumo del Grana Trentino.","caratteristico ma di medio equilibrio, panna, burro fuso, brodo di pollo","caratteristico ma di medio equilibrio, panna, burro fuso, brodo di pollo",2018,C0G,TG_20,1.0
+1417,OK,Il profumo è molto intenso.,positivo molto intenso,positivo molto intenso,2018,C0G,TG_26,1.0
+1418,OK,"Il campione presenta note di burro fuso e butirrico con intensità moderata, accompagnate da un tostato forte e una leggera/moderata intensità. Si segnala la presenza di un occhio da fermentazione butirrica.","burro fuso, butirrico intensità moderata, tostato forte intensità leggera/moderata; ATTENZIONE una porzione ha pure un occhio da fermentazione butirrica","burro fuso, butirrico intensità moderata, tostato forte intensità leggera/moderata; ATTENZIONE una porzione ha pure un occhio da fermentazione butirrica",2018,C0Q,Q_02,1.0
+1419,OK,"All'apertura si percepisce un profumo negativo di sporco fermentato, ma successivamente non è più avvertibile.",all'apertura negativo (sporco fermentato) poi non si sente,all'apertura negativo (sporco fermentato) poi non si sente,2018,C0Q,Q_09,1.0
+1420,OK,Il profumo è leggerissimo.,leggerissimo,leggerissimo,2018,C0Q,TG_04,1.0
+1421,OK,Si avvertono note di burro sciolto e brodo.,burro sciolto e brodo,burro sciolto e brodo,2018,C0Q,TG_11,1.0
+1422,CONFORME,"Il campione è conforme, senza particolari note distintive ma privo di difetti.",niente di particolare,niente di particolare,2018,C0Q,TG_14,1.0
+1423,OK,"Inizialmente si percepisce una nota fermentata, accompagnata da frutta fermentata, crosta di formaggio e formaggio vecchio, ma è comunque presente una nota lattica e di glutammato.","nota inizialmente nota fermentata, frutta fermentata, crosta di formaggio, formaggio vecchio, comunque presente la nota lattica e di glutammato","nota inizialmente nota fermentata, frutta fermentata, crosta di formaggio, formaggio vecchio, comunque presente la nota lattica e di glutammato",2018,C0Q,TG_20,1.0
+1424,OK,"Il profumo è caratterizzato da note fermentate, senza evidenziare aspetti negativi o positivi.","fermentato, yogurt ne negativi ne positivi","fermentato, yogurt ne negativi ne positivi",2018,C0R,Q_02,1.0
+1425,OK,Il profumo è leggero.,leggero,leggero,2018,C0R,Q_09,1.0
+1426,FUORI_ATTRIBUTO,"Il campione presenta un profumo leggero con note di emmental, che non è tipico del Grana Trentino.",leggero e sa di emmental,leggero e sa di emmental,2018,C0R,TG_04,1.0
+1427,OK,Si avvertono note di latte cotto e panna.,latte cotto e panna,latte cotto e panna,2018,C0R,TG_11,1.0
+1428,OK,"Il profumo è abbastanza blando, privo di aromi, se non per una leggera nota di burro cotto.","abbastanza blano, privo di aromi, se non leggeremte burro cotto","abbastanza blano, privo di aromi, se non leggeremte burro cotto",2018,C0R,TG_14,1.0
+1429,OK,"Il profumo è semplice, con note lattiche di panna e una leggera nota di formaggino.","semplice, lattico di panna, nota di formaggino","semplice, lattico di panna, nota di formaggino",2018,C0R,TG_20,1.0
+1430,FUORI_ATTRIBUTO,"Il commento si riferisce al formaggio emmental, che non è pertinente al Grana Trentino.",emmental,emmental,2018,C0R,TG_26,1.0
+1431,OK,Il profumo di latte cotto ha un'intensità leggera.,latte cotto intensità leggera;,latte cotto intensità leggera;,2018,C0C,Q_02,1.0
+1432,OK,Il profumo è leggero e non presenta difetti.,leggero ma non difetti,leggero ma non difetti,2018,C0C,Q_09,1.0
+1433,ILLEGGIBILE,,intensità moderata. vegetale. . burro sciolto. latteo,intensità moderata. vegetaleetale. . burro sciolto. latteo,2018,C0C,TG_04,1.0
+1434,ILLEGGIBILE,,dddddddddd,dddddddddd,2018,C0C,TG_05,1.0
+1435,OK,Si avvertono note di burro sciolto.,burro sciolto,burro sciolto,2018,C0C,TG_11,1.0
+1436,FUORI_ATTRIBUTO,Il commento esprime una valutazione negativa riguardo a un formaggio che non è tipico.,"debole, non tipico del grana","debole, non tipico del grana",2018,C0C,TG_13,1.0
+1437,FUORI_ATTRIBUTO,Il commento descrive un formaggio cotto con note di burro fuso.,formaggio cotto e burro fuso,formaggio cotto e burro fuso,2018,C0C,TG_14,1.0
+1438,FUORI_ATTRIBUTO,Il commento si riferisce a latte e crema cotti.,latte e crema cotti,latte e crema cotti,2018,C0C,TG_15,1.0
+1439,OK,Intenso profumo di panna e latte.,Intenso profumo di panna e latte,Intenso profumo di panna e latte,2018,C0C,TG_19,1.0
+1440,FUORI_ATTRIBUTO,Il commento esprime note fruttate e lattiche cotte.,Fruttato lattico cotto,Fruttato lattico cotto,2018,C0C,TG_35,1.0
+1441,OK,Tostato con intensità leggera; frutta (ananas) con intensità leggera.,tostato intensità leggera;frutta (ananas) intensità leggera,tostato intensità leggera;frutta (ananas) intensità leggera,2018,C0I,Q_02,1.0
+1442,FUORI_ATTRIBUTO,Il commento si limita a menzionare il latte.,latte,latte,2018,C0I,Q_09,1.0
+1443,OK,Intensità medio-forte. Note vegetali e floreali su latte. Particolare.,Intensità medio-forte. Note vegetali e floreali su latte. Particolare,Intensità medio-forte. Note vegetaleetali e floreali su latte. Particolare,2018,C0I,TG_04,1.0
+1444,FUORI_ATTRIBUTO,Il commento si limita a menzionare lo yogurt.,yoghurt,yoghurt,2018,C0I,TG_11,1.0
+1445,OK,Sentore di fermentato.,sentore di fermentato,sentore di fermentato,2018,C0I,TG_13,1.0
+1446,OK,"Sentore di stalla, crosta e ossidato.","sentore di stalla, crosta e ossidato","sentore di stalla, crosta e ossidato",2018,C0I,TG_14,1.0
+1447,OK,Latte e crema crudi ma leggeri.,latte e crema crudi ma leggeri,latte e crema crudi ma leggeri,2018,C0I,TG_15,1.0
+1448,OK,"Lattici moderatamente intensi, anche cotti, con leggero fermentato non spiacevole.","Lattici moderatamente intensi, anche cotti, leggero fermentato non spiacevole","Lattici moderatamente intensi, anche cotti, leggero fermentato non spiacevole",2018,C0I,TG_19,1.0
+1449,OK,"Nota fermentata appena percettibile, fruttato lattico cotto e brodo.","nota fermentata appena percettibile, fruttato lattico cotto e brodo","nota fermentata appena percettibile, fruttato lattico cotto e brodo",2018,C0I,TG_35,1.0
+1450,OK,Latte cotto con intensità leggera; verdure lesse con intensità leggera; animale con intensità leggera.,latte cotto intensità leggera;verdure lesse intensità leggera;animale intensità leggera,latte cotto intensità leggera;verdure lesse intensità leggera;animale intensità leggera,2018,C0M,Q_02,1.0
+1451,OK,Leggero ma senza difetti.,leggero ma non difetti,leggero ma non difetti,2018,C0M,Q_09,1.0
+1452,OK,"Intensità moderata. Pane tostato, cuoio e sentori lattei cotti.",intensità moderata.  pane tostato. . cuoio. sentori lattei cotti,intensità moderata.  pane tostato. . cuoio. sentori lattei cotti,2018,C0M,TG_04,1.0
+1453,OK,Latte cotto.,latte cotto,latte cotto,2018,C0M,TG_05,1.0
+1454,OK,Leggermente di panna.,leggermente di panna,leggermente di panna,2018,C0M,TG_11,1.0
+1455,OK,Leggera verdura cotta.,leggera verdura cotta,leggera verdura cotta,2018,C0M,TG_12,1.0
+1456,FUORI_ATTRIBUTO,Il commento esprime note di latte e burro con una leggera presenza animale.,"latte e burro, leggero animale","latte e burro, leggero animale",2018,C0M,TG_13,1.0
+1457,FUORI_ATTRIBUTO,"Il commento descrive note di burro fuso, formaggio cotto e una crosta con una punta di bruciato.","burro, fuso, formaggio cotto, crosta cou una punta di bruciato.","burro, fuso, formaggio cotto, crosta cou una punta di bruciato.",2018,C0M,TG_14,1.0
+1458,OK,"Il profumo presenta note di fiori, frutta e panna fresca.","fiori, frutta, panna fresca","fiori, frutta, panna fresca",2018,C0M,TG_15,1.0
+1459,OK,"All'apertura si percepisce una nota pungente, seguita da lattici cotti e un po' di fermentato, soprattutto in un pezzo.","All'apertura nota pungente, poi lattici cotti e un po' di fermentato soprattutto in un pezzo","All'apertura nota pungente, poi lattici cotti e un po' di fermentato soprattutto in un pezzo",2018,C0M,TG_19,1.0
+1460,OK,"Il profumo è caratterizzato da panna, burro fuso, brodo di carne e note fruttate.",panna burro fuso brodo di carne e fruttato,panna burro fuso brodo di carne e fruttato,2018,C0M,TG_35,1.0
+1461,OK,"Intensità medio-forte con note di latte intero, panna e brodo di carne, accompagnate da burro fresco.","Intensità medio-forte. Latte intero, panna. Brodo di carne. burr ofresco","Intensità medio-forte. Latte intero, panna. Brodo di carne. burr ofresco",2018,C0N,TG_04,1.0
+1462,OK,Il profumo presenta note di fermentato e insilato di mais.,"fermentato, insilato di mais","fermentato, insilatoilato di mais",2018,C0N,TG_11,1.0
+1463,OK,Si percepisce un leggero sentore di cotto.,leggero sentore di cotto,leggero sentore di cotto,2018,C0N,TG_13,1.0
+1464,FUORI_ATTRIBUTO,Il commento esprime un leggerissimo sentore di crosta e note ossidate.,leggerissimo crosta e ossidato,leggerissimo crosta e ossidato,2018,C0N,TG_14,1.0
+1465,OK,Il profumo presenta note di caramella mou e latte cotto.,"caramella mou, latte cotto","caramella mou, latte cotto",2018,C0N,TG_15,1.0
+1466,OK,"Lieve sentore vegetale iniziale, seguito da lattici cotti e formaggio cotto.","Lieve sentore vegetale iniziale, poi lattici cotti, formaggio cotto","Lieve sentore vegetaleetale iniziale, poi lattici cotti, formaggio cotto",2018,C0N,TG_19,1.0
+1467,OK,Il profumo è molto fruttato con note lattiche fresche.,molto fruttato con note lattiche freche,molto fruttato con note lattiche freche,2018,C0N,TG_35,1.0
+1468,OK,Il latte cotto presenta un'intensità leggera.,latte cotto intensità leggera,latte cotto intensità leggera,2018,C0O,Q_02,1.0
+1469,FUORI_ATTRIBUTO,"All'apertura si percepiscono teli sporchi, seguiti da brodo vegetale.",all'apertura teli sporchi e poi brodo vegetale,all'apertura teli sporchi e poi brodo vegetaleetale,2018,C0O,Q_09,1.0
+1470,OK,"Il profumo è leggero-moderato, con note tostate e lievemente cotte.",leggero-moderato.  tostato. lieve cotto,leggero-moderato.  tostato. lieve cotto,2018,C0O,TG_04,1.0
+1471,FUORI_ATTRIBUTO,"Il commento esprime note di brodo vegetale, latte e burro.",brodo vegertale;latte;burro,brodo vegetaleertale;latte;burro,2018,C0O,TG_05,1.0
+1472,FUORI_ATTRIBUTO,Il commento esprime semplicemente 'brodo'.,brodo,brodo,2018,C0O,TG_11,1.0
+1473,FUORI_ATTRIBUTO,Il commento descrive note di verdure lesse.,verdure lesse,verdure lesse,2018,C0O,TG_12,1.0
+1474,OK,"Non percettibile, senza odore.",non percettibile. senza odore,non percettibile. senza odore,2018,C0O,TG_13,1.0
+1475,OK,Il profumo risulta ossidato.,odssidato,odssidato,2018,C0O,TG_14,1.0
+1476,FUORI_ATTRIBUTO,Il campione presenta note di latte cotto e pane bruciato.,"latte cotto, pane bruciato","latte cotto, pane bruciato",2018,C0O,TG_15,1.0
+1477,FUORI_ATTRIBUTO,"All'apertura si percepiscono note di bruciato, seguite da sentori di lattici cotti e una lieve fermentazione fugace.","All'apertura nota di bruciato, poi lattici cotti e lieve fermentato fugace","All'apertura nota di bruciato, poi lattici cotti e lieve fermentato fugace",2018,C0O,TG_19,1.0
+1478,OK,Il campione mostra una leggera fermentazione.,molto leggera fermentazione,molto leggera fermentazione,2018,C0O,TG_35,1.0

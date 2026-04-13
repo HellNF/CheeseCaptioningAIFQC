@@ -1,0 +1,396 @@
+id,classe,caption,commento_raw,commento_prenorm,anno,prodotto,panelista,peso
+1,OK,Sapore di balsamico e liquirizia.,Balsamico liquirizia,Balsamico liquirizia,2019,C0E,Q_09,1.0
+2,OK,Profumo di erbe balsamiche.,Erbe Balsamiche,Erbe Balsamiche,2019,C0N,Q_09,1.0
+3,OK,Note di caffè e cacao amaro.,"Caffè,cacao amaro","Caffè,cacao amaro",2019,C0G,TG_19,1.0
+4,ILLEGGIBILE,,Solo una porzione su 4 è fortemente negativa,Solo una porzione su 4 è fortemente negativa,2019,C0Q,Q_02,1.0
+5,ILLEGGIBILE,,Vegetale balsamico,vegetaleetale balsamico,2019,C0L,Q_09,1.0
+6,OK,L'intensità è bassissima.,Intensità bassissima,Intensità bassissima,2019,C0L,TG_04,1.0
+7,OK,Presenta note acre.,Acre,Acre,2019,C0R,TG_12,1.0
+8,OK,Il campione risulta troppo delicato.,Troppo delicato,Troppo delicato,2019,C0L,TG_19,1.0
+9,OK,Si percepisce una quasi nota acetica.,Quasi nota acetica,Quasi nota acetica,2019,C0I,TG_20,1.0
+10,OK,Il profumo è poco intenso.,Poco intenso,Poco intenso,2019,C0Q,TG_20,1.0
+11,OK,Su uno dei pezzi si notano note di ossidato.,"Su uno dei pezzi, note di ossidato","Su uno dei pezzi, note di ossidato",2019,C0N,TG_14,1.0
+12,ILLEGGIBILE,,Y0gurth,Y0gurth,2019,C0O,TG_24,1.0
+13,OK,Il profumo è intenso.,Intenso,Intenso,2019,C0D,TG_26,1.0
+14,OK,Presenta note di miele e un'intensità elevata.,"Miele,intenso","Miele,intenso",2019,C0N,TG_26,1.0
+15,OK,Il campione ha un profumo leggero.,Leggero,Leggero,2019,C0D,Q_09,1.0
+16,OK,"Leggero, con una nota pungente all'inizio che ricorda il burro.","Leggero, pungente all'inizio da butirrico?","Leggero, pungente all'inizio da butirrico?",2019,C0N,Q_09,1.0
+17,OK,Il profumo è neutro.,Neutro,Neutro,2019,C0D,TG_13,1.0
+18,OK,"Presenta note erbacee, apertura della vaschetta, ossidato e crosta dominanti su frattura fresca.","Erbacea alo, apertura della vaschetta, ossidato e crosta dominanti su frattura fresca","Erbacea alo, apertura della vaschetta, ossidato e crosta dominanti su frattura fresca",2019,C0Q,TG_14,1.0
+19,OK,Si percepiscono note di nocciola.,Nocciola,Nocciola,2019,C0Q,TG_24,1.0
+20,OK,Odore di cavolo cotto.,Cavolo cotto,Cavolo cotto,2019,C0D,TG_26,1.0
+21,OK,Profumo di pozzo e acqua stagnante.,"Pozzo, acqua stagnante","Pozzo, acqua stagnante",2019,C0M,TG_20,1.0
+22,OK,Si percepisce un sentore di alcol.,Alcol,Alcol,2019,C0B,TG_24,1.0
+23,OK,Si avverte un sentore di solvente acetonico.,Solvente acetone,Solvente acetone,2019,C0L,TG_24,1.0
+24,OK,Il profumo del campione è intenso.,Intenso,Intenso,2019,C0D,TG_26,1.0
+25,OK,Il profumo del campione è debolissimo.,Debolissimo,Debolissimo,2019,C0H,TG_26,1.0
+26,OK,Si percepisce un aroma di fermentazione anomala.,Fermentazione da Clostridium sporogenes,Fermentazione da Clostridium sporogenes,2019,C0F,Q_02,1.0
+27,OK,Il profumo del campione è leggero.,Leggero,Leggero,2019,C0O,Q_09,1.0
+28,OK,Il profumo del campione è debole.,Profumo debole,Profumo debole,2019,C0R,TG_13,1.0
+29,OK,Sapore di cacao.,Cacao,Cacao,2019,C0F,TG_19,1.0
+30,OK,Il profumo del campione presenta bassa intensità.,Bassa intensità,Bassa intensità,2019,C0O,TG_19,1.0
+31,OK,Si avvertono soprattutto note di uovo sodo e zolfo.,"Soprattutto uovo sodo, zolfo","Soprattutto uovo sodo, zolfo",2019,C0P,TG_19,1.0
+32,OK,Si percepisce un odore di teli sporchi.,Teli sporchi,Teli sporchi,2019,C0G,Q_09,1.0
+33,OK,Si avverte un profumo di erbe balsamiche.,Erbe balsamiche,Erbe balsamiche,2019,C0I,Q_09,1.0
+34,OK,Si percepisce un sentore di alito di caffe.,Alito di caffè,Alito di caffè,2019,C0H,TG_19,1.0
+35,OK,Il profumo del campione è poco intenso.,Poco intenso,Poco intenso,2019,C0Q,TG_26,1.0
+36,OK,Note vegetali e balsamiche.,Vegetale balsamico,vegetaleetale balsamico,2019,C0M,Q_09,1.0
+37,OK,"Si avverte un odore di cuoio, simile a suola di scarpe o gomma.","Ho segnato cuoio ma in realtà ho sentito odore di suola di scarpe, o gomma","Ho segnato cuoio ma in realtà ho sentito odore di suola di scarpe, o gomma",2019,C0E,TG_28,1.0
+38,OK,"Si percepisce un sentore di grasso animale ossidato, simile a salame invecchiato.",Sentore di grasso animale ossidato (eg: salame invecchiato),Sentore di grasso animale ossidato (eg: salame invecchiato),2019,C0O,TG_04,1.0
+39,OK,Si percepisce un sentore di cipolla.,Cipolla,Cipolla,2019,C0E,TG_26,1.0
+40,OK,"Olfatto con ammoniaca solo all'apertura, seguito da un profumo troppo delicato.","Ammoniaca solo alla apertura,dopo profumo troppo delicato","Ammoniaca solo alla apertura,dopo profumo troppo delicato",2019,C0N,TG_19,1.0
+41,OK,Il sapore è troppo delicato.,Troppo delicato,Troppo delicato,2019,C0A,TG_19,1.0
+42,OK,Note di cacao e alito di caffè.,"Cacao, alito da caffè","Cacao, alito da caffè",2019,C0E,TG_19,1.0
+43,OK,Profumo vegetale e balsamico.,Vegetale balsamico,vegetaleetale balsamico,2019,C0N,Q_09,1.0
+44,OK,Odore di scarico.,Scarico,Scarico,2019,C0P,Q_09,1.0
+45,OK,"Il gorgonzola suscita dei dubbi, ma non penalizzo troppo.","Il gorgonzola é un dubbio, non penalizzo troppo","Il gorgonzola é un dubbio, non penalizzo troppo",2019,C0I,TG_04,1.0
+46,OK,"Il profumo del campione è leggero, ma presenta note tipiche di grana nostrano.",Ok ma molto leggero,Ok ma molto leggero,2019,C0O,TG_19,1.0
+47,OK,Profumo vegetale gradevole.,Vegetale buono,vegetaleetale buono,2019,C0P,TG_19,1.0
+48,OK,"Il profumo del campione è leggero, con note tipiche di grana nostrano.",Leggero,Leggero,2019,C0R,TG_19,1.0
+49,OK,"Il profumo del campione è leggero, con note tipiche di grana nostrano.",Leggero,Leggero,2019,C0A,Q_09,1.0
+50,OK,"Il profumo del campione è leggero, con note tipiche di grana nostrano.",Leggero,Leggero,2019,C0C,Q_09,1.0
+51,OK,"Il profumo del campione è leggero, con note tipiche di grana nostrano.",Leggero,Leggero,2019,C0M,Q_09,1.0
+52,OK,Sembra più invecchiato.,Sembra più  vecchio,Sembra più  vecchio,2019,C0B,TG_04,1.0
+53,OK,Sapore di cacao.,Cacao,Cacao,2019,C0Q,TG_19,1.0
+54,OK,"Il profumo del campione è poco intenso, con note tipiche di grana nostrano.",Poco intenso,Poco intenso,2019,C0A,TG_20,1.0
+55,OK,"Il profumo del campione non è molto intenso, ma presenta note tipiche di grana nostrano.",Non molto intenso,Non molto intenso,2019,C0N,TG_20,1.0
+56,OK,"Il profumo del campione è un po' piatto e poco complesso, con note tipiche di grana nostrano.","Un po' piatto, poco complesso","Un po' piatto, poco complesso",2019,C0Q,TG_20,1.0
+57,OK,"Il profumo del campione è leggerissimo e scompare rapidamente, ma presenta note tipiche di grana nostrano.","Leggerissimo, scompare dopo 2 secondi","Leggerissimo, scompare dopo 2 secondi",2019,C0C,TG_28,1.0
+58,OK,Odore di alcool etilico.,Alcool etilico,Alcool etilico,2019,C0D,TG_24,1.0
+59,OK,"Il profumo del campione presenta note di liquirizia, con una leggera tipicità di grana nostrano.",Liquirizia,Liquirizia,2019,C0E,Q_09,1.0
+60,OK,Leggero sentore di gomma bruciata.,Leggero gomma bruciata,Leggero gomma bruciata,2019,C0P,Q_09,1.0
+61,OK,Un pezzo aveva un pessimo odore.,Un solo pezzo aveva un pessimo odore,Un solo pezzo aveva un pessimo odore,2019,C0E,TG_12,1.0
+62,OK,Odore di lettiera.,Lettiera,Lettiera,2019,C0E,TG_26,1.0
+63,OK,Il profumo presenta note fruttate di ananas e pompelmo.,Ananas e pompelmo,Ananas e pompelmo,2019,C0D,Q_02,1.0
+64,OK,Profumo vegetale e balsamico.,Vegetale balsamico,vegetaleetale balsamico,2019,C0D,Q_09,1.0
+65,OK,Alla apertura soltanto.,Alla apertura soltanto,Alla apertura soltanto,2019,C0O,Q_09,1.0
+66,OK,Caffè.,Caffè,Caffè,2019,C0C,TG_19,1.0
+67,OK,Il profumo è molto tenue.,Molto molto tenue,Molto molto tenue,2019,C0O,TG_19,1.0
+68,OK,Il profumo è poco intenso e poco complesso.,Poco intenso e poco complesso,Poco intenso e poco complesso,2019,C0O,TG_20,1.0
+69,OK,Si percepisce un sentore di fieno.,Sentore di fieno greco,Sentore di fieno greco,2019,C0A,TG_28,1.0
+70,OK,Il profumo è poco intenso.,Poco intenso,Poco intenso,2019,C0M,Q_09,1.0
+71,OK,Il profumo è debolissimo.,Debolissimo,Debolissimo,2019,C0H,TG_26,1.0
+72,OK,Il profumo presenta note balsamiche.,Balsamico,Balsamico,2019,C0I,Q_09,1.0
+73,OK,Il profumo è poco presente.,Poco profumo,Poco profumo,2019,C0A,TG_08,1.0
+74,OK,La intensità del profumo è poca.,Poca intensità,Poca intensità,2019,C0P,TG_19,1.0
+75,OK,Il profumo è leggero.,Leggero,Leggero,2019,C0R,TG_19,1.0
+76,OK,Il profumo è leggero.,Leggero,Leggero,2019,C0A,TG_19,1.0
+77,OK,Il profumo è poco intenso.,Poco intenso,Poco intenso,2019,C0Q,TG_20,1.0
+78,OK,"Si avverte una nota bruciata, con poca intensità.","Nota bruciata, poco intenso","Nota bruciata, poco intenso",2019,C0D,TG_20,1.0
+79,OK,Lievito?,Lievito ?,Lievito ?,2019,C0M,Q_09,1.0
+80,OK,"Il profumo è poco intenso, con note di latte e floreali.",Poco intenso. Latte e floreale,Poco intenso. Latte e floreale,2019,C0C,TG_04,1.0
+81,OK,"Moderato, con una nota poco convincente di verdura cotta.",Moderato. Nota non convincente di verdura cotta,Moderato. Nota non convincente di verdura cotta,2019,C0E,TG_04,1.0
+82,OK,Il profumo del campione presenta una media intensità con profumi tipici e una complessità aromatica abbastanza sviluppata.,Media intensità. Profumi tipici. Abbastanza complesso,Media intensità. Profumi tipici. Abbastanza complesso,2019,C0H,TG_04,1.0
+83,OK,"Il campione presenta una buona intensità olfattiva, con note tipiche del Grana Trentino che si esprimono in modo chiaro e definito.",Buona intensità,Buona intensità,2019,C0M,TG_04,1.0
+84,OK,"Il profumo presenta un'intensità leggera, con una complessità ridotta e note di panna e burro.",Intensità leggera. Poco complesso. Panna e burro. Stop,Intensità leggera. Poco complesso. Panna e burro. Stop,2019,C0N,TG_04,1.0
+85,OK,"Il campione ha un'intensità iniziale alta, ma il bouquet non è gradevole, con note di cuoio, brodo e verdura cotta.","Intensità  iniziale alta. Ma bouquet non gradevole: cuoio, brodo, verdura  cotta","Intensità  iniziale alta. Ma bouquet non gradevole: cuoio, brodo, verdura  cotta",2019,C0P,TG_04,1.0
+86,OK,Il profumo presenta note di caramello all'apertura.,Caramello alla apertura,Caramello alla apertura,2019,C0M,TG_19,1.0
+87,OK,"Yogurt alla frutta, più che acido.",Yogurt alla frutta più che parte acido,Yogurt alla frutta più che parte acido,2019,C0P,TG_28,1.0
+88,OK,"L'intensità del profumo è buona, rivelando caratteristiche aromatiche tipiche del Grana Trentino, senza difetti.",Buona intensità,Buona intensità,2019,C0L,TG_04,1.0
+89,OK,Il profumo presenta sentori tostati e cotti.,"Sentori tostato, cotto","Sentori tostato, cotto",2019,C0N,TG_04,1.0
+90,OK,"Il campione ha una buona intensità con sentori lattei, più di uno.","Buona intensità. Sentori lattei , più  d'uno","Buona intensità. Sentori lattei , più  d'uno",2019,C0O,TG_04,1.0
+91,OK,Il profumo presenta una nota dolce.,Dolce,Dolce,2019,C0L,TG_11,1.0
+92,OK,Il profumo presenta note di burro cotto e formaggio cotto.,"Burro cotto, formaggio cotto","Burro cotto, formaggio cotto",2019,C0O,TG_20,1.0
+93,OK,Il profumo presenta un'intensità poco marcata.,Poco intenso,Poco intenso,2019,C0L,TG_26,1.0
+94,OK,La prima olfazione rivela note tra animale e stalla.,Prima olfazione: tra animale e stalla,Prima olfazione: tra animale e stalla,2019,C0E,TG_04,1.0
+95,OK,Il campione presenta un'intensità notevole.,Intensità notevole,Intensità notevole,2019,C0N,TG_04,1.0
+96,OK,"Un campione ha un odore positivo, tre hanno un odore negativo.","Un campione con odore positivo, 3 con odore negativo","Un campione con odore positivo, 3 con odore negativo",2019,C0E,TG_14,1.0
+97,OK,Alito al caffè.,Alito al Caffè ...,Alito al Caffè ...,2019,C0E,TG_19,1.0
+98,OK,"Il profumo presenta note di burro fresco, molto lattico.","Burro fresco, molto lattico","Burro fresco, molto lattico",2019,C0D,TG_20,1.0
+99,OK,Il profumo presenta un'intensità poco marcata.,Poco intenso,Poco intenso,2019,C0M,TG_26,1.0
+100,OK,Il campione presenta un buon livello di intensità.,Ben intenso,Ben intenso,2019,C0N,TG_04,1.0
+101,OK,Cacao amaro in polvere.,Cacao amaro in polvere,Cacao amaro in polvere,2019,C0L,TG_19,1.0
+102,OK,Caffè bevuto.,Caffe bevuto,Caffe bevuto,2019,C0M,TG_19,1.0
+103,OK,Un po' di plastica gomma.,Un po'  di plastica gomma,Un po'  di plastica gomma,2019,C0O,TG_24,1.0
+104,OK,Biscotto.,Biscotto,Biscotto,2019,C0C,TG_26,1.0
+105,OK,Pane e lievito.,PANE LIEVITO,PANE LIEVITO,2019,C0A,Q_09,1.0
+106,OK,Alle prime operazioni si percepisce un sgradevole odore di grasso animale ossidato.,Alle prime operazioni sgradevole odore di grasso animale ossidato,Alle prime operazioni sgradevole odore di grasso animale ossidato,2019,C0A,TG_04,1.0
+107,OK,Il profumo presenta note di limone ammuffito.,Limone ammuffito,Limone ammuffito,2019,C0M,TG_14,1.0
+108,OK,Il campione mostra una varietà di sentori nella categoria panna.,Tanti sentori nella categoria panna,Tanti sentori nella categoria panna,2019,C0A,TG_04,1.0
+109,OK,Il profumo è lieve e iniziale.,Lieve e iniziale,Lieve e iniziale,2019,C0C,TG_19,1.0
+110,OK,Cacao?,Cacao?,Cacao?,2019,C0A,Q_09,1.0
+111,OK,Il profumo è intenso.,Intenso,Intenso,2019,C0N,TG_04,1.0
+112,OK,La prima olfazione non è gradita; la definisco nostrano.,Prima olfazione non gradita. La definisco nostrano,Prima olfazione non gradita. La definisco nostrano,2019,C0R,TG_04,1.0
+113,OK,Il profumo non è molto intenso.,Non molto intenso,Non molto intenso,2020,C0G,TG_20,1.0
+114,OK,Il campione presenta note evolute dominanti.,Note evolute dominanti,Note evolute dominanti,2020,C0Q,TG_20,1.0
+115,OK,"Nota vegetale di primo naso, poi si alleggerisce.",Nota vegetale di primo naso. Poi si alleggerisce,Nota vegetaleetale di primo naso. Poi si alleggerisce,2020,C0G,TG_04,1.0
+116,OK,L'intensità è più che moderata.,Intensità  più  che moderata,Intensità  più  che moderata,2020,C0Q,TG_04,1.0
+117,OK,"Il profumo è intenso, con note di nostrano e latte cotto leggero.","Anche intenso, ma nostrano e latte cotto leggero","Anche intenso, ma nostrano e latte cotto leggero",2020,C0C,TG_04,1.0
+118,OK,Il profumo è molto vegetale.,Molto vegetale,Molto vegetaleetale,2020,C0D,TG_04,1.0
+119,OK,Il campione risulta poco complesso e poco intenso.,Poco complesso e poco intenso,Poco complesso e poco intenso,2020,C0H,TG_04,1.0
+120,OK,"Il profumo è ben complesso, ma con intensità limitata.",Anche ben complesso. Ma intensità limitata,Anche ben complesso. Ma intensità limitata,2020,C0I,TG_04,1.0
+121,OK,"Molto diverso all'apertura e spezzando i pezzi; fresco prima, più stagionato poi.","Molto diverso alle apertura e spezzando i pezzi. Fresco prima, più stagionato poi","Molto diverso alle apertura e spezzando i pezzi. Fresco prima, più stagionato poi",2020,C0M,TG_19,1.0
+122,OK,Poco intenso e poco complesso.,Poco intenso e poco complesso,Poco intenso e poco complesso,2020,C0D,TG_20,1.0
+123,OK,Poco intenso.,Poco intenso,Poco intenso,2020,C0M,TG_20,1.0
+124,OK,Proprio aggressivo e non piacevole.,Proprio aggressivo non piacevole,Proprio aggressivo non piacevole,2020,C0H,TG_24,1.0
+125,OK,"Anche intenso, con note di nostrano e latte cotto leggero.","Anche intenso, ma nostrano e latte cotto leggero","Anche intenso, ma nostrano e latte cotto leggero",2020,C0C,TG_04,1.0
+126,ILLEGGIBILE,,Molto vegetale,Molto vegetaleetale,2020,C0D,TG_04,1.0
+127,OK,Poco complesso e poco intenso.,Poco complesso e poco intenso,Poco complesso e poco intenso,2020,C0H,TG_04,1.0
+128,OK,"Anche ben complesso, ma con intensità limitata.",Anche ben complesso. Ma intensità limitata,Anche ben complesso. Ma intensità limitata,2020,C0I,TG_04,1.0
+129,OK,"Molto diverso all'apertura e spezzando i pezzi; fresco prima, più stagionato poi.","Molto diverso alle apertura e spezzando i pezzi. Fresco prima, più stagionato poi","Molto diverso alle apertura e spezzando i pezzi. Fresco prima, più stagionato poi",2020,C0M,TG_19,1.0
+130,OK,Poco intenso e poco complesso.,Poco intenso e poco complesso,Poco intenso e poco complesso,2020,C0D,TG_20,1.0
+131,OK,Poco intenso.,Poco intenso,Poco intenso,2020,C0M,TG_20,1.0
+132,OK,Proprio aggressivo e non piacevole.,Proprio aggressivo non piacevole,Proprio aggressivo non piacevole,2020,C0H,TG_24,1.0
+133,OK,"Odore pungente da fermentato, sgradevole.",Odore pungente da fermentato. Sgradevole,Odore pungente da fermentato. Sgradevole,2020,C0B,TG_04,1.0
+134,OK,Moderato.,Moderato,Moderato,2020,C0C,TG_04,1.0
+135,OK,Media intensità.,Media intensità,Media intensità,2020,C0L,TG_04,1.0
+136,OK,Intenso.,Intenso,Intenso,2020,C0N,TG_04,1.0
+137,OK,Crauti.,Crauti,Crauti,2020,C0O,TG_19,1.0
+138,OK,Aggressivo e non piacevole.,Aggressivo non piacevole,Aggressivo non piacevole,2020,C0B,TG_24,1.0
+139,OK,Peccato per una nota leggera di stalla.,Peccato per nota leggera di stalla,Peccato per nota leggera di stalla,2020,C0L,TG_24,1.0
+140,OK,Troppo debole per valutare con sicurezza.,Troppo debole per valutare con sicurezza,Troppo debole per valutare con sicurezza,2020,C0C,TG_28,1.0
+141,OK,Sentore di legno.,Sentore di legno,Sentore di legno,2020,C0N,TG_28,1.0
+142,OK,Intenso,Intenso,Intenso,2020,C0A,TG_04,1.0
+143,OK,Intensità moderata,Intensità  moderata,Intensità  moderata,2020,C0E,TG_04,1.0
+144,OK,"Tanta panna e latte, ben intenso",Tanta nanna e latte. Ben intenso,Tanta panna e latte. Ben intenso,2020,C0N,TG_04,1.0
+145,OK,Pochi sentori pannosi,Pochi sentori pannosi.,Pochi sentori pannosi.,2020,C0P,TG_04,1.0
+146,OK,"Povero, poco complesso, discreta intensità",Povero. Poco complesso. Discreta intensità,Povero. Poco complesso. Discreta intensità,2020,C0Q,TG_04,1.0
+147,OK,Crosta in senso positivo,Crosta in senso positivo (in precedenza poteva essere positivo o negativo),Crosta in senso positivo (in precedenza poteva essere positivo o negativo),2020,C0Q,TG_12,1.0
+148,OK,Pecorino.,Pecorino,Pecorino,2020,C0A,TG_19,1.0
+149,OK,Alcol.,Alcool,Alcool,2020,C0E,TG_24,1.0
+150,OK,Leggerissima nota tormentata,Leggerissima nota tormentata,Leggerissima nota tormentata,2020,C0E,TG_35,1.0
+151,OK,Nota leggermente fermentata,Nota leggermente fermentata,Nota leggermente fermentata,2020,C0Q,TG_35,1.0
+152,OK,Alla prima olfazione si percepiscono note quasi di puzzone.,Note quasi di puzzone alla prima olfazione,Note quasi di puzzone alla prima olfazione,2020,C0D,TG_04,1.0
+153,OK,Poco intenso,Poco intenso,Poco intenso,2020,C0Q,TG_04,1.0
+154,OK,Ha un sapore di grasso di prosciutto crudo.,Sa di grasso di prosciutto crudo,Sa di grasso di prosciutto crudo,2020,C0G,TG_04,1.0
+155,OK,Sapore di amido.,Amido,Amido,2020,C0M,TG_24,1.0
+156,OK,Peccato lieve nota bruciata,Peccato lieve nota bruciara,Peccato lieve nota bruciara,2020,C0G,TG_24,1.0
+157,OK,Poco complesso,Poco complesso,Poco complesso,2020,C0G,TG_20,1.0
+158,OK,Carente sulle note lattiche,Carente sulle note lattiche,Carente sulle note lattiche,2020,C0M,TG_20,1.0
+159,OK,Ricorda il cremoso al caramello.,Crem Caramel,Crem Caramel,2020,C0G,TG_19,1.0
+160,OK,Sente di liquirizia.,Liquirizia,Liquirizia,2020,C0E,Q_09,1.0
+161,OK,"L'odore iniziale non è convincente, poi svanisce.","Odore iniziale non convincente, poi sfuma","Odore iniziale non convincente, poi sfuma",2020,C0E,TG_04,1.0
+162,OK,Il profumo del campione presenta note intense di pane tostato.,Pane tostato potentissimo,Pane tostato potentissimo,2020,C0G,TG_04,1.0
+163,OK,"Moderata intensità del profumo, tipica del Grana Trentino.",Moderata intensità,Moderata intensità,2020,C0L,TG_04,1.0
+164,OK,È leggero e non complesso.,Leggero e non complesso,Leggero e non complesso,2020,C0M,TG_04,1.0
+165,OK,"Buona intensità del profumo, conforme alle caratteristiche del Grana Trentino.",Buona intensità,Buona intensità,2020,C0Q,TG_04,1.0
+166,OK,"Il profumo presenta note di caramello, tipiche di un formaggio ben stagionato.",Caramello,Caramello,2020,C0E,TG_19,1.0
+167,OK,"Il profumo è molto elegante, con una complessità aromatica apprezzabile.",Molto elegante,Molto elegante,2020,C0G,TG_24,1.0
+168,OK,"Spezzando un pezzo, si percepisce un leggero odore di cipolla.",Spezzando un pezzo no percepito un leggero odore di cipolla,Spezzando un pezzo no percepito un leggero odore di cipolla,2020,C0M,TG_35,1.0
+169,OK,Presenta tanti sentori lattei e vegetali strani.,Tanti sentori lattei. Ma anche vegetali strani,Tanti sentori lattei. Ma anche vegetaleetali strani,2020,C0D,TG_04,1.0
+170,OK,Ha una nota svizzera di groviera.,Nota svizzera di groviera,Nota svizzera di groviera,2020,C0O,TG_20,1.0
+171,OK,"Il profumo è molto elegante, con una complessità aromatica apprezzabile.",Molto elegante!,Molto elegante!,2020,C0C,TG_24,1.0
+172,OK,"Nocciola prevalente nel profumo, caratteristica del Grana Trentino.",Nocciola prevalente,Nocciola prevalente,2020,C0Q,TG_24,1.0
+173,OK,C'è troppa crosta.,Troppa crosta,Troppa crosta,2020,C0A,TG_04,1.0
+174,OK,"Buona intensità del profumo, conforme alle caratteristiche del Grana Trentino.",Buona intensità,Buona intensità,2020,C0M,TG_04,1.0
+175,OK,"Il profumo presenta note pungenti, tipiche di un formaggio stagionato.",Pungente,Pungente,2020,C0A,TG_19,1.0
+176,OK,"Il profumo presenta note di nocciola, caratteristica del Grana Trentino.",Nocciola,Nocciola,2020,C0N,TG_19,1.0
+177,OK,Sembra polvere.,Polvere...,Polvere...,2020,C0A,TG_24,1.0
+178,OK,Sente di kiwi.,Kiwi...,Kiwi...,2020,C0F,TG_24,1.0
+179,OK,"Il profumo presenta note di nocciola, caratteristica del Grana Trentino.",Nocciola,Nocciola,2020,C0M,TG_24,1.0
+180,OK,"All'inizio ha un odore di stalla, poi si apre.",Stalla al primo impatto poi si apre!!!,Stalla al primo impatto poi si apre!!!,2020,C0P,TG_24,1.0
+181,OK,C'è una leggera fermentazione.,Leggera fermentazione,Leggera fermentazione,2020,C0Q,TG_35,1.0
+182,OK,Intensità moderata.,Intensità moderata,Intensità moderata,2020,C0A,TG_04,1.0
+183,OK,"Alla prima olfazione, c'è una sfumatura non gradevole.","Al primo olfatto, sfumatura non gradevole","Al primo olfatto, sfumatura non gradevole",2020,C0C,TG_04,1.0
+184,OK,Leggero.,Leggero,Leggero,2020,C0G,TG_04,1.0
+185,OK,Abbastanza intenso.,Abbastanza intenso,Abbastanza intenso,2020,C0I,TG_04,1.0
+186,OK,I quattro pezzi sono molto diversi e all'apertura.,Molto diversi i 4 pezzi e all'apertura,Molto diversi i 4 pezzi e all'apertura,2020,C0G,TG_19,1.0
+187,OK,Soprattutto all'apertura.,Soprattutto all'apertura,Soprattutto all'apertura,2020,C0P,TG_19,1.0
+188,OK,Poco intenso e poco complesso.,Poco intenso e poco complesso,Poco intenso e poco complesso,2020,C0N,TG_20,1.0
+189,OK,Poco complesso.,Poco complesso,Poco complesso,2020,C0P,TG_20,1.0
+190,OK,Intenso e molto equilibrato.,Intenso e molto equilibrato,Intenso e molto equilibrato,2020,C0A,TG_24,1.0
+191,CONFORME,"Il campione si presenta conforme agli standard, con un profumo equilibrato e privo di anomalie.",Molto buono!,Molto buono!,2020,C0G,TG_24,0.5
+192,OK,La crosta è solo accennata.,Crosta solo accennata,Crosta solo accennata,2020,C0I,TG_24,1.0
+193,OK,Sento un aroma di kiwi.,Kiwi...,Kiwi...,2020,C0N,TG_24,1.0
+194,OK,C'è un retrogusto di bruciato.,Peccato per il fondo di bruciato,Peccato per il fondo di bruciato,2020,C0P,TG_24,1.0
+195,OK,Liquirizia.,Liquirizia,Liquirizia,2020,C0E,Q_09,1.0
+196,OK,Ho dei dubbi sul sentore di nostrano.,Il sentore di nostrano é un dubbio,Il sentore di nostrano é un dubbio,2020,C0D,TG_04,1.0
+197,OK,"È strano, a tratti sembra di sentire odore di pesce.",Strano. A tratti sentiva di pesce. Perplesso,Strano. A tratti sentiva di pesce. Perplesso,2020,C0M,TG_04,1.0
+198,OK,Sento un forte odore di alcool.,Alcool!,Alcool!,2020,C0A,TG_24,1.0
+199,OK,"C'è un sentore di stalla, ma solo all'inizio.",Stalla ma solo al primo impatto!,Stalla ma solo al primo impatto!,2020,C0N,TG_24,1.0
+200,OK,Leggere note bruciate.,Leggere note bruciate,Leggere note bruciate,2020,C0P,TG_24,1.0
+201,OK,Sento un aroma di polvere.,Polvere,Polvere,2020,C0P,TG_28,1.0
+202,ILLEGGIBILE,,Non so se ho scritto che son raffreddato,Non so se ho scritto che son raffreddato,2020,C0A,TG_04,1.0
+203,OK,"Sento poco, forse perché è raffreddato o il formaggio è di qualità bassa.",Sento poco. Non so se perché  raffreddato o perché povero il fromage,Sento poco. Non so se perché  raffreddato o perché povero il fromage,2020,C0C,TG_04,1.0
+204,ILLEGGIBILE,,Oggi sono raffreddato,Oggi sono raffreddato,2020,C0P,TG_04,1.0
+205,OK,Leggero sentore di bruciato e animale stalla all'inizio.,Leggero sentore di bruciato e stalla all'inizio!,Leggero sentore di bruciato e stalla all'inizio!,2020,C0A,TG_24,1.0
+206,OK,Nota di alcool.,Alcool,Alcool,2020,C0M,TG_24,1.0
+207,OK,Sentore di kiwi e bruciato.,"Kiwi,,,e bruciato?","Kiwi,,,e bruciato?",2020,C0N,TG_24,1.0
+208,OK,Sentore di urina.,Sentore di urina...,Sentore di urina...,2020,C0P,TG_24,1.0
+209,OK,"C'è un sapore di formaggio, ma non ricorda il trentingrana.","Tanta nanna, ma nota di formaggio non trentingrana","Tanta panna, ma nota di formaggio non trentingrana",2020,C0P,TG_04,1.0
+210,OK,Sentore da animale stalla iniziale che poi sparisce.,Sentore da stalla iniziale...che poi sparisce,Sentore da stalla iniziale...che poi sparisce,2020,C0C,TG_24,1.0
+211,OK,Peccato per leggero sentore di alcool.,Peccato per leggero sentore di alcool,Peccato per leggero sentore di alcool,2020,C0D,TG_24,1.0
+212,OK,Nota di nocciola.,NOcciola,NOcciola,2020,C0E,TG_24,1.0
+213,OK,Intensità moderata.,Intensità  moderata,Intensità  moderata,2020,C0I,TG_04,1.0
+214,OK,Elegante con note di kiwi.,Elegante... Kiwi,Elegante... Kiwi,2020,C0D,TG_24,1.0
+215,OK,Nota di alcool.,Alcool!!,Alcool!!,2020,C0Q,TG_24,1.0
+216,OK,Sentore di muschio.,Muschio,Muschio,2020,C0F,TG_26,1.0
+217,OK,Nota di liquirizia.,Liquirizia,Liquirizia,2020,C0N,Q_09,1.0
+218,OK,Sentore di funghi.,Funghi,Funghi,2020,C0N,TG_04,1.0
+219,OK,Lievi intensità.,Lievi intensità,Lievi intensità,2020,C0Q,TG_04,1.0
+220,OK,Sento un aroma di yogurt alla frutta.,Yogurt alla frutta,Yogurt alla frutta,2020,C0A,TG_19,1.0
+221,OK,C'è un sentore di liquirizia.,Liquirizia,Liquirizia,2020,C0N,TG_19,1.0
+222,OK,Sento un aroma di kiwi.,Kiwi...,Kiwi...,2020,C0G,TG_24,1.0
+223,OK,Peccato per la leggera nota bruciata.,Peccato per leggera nota bruciata,Peccato per leggera nota bruciata,2020,C0N,TG_24,1.0
+224,OK,C'è un forte odore di alcool.,Alcol,Alcol,2020,C0Q,TG_24,1.0
+225,OK,Sento un aroma di liquirizia.,Liquirizia,Liquirizia,2020,C0R,Q_09,1.0
+226,OK,C'è un sentore di grasso di prosciutto crudo.,Grasso di prosciutto crudo,Grasso di prosciutto crudo,2020,C0B,TG_04,1.0
+227,OK,Moderato.,Moderato,Moderato,2020,C0P,TG_04,1.0
+228,OK,Sento un odore vinilico.,Vinilico,Vinilico,2020,C0G,TG_12,1.0
+229,OK,C'è un forte e spiacevole aroma di dado e glutammato.,"Dado, glutammato molto forte e spiacevole","Dado, glutammato molto forte e spiacevole",2020,C0R,TG_14,1.0
+230,OK,Caramello.,Caramello,Caramello,2020,C0R,TG_19,1.0
+231,OK,"Stalla solo all'inizio, poi sparisce.",Stalla solo all'inizio  poi sparisce,Stalla solo all'inizio  poi sparisce,2020,C0B,TG_24,1.0
+232,OK,Peccato per la sfumatura bruciata e il brodo.,"Peccato sfumatura bruciata e  brodo che, ho dimenticato","Peccato sfumatura bruciata e  brodo che, ho dimenticato",2020,C0G,TG_24,1.0
+233,OK,"Elegante, con molta nocciola e kiwi.","Elegante,,,molta nocciola e kiwi","Elegante,,,molta nocciola e kiwi",2020,C0O,TG_24,1.0
+234,OK,Intenso ed elegante.,Intenso ed elegante,Intenso ed elegante,2020,C0P,TG_24,1.0
+235,OK,Vaniglia! Peccato per il bruciato.,Vaniglia! Peccato per bruciato!,Vaniglia! Peccato per bruciato!,2020,C0R,TG_24,1.0
+236,OK,Salsa al caramello mou bruciacchiata.,Salsa al caramello mou bruciacchiata,Salsa al caramello mou bruciacchiata,2020,C0R,TG_28,1.0
+237,OK,"Polvere, pungente.","Polvere, pungente","Polvere, pungente",2020,C0A,Q_09,1.0
+238,OK,Sento un aroma di liquirizia.,Liquirizia,Liquirizia,2020,C0N,Q_09,1.0
+239,OK,"Alla prima olfazione percepisco un odore anomalo, di un altro formaggio.","Alla prima olfazione odore anomalo, di altro formaggio quantomeno.","Alla prima olfazione odore anomalo, di altro formaggio quantomeno.",2020,C0H,TG_04,1.0
+240,OK,Peccato per il bruciato.,Peccato per bruciato,Peccato per bruciato,2020,C0A,TG_24,1.0
+241,OK,C'è un sentore di vaniglia?,Vaniglia?,Vaniglia?,2020,C0P,Q_09,1.0
+242,OK,Il profumo presenta note animali più che di stalla.,Animale più  che stalla,Animale più  che stalla,2020,C0B,TG_04,1.0
+243,OK,"Il profumo presenta note di vaniglia, con sentori molto buoni di insilato insieme ad altri non buoni.",Vaniglia. Sentori molto buoni insieme ad altri non buoni,Vaniglia. Sentori molto buoni insilatoieme ad altri non buoni,2020,C0A,TG_19,1.0
+244,OK,Il profumo presenta note di burro cotto e una nota di confetto.,"Burro cotto, nota di confetto","Burro cotto, nota di confetto",2020,C0P,TG_20,1.0
+245,OK,Il profumo presenta note di vaniglia.,Vaniglia,Vaniglia,2020,C0B,TG_24,1.0
+246,OK,"Il profumo presenta una buona intensità, peccato per una sfumatura di bruciato.",Peccato per sfumatura di bruciato,Peccato per sfumatura di bruciato,2020,C0M,TG_24,1.0
+247,OK,"Il profumo è elegante, con note di cioccolato e lievito.",Elegante! Cioccolata  e anche lievito...,Elegante! Cioccolata  e anche lievito...,2020,C0P,TG_24,1.0
+248,OK,Il profumo presenta una buona intensità.,Buona intensità,Buona intensità,2020,C0D,TG_04,1.0
+249,OK,Il profumo presenta una moderata intensità.,Moderata intensità,Moderata intensità,2020,C0F,TG_04,1.0
+250,OK,Intensità media con un sentore anomalo.,Media intensità. Sentore anomalo (nostrano),Media intensità. Sentore anomalo (nostrano),2020,C0H,TG_04,1.0
+251,OK,Il profumo presenta una buona intensità.,Buona intensità,Buona intensità,2020,C0Q,TG_04,1.0
+252,OK,Il profumo presenta note di agrumi all'apertura.,Agrumi (all'apertura),Agrumi (all'apertura),2020,C0A,TG_19,1.0
+253,OK,Il profumo è molto elegante.,Molto  elegante,Molto  elegante,2020,C0A,TG_24,1.0
+254,OK,"Il profumo presenta una buona intensità, peccato per una sfumatura bruciata.",Peccato per sfumatura bruciata!,Peccato per sfumatura bruciata!,2020,C0D,TG_24,1.0
+255,OK,Il profumo presenta note di noce.,Noce,Noce,2020,C0G,TG_24,1.0
+256,OK,Il profumo non è molto buono come impatto iniziale.,Non molto buono come impatto iniziale,Non molto buono come impatto iniziale,2020,C0H,TG_24,1.0
+257,OK,Il profumo presenta note di ananas e frutta esotica.,Ananas e frutta esotica,Ananas e frutta esotica,2020,C0M,Q_02,1.0
+258,OK,Il profumo presenta una moderata intensità.,Intensità  Moderata,Intensità  Moderata,2020,C0C,TG_04,1.0
+259,OK,"Il profumo è pannoso ed elegante, ma con una moderata intensità.","Pannoso, elegante, ma moderata intensità","Pannoso, elegante, ma moderata intensità",2020,C0N,TG_04,1.0
+260,OK,"Dominano sentori di latte e burro fresco, ma c'è un odore di formaggio fermentato che penalizza.","Tanto latte, burro fresco. Alla prima occasione odore di altro formaggio, fermentato che mi fa penalizzare.","Tanto latte, burro fresco. Alla prima occasione odore di altro formaggio, fermentato che mi fa penalizzare.",2020,C0P,TG_04,1.0
+261,OK,Sentore lattico dominante con burro fresco.,"Lattico dominante, burro fresco","Lattico dominante, burro fresco",2020,C0H,TG_20,1.0
+262,OK,Per fermentato intendo un odore di alcool.,Fermentato intendo alcool,Fermentato intendo alcool,2020,C0C,TG_24,1.0
+263,OK,Solo una piccola nota di bruciato.,Solo una piccola nota di bruciato,Solo una piccola nota di bruciato,2020,C0H,TG_24,1.0
+264,FUORI_ATTRIBUTO,Non è equilibrato nell'espressione.,Non equilibrato nell' espressione,Non equilibrato nell' espressione,2020,C0M,TG_24,1.0
+265,FUORI_ATTRIBUTO,Quasi disturbante.,Quasi disturba!,Quasi disturba!,2020,C0P,TG_24,1.0
+266,OK,Debole fermentazione.,Debole fermentazione,Debole fermentazione,2020,C0E,TG_35,1.0
+267,OK,Bella intensità.,Bella intensità,Bella intensità,2020,C0I,TG_04,1.0
+268,OK,Moderata intensità.,Moderata intensità,Moderata intensità,2020,C0L,TG_04,1.0
+269,OK,Nota da nostrano.,Nota da nostrano,Nota da nostrano,2020,C0N,TG_04,1.0
+270,OK,"Alla prima occasione ho percepito un odore sgradevole, poi scomparso.","Alla prima occasione percepito un odore non gradevole, poi scomparso. Non so definirlo, quindi non penalizzo","Alla prima occasione percepito un odore non gradevole, poi scomparso. Non so definirlo, quindi non penalizzo",2020,C0O,TG_04,1.0
+271,OK,Sentore di crauti.,Crauti,Crauti,2020,C0G,TG_19,1.0
+272,OK,Note animali simili a lettiera.,Lettiera note animali,Lettiera note animali,2020,C0A,TG_20,1.0
+273,OK,Burro cotto.,Burro cotto,Burro cotto,2020,C0L,TG_20,1.0
+274,OK,Sentore di confetteria.,Confetteria,Confetteria,2020,C0N,TG_20,1.0
+275,OK,Difettato con odori strani.,Difettato? Odori strani...,Difettato? Odori strani...,2020,C0A,TG_24,1.0
+276,OK,Kiwi e mela.,Kiwi e mela,Kiwi e mela,2020,C0L,TG_24,1.0
+277,OK,Un profumo anomalo alla prima occasione fa diminuire il voto.,Profumo anomalo alla prima occasione fa diminuire i voto,Profumo anomalo alla prima occasione fa diminuire i voto,2020,C0E,TG_04,1.0
+278,OK,"Sentore di sedano e troppo vegetale cotto, abbasso il voto.","Sedano. Troppo vegetale cotto, abbasso voto. Altrimenti molto intenso","Sedano. Troppo vegetaleetale cotto, abbasso voto. Altrimenti molto intenso",2020,C0R,TG_04,1.0
+279,OK,Mela e pesca forti!,Mela e pesca forti!,Mela e pesca forti!,2020,C0R,TG_24,1.0
+280,OK,C'è anche un sentore di alcool.,Anche alcol,Anche alcol,2020,C0C,TG_24,1.0
+281,OK,"All'inizio ho percepito odore di stalla, ma poi è diminuito.",All'inizio stalla...ma lo cala,All'inizio stalla...ma lo cala,2020,C0N,TG_24,1.0
+282,OK,Il profumo del campione presenta una complessità aromatica molto intensa.,Molto complesso!,Molto complesso!,2020,C0D,TG_24,1.0
+283,OK,Il profumo del campione presenta una intensità molto limitata.,Molto poco intenso,Molto poco intenso,2020,C0M,TG_35,1.0
+284,ILLEGGIBILE,,All'apertura solvente liquame,All'apertura solvente liquame,2020,C0L,Q_09,1.0
+285,OK,Il profumo del campione presenta una intensità poco marcata.,Poco intenso,Poco intenso,2020,C0O,TG_04,1.0
+286,OK,"All'inizio si percepisce un odore non gradevole, ma poi sfuma senza penalizzare, con una buona intensità.","All'inizio odore non gradevole. Poi sfuma, non penalizza. Buona intensità","All'inizio odore non gradevole. Poi sfuma, non penalizza. Buona intensità",2020,C0Q,TG_04,1.0
+287,OK,Il profumo del campione presenta una intensità media.,Media intensità,Media intensità,2020,C0L,TG_04,1.0
+288,OK,"Il profumo del campione presenta una buona intensità, con note di pane e tostatura.","Buona intensità. Tanto pane, tostatura","Buona intensità. Tanto pane, tostatura",2020,C0R,TG_04,1.0
+289,OK,Il profumo del campione presenta una intensità limitata.,Intensità  limitata,Intensità  limitata,2020,C0M,TG_04,1.0
+290,OK,Sentore di croste di polenta.,Croste di polenta,Croste di polenta,2020,C0L,TG_19,1.0
+291,OK,Sentore di crauti.,Crauti,Crauti,2020,C0A,TG_19,1.0
+292,CONFORME,"Il campione rispetta le normative, mostrando un profumo gradevole e tipico del Grana Trentino.",Ottimo,Ottimo,2020,C0O,TG_24,0.5
+293,OK,"Il profumo presenta note bruciate, che penalizzano leggermente la qualità.",Peccato per bruciato,Peccato per bruciato,2020,C0R,TG_24,1.0
+294,OK,"Il profumo presenta sentori positivi di brodo di carne e pane tostato, ma il NOSTRANO è molto intenso e caratterizzante.",Ci sono comunque sentori positivi come brodo di carne e pane tostato ma il NOSTRANO è MOLTO INTENSO e caratterizzante,Ci sono comunque sentori positivi come brodo di carne e pane tostato ma il NOSTRANO è MOLTO INTENSO e caratterizzante,2020,C0E,Q_02,1.0
+295,ILLEGGIBILE,,All'apertura stagnante,All'apertura stagnante,2020,C0A,Q_09,1.0
+296,OK,"Solo all'apertura si percepisce un odore, poi non è più avvertibile.",Solo all'apertura poi no l'ho sento,Solo all'apertura poi no l'ho sento,2020,C0B,Q_09,1.0
+297,OK,Il profumo del campione presenta una intensità moderata.,Intensità  moderata,Intensità  moderata,2020,C0E,TG_04,1.0
+298,OK,Il profumo del campione presenta note di burro.,Tanto burro,Tanto burro,2020,C0G,TG_04,1.0
+299,OK,Il profumo presenta una nota bruciata.,Nota bruciata,Nota bruciata,2020,C0B,TG_24,1.0
+300,OK,Il profumo del campione è piacevole.,Piacevole,Piacevole,2020,C0G,TG_24,1.0
+301,OK,Sentore di alcool.,Alcool,Alcool,2020,C0M,TG_24,1.0
+302,OK,Odore di polvere chiusa.,Polvere chiuso,Polvere chiuso,2020,C0N,Q_09,1.0
+303,OK,Buona intensità.,Buona intensità,Buona intensità,2020,C0A,TG_04,1.0
+304,OK,Buona intensità.,Buona intensità,Buona intensità,2020,C0C,TG_04,1.0
+305,OK,"Poco complesso, moderata intensità.","Poco complesso, moderata intensità","Poco complesso, moderata intensità",2020,C0H,TG_04,1.0
+306,OK,Buona intensità.,Buona intensità,Buona intensità,2020,C0P,TG_04,1.0
+307,OK,Sentore di yogurt.,Anche yogurt,Anche yogurt,2020,C0A,TG_24,1.0
+308,OK,Leggero bruciato.,Leggero bruciato,Leggero bruciato,2020,C0H,TG_24,1.0
+309,OK,Complesso ed elegante.,Complesso ed elegante,Complesso ed elegante,2020,C0P,TG_24,1.0
+310,OK,Ha una consistenza pomata.,Pomata,Pomata,2020,C0H,TG_26,1.0
+311,OK,Burro fuso ma quasi bruciato.,Burro fuso ma quasi bruciato,Burro fuso ma quasi bruciato,2020,C0E,TG_28,1.0
+312,ILLEGGIBILE,,Insilato,insilatoilato,2020,C0P,TG_35,1.0
+313,OK,Ha un odore di plastica.,Plastica,Plastica,2020,C0G,Q_09,1.0
+314,OK,Ricorda il lievito per il pane.,Lievito pane?,Lievito pane?,2020,C0N,Q_09,1.0
+315,OK,Intensità moderata.,Intensità  moderata,Intensità  moderata,2020,C0N,TG_04,1.0
+316,OK,"Mollica di pane, burro cotto.","Mollica di pane, burro cotto","Mollica di pane, burro cotto",2020,C0G,TG_20,1.0
+317,OK,Leggermente bruciato.,Leggermente  bruciato,Leggermente  bruciato,2020,C0G,TG_24,1.0
+318,OK,Buona intensità.,Buona intensità,Buona intensità,2020,C0R,TG_04,1.0
+319,OK,Ha un sentore di alcool.,Alcool,Alcool,2020,C0R,TG_24,1.0
+320,OK,Moderata intensità.,Moderata intensità,Moderata intensità,2020,C0F,TG_04,1.0
+321,OK,Odore di paglia.,Paglia,Paglia,2020,C0F,TG_20,1.0
+322,OK,"Il profumo presenta note intense e pungenti, con una reminiscenza di fieno greco.",Molto intenso ma in negativo....mi ricorda una essenza come il fieno greco...comunque pungente,Molto intenso ma in negativo....mi ricorda una essenza come il fieno greco...comunque pungente,2020,C0L,Q_02,1.0
+323,OK,Solo all'apertura si percepisce un odore stantio.,Solo all'apertura odore stantio,Solo all'apertura odore stantio,2020,C0P,Q_09,1.0
+324,OK,Il profumo ha una buona intensità.,Buona intensità,Buona intensità,2020,C0P,TG_04,1.0
+325,OK,Il profumo è complesso.,Complesso,Complesso,2020,C0P,TG_24,1.0
+326,OK,Il profumo è forte.,Forte,Forte,2020,C0M,TG_14,1.0
+327,OK,Ricorda i crauti.,Crauti,Crauti,2020,C0C,TG_19,1.0
+328,OK,Il profumo presenta note chimiche simili alla colla.,Odore chimico tipo colpa o simili,colla o simili,2020,C0M,TG_19,1.0
+329,OK,Ha un odore di polvere.,Polvere,Polvere,2020,C0M,TG_24,1.0
+330,FUORI_ATTRIBUTO,Al primo impatto non è gradevole.,Al primo impatto non buono,Al primo impatto non buono,2020,C0P,TG_24,1.0
+331,OK,Ha un sentore di banana verde.,Banana verde,Banana verde,2020,C0M,TG_35,1.0
+332,OK,Il profumo è fresco.,Profumo fresco,Profumo fresco,2020,C0M,TG_04,1.0
+333,OK,Il profumo presenta una nota polverosa che ne compromette la qualità.,Peccato presenza nota polverosa,Peccato presenza nota polverosa,2020,C0M,TG_24,1.0
+334,FUORI_ATTRIBUTO,Non è buono.,Non buono,Non buono,2020,C0Q,TG_24,1.0
+335,ILLEGGIBILE,,Qualcosa di non ottimale che non so definire,Qualcosa di non ottimale che non so definire,2020,C0I,TG_19,1.0
+336,OK,Il profumo è complesso e piacevole.,Complesso e piacevole,Complesso e piacevole,2020,C0G,TG_24,1.0
+337,OK,Il profumo presenta note di gomma.,gomma,gomma,2020,C0G,TG_28,1.0
+338,OK,"All'apertura si sente un odore stagnante, poi svanisce.",All'apertura odore stagnante poi non si sente,All'apertura odore stagnante poi non si sente,2020,C0N,Q_09,1.0
+339,OK,Il profumo ha una buona intensità.,Buona intensità,Buona intensità,2020,C0N,TG_04,1.0
+340,OK,Il profumo ha un'ottima intensità.,Ottima intensità,Ottima intensità,2020,C0N,TG_04,1.0
+341,OK,L'intensità è bassa.,Intensità bassa,Intensità bassa,2020,C0O,TG_04,1.0
+342,ILLEGGIBILE,,Correggi fieno non meno 1 ma più 0.2,Correggi fieno non meno 1 ma più 0.2,2020,C0B,TG_04,1.0
+343,OK,Intensità bassa.,Leggero,Leggero,2020,C0E,TG_04,1.0
+344,OK,"È poco intenso, manca qualcosa.",Poco intenso manca tra i commenti?,Poco intenso manca tra i commenti?,2020,C0E,Q_09,1.0
+345,OK,Poco intenso.,Poco intenso,Poco intenso,2020,C0B,Q_09,1.0
+346,OK,Ricorda la panna cotta.,Panna cotta,Panna cotta,2021,C0N,TG_19,1.0
+347,OK,Tenue senza particolari note negative.,Tenue senza particolari note negative,Tenue senza particolari note negative,2021,C0Q,Q_10,1.0
+348,OK,Ha un odore di crauti.,Crauti,Crauti,2021,C0C,TG_19,1.0
+349,OK,Si avverte un odore di marcio.,Marcio,Marcio,2021,C0A,TG_19,1.0
+350,OK,Ricorda i funghi freschi.,Funghi freschi,Funghi freschi,2021,C0G,TG_28,1.0
+351,OK,Potrebbe avere un sentore di eucalipto.,Eucalipto?,Eucalipto?,2021,C0A,Q_09,1.0
+352,CONFORME,"Il profumo del campione è neutro, conforme agli standard senza note anomale o difetti.",Neutro,Neutro,2021,C0R,Q_10,0.5
+353,OK,Odore di crauti.,Crauti,Crauti,2021,C0I,TG_19,1.0
+354,OK,Si percepisce un sentore di gomma bruciata.,Gomma bruciata,Gomma bruciata,2021,C0P,Q_09,1.0
+355,ILLEGGIBILE,,Insilato,insilatoilato,2021,C0P,TG_24,1.0
+356,OK,Si avverte un profumo agrumato.,Agrumato,Agrumato,2021,C0Q,TG_19,1.0
+357,OK,"Ho il dubbio di aver sentito un cattivo odore iniziale, ma non penalizzo.",Ho il dubbio di aver sentito un cattivo odore iniziale. Non riesco a qualificarsi poi...non penalizzo,Ho il dubbio di aver sentito un cattivo odore iniziale. Non riesco a qualificarsi poi...non penalizzo,2021,C0C,TG_04,1.0
+358,OK,Si avverte un profumo tostato.,Tostato,Tostato,2021,C0Q,TG_28,1.0
+359,OK,All'apertura si percepisce un sentore di plastica bruciata.,All' apertura plastica bruciata,All' apertura plastica bruciata,2021,C0M,Q_09,1.0
+360,OK,Ha un odore di paglia sporca.,Paglia sporca,Paglia sporca,2021,C0E,TG_19,1.0
+361,OK,Liquirizia e radice.,Liquirizia radice,Liquirizia radice,2021,C0M,TG_19,1.0
+362,OK,Molto elegante.,Molto elegante,Molto elegante,2021,C0F,TG_24,1.0
+363,OK,Odore stantio e di cipolla solo all'apertura.,Odore stantio e cipolla solo all’apertura,Odore stantio e cipolla solo all’apertura,2021,C0F,Q_09,1.0
+364,OK,Gomma bruciata.,Gomma bruciata,Gomma bruciata,2021,C0P,Q_09,1.0
+365,OK,Balsamico e eucalipto.,Balsamico eucalipto,Balsamico eucalipto,2021,C0E,Q_09,1.0
+366,OK,Molto tenue.,Molto tenue,Molto tenue,2021,C0I,TG_19,1.0
+367,OK,Ananas e caramella.,Ananas e caramella mu,Ananas e caramella mu,2021,C0I,TG_35,1.0
+368,OK,Odori percepibili solo all'apertura.,Odori solo all’apertura,Odori solo all’apertura,2021,C0P,Q_09,1.0
+369,OK,Presenza di polvere.,"Polvere,","Polvere,",2021,C0L,TG_24,1.0
+370,OK,"Odore di cavolo, più evidente all'apertura.","Cavolo, odori piu evidenti all’apertura","Cavolo, odori piu evidenti all’apertura",2021,C0P,Q_09,1.0
+371,OK,Profumo di muffa bianca del camembert.,Sa di muffa bianca del camembert,Sa di muffa bianca del camembert,2021,C0P,TG_04,1.0
+372,OK,Odore stagnante solo all'apertura.,Solo all’apertura stagnante,Solo all’apertura stagnante,2021,C0A,Q_09,1.0
+373,OK,Gomma bruciata.,Gomma bruciata,Gomma bruciata,2021,C0P,Q_09,1.0
+374,OK,Stagnante solo all'apertura.,Stagnante solo all’apertura,Stagnante solo all’apertura,2021,C0E,Q_09,1.0
+375,OK,Cipolla lessa.,Cipolla lessa,Cipolla lessa,2021,C0P,TG_19,1.0
+376,OK,All'apertura l'odore è più evidente e sgradevole.,All’apertura più evidente od sgradevole,All’apertura più evidente od sgradevole,2021,C0D,Q_09,1.0
+377,OK,Gomma bruciata più evidente all'apertura.,Gomma bruciata più evidente all’apertura,Gomma bruciata più evidente all’apertura,2021,C0P,Q_09,1.0
+378,OK,"Odore vegetale strano, simile alla buccia di anguria.","Odore vegetale strano …,buccia anguria?","Odore vegetaleetale strano …,buccia anguria?",2021,C0Q,Q_09,1.0
+379,OK,Molto interessante.,Molto interessante,Molto interessante,2021,C0G,TG_24,1.0
+380,OK,Vaniglia all'apertura.,Vaniglia all’apertura,Vaniglia all’apertura,2021,C0D,TG_19,1.0
+381,OK,Presenza di polvere.,"Polvere anche,,,","Polvere anche,,,",2021,C0Q,TG_24,1.0
+382,CONFORME,"Il campione si distingue per un profumo interessante, conforme alle caratteristiche del Grana Trentino.",Molto interessante,Molto interessante,2021,C0G,TG_24,0.5
+383,OK,Intrigante.,Intrigante,Intrigante,2021,C0L,TG_24,1.0
+384,OK,Leggermente bruciato.,Leggermente bruciato,Leggermente bruciato,2021,C0N,TG_24,1.0
+385,OK,"Odore minerale, simile alla roccia.",Minerale-roccia,Minerale-roccia,2021,C0B,TG_24,1.0
+386,OK,Peccato per la leggera nota animale.,"Peccato perla leggera nota animale,,","Peccato perla leggera nota animale,,",2021,C0G,TG_24,1.0
+387,OK,Erbe balsamiche.,Erbe Balsamiche,Erbe Balsamiche,2021,C0E,Q_09,1.0
+388,OK,"Intensità negativa perché non piacevole, puzza.","Intensità messa negativa perché non piacevole, puzza,,,,","Intensità messa negativa perché non piacevole, puzza,,,,",2021,C0C,TG_14,1.0
+389,OK,Radici fresche.,Radici fresche,Radici fresche,2021,C0N,TG_19,1.0
+390,OK,Crauti acidi.,Crauti acidi,Crauti acidi,2021,C0I,TG_19,1.0
+391,OK,"All’inizio ho sentito fumo, poi scomparso.","All’inizio ho sentito fumo, Poi scomparso","All’inizio ho sentito fumo, Poi scomparso",2021,C0N,TG_04,1.0
+392,OK,Profumo di banana.,Banana,Banana,2021,C0Q,Q_09,1.0
+393,OK,Crauti.,Crauti,Crauti,2021,C0N,TG_19,1.0
+394,OK,Non ha il sapore del grana.,Non sa di grana,Non sa di grana,2021,C0M,TG_19,1.0
+395,OK,Plastica bruciata.,Plastica bruciata,Plastica bruciata,2021,C0P,Q_09,1.0

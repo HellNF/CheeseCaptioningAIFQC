@@ -110,7 +110,7 @@ Linear → Softmax → distribuzione sul vocabolario
 
 - **Encoder:** ResNet-50 pre-trained, estratta la feature map dall'ultimo layer conv (prima del global avg pooling) → shape `(B, 2048, 7, 7)` → reshape in `(B, 49, 2048)` → proiezione lineare a 512
 - **Fusione FETTA+GRANA:** concatenazione delle due feature map spaziali → `(B, 98, 512)` — mantiene la struttura spaziale di entrambe le viste
-- **Decoder:** Transformer decoder PyTorch standard (`nn.TransformerDecoder`), 4 layer, 8 teste, dim 512, FFN 2048
+- **Decoder:** Transformer decoder PyTorch standard (`nn.TransformerDecoder`), 4 layer, 8 teste, dim 512, FFN 2048. **Opzione consigliata:** inizializzare i pesi del decoder da `GroNLP/gpt2-small-italian` (GPT-2 pre-trained su italiano) — i layer di self-attention sono già addestrati su testo italiano, riducendo il numero di epoche necessarie
 - **Positional encoding:** sinusoidale sulle sequenze testuali; per le visual features si usa positional encoding 2D apprendibile (o nessuno, dato che sono già ordinate spazialmente)
 - **Generazione:** autoregressive con causal mask; beam search a inference
 
@@ -146,7 +146,7 @@ Linear → Softmax → distribuzione sul vocabolario
 - **Fusione FETTA+GRANA:** concatenazione delle due sequenze di patch → `(B, 392, 768)` → proiezione lineare a 512
 - **Strategia fine-tuning ViT:** i primi N layer del ViT sono congelati, gli ultimi 4 sono trainabili con learning rate ridotto (1/10 rispetto al decoder) — come raccomandato dal corso (Cap. 6, sezione Transfer Learning) e dalla letteratura specifica su ViT con dataset piccoli (Gani et al., BMVC 2022)
 - **Data augmentation obbligatoria per M3:** con ~1300 campioni, il ViT tende all'overfitting; applicare random crop, flip orizzontale, color jitter, e random rotation durante il training
-- **Decoder:** identico a M2 (Transformer decoder PyTorch, 4 layer, 8 teste, dim 512)
+- **Decoder:** identico a M2 (Transformer decoder PyTorch, 4 layer, 8 teste, dim 512), con pesi inizializzati da `GroNLP/gpt2-small-italian` o `LorenzoDeMattei/GePpeTto`. Questo rende M3 la combinazione **ViT (ImageNet) + GPT-2 italiano** — entrambi gli encoder e decoder partono da pesi pre-trained, il che è particolarmente vantaggioso con dataset piccoli
 - **Memoria GPU:** ViT-B/16 ≈ 86M parametri — raccomandato training su Colab con GPU A100 o T4 con batch size ridotto (8-16)
 
 ### Perché è concettualmente distinto
@@ -185,6 +185,29 @@ Split a livello di **campione fisico** (non di immagine), per evitare data leaka
 - Test: 15%
 
 Stratificazione per anno (2018-2021) raccomandata.
+
+---
+
+## Modelli italiani pre-trained disponibili
+
+Contrariamente a quanto inizialmente indicato, **esistono modelli pre-trained in italiano** su HuggingFace utilizzabili come decoder o come fonte di tokenizer/vocabolario:
+
+| Modello | Architettura | Parametri | Addestrato su | Uso consigliato |
+|---|---|---|---|---|
+| `LorenzoDeMattei/GePpeTto` | GPT-2 (117M) | 117M | Wikipedia IT + ItWac (14GB) | Decoder M2/M3, o tokenizer per M1 |
+| `GroNLP/gpt2-small-italian` | GPT-2 small | ~117M | Corpus italiano | Decoder M2/M3 |
+| `GroNLP/gpt2-medium-italian-embeddings` | GPT-2 medium | ~345M | Corpus italiano | Decoder M3 se VRAM sufficiente |
+| `gsarti/it5-base` | T5 enc-dec | ~250M | mC4 italiano (41B parole) | Alternativa completa per M3 |
+
+### Strategia raccomandata per ciascun metodo
+
+- **M1 (CNN+LSTM):** usare il tokenizer di `GePpeTto` per il vocabolario italiano consolidato; i pesi LSTM restano inizializzati da zero (GPT-2 è decoder-only, non compatibile con LSTM)
+- **M2 (CNN+Transformer):** inizializzare il Transformer decoder con i pesi di `GroNLP/gpt2-small-italian`; aggiungere un cross-attention layer sulle visual features CNN (non presente in GPT-2 standard)
+- **M3 (ViT+Transformer):** inizializzare sia l'encoder (ViT-B/16 da `timm`) che il decoder (GPT-2 italiano da `GroNLP/gpt2-small-italian`) da pesi pre-trained — massimo sfruttamento del transfer learning
+
+### Nota su IT5
+
+`gsarti/it5-base` è un modello T5 encoder-decoder pre-trained su italiano. Potrebbe essere usato come M3 alternativo, sostituendo il decoder Transformer custom con il decoder IT5 e aggiungendo solo il cross-attention visuale. È un'opzione più avanzata ma concettualmente coerente con la pipeline.
 
 ---
 
@@ -234,3 +257,6 @@ tqdm
 - Dosovitskiy et al., *An Image is Worth 16×16 Words: Transformers for Image Recognition at Scale (ViT)*, ICLR 2021
 - Gani et al., *How to Train Vision Transformer on Small-scale Datasets?*, BMVC 2022 — [PDF](https://bmvc2022.mpi-inf.mpg.de/0731.pdf)
 - Kumar et al., *Comparative Study of Transformer and LSTM Network with Attention Mechanism on Image Captioning*, 2023 — [arXiv:2303.02648](https://arxiv.org/abs/2303.02648)
+- De Mattei et al., *GePpeTto: Caricaturizing Italian Language Models*, 2020 — [HuggingFace: LorenzoDeMattei/GePpeTto](https://huggingface.co/LorenzoDeMattei/GePpeTto)
+- Sarti & Nissim, *IT5: Text-to-text Pretraining for Italian Language Understanding and Generation*, LREC-COLING 2024 — [arXiv:2203.03759](https://arxiv.org/abs/2203.03759)
+- GroNLP, *Italian GPT-2 models* — [HuggingFace: GroNLP/gpt2-small-italian](https://huggingface.co/GroNLP/gpt2-small-italian)
