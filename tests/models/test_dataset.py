@@ -1,10 +1,7 @@
 # tests/models/test_dataset.py
 import json
 import pytest
-import numpy as np
 import pandas as pd
-from pathlib import Path
-from PIL import Image
 from unittest.mock import patch
 import torch
 
@@ -71,76 +68,57 @@ def test_splits_approximate_ratio(splits_json):
     ratio = n_train / n_total
     assert 0.60 <= ratio <= 0.80  # ~70%
 
-def _make_fake_image(tmp_path, name):
-    """Crea un'immagine BMP RGB 224x224 di rumore."""
-    arr = np.random.randint(0, 256, (224, 224, 3), dtype=np.uint8)
-    img = Image.fromarray(arr, mode="RGB")
-    p = tmp_path / name
-    p.parent.mkdir(parents=True, exist_ok=True)
-    img.save(str(p))
-    return str(p)
-
 def test_dataset_item_keys(tmp_path, mock_csv, splits_json, tok):
-    # Crea le immagini fake nella cartella del progetto
-    project_root = Path(__file__).parents[2]
-    for i in range(10):
-        _make_fake_image(project_root, f"fake/fetta_{i}.bmp")
-        _make_fake_image(project_root, f"fake/grana_{i}.bmp")
-
     splits_path = tmp_path / "splits.json"
     with open(splits_path, "w") as f:
         json.dump(splits_json, f)
 
-    ds = GranaTrentinoDataset(
-        csv_path=mock_csv,
-        tokenizer=tok,
-        splits_path=splits_path,
-        attributo="Texture",
-        split="train",
-    )
-    assert len(ds) > 0
-    item = ds[0]
-    assert set(item.keys()) == {"fetta", "grana", "caption", "weight"}
-    assert item["fetta"].shape == (3, 224, 224)
-    assert item["grana"].shape == (3, 224, 224)
-    assert isinstance(item["caption"], torch.Tensor)
-    assert item["caption"][0].item() == tok.SOS_ID
-    assert item["weight"] == 1.0
+    fake_img = torch.zeros(3, 224, 224)
+    with patch.object(GranaTrentinoDataset, "_load_image", return_value=fake_img):
+        ds = GranaTrentinoDataset(
+            csv_path=mock_csv,
+            tokenizer=tok,
+            splits_path=splits_path,
+            attributo="Texture",
+            split="train",
+        )
+        assert len(ds) > 0
+        item = ds[0]
+        assert set(item.keys()) == {"fetta", "grana", "caption", "weight"}
+        assert item["fetta"].shape == (3, 224, 224)
+        assert item["grana"].shape == (3, 224, 224)
+        assert isinstance(item["caption"], torch.Tensor)
+        assert item["caption"][0].item() == tok.SOS_ID
+        assert item["weight"] == 1.0
 
 def test_dataset_filters_attributo(tmp_path, mock_csv, splits_json, tok):
     splits_path = tmp_path / "splits.json"
     with open(splits_path, "w") as f:
         json.dump(splits_json, f)
 
-    project_root = Path(__file__).parents[2]
-    for i in range(10):
-        _make_fake_image(project_root, f"fake/fetta_{i}.bmp")
-        _make_fake_image(project_root, f"fake/grana_{i}.bmp")
-
-    ds = GranaTrentinoDataset(
-        csv_path=mock_csv, tokenizer=tok, splits_path=splits_path,
-        attributo="Texture", split="train",
-    )
-    df = pd.read_csv(mock_csv)
-    train_ids = set(splits_json["train"])
-    expected = df[(df["attributo"] == "Texture") & df["sample_id"].isin(train_ids)]
-    assert len(ds) == len(expected)
+    fake_img = torch.zeros(3, 224, 224)
+    with patch.object(GranaTrentinoDataset, "_load_image", return_value=fake_img):
+        ds = GranaTrentinoDataset(
+            csv_path=mock_csv, tokenizer=tok, splits_path=splits_path,
+            attributo="Texture", split="train",
+        )
+        df = pd.read_csv(mock_csv)
+        train_ids = set(splits_json["train"])
+        expected = df[(df["attributo"] == "Texture") & df["sample_id"].isin(train_ids)]
+        assert len(ds) == len(expected)
 
 def test_dataset_global_mode_prepends_attr_token(tmp_path, mock_csv, splits_json, tok):
     splits_path = tmp_path / "splits.json"
     with open(splits_path, "w") as f:
         json.dump(splits_json, f)
 
-    project_root = Path(__file__).parents[2]
-    for i in range(10):
-        _make_fake_image(project_root, f"fake/fetta_{i}.bmp")
-        _make_fake_image(project_root, f"fake/grana_{i}.bmp")
-
-    ds = GranaTrentinoDataset(
-        csv_path=mock_csv, tokenizer=tok, splits_path=splits_path,
-        attributo=None, split="train",
-    )
-    item = ds[0]
-    # Dopo <SOS> ci deve essere un token attributo
-    attr_ids = set(tok.ATTR_TOKENS.values())
-    assert item["caption"][1].item() in attr_ids
+    fake_img = torch.zeros(3, 224, 224)
+    with patch.object(GranaTrentinoDataset, "_load_image", return_value=fake_img):
+        ds = GranaTrentinoDataset(
+            csv_path=mock_csv, tokenizer=tok, splits_path=splits_path,
+            attributo=None, split="train",
+        )
+        item = ds[0]
+        # Dopo <SOS> ci deve essere un token attributo
+        attr_ids = set(tok.ATTR_TOKENS.values())
+        assert item["caption"][1].item() in attr_ids

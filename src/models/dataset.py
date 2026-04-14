@@ -49,7 +49,9 @@ def build_splits(
         rng.shuffle(ids)
         n = len(ids)
         n_train = max(1, int(n * train_ratio))
-        n_val = max(1, int(n * val_ratio))
+        # Per strati piccoli (n=1) n_val sarà 0 — il campione va tutto a train, non a val.
+        # Il max(1,...) su n_train protegge solo train; val e test possono restare vuoti per strati piccoli.
+        n_val = int(n * val_ratio)
         train_ids.extend(ids[:n_train])
         val_ids.extend(ids[n_train: n_train + n_val])
         test_ids.extend(ids[n_train + n_val:])
@@ -87,6 +89,10 @@ class GranaTrentinoDataset(Dataset):
         mask = df["has_caption"] & df["has_images"]
         if require_both_views:
             mask &= df["has_both_views"]
+        # Nota: build_splits() include in splits.json solo i sample_id con has_both_views=True.
+        # Qui filtriamo con has_images (non has_both_views) per permettere require_both_views=False,
+        # ma in pratica i sample_id fetta-only non sono in splits.json se generato con i default.
+        # Per usare fetta-only: rigenerare splits.json con has_images anziché has_both_views.
         df = df[mask].copy()
 
         with open(splits_path, encoding="utf-8") as f:
@@ -123,6 +129,8 @@ class GranaTrentinoDataset(Dataset):
             ids = self.tokenizer.encode(caption_text, add_special=True)
 
         ids = ids[: self.max_caption_len]
+        # Nota: se la caption supera max_caption_len, <EOS> viene troncato silenziosamente.
+        # Il training loop deve tollerare sequenze senza <EOS> finale.
         caption_tensor = torch.tensor(ids, dtype=torch.long)
 
         return {
