@@ -182,7 +182,7 @@ def train_model(
         print(
             f"Epoca {epoch:3d}/{max_epochs} | "
             f"train_loss={train_loss:.4f} | val_loss={val_loss:.4f} | "
-            f"BLEU-4={bleu4:.4f} | {'★ BEST' if is_best else f'patience {patience_counter}/{patience}'} | "
+            f"BLEU-4={bleu4:.4f} | {'[BEST]' if is_best else f'patience {patience_counter}/{patience}'} | "
             f"{elapsed:.0f}s"
         )
 

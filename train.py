@@ -13,8 +13,15 @@ import json
 import sys
 from pathlib import Path
 
+import sys as _sys
+
 import torch
+from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader
+
+# num_workers > 0 richiede funzioni picklable; su Windows (spawn) le closure locali
+# non funzionano, quindi usiamo 0 worker e lasciamo al DataLoader il caricamento nel processo principale.
+_NUM_WORKERS = 0 if _sys.platform == "win32" else 2
 
 PROJECT_ROOT = Path(__file__).parent
 
@@ -54,6 +61,23 @@ def parse_args():
     return p.parse_args()
 
 
+class _CollateFn:
+    """Collate picklable (compatibile con multiprocessing spawn su Windows)."""
+
+    def __init__(self, pad_id: int) -> None:
+        self.pad_id = pad_id
+
+    def __call__(self, batch):
+        fette = torch.stack([b["fetta"] for b in batch])
+        grana = torch.stack([b["grana"] for b in batch])
+        caps = pad_sequence(
+            [b["caption"] for b in batch], batch_first=True,
+            padding_value=self.pad_id,
+        )
+        weights = torch.tensor([b["weight"] for b in batch], dtype=torch.float)
+        return fette, grana, caps, weights
+
+
 def make_loader(
     split: str,
     tokenizer: ItalianTokenizer,
@@ -69,21 +93,10 @@ def make_loader(
         split=split,
         require_both_views=require_both_views,
     )
-
-    def collate(batch):
-        from torch.nn.utils.rnn import pad_sequence
-        fette = torch.stack([b["fetta"] for b in batch])
-        grana = torch.stack([b["grana"] for b in batch])
-        caps = pad_sequence(
-            [b["caption"] for b in batch], batch_first=True,
-            padding_value=tokenizer.PAD_ID,
-        )
-        weights = torch.tensor([b["weight"] for b in batch], dtype=torch.float)
-        return fette, grana, caps, weights
-
     return DataLoader(
         ds, batch_size=batch_size, shuffle=(split == "train"),
-        collate_fn=collate, num_workers=2, pin_memory=True,
+        collate_fn=_CollateFn(tokenizer.PAD_ID),
+        num_workers=_NUM_WORKERS, pin_memory=True,
     )
 
 
