@@ -21,8 +21,9 @@ class CNNEncoderGlobal(nn.Module):
         self.proj = nn.Linear(2048 * 2, self.d_model)
 
     def forward(self, fetta: torch.Tensor, grana: torch.Tensor) -> torch.Tensor:
-        f = self.backbone(fetta).flatten(1)   # (B, 2048)
-        g = self.backbone(grana).flatten(1)   # (B, 2048)
+        with torch.no_grad():
+            f = self.backbone(fetta).flatten(1)   # (B, 2048)
+            g = self.backbone(grana).flatten(1)   # (B, 2048)
         x = torch.cat([f, g], dim=1)          # (B, 4096)
         x = self.proj(x)                       # (B, 512)
         return x.unsqueeze(1)                  # (B, 1, 512)
@@ -44,11 +45,12 @@ class CNNEncoderSpatial(nn.Module):
         self.proj = nn.Linear(2048, self.d_model)
 
     def forward(self, fetta: torch.Tensor, grana: torch.Tensor) -> torch.Tensor:
-        f = self.backbone(fetta)                         # (B, 2048, 7, 7)
-        g = self.backbone(grana)                         # (B, 2048, 7, 7)
-        B = f.size(0)
-        f = f.permute(0, 2, 3, 1).reshape(B, 49, 2048)  # (B, 49, 2048)
-        g = g.permute(0, 2, 3, 1).reshape(B, 49, 2048)  # (B, 49, 2048)
+        with torch.no_grad():
+            f = self.backbone(fetta)   # (B, 2048, H, W)
+            g = self.backbone(grana)   # (B, 2048, H, W)
+        B, C, H, W = f.shape
+        f = f.permute(0, 2, 3, 1).reshape(B, H * W, C)  # (B, 49, 2048)
+        g = g.permute(0, 2, 3, 1).reshape(B, H * W, C)  # (B, 49, 2048)
         tokens = torch.cat([f, g], dim=1)                # (B, 98, 2048)
         return self.proj(tokens)                          # (B, 98, 512)
 
