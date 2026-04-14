@@ -12,6 +12,7 @@ class ItalianTokenizer:
     """Wrapper su GePpeTto (GPT-2 italiano) con token speciali per il captioning."""
 
     MODEL_NAME = "LorenzoDeMattei/GePpeTto"
+    SPECIAL_TOKENS: list[str] = _SPECIAL
 
     def __init__(self) -> None:
         self._tok = AutoTokenizer.from_pretrained(self.MODEL_NAME)
@@ -23,16 +24,18 @@ class ItalianTokenizer:
             f"[{a}]": self._tok.convert_tokens_to_ids(f"[{a}]") for a in ATTRIBUTI
         }
 
-    def encode(self, text: str, add_special: bool = True) -> list[int]:
+    def encode(self, text: str, add_special: bool = True, attribute: str | None = None) -> list[int]:
         ids = self._tok.encode(text, add_special_tokens=False)
+        if attribute is not None:
+            attr_key = f"[{attribute}]"
+            if attr_key not in self.ATTR_TOKENS:
+                raise ValueError(f"Attributo sconosciuto: {attribute!r}. Scegli tra {list(self.ATTR_TOKENS)}")
+            ids = [self.ATTR_TOKENS[attr_key]] + ids
         if add_special:
             ids = [self.SOS_ID] + ids + [self.EOS_ID]
         return ids
 
     def decode(self, ids: list[int], skip_special: bool = True) -> str:
-        special_ids = {self.SOS_ID, self.EOS_ID, self.PAD_ID}
-        if skip_special:
-            ids = [i for i in ids if i not in special_ids]
         return self._tok.decode(ids, skip_special_tokens=skip_special)
 
     def __len__(self) -> int:

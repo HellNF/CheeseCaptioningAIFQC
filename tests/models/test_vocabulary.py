@@ -1,10 +1,5 @@
 import pytest
-from src.models.vocabulary import ItalianTokenizer
-
-ATTRIBUTI = [
-    "Texture", "Sapore", "Aroma", "Profumo",
-    "Struttura_della_Pasta", "Colore_della_Pasta", "Spessore_della_Crosta",
-]
+from src.models.vocabulary import ItalianTokenizer, ATTRIBUTI
 
 @pytest.fixture(scope="module")
 def tok():
@@ -45,4 +40,11 @@ def test_decode_roundtrip(tok):
 def test_vocab_size_is_large(tok):
     # GePpeTto uses a 30k BPE vocab (not 50k as GPT-2 English);
     # after adding 10 special tokens the total is ~30010.
-    assert len(tok) > 29_000
+    assert len(tok) > 30_000
+
+def test_decode_strips_attr_tokens(tok):
+    attr_id = tok.ATTR_TOKENS["[Sapore]"]
+    ids = [tok.SOS_ID, attr_id] + tok.encode("pasta compatta", add_special=False) + [tok.EOS_ID]
+    text = tok.decode(ids, skip_special=True)
+    assert "[Sapore]" not in text
+    assert "pasta" in text.lower()
