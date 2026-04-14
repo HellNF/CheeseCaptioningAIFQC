@@ -27,6 +27,10 @@ class LSTMDecoder(nn.Module):
         captions: torch.Tensor,        # (B, seq_len)
     ) -> torch.Tensor:                 # (B, seq_len, vocab_size)
         # visual_tokens: (B,1,512) → h0/c0: (1,B,512)
+        if visual_tokens.size(-1) != self.hidden_size:
+            raise ValueError(
+                f"visual_tokens last dim {visual_tokens.size(-1)} != hidden_size {self.hidden_size}"
+            )
         h0 = visual_tokens.squeeze(1).unsqueeze(0)  # (1, B, 512)
         c0 = torch.zeros_like(h0)
         emb = self.embed(captions)                   # (B, seq_len, embed_dim)
@@ -39,6 +43,7 @@ class _SinusoidalPE(nn.Module):
 
     def __init__(self, d_model: int, max_len: int = 512) -> None:
         super().__init__()
+        assert d_model % 2 == 0, f"d_model deve essere pari, ricevuto {d_model}"
         pe = torch.zeros(max_len, d_model)
         pos = torch.arange(max_len).unsqueeze(1).float()
         div = torch.exp(torch.arange(0, d_model, 2).float() * (-math.log(10000.0) / d_model))
