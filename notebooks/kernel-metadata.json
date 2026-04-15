@@ -1,0 +1,14 @@
+{
+  "id": "marcopanciera/blip-grana-trentino-fine-tuning",
+  "title": "BLIP Grana Trentino Fine-tuning",
+  "code_file": "blip_finetuning.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "accelerator": "nvidiaTeslaT4",
+  "enable_internet": true,
+  "dataset_sources": ["marcopanciera/grana-trentino-captioning"],
+  "competition_sources": [],
+  "kernel_sources": []
+}

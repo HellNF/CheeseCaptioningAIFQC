@@ -19,6 +19,7 @@ MODEL_DIRS = {
     "M1 (CNN+LSTM)": "m1_cnn_lstm",
     "M2 (CNN+Transformer)": "m2_cnn_transformer",
     "M3 (ViT+Transformer)": "m3_vit_transformer",
+    "M4 (BLIP fine-tuned)": "m4_blip",
 }
 ATTRIBUTI = [
     "Aroma", "Profumo", "Sapore", "Texture",
@@ -29,7 +30,22 @@ METRICS = ["bleu1", "bleu4", "meteor", "rouge_l"]
 
 
 def _load_results(model_dir: Path, attr: str) -> dict | None:
-    """Legge predictions.csv e restituisce le metriche, o None se non esiste."""
+    """Legge metriche da metrics.json (priorità) o le ricalcola da predictions.csv."""
+    import json
+
+    # Priorità 1: metrics.json pre-calcolato (prodotto dal notebook Kaggle per M4)
+    metrics_path = model_dir / attr / "metrics.json"
+    if metrics_path.exists():
+        try:
+            with open(metrics_path, encoding="utf-8") as f:
+                data = json.load(f)
+            # Il file può avere le metriche dirette oppure annidate in per_attributo
+            if all(k in data for k in ("bleu1", "bleu4", "meteor", "rouge_l")):
+                return {k: round(float(data[k]), 4) for k in ("bleu1", "bleu4", "meteor", "rouge_l")}
+        except Exception as e:
+            print(f"  WARN: {metrics_path}: {e}")
+
+    # Priorità 2: ricalcola da predictions.csv
     pred_path = model_dir / attr / "predictions.csv"
     if not pred_path.exists():
         return None
@@ -56,6 +72,19 @@ def _load_results(model_dir: Path, attr: str) -> dict | None:
 
 
 def _best_epoch(model_dir: Path, attr: str) -> int | None:
+    import json
+
+    # Per M4: legge best_epoch da metrics.json
+    metrics_path = model_dir / attr / "metrics.json"
+    if metrics_path.exists():
+        try:
+            with open(metrics_path, encoding="utf-8") as f:
+                data = json.load(f)
+            if "best_epoch" in data:
+                return int(data["best_epoch"])
+        except Exception:
+            pass
+
     log_path = model_dir / attr / "log.csv"
     if not log_path.exists():
         return None

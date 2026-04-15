@@ -103,5 +103,6 @@ class TransformerDecoder(nn.Module):
             tgt=emb,
             memory=visual_tokens,
             tgt_mask=tgt_mask,
+            tgt_is_causal=True,
         )                                     # (B, seq_len, d_model)
         return self.fc(out)                   # (B, seq_len, vocab_size)

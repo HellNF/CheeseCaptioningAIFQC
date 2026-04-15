@@ -138,9 +138,9 @@ def main():
     model = build_model(args.model, vocab_size=len(tokenizer), device=device)
 
     if args.eval_only:
-        from src.models.train import load_checkpoint
-        opt_tmp = torch.optim.Adam(model.parameters())
-        load_checkpoint(run_dir / "best.pt", model, opt_tmp)
+        state = torch.load(run_dir / "best.pt", map_location="cpu", weights_only=True)
+        model.load_state_dict(state["model_state"])
+        model.to(device)
         print("Valutazione su test set...")
         test_loader = make_loader("test", tokenizer, attributo, batch_size,
                                   require_both_views=not args.include_fetta_only)
