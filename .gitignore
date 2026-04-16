@@ -24,6 +24,10 @@ models_trained/*
 *.pth
 *.h5
 *.pkl
+models/
+
+# Dataset Kaggle (file derivati, non committare le immagini)
+kaggle_dataset/images/
 
 # Log
 logs/*
