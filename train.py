@@ -38,22 +38,34 @@ SPLITS_JSON = PROJECT_ROOT / "data" / "processed" / "splits.json"
 MODELS_DIR = PROJECT_ROOT / "models"
 
 DEFAULTS = {
-    "m1": dict(epochs=50, batch_size=32, lr=3e-4, patience=7, scheduler="steplr"),
-    "m2": dict(epochs=50, batch_size=32, lr=3e-4, patience=7, scheduler="steplr"),
-    "m3": dict(epochs=30, batch_size=16, lr=1e-4, patience=5, scheduler="cosine"),
+    "m1":  dict(epochs=50, batch_size=32, lr=3e-4, patience=7, scheduler="steplr"),
+    "m2":  dict(epochs=50, batch_size=32, lr=3e-4, patience=7, scheduler="steplr"),
+    "m3":  dict(epochs=30, batch_size=16, lr=1e-4, patience=5, scheduler="cosine"),
+    "m5a": dict(epochs=30, batch_size=16, lr=1e-4, patience=7, scheduler="cosine"),
+    "m5b": dict(epochs=30, batch_size=16, lr=1e-4, patience=7, scheduler="cosine"),
+    "m5c": dict(epochs=20, batch_size=8,  lr=5e-5, patience=5, scheduler="cosine"),
 }
 DEFAULTS_FT = {
-    "m1": dict(epochs=30, batch_size=16, lr=1e-4, patience=7, scheduler="cosine"),
-    "m2": dict(epochs=30, batch_size=16, lr=1e-4, patience=7, scheduler="cosine"),
-    "m3": dict(epochs=20, batch_size=8,  lr=5e-5, patience=5, scheduler="cosine"),
+    "m1":  dict(epochs=30, batch_size=16, lr=1e-4, patience=7, scheduler="cosine"),
+    "m2":  dict(epochs=30, batch_size=16, lr=1e-4, patience=7, scheduler="cosine"),
+    "m3":  dict(epochs=20, batch_size=8,  lr=5e-5, patience=5, scheduler="cosine"),
+    "m5a": dict(epochs=20, batch_size=16, lr=5e-5, patience=7, scheduler="cosine"),
+    "m5b": dict(epochs=20, batch_size=8,  lr=5e-5, patience=7, scheduler="cosine"),
+    "m5c": dict(epochs=15, batch_size=8,  lr=2e-5, patience=5, scheduler="cosine"),
 }
-MODEL_DIR_NAMES = {"m1": "m1_cnn_lstm", "m2": "m2_cnn_transformer", "m3": "m3_vit_transformer"}
-MODEL_DIR_NAMES_FT = {"m1": "m1_cnn_lstm_ft", "m2": "m2_cnn_transformer_ft", "m3": "m3_vit_transformer_ft"}
+MODEL_DIR_NAMES = {
+    "m1": "m1_cnn_lstm", "m2": "m2_cnn_transformer", "m3": "m3_vit_transformer",
+    "m5a": "m5a_cnn_gpt", "m5b": "m5b_cnnspatial_gpt", "m5c": "m5c_vit_gpt",
+}
+MODEL_DIR_NAMES_FT = {
+    "m1": "m1_cnn_lstm_ft", "m2": "m2_cnn_transformer_ft", "m3": "m3_vit_transformer_ft",
+    "m5a": "m5a_cnn_gpt_ft", "m5b": "m5b_cnnspatial_gpt_ft", "m5c": "m5c_vit_gpt_ft",
+}
 
 
 def parse_args():
     p = argparse.ArgumentParser(description="Training image captioning Grana Trentino")
-    p.add_argument("--model", required=True, choices=["m1", "m2", "m3"])
+    p.add_argument("--model", required=True, choices=["m1", "m2", "m3", "m5a", "m5b", "m5c"])
     p.add_argument("--attributo", required=True,
                    help="Nome attributo (es. Texture) o 'all' per modello globale")
     p.add_argument("--epochs", type=int, default=None)
@@ -183,9 +195,27 @@ def main():
     print(f"Train: {len(train_loader.dataset)} campioni | Val: {len(val_loader.dataset)} campioni")
 
     # Optimizer e scheduler
-    # Fine-tuning: differential LR for all models (encoder lr*0.1, decoder/proj full lr)
-    # M3 always uses differential LR (ViT blocks 8-11 partially unfrozen by default)
-    if args.finetune or args.model == "m3":
+    use_differential_lr = args.finetune or args.model in ("m3", "m5a", "m5b", "m5c")
+
+    if use_differential_lr and args.model.startswith("m5"):
+        # M5: 3 gruppi — encoder (slow), gpt2 backbone (slow), projection (full)
+        encoder_params = [p for n, p in model.named_parameters()
+                          if p.requires_grad and "encoder" in n and "proj" not in n]
+        gpt2_params = [p for n, p in model.named_parameters()
+                       if p.requires_grad and "decoder.gpt2" in n]
+        proj_params = [p for n, p in model.named_parameters()
+                       if p.requires_grad and "decoder.proj" in n]
+        groups = []
+        if encoder_params:
+            groups.append({"params": encoder_params, "lr": lr * 0.1})
+        if gpt2_params:
+            groups.append({"params": gpt2_params, "lr": lr * 0.1})
+        if proj_params:
+            groups.append({"params": proj_params, "lr": lr})
+        optimizer = torch.optim.AdamW(groups)
+        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
+    elif use_differential_lr:
+        # M1-FT/M2-FT/M3: 2 gruppi — encoder (slow), decoder+proj (full)
         encoder_params = [p for n, p in model.named_parameters()
                           if p.requires_grad and "encoder" in n and "proj" not in n]
         other_params = [p for n, p in model.named_parameters()

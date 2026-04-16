@@ -3,6 +3,7 @@ from __future__ import annotations
 import math
 import torch
 import torch.nn as nn
+from transformers import AutoModelForCausalLM
 
 
 class LSTMDecoder(nn.Module):
@@ -106,3 +107,61 @@ class TransformerDecoder(nn.Module):
             tgt_is_causal=True,
         )                                     # (B, seq_len, d_model)
         return self.fc(out)                   # (B, seq_len, vocab_size)
+
+
+class GePpeTtoDecoder(nn.Module):
+    """GPT-2 italiano (GePpeTto) usato come decoder con prefix tuning.
+
+    I visual token vengono proiettati nello spazio embedding di GPT-2 e
+    prepesi alla sequenza caption. GPT-2 genera condizionato su questo
+    prefisso visivo. Output: (B, seq_len, vocab_size).
+    """
+
+    _GPT2_NAME = "LorenzoDeMattei/GePpeTto"
+    _GPT2_DIM = 768  # hidden size di GePpeTto (GPT-2 small)
+
+    def __init__(
+        self,
+        vocab_size: int,
+        d_encoder: int = 512,
+        pad_id: int = 0,
+    ) -> None:
+        super().__init__()
+        self.gpt2 = AutoModelForCausalLM.from_pretrained(self._GPT2_NAME)
+        self.gpt2.resize_token_embeddings(vocab_size)
+
+        self.proj = nn.Sequential(
+            nn.Linear(d_encoder, self._GPT2_DIM),
+            nn.GELU(),
+            nn.Linear(self._GPT2_DIM, self._GPT2_DIM),
+        )
+        self.pad_id = pad_id
+
+    def forward(
+        self,
+        visual_tokens: torch.Tensor,  # (B, N, d_encoder)
+        captions: torch.Tensor,       # (B, seq_len)
+    ) -> torch.Tensor:                # (B, seq_len, vocab_size)
+        B, N, _ = visual_tokens.shape
+        seq_len = captions.size(1)
+        device = captions.device
+
+        vis_embeds = self.proj(visual_tokens)                     # (B, N, 768)
+        cap_embeds = self.gpt2.transformer.wte(captions)          # (B, seq, 768)
+        inputs_embeds = torch.cat([vis_embeds, cap_embeds], dim=1)  # (B, N+seq, 768)
+
+        # Position IDs: visual tokens get pos 0, caption tokens get 0..seq-1
+        vis_pos = torch.zeros(N, dtype=torch.long, device=device)
+        cap_pos = torch.arange(seq_len, dtype=torch.long, device=device)
+        position_ids = torch.cat([vis_pos, cap_pos]).unsqueeze(0).expand(B, -1)
+
+        # GPT-2 gestisce internamente il causal masking sulla sequenza concatenata
+        outputs = self.gpt2.transformer(
+            inputs_embeds=inputs_embeds,
+            position_ids=position_ids,
+        )
+        hidden = outputs.last_hidden_state                        # (B, N+seq, 768)
+
+        caption_hidden = hidden[:, N:, :]                         # (B, seq, 768)
+        logits = self.gpt2.lm_head(caption_hidden)               # (B, seq, vocab)
+        return logits
