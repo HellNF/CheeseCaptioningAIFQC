@@ -42,7 +42,13 @@ DEFAULTS = {
     "m2": dict(epochs=50, batch_size=32, lr=3e-4, patience=7, scheduler="steplr"),
     "m3": dict(epochs=30, batch_size=16, lr=1e-4, patience=5, scheduler="cosine"),
 }
+DEFAULTS_FT = {
+    "m1": dict(epochs=30, batch_size=16, lr=1e-4, patience=7, scheduler="cosine"),
+    "m2": dict(epochs=30, batch_size=16, lr=1e-4, patience=7, scheduler="cosine"),
+    "m3": dict(epochs=20, batch_size=8,  lr=5e-5, patience=5, scheduler="cosine"),
+}
 MODEL_DIR_NAMES = {"m1": "m1_cnn_lstm", "m2": "m2_cnn_transformer", "m3": "m3_vit_transformer"}
+MODEL_DIR_NAMES_FT = {"m1": "m1_cnn_lstm_ft", "m2": "m2_cnn_transformer_ft", "m3": "m3_vit_transformer_ft"}
 
 
 def parse_args():
@@ -58,6 +64,11 @@ def parse_args():
     p.add_argument("--resume", action="store_true")
     p.add_argument("--include-fetta-only", action="store_true")
     p.add_argument("--eval-only", action="store_true")
+    p.add_argument(
+        "--finetune", action="store_true",
+        help="Unfreeze encoder for end-to-end fine-tuning with differential LR. "
+             "Saves to models/<model>_ft/ to avoid overwriting from-scratch results.",
+    )
     return p.parse_args()
 
 
@@ -115,13 +126,14 @@ def main():
     attr_dir = "global" if attributo is None else attributo
 
     # Iperparametri
-    defaults = DEFAULTS[args.model]
+    defaults = (DEFAULTS_FT if args.finetune else DEFAULTS)[args.model]
     epochs = args.epochs or defaults["epochs"]
     batch_size = args.batch_size or defaults["batch_size"]
     lr = args.lr or defaults["lr"]
 
     # Run directory
-    run_dir = MODELS_DIR / MODEL_DIR_NAMES[args.model] / attr_dir
+    dir_names = MODEL_DIR_NAMES_FT if args.finetune else MODEL_DIR_NAMES
+    run_dir = MODELS_DIR / dir_names[args.model] / attr_dir
 
     # Tokenizer
     print("Caricamento tokenizer...")
@@ -134,8 +146,13 @@ def main():
             print(f"ERRORE: {best_pt} non trovato. Esegui prima il training.")
             sys.exit(1)
 
-    print(f"Costruzione modello {args.model.upper()}...")
+    print(f"Costruzione modello {args.model.upper()}{'  [fine-tuning]' if args.finetune else ''}...")
     model = build_model(args.model, vocab_size=len(tokenizer), device=device)
+
+    if args.finetune:
+        model.unfreeze_encoder()
+        n_trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
+        print(f"Encoder sbloccato — parametri trainable: {n_trainable:,}")
 
     if args.eval_only:
         state = torch.load(run_dir / "best.pt", map_location="cpu", weights_only=True)
@@ -166,13 +183,15 @@ def main():
     print(f"Train: {len(train_loader.dataset)} campioni | Val: {len(val_loader.dataset)} campioni")
 
     # Optimizer e scheduler
-    if args.model == "m3":
-        vit_params = [p for n, p in model.named_parameters()
-                      if p.requires_grad and "encoder.vit" in n]
+    # Fine-tuning: differential LR for all models (encoder lr*0.1, decoder/proj full lr)
+    # M3 always uses differential LR (ViT blocks 8-11 partially unfrozen by default)
+    if args.finetune or args.model == "m3":
+        encoder_params = [p for n, p in model.named_parameters()
+                          if p.requires_grad and "encoder" in n and "proj" not in n]
         other_params = [p for n, p in model.named_parameters()
-                        if p.requires_grad and "encoder.vit" not in n]
+                        if p.requires_grad and ("encoder" not in n or "proj" in n)]
         optimizer = torch.optim.AdamW([
-            {"params": vit_params, "lr": lr * 0.1},
+            {"params": encoder_params, "lr": lr * 0.1},
             {"params": other_params, "lr": lr},
         ])
         scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
@@ -185,6 +204,7 @@ def main():
         batch_size=batch_size, lr=lr, seed=args.seed,
         beam_size=args.beam_size, early_stopping_patience=defaults["patience"],
         include_fetta_only=args.include_fetta_only,
+        finetune=args.finetune,
     )
 
     # Training

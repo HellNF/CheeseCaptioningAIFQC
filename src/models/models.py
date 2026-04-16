@@ -15,6 +15,9 @@ class CnnLstm(nn.Module):
         self.encoder = CNNEncoderGlobal()
         self.decoder = LSTMDecoder(vocab_size=vocab_size)
 
+    def unfreeze_encoder(self) -> None:
+        self.encoder.unfreeze_encoder()
+
     def forward(
         self,
         fetta: torch.Tensor,
@@ -33,6 +36,9 @@ class CnnTransformer(nn.Module):
         self.encoder = CNNEncoderSpatial()
         self.decoder = TransformerDecoder(vocab_size=vocab_size, n_visual_tokens=98)
 
+    def unfreeze_encoder(self) -> None:
+        self.encoder.unfreeze_encoder()
+
     def forward(
         self,
         fetta: torch.Tensor,
@@ -50,6 +56,9 @@ class ViTTransformer(nn.Module):
         super().__init__()
         self.encoder = ViTEncoder()
         self.decoder = TransformerDecoder(vocab_size=vocab_size, n_visual_tokens=392)
+
+    def unfreeze_encoder(self) -> None:
+        self.encoder.unfreeze_encoder()
 
     def forward(
         self,

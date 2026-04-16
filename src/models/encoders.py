@@ -19,11 +19,21 @@ class CNNEncoderGlobal(nn.Module):
         # Rimuovi il classificatore finale (fc layer) e avgpool → estrai fino ad avgpool
         self.backbone = nn.Sequential(*list(backbone.children())[:-1])  # fino ad avgpool incluso
         self.proj = nn.Linear(2048 * 2, self.d_model)
+        self._frozen = True
+
+    def unfreeze_encoder(self) -> None:
+        for p in self.backbone.parameters():
+            p.requires_grad = True
+        self._frozen = False
 
     def forward(self, fetta: torch.Tensor, grana: torch.Tensor) -> torch.Tensor:
-        with torch.no_grad():
-            f = self.backbone(fetta).flatten(1)   # (B, 2048)
-            g = self.backbone(grana).flatten(1)   # (B, 2048)
+        if self._frozen:
+            with torch.no_grad():
+                f = self.backbone(fetta).flatten(1)   # (B, 2048)
+                g = self.backbone(grana).flatten(1)   # (B, 2048)
+        else:
+            f = self.backbone(fetta).flatten(1)       # (B, 2048)
+            g = self.backbone(grana).flatten(1)       # (B, 2048)
         x = torch.cat([f, g], dim=1)          # (B, 4096)
         x = self.proj(x)                       # (B, 512)
         return x.unsqueeze(1)                  # (B, 1, 512)
@@ -43,11 +53,21 @@ class CNNEncoderSpatial(nn.Module):
         # Strati fino all'ultimo layer conv (layer4), senza avgpool
         self.backbone = nn.Sequential(*list(backbone.children())[:-2])
         self.proj = nn.Linear(2048, self.d_model)
+        self._frozen = True
+
+    def unfreeze_encoder(self) -> None:
+        for p in self.backbone.parameters():
+            p.requires_grad = True
+        self._frozen = False
 
     def forward(self, fetta: torch.Tensor, grana: torch.Tensor) -> torch.Tensor:
-        with torch.no_grad():
-            f = self.backbone(fetta)   # (B, 2048, H, W)
-            g = self.backbone(grana)   # (B, 2048, H, W)
+        if self._frozen:
+            with torch.no_grad():
+                f = self.backbone(fetta)   # (B, 2048, H, W)
+                g = self.backbone(grana)   # (B, 2048, H, W)
+        else:
+            f = self.backbone(fetta)       # (B, 2048, H, W)
+            g = self.backbone(grana)       # (B, 2048, H, W)
         B, C, H, W = f.shape
         f = f.permute(0, 2, 3, 1).reshape(B, H * W, C)  # (B, 49, 2048)
         g = g.permute(0, 2, 3, 1).reshape(B, H * W, C)  # (B, 49, 2048)
@@ -82,6 +102,13 @@ class ViTEncoder(nn.Module):
             p.requires_grad = True
 
         self.proj = nn.Linear(768, self.d_model)
+        self._frozen = True  # partial freeze — blocks 8-11 + norm already unfrozen
+
+    def unfreeze_encoder(self) -> None:
+        """Unfreeze all ViT blocks (including blocks 0-7 currently frozen)."""
+        for p in self.vit.parameters():
+            p.requires_grad = True
+        self._frozen = False
 
     def _extract_patches(self, x: torch.Tensor) -> torch.Tensor:
         """Estrae i 196 patch token (escluso CLS) da un'immagine."""

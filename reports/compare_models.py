@@ -20,6 +20,13 @@ MODEL_DIRS = {
     "M2 (CNN+Transformer)": "m2_cnn_transformer",
     "M3 (ViT+Transformer)": "m3_vit_transformer",
     "M4 (BLIP fine-tuned)": "m4_blip",
+    "M1-FT (CNN+LSTM)": "m1_cnn_lstm_ft",
+    "M2-FT (CNN+Transformer)": "m2_cnn_transformer_ft",
+    "M3-FT (ViT+Transformer)": "m3_vit_transformer_ft",
+    "Baseline (random)": "baseline_random",
+    "Baseline (most-frequent)": "baseline_most_frequent",
+    "Baseline (freq-weighted)": "baseline_freq_weighted",
+    "Baseline (retrieval)": "baseline_retrieval",
 }
 ATTRIBUTI = [
     "Aroma", "Profumo", "Sapore", "Texture",
