@@ -34,6 +34,25 @@ elif Path("/kaggle/working/train.py").exists():
 MODELS_DIR = REPO_ROOT / "models"
 REPORT_PATH = REPO_ROOT / "reports" / "kaggle_training_report.md"
 
+# ── Risultati precedenti (M1/M2/M3 from-scratch + M4 BLIP + baseline) ──
+# Metriche test set su Struttura_della_Pasta (già addestrati)
+PRIOR_RESULTS = {
+    "M1":       {"bleu1": 0.2138, "bleu4": 0.0472, "meteor": 0.2309, "rouge_l": 0.2130, "desc": "CNN (frozen) + LSTM"},
+    "M2":       {"bleu1": 0.2104, "bleu4": 0.0405, "meteor": 0.2286, "rouge_l": 0.2084, "desc": "CNN (frozen) + Transformer"},
+    "M3":       {"bleu1": 0.2022, "bleu4": 0.0445, "meteor": 0.2289, "rouge_l": 0.2048, "desc": "ViT (frozen) + Transformer"},
+    "M4 BLIP":  {"bleu1": 0.2298, "bleu4": 0.0483, "meteor": 0.2712, "rouge_l": 0.2301, "desc": "BLIP fully pre-trained"},
+    "Baseline (retrieval)": {"bleu1": 0.1312, "bleu4": 0.0213, "meteor": 0.1548, "rouge_l": 0.1322, "desc": "ResNet-50 cosine similarity"},
+    "Baseline (freq-weighted)": {"bleu1": 0.0937, "bleu4": 0.0068, "meteor": 0.1129, "rouge_l": 0.0924, "desc": "Weighted random sampling"},
+}
+
+# Mapping per analisi fattoriale 2×2
+FACTORIAL_GRID = {
+    "frozen_scratch":  ["M1", "M2", "M3"],
+    "frozen_geppetto": ["M5a", "M5b", "M5c"],
+    "ft_scratch":      ["M1-FT", "M2-FT", "M3-FT"],
+    "ft_geppetto":     ["M5a-FT", "M5b-FT", "M5c-FT"],
+}
+
 # ── Configurazione modelli ───────────────────────────────────────────────
 ATTRIBUTO = "Struttura_della_Pasta"
 
@@ -177,10 +196,123 @@ def print_summary_table(results: list[dict]):
     print(f"\nTotale: {completed}/{len(results)} completati in {fmt_time(total_time)}")
 
 
+def _all_metrics(results: list[dict]) -> dict[str, dict]:
+    """Unisce risultati nuovi + precedenti in un unico dict label→metrics."""
+    combined = {}
+    for label, data in PRIOR_RESULTS.items():
+        combined[label] = {k: data[k] for k in ("bleu1", "bleu4", "meteor", "rouge_l")}
+    for r in results:
+        if r["success"] and r.get("metrics") and "bleu4" in r["metrics"]:
+            combined[r["label"]] = {
+                k: r["metrics"][k] for k in ("bleu1", "bleu4", "meteor", "rouge_l")
+            }
+    return combined
+
+
+def print_analysis(results: list[dict], latest: dict):
+    """Stampa analisi dettagliata dopo ogni modello completato."""
+    label = latest["label"]
+    m = latest.get("metrics")
+    if not m or "bleu4" not in m:
+        return
+
+    print(f"\n{'╔' + '═' * 68 + '╗'}")
+    print(f"{'║'} {'ANALISI — ' + label:^68} {'║'}")
+    print(f"{'╚' + '═' * 68 + '╝'}")
+
+    # 1. Confronto con baseline
+    retr = PRIOR_RESULTS["Baseline (retrieval)"]
+    print(f"\n  vs Baseline (retrieval):")
+    for metric in ("bleu1", "bleu4", "meteor", "rouge_l"):
+        val = m[metric]
+        base = retr[metric]
+        delta = val - base
+        ratio = val / base if base > 0 else float("inf")
+        arrow = "▲" if delta > 0 else "▼"
+        print(f"    {metric:>8}: {val:.4f}  {arrow} {delta:+.4f}  ({ratio:.1f}x baseline)")
+
+    beats_baseline = m["bleu4"] > retr["bleu4"]
+    print(f"\n  {'✓ Batte il baseline' if beats_baseline else '✗ NON batte il baseline'}"
+          f" → il modello {'usa' if beats_baseline else 'non usa'} informazione visiva")
+
+    # 2. Confronto con controparte frozen/unfrozen
+    counterpart = None
+    if label.endswith("-FT"):
+        base_label = label.replace("-FT", "")
+        combined = _all_metrics(results)
+        if base_label in combined:
+            counterpart = (base_label, combined[base_label])
+    elif not label.endswith("-FT"):
+        ft_label = label + "-FT"
+        combined = _all_metrics(results)
+        if ft_label in combined:
+            counterpart = (ft_label, combined[ft_label])
+
+    if counterpart:
+        c_label, c_m = counterpart
+        print(f"\n  vs {c_label} (effetto fine-tuning encoder):")
+        for metric in ("bleu4", "meteor", "rouge_l"):
+            delta = m[metric] - c_m[metric]
+            arrow = "▲" if delta > 0 else "▼"
+            print(f"    {metric:>8}: {m[metric]:.4f} vs {c_m[metric]:.4f}  {arrow} {delta:+.4f}")
+
+    # 3. Confronto con controparte decoder (scratch vs GePpeTto)
+    decoder_map = {
+        "M1-FT": "M5a-FT", "M5a-FT": "M1-FT",
+        "M2-FT": "M5b-FT", "M5b-FT": "M2-FT",
+        "M3-FT": "M5c-FT", "M5c-FT": "M3-FT",
+        "M1": "M5a", "M5a": "M1",
+        "M2": "M5b", "M5b": "M2",
+        "M3": "M5c", "M5c": "M3",
+    }
+    combined = _all_metrics(results)
+    dec_counterpart_label = decoder_map.get(label)
+    if dec_counterpart_label and dec_counterpart_label in combined:
+        dec_m = combined[dec_counterpart_label]
+        geppetto_label = label if label.startswith("M5") else dec_counterpart_label
+        scratch_label = dec_counterpart_label if label.startswith("M5") else label
+        print(f"\n  Effetto decoder pre-trained ({scratch_label} vs {geppetto_label}):")
+        for metric in ("bleu4", "meteor", "rouge_l"):
+            s_val = combined.get(scratch_label, {}).get(metric)
+            g_val = combined.get(geppetto_label, {}).get(metric)
+            if s_val is not None and g_val is not None:
+                delta = g_val - s_val
+                arrow = "▲" if delta > 0 else "▼"
+                print(f"    {metric:>8}: scratch={s_val:.4f}  geppetto={g_val:.4f}  {arrow} {delta:+.4f}")
+
+    # 4. Confronto con M4 BLIP
+    m4 = PRIOR_RESULTS["M4 BLIP"]
+    print(f"\n  vs M4 BLIP (fully pre-trained, 129M image-text pairs):")
+    for metric in ("bleu4", "meteor", "rouge_l"):
+        delta = m[metric] - m4[metric]
+        pct = (delta / m4[metric] * 100) if m4[metric] > 0 else 0
+        arrow = "▲" if delta > 0 else "▼"
+        print(f"    {metric:>8}: {m[metric]:.4f} vs {m4[metric]:.4f}  {arrow} {pct:+.1f}%")
+
+    # 5. Stato griglia 2×2
+    combined = _all_metrics(results)
+    print(f"\n  Griglia fattoriale 2×2 (BLEU-4):")
+    print(f"  {'':>20} {'Decoder scratch':>18} {'Decoder GePpeTto':>18}")
+    for row_label, row_key in [("Encoder frozen", "frozen"), ("Encoder fine-tuned", "ft")]:
+        scratch_models = FACTORIAL_GRID[f"{row_key}_scratch"]
+        geppetto_models = FACTORIAL_GRID[f"{row_key}_geppetto"]
+        s_vals = [combined[m_l]["bleu4"] for m_l in scratch_models if m_l in combined]
+        g_vals = [combined[m_l]["bleu4"] for m_l in geppetto_models if m_l in combined]
+        s_avg = f"{sum(s_vals)/len(s_vals):.4f}" if s_vals else "..."
+        g_avg = f"{sum(g_vals)/len(g_vals):.4f}" if g_vals else "..."
+        s_n = f"(n={len(s_vals)}/3)"
+        g_n = f"(n={len(g_vals)}/3)"
+        print(f"  {row_label:>20} {s_avg:>10} {s_n:<8} {g_avg:>10} {g_n:<8}")
+
+    print()
+
+
 def save_report_md(results: list[dict], attributo: str):
     lines = [
         f"# Report Training Kaggle — {attributo}",
         f"Data: {datetime.now().strftime('%Y-%m-%d %H:%M')}",
+        "",
+        "## Nuovi modelli",
         "",
         "| Modello | Descrizione | BLEU-1 | BLEU-4 | METEOR | ROUGE-L | Best Epoch | Tempo |",
         "|---|---|---|---|---|---|---|---|",
@@ -192,7 +324,7 @@ def save_report_md(results: list[dict], attributo: str):
         met = f"{m['meteor']:.4f}" if "meteor" in m else "—"
         rl = f"{m['rouge_l']:.4f}" if "rouge_l" in m else "—"
         ep = str(m.get("best_epoch", "—"))
-        status = "" if r["success"] else " ✗"
+        status = "" if r["success"] else " **ERRORE**"
         lines.append(
             f"| {r['label']}{status} | {r['desc']} | {b1} | {b4} | {met} | {rl} | {ep} | {fmt_time(r['elapsed'])} |"
         )
@@ -200,6 +332,50 @@ def save_report_md(results: list[dict], attributo: str):
     lines.append("")
     total_time = sum(r["elapsed"] for r in results)
     lines.append(f"**Totale:** {fmt_time(total_time)}")
+
+    # Tabella completa con tutti i modelli
+    combined = _all_metrics(results)
+    lines.extend([
+        "",
+        "## Confronto completo (tutti i modelli)",
+        "",
+        "| Modello | BLEU-1 | BLEU-4 | METEOR | ROUGE-L |",
+        "|---|---|---|---|---|",
+    ])
+
+    display_order = [
+        "M1", "M2", "M3",
+        "M1-FT", "M2-FT", "M3-FT",
+        "M5a", "M5b", "M5c",
+        "M5a-FT", "M5b-FT", "M5c-FT",
+        "M4 BLIP",
+        "Baseline (retrieval)", "Baseline (freq-weighted)",
+    ]
+    for lbl in display_order:
+        if lbl in combined:
+            cm = combined[lbl]
+            lines.append(
+                f"| {lbl} | {cm['bleu1']:.4f} | {cm['bleu4']:.4f} "
+                f"| {cm['meteor']:.4f} | {cm['rouge_l']:.4f} |"
+            )
+
+    # Griglia 2×2
+    lines.extend([
+        "",
+        "## Design fattoriale 2x2 (media BLEU-4)",
+        "",
+        "|  | Decoder from scratch | Decoder GePpeTto |",
+        "|---|---|---|",
+    ])
+    for row_label, row_key in [("Encoder frozen", "frozen"), ("Encoder fine-tuned", "ft")]:
+        scratch_models = FACTORIAL_GRID[f"{row_key}_scratch"]
+        geppetto_models = FACTORIAL_GRID[f"{row_key}_geppetto"]
+        s_vals = [combined[m_l]["bleu4"] for m_l in scratch_models if m_l in combined]
+        g_vals = [combined[m_l]["bleu4"] for m_l in geppetto_models if m_l in combined]
+        s_str = f"{sum(s_vals)/len(s_vals):.4f} (n={len(s_vals)})" if s_vals else "—"
+        g_str = f"{sum(g_vals)/len(g_vals):.4f} (n={len(g_vals)})" if g_vals else "—"
+        lines.append(f"| **{row_label}** | {s_str} | {g_str} |")
+
     lines.append("")
 
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -280,12 +456,17 @@ def main():
 
         print_model_report(label, desc, metrics, elapsed, success)
 
-        results.append(dict(
+        result_entry = dict(
             label=label, desc=desc, success=success,
             elapsed=elapsed, metrics=metrics,
-        ))
+        )
+        results.append(result_entry)
 
-        # Report progressivo dopo ogni modello
+        # Analisi dettagliata dopo ogni modello
+        if success and metrics:
+            print_analysis(results, result_entry)
+
+        # Tabella progressiva dopo 2+ modelli
         if len(results) > 1:
             print_summary_table(results)
 
