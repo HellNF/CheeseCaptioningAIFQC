@@ -8,56 +8,65 @@ venv/
 .env
 .env.*
 
-# Dati (troppo grandi per git)
+# Immagini e file grandi
 *.bmp
 *.xlsx
-*.csv
-data/raw/*
+
+# CSV grezzi nella cartella dati originale (non tracciare)
+07_captioning risultati grana Trentino/GT commenti liberi/**/*.csv
+07_captioning risultati grana Trentino/GT commenti liberi/csv dataset/
+07_captioning risultati grana Trentino/GT commenti liberi/raw_per_attribute/
+
+# ── Data ─────────────────────────────────────────────────────────────────
+# Ignora tutto in data/raw/
+data/raw/
+
+# data/interim: ignora tutto tranne le sottodirectory specifiche
 data/interim/*
-!data/processed/*.csv
-!data/processed/caption_per_attributo/
-!data/processed/caption_per_attributo/*.csv
-
-
-# Modelli addestrati
-models_trained/*
-*.pth
-*.h5
-*.pkl
-models/
-
-# Dataset Kaggle (file derivati, non committare le immagini)
-kaggle_dataset/images/
-
-# Log
-logs/*
-*.log
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb
-
-# IDE
-.vscode/
-.idea/
-.github/
-.claude/
-# OS
-.DS_Store
-Thumbs.db
-
-# Eccezioni (file da committare)
-!.gitignore
-!docs/*
-!templates/*
-!src/**/*.py
-!README.md
 !data/interim/analisi_statistica_per_attributo/
 !data/interim/vocabolari_bozza_per_attributo/
 !data/interim/vocabolari_revisione_umana/
 !data/interim/vocabolari_validati_per_attributo/
 !data/interim/residui_hallucination.csv
 !data/interim/revisione_fuori_attributo.csv
-!07_captioning risultati grana Trentino/validation_reports/*.csv
+
+# data/processed: traccia i CSV (sono piccoli e necessari)
+# I CSV qui sono gia' tracked, non servono eccezioni globali
+
+# ── Modelli addestrati (checkpoint, pesi) ────────────────────────────────
+# Usa /models/ con slash iniziale per matchare SOLO la root, non src/models/
+/models/
+models_trained/
+*.pth
+*.h5
+*.pkl
+*.pt
+
+# ── Kaggle (file derivati, non committare) ───────────────────────────────
+kaggle_dataset/
+kaggle_dataset_full/
+kaggle_notebook/
+kaggle_output/
+
+# ── Log ──────────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── Jupyter ──────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── IDE / OS / Tool ─────────────────────────────────────────────────────
+.vscode/
+.idea/
+.github/
+.claude/
 .agents/
 skills-lock.json
+.DS_Store
+Thumbs.db
+
+# ── Eccezioni esplicite ─────────────────────────────────────────────────
+!.gitignore
+!README.md
+!07_captioning risultati grana Trentino/validation_reports/*.csv
