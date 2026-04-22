@@ -17,16 +17,49 @@ def generate_caption(
     device: torch.device,
     beam_size: int = 1,
     max_len: int = 50,
+    strategy: str = "beam",
+    top_p: float = 0.9,
+    temperature: float = 0.7,
 ) -> str:
-    """Genera una caption con greedy decoding (beam_size=1) o beam search."""
+    """Genera una caption.
+
+    strategy:
+      - "beam": beam search (beam_size=1 → greedy)
+      - "nucleus": nucleus (top-p) sampling con temperature
+    """
     model.eval()
     fetta = fetta.to(device)
     grana = grana.to(device)
 
     with torch.no_grad():
+        if strategy == "nucleus":
+            return _nucleus_decode(model, fetta, grana, tokenizer, device,
+                                   max_len, top_p, temperature)
         if beam_size == 1:
             return _greedy_decode(model, fetta, grana, tokenizer, device, max_len)
         return _beam_search(model, fetta, grana, tokenizer, device, beam_size, max_len)
+
+
+def _nucleus_decode(model, fetta, grana, tokenizer, device, max_len,
+                    top_p, temperature):
+    generated = [tokenizer.SOS_ID]
+    for _ in range(max_len):
+        inp = torch.tensor([generated], dtype=torch.long, device=device)
+        logits = model(fetta, grana, inp)               # (1, t, vocab)
+        logits = logits[0, -1] / temperature            # (vocab,)
+        sorted_logits, sorted_idx = logits.sort(descending=True)
+        cumulative_probs = sorted_logits.softmax(dim=-1).cumsum(dim=-1)
+        # Remove tokens with cumulative prob above top_p (keep at least 1)
+        remove_mask = cumulative_probs > top_p
+        remove_mask[1:] = remove_mask[:-1].clone()
+        remove_mask[0] = False
+        sorted_logits[remove_mask] = float("-inf")
+        probs = sorted_logits.softmax(dim=-1)
+        sampled = sorted_idx[torch.multinomial(probs, 1).item()].item()
+        if sampled == tokenizer.EOS_ID:
+            break
+        generated.append(sampled)
+    return tokenizer.decode(generated[1:], skip_special=True)
 
 
 def _greedy_decode(model, fetta, grana, tokenizer, device, max_len):
@@ -120,6 +153,9 @@ def full_eval(
     device: torch.device,
     predictions_path: Path | None = None,
     beam_size: int = 3,
+    strategy: str = "beam",
+    top_p: float = 0.9,
+    temperature: float = 0.7,
 ) -> dict[str, float]:
     """BLEU-1/4, METEOR, ROUGE-L su tutto il loader. Salva predictions.csv."""
     bleu_metric = hf_evaluate.load("bleu", module_type="metric")
@@ -135,6 +171,7 @@ def full_eval(
             pred = generate_caption(
                 model, fetta[i: i + 1], grana[i: i + 1], tokenizer, device,
                 beam_size=beam_size, max_len=50,
+                strategy=strategy, top_p=top_p, temperature=temperature,
             )
             ref_ids = caps[i].tolist()
             ref = tokenizer.decode(ref_ids, skip_special=True)

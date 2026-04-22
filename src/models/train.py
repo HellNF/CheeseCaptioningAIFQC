@@ -20,7 +20,8 @@ def train_one_epoch(
 ) -> float:
     """Teacher-forcing training. Restituisce la loss media sull'epoca."""
     model.train()
-    criterion = nn.CrossEntropyLoss(ignore_index=pad_id, reduction="none")
+    criterion = nn.CrossEntropyLoss(ignore_index=pad_id, reduction="none",
+                                     label_smoothing=0.1)
     total_loss, total_weight = 0.0, 0.0
 
     for batch in tqdm(loader, leave=False, desc="train"):

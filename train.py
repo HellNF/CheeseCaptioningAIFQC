@@ -72,6 +72,12 @@ def parse_args():
     p.add_argument("--batch-size", type=int, default=None)
     p.add_argument("--lr", type=float, default=None)
     p.add_argument("--beam-size", type=int, default=3)
+    p.add_argument("--decode-strategy", choices=["beam", "nucleus"], default="nucleus",
+                   help="Decoding strategy for evaluation: beam search or nucleus sampling")
+    p.add_argument("--top-p", type=float, default=0.9,
+                   help="Nucleus sampling: cumulative probability threshold")
+    p.add_argument("--temperature", type=float, default=0.7,
+                   help="Nucleus sampling: temperature for logit scaling")
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--resume", action="store_true")
     p.add_argument("--include-fetta-only", action="store_true")
@@ -175,7 +181,9 @@ def main():
                                   require_both_views=not args.include_fetta_only)
         results = full_eval(model, test_loader, tokenizer, device,
                             predictions_path=run_dir / "predictions.csv",
-                            beam_size=args.beam_size)
+                            beam_size=args.beam_size,
+                            strategy=args.decode_strategy,
+                            top_p=args.top_p, temperature=args.temperature)
         print("Test set results:")
         for k, v in results.items():
             print(f"  {k}: {v:.4f}")
@@ -232,7 +240,10 @@ def main():
     config = dict(
         model=args.model, attributo=attr_dir, epochs=epochs,
         batch_size=batch_size, lr=lr, seed=args.seed,
-        beam_size=args.beam_size, early_stopping_patience=defaults["patience"],
+        beam_size=args.beam_size, decode_strategy=args.decode_strategy,
+        top_p=args.top_p, temperature=args.temperature,
+        label_smoothing=0.1,
+        early_stopping_patience=defaults["patience"],
         include_fetta_only=args.include_fetta_only,
         finetune=args.finetune,
     )
@@ -258,7 +269,9 @@ def main():
     test_loader = make_loader("test", tokenizer, attributo, batch_size, require_both)
     results = full_eval(model, test_loader, tokenizer, device,
                         predictions_path=run_dir / "predictions.csv",
-                        beam_size=args.beam_size)
+                        beam_size=args.beam_size,
+                        strategy=args.decode_strategy,
+                        top_p=args.top_p, temperature=args.temperature)
     print("Test set results:")
     for k, v in results.items():
         print(f"  {k}: {v:.4f}")
