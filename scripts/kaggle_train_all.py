@@ -32,18 +32,14 @@ elif Path("/kaggle/working/train.py").exists():
     REPO_ROOT = Path("/kaggle/working")
 
 MODELS_DIR = REPO_ROOT / "models"
-REPORT_PATH = REPO_ROOT / "reports" / "kaggle_training_report.md"
 
-# ── Risultati precedenti (M1/M2/M3 from-scratch + M4 BLIP + baseline) ──
-# Metriche test set su Struttura_della_Pasta (già addestrati)
-PRIOR_RESULTS = {
-    "M1":       {"bleu1": 0.2138, "bleu4": 0.0472, "meteor": 0.2309, "rouge_l": 0.2130, "desc": "CNN (frozen) + LSTM"},
-    "M2":       {"bleu1": 0.2104, "bleu4": 0.0405, "meteor": 0.2286, "rouge_l": 0.2084, "desc": "CNN (frozen) + Transformer"},
-    "M3":       {"bleu1": 0.2022, "bleu4": 0.0445, "meteor": 0.2289, "rouge_l": 0.2048, "desc": "ViT (frozen) + Transformer"},
-    "M4 BLIP":  {"bleu1": 0.2298, "bleu4": 0.0483, "meteor": 0.2712, "rouge_l": 0.2301, "desc": "BLIP fully pre-trained"},
-    "Baseline (retrieval)": {"bleu1": 0.1312, "bleu4": 0.0213, "meteor": 0.1548, "rouge_l": 0.1322, "desc": "ResNet-50 cosine similarity"},
-    "Baseline (freq-weighted)": {"bleu1": 0.0937, "bleu4": 0.0068, "meteor": 0.1129, "rouge_l": 0.0924, "desc": "Weighted random sampling"},
-}
+# Output report path: reports/{attributo_lower}_pilot/kaggle_training_report.md
+def _report_path(attr: str) -> Path:
+    slug = attr.lower()
+    return REPO_ROOT / "reports" / f"{slug}_pilot" / "kaggle_training_report.md"
+
+# Baseline e risultati di riferimento (popolare manualmente dopo evaluate_baselines.py)
+PRIOR_RESULTS: dict[str, dict] = {}
 
 # Mapping per analisi fattoriale 2×2
 FACTORIAL_GRID = {
@@ -54,22 +50,29 @@ FACTORIAL_GRID = {
 }
 
 # ── Configurazione modelli ───────────────────────────────────────────────
-ATTRIBUTO = "Struttura_della_Pasta"
+ATTRIBUTO = "Sapore"
 
+# 12 modelli per il 2x2 completo: 6 frozen + 6 fine-tuned
 MODELS = [
     # (label, model_flag, finetune, dir_name, description)
-    ("M1-FT", "m1", True, "m1_cnn_lstm_ft",
-     "CNN encoder (fine-tuned) + LSTM decoder"),
-    ("M2-FT", "m2", True, "m2_cnn_transformer_ft",
-     "CNN encoder (fine-tuned) + Transformer decoder"),
-    ("M3-FT", "m3", True, "m3_vit_transformer_ft",
-     "ViT encoder (fine-tuned) + Transformer decoder"),
+    ("M1", "m1", False, "m1_cnn_lstm",
+     "CNN encoder (frozen) + LSTM decoder"),
+    ("M2", "m2", False, "m2_cnn_transformer",
+     "CNN encoder (frozen) + Transformer decoder"),
+    ("M3", "m3", False, "m3_vit_transformer",
+     "ViT encoder (frozen) + Transformer decoder"),
     ("M5a", "m5a", False, "m5a_cnn_gpt",
      "CNN encoder (frozen) + GePpeTto decoder"),
     ("M5b", "m5b", False, "m5b_cnnspatial_gpt",
      "CNNSpatial encoder (frozen) + GePpeTto decoder"),
     ("M5c", "m5c", False, "m5c_vit_gpt",
      "ViT encoder (frozen) + GePpeTto decoder"),
+    ("M1-FT", "m1", True, "m1_cnn_lstm_ft",
+     "CNN encoder (fine-tuned) + LSTM decoder"),
+    ("M2-FT", "m2", True, "m2_cnn_transformer_ft",
+     "CNN encoder (fine-tuned) + Transformer decoder"),
+    ("M3-FT", "m3", True, "m3_vit_transformer_ft",
+     "ViT encoder (fine-tuned) + Transformer decoder"),
     ("M5a-FT", "m5a", True, "m5a_cnn_gpt_ft",
      "CNN encoder (fine-tuned) + GePpeTto decoder"),
     ("M5b-FT", "m5b", True, "m5b_cnnspatial_gpt_ft",
@@ -220,20 +223,21 @@ def print_analysis(results: list[dict], latest: dict):
     print(f"{'║'} {'ANALISI — ' + label:^68} {'║'}")
     print(f"{'╚' + '═' * 68 + '╝'}")
 
-    # 1. Confronto con baseline
-    retr = PRIOR_RESULTS["Baseline (retrieval)"]
-    print(f"\n  vs Baseline (retrieval):")
-    for metric in ("bleu1", "bleu4", "meteor", "rouge_l"):
-        val = m[metric]
-        base = retr[metric]
-        delta = val - base
-        ratio = val / base if base > 0 else float("inf")
-        arrow = "▲" if delta > 0 else "▼"
-        print(f"    {metric:>8}: {val:.4f}  {arrow} {delta:+.4f}  ({ratio:.1f}x baseline)")
+    # 1. Confronto con baseline (se disponibile)
+    retr = PRIOR_RESULTS.get("Baseline (retrieval)")
+    if retr:
+        print(f"\n  vs Baseline (retrieval):")
+        for metric in ("bleu1", "bleu4", "meteor", "rouge_l"):
+            val = m[metric]
+            base = retr[metric]
+            delta = val - base
+            ratio = val / base if base > 0 else float("inf")
+            arrow = "▲" if delta > 0 else "▼"
+            print(f"    {metric:>8}: {val:.4f}  {arrow} {delta:+.4f}  ({ratio:.1f}x baseline)")
 
-    beats_baseline = m["bleu4"] > retr["bleu4"]
-    print(f"\n  {'✓ Batte il baseline' if beats_baseline else '✗ NON batte il baseline'}"
-          f" → il modello {'usa' if beats_baseline else 'non usa'} informazione visiva")
+        beats_baseline = m["bleu4"] > retr["bleu4"]
+        print(f"\n  {'✓ Batte il baseline' if beats_baseline else '✗ NON batte il baseline'}"
+              f" → il modello {'usa' if beats_baseline else 'non usa'} informazione visiva")
 
     # 2. Confronto con controparte frozen/unfrozen
     counterpart = None
@@ -280,14 +284,15 @@ def print_analysis(results: list[dict], latest: dict):
                 arrow = "▲" if delta > 0 else "▼"
                 print(f"    {metric:>8}: scratch={s_val:.4f}  geppetto={g_val:.4f}  {arrow} {delta:+.4f}")
 
-    # 4. Confronto con M4 BLIP
-    m4 = PRIOR_RESULTS["M4 BLIP"]
-    print(f"\n  vs M4 BLIP (fully pre-trained, 129M image-text pairs):")
-    for metric in ("bleu4", "meteor", "rouge_l"):
-        delta = m[metric] - m4[metric]
-        pct = (delta / m4[metric] * 100) if m4[metric] > 0 else 0
-        arrow = "▲" if delta > 0 else "▼"
-        print(f"    {metric:>8}: {m[metric]:.4f} vs {m4[metric]:.4f}  {arrow} {pct:+.1f}%")
+    # 4. Confronto con M4 BLIP (se disponibile)
+    m4 = PRIOR_RESULTS.get("M4 BLIP")
+    if m4:
+        print(f"\n  vs M4 BLIP (fully pre-trained, 129M image-text pairs):")
+        for metric in ("bleu4", "meteor", "rouge_l"):
+            delta = m[metric] - m4[metric]
+            pct = (delta / m4[metric] * 100) if m4[metric] > 0 else 0
+            arrow = "▲" if delta > 0 else "▼"
+            print(f"    {metric:>8}: {m[metric]:.4f} vs {m4[metric]:.4f}  {arrow} {pct:+.1f}%")
 
     # 5. Stato griglia 2×2
     combined = _all_metrics(results)
@@ -378,9 +383,10 @@ def save_report_md(results: list[dict], attributo: str):
 
     lines.append("")
 
-    REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_PATH.write_text("\n".join(lines), encoding="utf-8")
-    print(f"\nReport salvato: {REPORT_PATH}")
+    report_path = _report_path(attributo)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text("\n".join(lines), encoding="utf-8")
+    print(f"\nReport salvato: {report_path}")
 
 
 def run_training(model_flag: str, finetune: bool, attributo: str,

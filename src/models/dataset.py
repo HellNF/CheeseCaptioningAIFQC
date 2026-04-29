@@ -78,6 +78,7 @@ class GranaTrentinoDataset(Dataset):
         require_both_views: bool = True,
         max_caption_len: int = 50,
         transform: transforms.Compose | None = None,
+        on_topic_only: bool = True,
     ) -> None:
         self.tokenizer = tokenizer
         self.max_caption_len = max_caption_len
@@ -94,6 +95,9 @@ class GranaTrentinoDataset(Dataset):
         # ma in pratica i sample_id fetta-only non sono in splits.json se generato con i default.
         # Per usare fetta-only: rigenerare splits.json con has_images anziché has_both_views.
         df = df[mask].copy()
+
+        if on_topic_only and "classe" in df.columns:
+            df = df[df["classe"].isin(["OK", "CONFORME"])].copy()
 
         with open(splits_path, encoding="utf-8") as f:
             splits = json.load(f)

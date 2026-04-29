@@ -29,19 +29,16 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MODELS_DIR = REPO_ROOT / "models"
-REPORT_PATH = REPO_ROOT / "reports" / "local_training_report.md"
 
-ATTRIBUTO = "Struttura_della_Pasta"
+ATTRIBUTO = "Sapore"
 
-# Risultati precedenti per confronto
-PRIOR_RESULTS = {
-    "M1":       {"bleu1": 0.2138, "bleu4": 0.0472, "meteor": 0.2309, "rouge_l": 0.2130},
-    "M2":       {"bleu1": 0.2104, "bleu4": 0.0405, "meteor": 0.2286, "rouge_l": 0.2084},
-    "M3":       {"bleu1": 0.2022, "bleu4": 0.0445, "meteor": 0.2289, "rouge_l": 0.2048},
-    "M4 BLIP":  {"bleu1": 0.2298, "bleu4": 0.0483, "meteor": 0.2712, "rouge_l": 0.2301},
-    "Baseline (retrieval)":      {"bleu1": 0.1312, "bleu4": 0.0213, "meteor": 0.1548, "rouge_l": 0.1322},
-    "Baseline (freq-weighted)":  {"bleu1": 0.0937, "bleu4": 0.0068, "meteor": 0.1129, "rouge_l": 0.0924},
-}
+# Output report path: reports/{attributo_lower}_pilot/local_training_report.md
+def _report_path(attr: str) -> Path:
+    slug = attr.lower()
+    return REPO_ROOT / "reports" / f"{slug}_pilot" / "local_training_report.md"
+
+# Baseline e risultati di riferimento (popolare manualmente dopo evaluate_baselines.py)
+PRIOR_RESULTS: dict[str, dict] = {}
 
 FACTORIAL_GRID = {
     "frozen_scratch":  ["M1", "M2", "M3"],
@@ -51,13 +48,17 @@ FACTORIAL_GRID = {
 }
 
 # (label, model_flag, finetune, dir_name, description)
+# 12 modelli totali per il 2x2 completo: 6 frozen + 6 fine-tuned
 MODELS = [
-    ("M1-FT",  "m1",  True,  "m1_cnn_lstm_ft",          "CNN (fine-tuned) + LSTM"),
-    ("M2-FT",  "m2",  True,  "m2_cnn_transformer_ft",   "CNN (fine-tuned) + Transformer"),
-    ("M3-FT",  "m3",  True,  "m3_vit_transformer_ft",   "ViT (fine-tuned) + Transformer"),
+    ("M1",     "m1",  False, "m1_cnn_lstm",             "CNN (frozen) + LSTM"),
+    ("M2",     "m2",  False, "m2_cnn_transformer",      "CNN (frozen) + Transformer"),
+    ("M3",     "m3",  False, "m3_vit_transformer",      "ViT (frozen) + Transformer"),
     ("M5a",    "m5a", False, "m5a_cnn_gpt",             "CNN (frozen) + GePpeTto"),
     ("M5b",    "m5b", False, "m5b_cnnspatial_gpt",      "CNNSpatial (frozen) + GePpeTto"),
     ("M5c",    "m5c", False, "m5c_vit_gpt",             "ViT (frozen) + GePpeTto"),
+    ("M1-FT",  "m1",  True,  "m1_cnn_lstm_ft",          "CNN (fine-tuned) + LSTM"),
+    ("M2-FT",  "m2",  True,  "m2_cnn_transformer_ft",   "CNN (fine-tuned) + Transformer"),
+    ("M3-FT",  "m3",  True,  "m3_vit_transformer_ft",   "ViT (fine-tuned) + Transformer"),
     ("M5a-FT", "m5a", True,  "m5a_cnn_gpt_ft",          "CNN (fine-tuned) + GePpeTto"),
     ("M5b-FT", "m5b", True,  "m5b_cnnspatial_gpt_ft",   "CNNSpatial (fine-tuned) + GePpeTto"),
     ("M5c-FT", "m5c", True,  "m5c_vit_gpt_ft",          "ViT (fine-tuned) + GePpeTto"),
@@ -207,12 +208,13 @@ def print_model_report(label: str, desc: str, metrics: dict | None,
             print(f"  Test:  BLEU-1={metrics['bleu1']:.4f}  BLEU-4={metrics['bleu4']:.4f}"
                   f"  METEOR={metrics['meteor']:.4f}  ROUGE-L={metrics['rouge_l']:.4f}")
 
-            # Confronto rapido con baseline
-            retr = PRIOR_RESULTS["Baseline (retrieval)"]
-            delta_b4 = metrics["bleu4"] - retr["bleu4"]
-            delta_met = metrics["meteor"] - retr["meteor"]
-            print(f"  vs Baseline: BLEU-4 {delta_b4:+.4f}  METEOR {delta_met:+.4f}"
-                  f"  {'> baseline' if delta_b4 > 0 else '< baseline'}")
+            # Confronto rapido con baseline (se disponibile)
+            retr = PRIOR_RESULTS.get("Baseline (retrieval)")
+            if retr:
+                delta_b4 = metrics["bleu4"] - retr["bleu4"]
+                delta_met = metrics["meteor"] - retr["meteor"]
+                print(f"  vs Baseline: BLEU-4 {delta_b4:+.4f}  METEOR {delta_met:+.4f}"
+                      f"  {'> baseline' if delta_b4 > 0 else '< baseline'}")
 
 
 def print_summary_table(results: list[dict]):
@@ -301,9 +303,10 @@ def save_report_md(results: list[dict], attributo: str):
 
     lines.append("")
 
-    REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_PATH.write_text("\n".join(lines), encoding="utf-8")
-    print(f"\nReport salvato: {REPORT_PATH}")
+    report_path = _report_path(attributo)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text("\n".join(lines), encoding="utf-8")
+    print(f"\nReport salvato: {report_path}")
 
 
 def main():

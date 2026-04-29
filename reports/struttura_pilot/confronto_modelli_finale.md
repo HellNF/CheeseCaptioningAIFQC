@@ -4,6 +4,22 @@
 **GPU:** NVIDIA RTX 4060 Laptop (8 GB VRAM)
 **Attributo pilota:** Struttura_della_Pasta (Train=1071, Val=256, Test=265)
 
+> ⚠️ **DISCLAIMER POST-PILOT (aggiunto 2026-04-29).**
+> Dopo la pubblicazione di questo report è stato scoperto un bug nel loader
+> (`src/models/dataset.py`): non filtrava la colonna `classe`, includendo nel
+> training tutte le caption marcate `FUORI_ATTRIBUTO` (caption riformulate da
+> commenti che riguardano altri attributi). Per Struttura_della_Pasta:
+> **47% del train e 49% del test sono caption off-topic**. Le metriche assolute
+> di questo report sono quindi un **lower bound** del potenziale reale, e il
+> "plateau BLEU-4 ~0.048" è probabilmente artefatto del rumore. I confronti
+> relativi tra modelli (effetto encoder fine-tuning, effetto decoder pre-trained)
+> restano informativi perché tutti i modelli condividono lo stesso rumore.
+> Il fix è applicato in `src/models/dataset.py` con parametro `on_topic_only=True`
+> (default). Distribuzione FUORI_ATTRIBUTO per attributo:
+> Aroma 1%, Sapore 0.6%, Colore 24%, Profumo 26%, Texture 29%,
+> **Struttura 47%, Spessore_della_Crosta 48%**. Il nuovo pilot è su Sapore
+> (dataset naturalmente pulito); vedi `reports/sapore_pilot/`.
+
 ---
 
 ## 1. Obiettivo
