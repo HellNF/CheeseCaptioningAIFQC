@@ -460,6 +460,17 @@ def main():
         model_dir = MODELS_DIR / dir_name
         metrics = load_metrics(model_dir, attributo) if success else None
 
+        # Cleanup last.pt per liberare spazio (best.pt è quello che conta)
+        if success:
+            last_ckpt = model_dir / attributo / "last.pt"
+            if last_ckpt.exists():
+                try:
+                    size_mb = last_ckpt.stat().st_size / 1024**2
+                    last_ckpt.unlink()
+                    print(f"  Cleanup: rimosso last.pt ({size_mb:.0f} MB liberati)")
+                except Exception as e:
+                    print(f"  WARN cleanup: {e}")
+
         print_model_report(label, desc, metrics, elapsed, success)
 
         result_entry = dict(
