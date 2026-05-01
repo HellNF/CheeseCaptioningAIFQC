@@ -46,12 +46,14 @@ DEFAULTS = {
     "m5c": dict(epochs=20, batch_size=8,  lr=5e-5, patience=5, scheduler="cosine"),
 }
 DEFAULTS_FT = {
-    "m1":  dict(epochs=30, batch_size=16, lr=1e-4, patience=7, scheduler="cosine"),
-    "m2":  dict(epochs=30, batch_size=16, lr=1e-4, patience=7, scheduler="cosine"),
-    "m3":  dict(epochs=20, batch_size=8,  lr=5e-5, patience=5, scheduler="cosine"),
-    "m5a": dict(epochs=20, batch_size=16, lr=5e-5, patience=7, scheduler="cosine"),
-    "m5b": dict(epochs=20, batch_size=8,  lr=5e-5, patience=7, scheduler="cosine"),
-    "m5c": dict(epochs=15, batch_size=8,  lr=2e-5, patience=5, scheduler="cosine"),
+    # Batch size dimezzati rispetto al pilot Struttura: laptop 4060 va in
+    # crash hardware/reboot durante backward su encoder unfrozen pesanti.
+    "m1":  dict(epochs=30, batch_size=8,  lr=1e-4, patience=7, scheduler="cosine"),
+    "m2":  dict(epochs=30, batch_size=8,  lr=1e-4, patience=7, scheduler="cosine"),
+    "m3":  dict(epochs=20, batch_size=4,  lr=5e-5, patience=5, scheduler="cosine"),
+    "m5a": dict(epochs=20, batch_size=8,  lr=5e-5, patience=7, scheduler="cosine"),
+    "m5b": dict(epochs=20, batch_size=4,  lr=5e-5, patience=7, scheduler="cosine"),
+    "m5c": dict(epochs=15, batch_size=4,  lr=2e-5, patience=5, scheduler="cosine"),
 }
 MODEL_DIR_NAMES = {
     "m1": "m1_cnn_lstm", "m2": "m2_cnn_transformer", "m3": "m3_vit_transformer",
