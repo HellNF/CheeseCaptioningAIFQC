@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Kaggle Kernel: Train all 9 new models for Grana Trentino captioning.
-v7: T4/P100 auto-detect + full training via kaggle_train_all.py
+Kaggle Kernel: Train all 12 models for Grana Trentino captioning (Sapore pilot).
+v8: 2x2 factorial complete (6 frozen + 6 fine-tuned), default attribute=Sapore.
 """
+import json
 import os
 import subprocess
 import sys
@@ -181,17 +182,31 @@ tok = ItalianTokenizer()
 print(f"  Tokenizer: vocab={len(tok)}")
 sys.stdout.flush()
 
+ATTRIBUTO = "Sapore"
+# CHUNK: "frozen" = M1/M2/M3/M5a/M5b/M5c (6 frozen models)
+#        "ft"     = M1-FT/M2-FT/M3-FT/M5a-FT/M5b-FT/M5c-FT (6 fine-tuned models)
+#        "all"    = tutti i 12 (richiede >20GB storage, può fallire per disk full)
+CHUNK = "m5c-only"
+
+CHUNK_MODELS = {
+    "frozen":   ["m1", "m2", "m3", "m5a", "m5b", "m5c"],
+    "ft":       ["m1-ft", "m2-ft", "m3-ft", "m5a-ft", "m5b-ft", "m5c-ft"],
+    "m5c-only": ["m5c"],
+}
+
 print(f"\n{'=' * 70}")
 print(f"  SETUP OK")
 print(f"  GPU: {gpu_name} -> device={device}")
-print(f"  Ready to train all 9 models")
+print(f"  Attributo: {ATTRIBUTO} | Chunk: {CHUNK}")
 print(f"{'=' * 70}\n")
 sys.stdout.flush()
 
-# ---- Train all models via kaggle_train_all.py ----
+# ---- Train via kaggle_train_all.py ----
 train_script = REPO_DIR / "scripts" / "kaggle_train_all.py"
 
-cmd = [sys.executable, str(train_script), "--beam-size", "3"]
+cmd = [sys.executable, str(train_script), "--attributo", ATTRIBUTO, "--beam-size", "3"]
+if CHUNK in CHUNK_MODELS:
+    cmd.extend(["--only"] + CHUNK_MODELS[CHUNK])
 
 print(f"Command: {' '.join(cmd)}")
 sys.stdout.flush()
@@ -207,9 +222,13 @@ print(f"\nTraining exit code: {result.returncode}")
 sys.stdout.flush()
 
 # ---- Copy results to /kaggle/working for download ----
-print("\nSaving results...")
+# /kaggle/working/ è l'output ufficiale del kernel — qui serve copiare TUTTO
+# quello che vogliamo poter scaricare a fine run (csv + json + best.pt).
+print("\nSaving results to /kaggle/working/results/...")
 models_dir = REPO_DIR / "models"
 output_dir = WORK_DIR / "results"
+total_pt = 0
+total_pt_mb = 0
 if models_dir.exists():
     for md in models_dir.iterdir():
         if md.is_dir():
@@ -221,11 +240,66 @@ if models_dir.exists():
                         if f.suffix in (".csv", ".json", ".txt"):
                             shutil.copy2(f, dst / f.name)
                             print(f"  {md.name}/{ad.name}/{f.name}")
+                        elif f.name == "best.pt":
+                            try:
+                                shutil.copy2(f, dst / f.name)
+                                size_mb = f.stat().st_size / 1024**2
+                                total_pt += 1
+                                total_pt_mb += size_mb
+                                print(f"  {md.name}/{ad.name}/{f.name} ({size_mb:.0f} MB)")
+                            except OSError as e:
+                                print(f"  WARN: {f.name}: {e}")
+print(f"\nCheckpoint salvati: {total_pt} (totale {total_pt_mb:.0f} MB)")
 
-# Copy report
-report_src = REPO_DIR / "reports" / "kaggle_training_report.md"
+# ---- Push checkpoint come Kaggle dataset (backup permanente) ----
+# Un dataset per chunk per evitare collisioni e perdite parziali
+DATASET_ID = f"marcopanciera/{ATTRIBUTO.lower()}-pilot-{CHUNK.replace('_','-')}-checkpoints"
+print(f"\nPush dei pesi come Kaggle dataset: {DATASET_ID}")
+sys.stdout.flush()
+
+ds_dir = WORK_DIR / "dataset_upload"
+if output_dir.exists():
+    if ds_dir.exists():
+        shutil.rmtree(ds_dir)
+    shutil.copytree(output_dir, ds_dir)
+
+    # Metadata per Kaggle dataset
+    metadata = {
+        "title": f"{ATTRIBUTO} pilot checkpoints",
+        "id": DATASET_ID,
+        "licenses": [{"name": "CC0-1.0"}],
+    }
+    with open(ds_dir / "dataset-metadata.json", "w") as f:
+        json.dump(metadata, f, indent=2)
+
+    # Crea o aggiorna
+    try:
+        # Tenta create; se esiste, fa version
+        cr = subprocess.run(
+            ["kaggle", "datasets", "create", "-p", str(ds_dir), "--dir-mode", "zip"],
+            capture_output=True, text=True, timeout=1800,
+        )
+        if cr.returncode != 0 and "already exists" in (cr.stderr + cr.stdout).lower():
+            cr = subprocess.run(
+                ["kaggle", "datasets", "version", "-p", str(ds_dir),
+                 "-m", f"Auto-upload {ATTRIBUTO} pilot", "--dir-mode", "zip"],
+                capture_output=True, text=True, timeout=1800,
+            )
+        print(cr.stdout[-500:] if cr.stdout else "")
+        print(cr.stderr[-500:] if cr.stderr else "")
+    except Exception as e:
+        print(f"WARN dataset push fallito: {e}")
+
+# Copy report (path dinamico: reports/{attributo_lower}_pilot/kaggle_training_report.md)
+report_src = REPO_DIR / "reports" / f"{ATTRIBUTO.lower()}_pilot" / "kaggle_training_report.md"
 if report_src.exists():
     shutil.copy2(report_src, WORK_DIR / "kaggle_training_report.md")
-    print(f"\n  Report: kaggle_training_report.md")
+    print(f"\n  Report: kaggle_training_report.md (from {report_src})")
+else:
+    # fallback path legacy
+    legacy = REPO_DIR / "reports" / "kaggle_training_report.md"
+    if legacy.exists():
+        shutil.copy2(legacy, WORK_DIR / "kaggle_training_report.md")
+        print(f"\n  Report: kaggle_training_report.md (legacy path)")
 
 print("\n=== DONE ===")

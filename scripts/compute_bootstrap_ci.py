@@ -10,11 +10,12 @@ meteor = hf_evaluate.load('meteor')
 rouge = hf_evaluate.load('rouge')
 
 models = {
-    'M3-FT': 'models/m3_vit_transformer_ft/Sapore/predictions.csv',
-    'M5c':   'models/m5c_vit_gpt/Sapore/predictions.csv',
-    'M5b-FT':'models/m5b_cnnspatial_gpt_ft/Sapore/predictions.csv',
-    'M5b':   'models/m5b_cnnspatial_gpt/Sapore/predictions.csv',
-    'M3':    'models/m3_vit_transformer/Sapore/predictions.csv',
+    'M3-FT':       'models/m3_vit_transformer_ft/Sapore/predictions.csv',
+    'M5c-laptop':  'models/m5c_vit_gpt/Sapore/predictions.csv',
+    'M5c-kaggle':  'models/m5c_vit_gpt/Sapore_kaggle/predictions.csv',
+    'M5b-FT':      'models/m5b_cnnspatial_gpt_ft/Sapore/predictions.csv',
+    'M5b':         'models/m5b_cnnspatial_gpt/Sapore/predictions.csv',
+    'M3':          'models/m3_vit_transformer/Sapore/predictions.csv',
 }
 
 N_BOOT = 1000

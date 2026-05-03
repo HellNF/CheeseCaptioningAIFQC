@@ -14,7 +14,7 @@
 
 ## Abstract
 
-This work addresses the AI4FQC #07 GRANA Captioning project end-to-end. We (i) build a hybrid deterministic + LLM-assisted pipeline that converts 13 261 raw panel-tasting comments into normalized Italian captions, classifying each comment in one of five labels (`OK` / `CONFORME` / `FUORI_ATTRIBUTO` / `RIFERIMENTO` / `ILLEGGIBILE`); and (ii) train and compare **12 image-captioning models** in a 2×2 factorial design (encoder frozen/fine-tuned × decoder from-scratch/pre-trained), on two attributes that span the dataset noise spectrum: *Struttura della Pasta* (47 % of training captions are off-topic) and *Sapore* (0.9 %, naturally clean). The project specs require 3 conceptually different captioning methods; we evaluate **9 distinct architectures** (3 encoders × 3 decoders) plus their fine-tuned variants. Key findings: (a) cleaning the loader from off-topic captions doubles BLEU-4 across all 2×2 cells (+125 % on average); (b) the winning 2×2 cell flips between attributes — `frozen × GePpeTto` on Struttura, `fine-tuned × scratch` on Sapore; (c) the best single model is **M3-FT** (ViT fine-tuned + Transformer scratch) with BLEU-4 = 0.117, while **M5c** (ViT frozen + GePpeTto frozen) wins on METEOR (0.320). Bootstrap 95 % confidence intervals overlap between top-3 models, so the ranking is suggestive rather than conclusive.
+This work addresses the AI4FQC #07 GRANA Captioning project end-to-end. We (i) build a hybrid deterministic + LLM-assisted pipeline that converts 13 261 raw panel-tasting comments into normalized Italian captions, classifying each comment in one of five labels (`OK` / `CONFORME` / `FUORI_ATTRIBUTO` / `RIFERIMENTO` / `ILLEGGIBILE`); and (ii) train and compare **12 image-captioning models** in a 2×2 factorial design (encoder frozen/fine-tuned × decoder from-scratch/pre-trained), on two attributes that span the dataset noise spectrum: *Struttura della Pasta* (47 % of training captions are off-topic) and *Sapore* (0.9 %, naturally clean). The project specs require 3 conceptually different captioning methods; we evaluate **9 distinct architectures** (3 encoders × 3 decoders) plus their fine-tuned variants. Key findings: (a) cleaning the loader from off-topic captions doubles BLEU-4 across all 2×2 cells (+125 % on average); (b) the winning 2×2 cell flips between attributes — `frozen × GePpeTto` on Struttura, `fine-tuned × scratch` on Sapore; (c) the best single model is **M3-FT** (ViT fine-tuned + Transformer scratch) with BLEU-4 = 0.117. M5c (ViT frozen + GePpeTto frozen) appears to win METEOR on the laptop seed (0.320) but a clean Kaggle re-run of the same recipe lands at 0.287, *below* M3-FT — i.e. inter-seed variance for M5c is larger than its METEOR margin. Bootstrap 95 % CIs overlap among the top-3, and a second seed shows the ranking can flip; we therefore present the top cluster as statistically indistinguishable rather than ranked.
 
 ---
 
@@ -270,7 +270,8 @@ The right panel of Figure 1 shows the Sapore 2×2: the winning cell is `fine-tun
 | M3 (ViT+Transf) | 0.315 | 0.098 | 0.307 | 0.249 | 8/13 | 21 m |
 | M5a (CNN+GePpeTto) | 0.308 | 0.090 | 0.274 | 0.231 | 9/16 | 21 m |
 | M5b (CNNSpatial+GPT) | 0.327 | 0.100 | 0.292 | 0.248 | 8/15 | 23 m |
-| **M5c (ViT+GPT)** 🥈 | 0.316 | 0.112 | **0.320** | 0.261 | 8 | ~ 47 m |
+| M5c (ViT+GPT) — laptop seed | 0.316 | 0.112 | 0.320 | 0.261 | 8 ‡ | ~ 47 m |
+| M5c (ViT+GPT) — Kaggle seed | 0.303 | 0.086 | 0.287 | 0.233 | 8 | 1 h 23 m |
 | M1-FT | 0.339 | 0.098 | 0.284 | 0.241 | 30/30 | 24 m |
 | M2-FT | 0.309 | 0.098 | 0.298 | 0.238 | 9/16 | 17 m |
 | **M3-FT (ViT+Transf, ft)** 🏆 | **0.363** | **0.117** | 0.305 | **0.262** | 13/18 | 41 m |
@@ -278,15 +279,17 @@ The right panel of Figure 1 shows the Sapore 2×2: the winning cell is `fine-tun
 | M5b-FT | 0.349 | 0.100 | 0.294 | 0.244 | 7/14 | 22 m |
 | M5c-FT | 0.327 | 0.098 | 0.294 | 0.246 | 13/15 | 70 m |
 
+‡ The laptop M5c run was completed via `--eval-only` on the `best.pt` saved at epoch 8 (out of 20 planned), after a system reboot interrupted training. We **re-ran the same model from scratch on Kaggle T4** (full training, identical code, identical data, different RNG state) to test whether the partial nature of the laptop checkpoint biased the metrics. The Kaggle run also early-stopped at epoch 8, but its test metrics are 20–25 % lower than the laptop ones across BLEU-4, METEOR, and ROUGE-L. Both rows are kept in the table; §6.5 and §7.10 discuss what this means for the model ranking.
+
 All 12 models beat the four baselines on BLEU-4 and METEOR. *Most-frequent* attains the highest BLEU-1 (0.404) by always emitting the most common opener tokens, but collapses to 0 on BLEU-4 (no 4-gram diversity) and to 0.115 on METEOR — confirming that BLEU-1 alone is misleading on this dataset. Trained models dominate on the order-aware metrics by 1.4× to 2.6× over the strongest baseline (freq-weighted, 0.072 BLEU-4).
 
 ### 6.4 Trade-off: BLEU-4 vs. METEOR
 
 ![Figure 2 — BLEU-4 vs. METEOR scatter for all 12 models](figures/sapore_pilot/02_bleu_vs_meteor.png)
 
-The two best models are visibly *Pareto-incomparable*: M3-FT maximises BLEU-4 (n-gram overlap), M5c maximises METEOR (synonym-aware overlap). The two metrics rank candidates differently because BLEU-4 punishes paraphrase, METEOR rewards it.
+On the **laptop** seed the two best models are visibly *Pareto-incomparable*: M3-FT maximises BLEU-4 (n-gram overlap), M5c maximises METEOR (synonym-aware overlap). The two metrics rank candidates differently because BLEU-4 punishes paraphrase, METEOR rewards it. **On the Kaggle re-run of M5c the picture changes**: M5c-Kaggle scores 0.287 METEOR, *below* M3-FT's 0.305, so the "M5c wins METEOR" headline is seed-dependent. We discuss this honestly in §6.5 and §7.10 rather than picking the more flattering seed.
 
-### 6.5 Statistical significance — bootstrap 95 % CIs
+### 6.5 Statistical significance — bootstrap 95 % CIs and inter-seed variance
 
 We computed bootstrap 95 % confidence intervals (**n = 1 000** resamples with replacement, seed = 42) on the test predictions of the top 5 models.
 
@@ -295,12 +298,25 @@ We computed bootstrap 95 % confidence intervals (**n = 1 000** resamples with re
 | Model | BLEU-4 (mean [95 % CI]) | METEOR (mean [95 % CI]) |
 |---|---|---|
 | M3-FT | 0.117 [0.095, 0.139] | 0.305 [0.282, 0.329] |
-| M5c | 0.111 [0.091, 0.131] | 0.319 [0.294, 0.342] |
+| M5c (laptop seed) | 0.111 [0.091, 0.131] | 0.319 [0.294, 0.342] |
 | M5b-FT | 0.100 [0.080, 0.121] | 0.295 [0.273, 0.319] |
 | M5b | 0.100 [0.079, 0.121] | 0.291 [0.266, 0.315] |
 | M3 | 0.098 [0.080, 0.116] | 0.308 [0.286, 0.329] |
+| **M5c (Kaggle seed)** *point estimate* | **0.086** | **0.287** |
 
-**The CIs of M3-FT and M5c overlap heavily on BLEU-4** (0.095–0.139 vs. 0.091–0.131). The point-estimate ranking favours M3-FT, but the difference is **not statistically significant at α = 0.05** with a single seed and a 230-sample test set. M5c's METEOR advantage (0.320 vs. 0.305) is also borderline. The honest reading is: *these three models perform similarly; the choice between them should be guided by other criteria (latency, output style, downstream usability)*.
+**Bootstrap CIs already overlap heavily** between M3-FT and M5c-laptop on BLEU-4 (0.095–0.139 vs. 0.091–0.131). With α = 0.05 and 230 test samples we cannot separate them on a single seed.
+
+**The inter-seed variance is larger than the bootstrap variance.** Re-training the same M5c recipe with a different RNG state produces:
+
+| | BLEU-4 | METEOR | ROUGE-L |
+|---|---:|---:|---:|
+| M5c laptop seed | 0.112 | 0.320 | 0.261 |
+| M5c Kaggle seed | 0.086 | 0.287 | 0.233 |
+| **Δ (relative)** | **−23 %** | **−10 %** | **−11 %** |
+
+The Kaggle point estimate falls *outside* the 95 % bootstrap CI of the laptop run on BLEU-4. This is exactly the seed-variance band that bootstrapping a single model run cannot capture: bootstrap CIs estimate uncertainty over the test set given a fixed model, not uncertainty over the training trajectory. With only one training seed per cell, **the M3-FT vs. M5c "horse race" is not interpretable** — depending on which M5c seed we report, M5c can be the METEOR winner or the third-place model.
+
+**Honest conclusion.** The top three or four Sapore models (M3-FT, M5c, M5b-FT, M5b) cluster within a band of width ≈ 0.025 BLEU-4 / ≈ 0.03 METEOR, which is comparable to the inter-seed variance we measured on M5c. With a single seed we cannot statistically rank them. Multi-seed training (≥ 3 seeds per cell) is the natural follow-up — see §7.10 and §8.
 
 ### 6.6 Loss curves — convergence behaviour
 
@@ -371,10 +387,11 @@ On Sapore: M3 (0.098) > M1 (0.092); M3-FT (0.117) > M1-FT (0.098); M5c (0.112) >
 
 This is the most actionable finding for downstream use.
 
-- **M3-FT** is top BLEU-4 but only 4th on METEOR. It converges on a *narrow set of templates* matching the training-set style, achieving high 4-gram precision but limited paraphrasing.
-- **M5c** is 2nd on BLEU-4 but **top METEOR**. Its language prior produces *natural synonyms and paraphrases*, which METEOR rewards.
+- **M3-FT** is top BLEU-4 and 3rd–4th on METEOR (depending on the seed for M5c). It converges on a *narrow set of templates* matching the training-set style, achieving high 4-gram precision but limited paraphrasing.
+- **M5c (laptop seed)** is 2nd on BLEU-4 and *appears* top METEOR. Its language prior produces natural synonyms and paraphrases, which METEOR rewards.
+- **M5c (Kaggle seed)** is 6th on BLEU-4 and below M3-FT on METEOR. Same architecture, same recipe, just a different RNG state.
 
-Bootstrap CIs (§6.5) confirm the difference is borderline. **For practical deployment** (showing captions to a human cheese expert) **M5c is probably the better choice** because its outputs are more readable and varied, even though it is technically not the BLEU-4 leader. For *automated downstream pipelines* that compare model output against a known reference style, M3-FT is preferable.
+Bootstrap CIs (§6.5) overlap heavily between M3-FT and the laptop M5c, and the Kaggle re-run shows that *seed* variance alone is larger than bootstrap variance. The "M5c is the better deployment choice because of METEOR" reading we drafted earlier is **only safe on the laptop seed**. With two seeds available we now read the picture as: **M3-FT and M5c are comparable on Sapore, with M3-FT the slightly safer choice because its laptop-seed advantage on BLEU-4 is robust to seed change while M5c's METEOR advantage is not.** A choice between them for a downstream cheese-expert UI should be driven by qualitative output style (see §6.8 / §7.7) and inference cost (§7.9: M5c is ≈ 2× slower and 2× the VRAM), not by point-estimate metrics that move 20 %+ across seeds.
 
 ### 7.5 Persistent grammatical errors
 
@@ -417,9 +434,9 @@ GePpeTto-based decoders are roughly **2× slower per caption** than scratch deco
 - **Test set is small** (230–265 samples) → metric variance is high (§6.5). Bootstrap CIs of top-3 models overlap.
 - **Ground truth captions are LLM outputs** (`gpt-4o-mini`), not the original panellist comments. We measure "how much the model resembles `gpt-4o-mini`'s normalisation", not "how faithfully the model describes the image".
 - **No human evaluation.** Automatic metrics (BLEU/METEOR/ROUGE) measure lexical overlap, not factual correctness. A cheese expert might rank M5c above M3-FT for usability reasons not captured by metrics.
-- **Single seed.** No multi-seed runs to estimate seed variance — results may shift by ~ ± 1 BLEU-4 point with a different seed.
+- **Two seeds for one model, single seed for the others.** We re-ran M5c (frozen) on Kaggle T4 to test whether its laptop-seed metrics were biased by an interrupted training. The Kaggle re-run is fully clean (early-stop at epoch 8 like the laptop, identical code) but its metrics differ by 23 % BLEU-4 and 10 % METEOR from the laptop seed (0.086 / 0.287 vs. 0.112 / 0.320). The Kaggle point estimate falls outside the 95 % bootstrap CI of the laptop run — **inter-seed variance is larger than bootstrap (over-test-set) variance**. By analogy, every other model in the table likely has a comparable seed band that we have *not* characterised. Multi-seed training (≥ 3 seeds per cell) is the natural follow-up.
 - **Panellists overlap train/test.** The 16 test panellists are all in the training set. The model may exploit individual stylistic cues; deployment with a new panel could see a noticeable degradation.
-- **M5c (frozen) on Sapore** was completed via `--eval-only` on the `best.pt` saved at epoch 8 (out of 20 planned), after a system reboot interrupted the training. Its metrics may be conservatively under-stated.
+- **M5c (frozen) on Sapore — laptop run.** Originally completed via `--eval-only` on the `best.pt` saved at epoch 8 (out of 20 planned) after a system reboot. The Kaggle re-run (full training, also early-stopped at epoch 8) shows that the laptop metrics were *not* under-stated — if anything, they were the better of two seeds. Both rows are reported in §6.3.
 
 ---
 
@@ -434,15 +451,15 @@ The work fully implements the AI4FQC #07 specifications and significantly extend
 1. All 12 models beat the 4 baselines on every metric, on both attributes.
 2. Cleaning the loader from off-topic captions doubles BLEU-4 across all four cells of the 2×2 (mean +124 %).
 3. The winning 2×2 cell **flips** between Struttura and Sapore — the optimal architecture is attribute-dependent, not universal.
-4. The two best models, **M3-FT** and **M5c**, are statistically indistinguishable on BLEU-4 with the current sample size; M3-FT wins BLEU-4, M5c wins METEOR. M5c is the better candidate for a downstream readable-caption use case.
+4. The top three to four models (M3-FT, M5c, M5b-FT, M5b) are statistically indistinguishable on BLEU-4 with the current sample size. A second seed for M5c (same recipe, Kaggle T4) shifts its BLEU-4 by 23 % and removes its METEOR lead, so we report them as a cluster and *do not* claim a single winner; the M3-FT/M5c choice for deployment is better made on qualitative output style and inference cost (§7.9), not on point-estimate metrics.
 5. Fine-tuning encoder and pre-training decoder are **alternatives**: combining them gives less than the sum of either alone — a real interaction effect, not noise.
 
 **Recommended next steps**, in priority order:
 
-1. **Replicate on Aroma** (0.5 % noise) — second clean-attribute confirmation that the Sapore winning cell (`ft × scratch`) generalises.
-2. **Replicate on Texture or Profumo** (~ 18–20 % noise) — intermediate noise regime, will the winner shift back towards `frozen × GePpeTto`?
-3. **Human evaluation** on top-3 Sapore models (a domain expert ranks 30 image-caption triples).
-4. **Multi-seed runs** on the top-3 to obtain a real seed-variance band on the metrics (currently single-seed).
+1. **Multi-seed runs (≥ 3 seeds) on the top-3 Sapore models** — promoted to top priority after the M5c second seed showed a 23 % BLEU-4 shift. Without this band, none of the per-model rankings is decision-grade.
+2. **Replicate on Aroma** (0.9 % noise) — second clean-attribute confirmation that the Sapore winning cell (`ft × scratch`) generalises.
+3. **Replicate on Texture or Profumo** (~ 25–30 % noise) — intermediate noise regime, will the winner shift back towards `frozen × GePpeTto`?
+4. **Human evaluation** on top-3 Sapore models (a domain expert ranks 30 image-caption triples).
 5. **Mode-collapse fix ablation** — isolate label smoothing alone vs. nucleus alone vs. both, quantify the contribution of each component.
 6. **Re-run BLIP fine-tuning** on Sapore with the loader fix to obtain an updated ceiling.
 7. **Scale to all 7 attributes** on Kaggle T4 (the `scripts/kaggle_train_all.py` launcher is ready).
