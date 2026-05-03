@@ -169,7 +169,7 @@ for ax, (mkey, mlabel) in zip(axes, metrics):
     ax.set_yticks(y_pos)
     ax.set_yticklabels(model_names)
     ax.set_xlabel(mlabel)
-    ax.set_title(f'{mlabel} - bootstrap 95% CI (n=200)')
+    ax.set_title(f'{mlabel} - bootstrap 95% CI (n=1000)')
     ax.grid(axis='x', alpha=0.3)
     ax.invert_yaxis()
 plt.tight_layout()
