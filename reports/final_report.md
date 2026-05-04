@@ -299,10 +299,10 @@ We computed bootstrap 95 % confidence intervals (**n = 1 000** resamples with re
 |---|---|---|
 | M3-FT | 0.117 [0.095, 0.139] | 0.305 [0.282, 0.329] |
 | M5c (laptop seed) | 0.111 [0.091, 0.131] | 0.319 [0.294, 0.342] |
+| M5c (Kaggle seed) | 0.086 [0.070, 0.103] | 0.287 [0.267, 0.309] |
 | M5b-FT | 0.100 [0.080, 0.121] | 0.295 [0.273, 0.319] |
 | M5b | 0.100 [0.079, 0.121] | 0.291 [0.266, 0.315] |
 | M3 | 0.098 [0.080, 0.116] | 0.308 [0.286, 0.329] |
-| **M5c (Kaggle seed)** *point estimate* | **0.086** | **0.287** |
 
 **Bootstrap CIs already overlap heavily** between M3-FT and M5c-laptop on BLEU-4 (0.095–0.139 vs. 0.091–0.131). With α = 0.05 and 230 test samples we cannot separate them on a single seed.
 
@@ -314,7 +314,7 @@ We computed bootstrap 95 % confidence intervals (**n = 1 000** resamples with re
 | M5c Kaggle seed | 0.086 | 0.287 | 0.233 |
 | **Δ (relative)** | **−23 %** | **−10 %** | **−11 %** |
 
-The Kaggle point estimate falls *outside* the 95 % bootstrap CI of the laptop run on BLEU-4. This is exactly the seed-variance band that bootstrapping a single model run cannot capture: bootstrap CIs estimate uncertainty over the test set given a fixed model, not uncertainty over the training trajectory. With only one training seed per cell, **the M3-FT vs. M5c "horse race" is not interpretable** — depending on which M5c seed we report, M5c can be the METEOR winner or the third-place model.
+The two M5c CIs barely overlap on BLEU-4 (laptop [0.091, 0.131] vs. Kaggle [0.070, 0.103]) and on METEOR (laptop [0.294, 0.342] vs. Kaggle [0.267, 0.309]) — the overlap is in the upper-tail / lower-tail region of each respectively, i.e. the *means* are separated by more than one CI half-width. This is exactly the seed-variance band that bootstrapping a single model run cannot capture: bootstrap CIs estimate uncertainty over the test set given a fixed model, not uncertainty over the training trajectory. With only one training seed per cell, **the M3-FT vs. M5c "horse race" is not interpretable** — depending on which M5c seed we report, M5c can be the METEOR winner or the third-place model.
 
 **Honest conclusion.** The top three or four Sapore models (M3-FT, M5c, M5b-FT, M5b) cluster within a band of width ≈ 0.025 BLEU-4 / ≈ 0.03 METEOR, which is comparable to the inter-seed variance we measured on M5c. With a single seed we cannot statistically rank them. Multi-seed training (≥ 3 seeds per cell) is the natural follow-up — see §7.10 and §8.
 
